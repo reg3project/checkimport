@@ -51,3 +51,4 @@ output/reports/*
 # Only ignore temporary files in input folders
 input/**/*.tmp
 input/**/*.log
+!output/sku_variants_for_review.csv
