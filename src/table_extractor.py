@@ -61,24 +61,26 @@ class TechnicalSpec:
     raw_value: str = ""
 
     def __post_init__(self):
-        # Parse unit from value if present
-        if not self.unit and self.value:
-            self.unit, self.value = self._extract_unit(self.value)
+        # Store raw value before any processing
         if not self.raw_value:
             self.raw_value = self.value
+        # Extract unit but DON'T modify the original value
+        # The value should remain intact for comparison
+        if not self.unit and self.value:
+            self.unit = self._extract_unit(self.value)
 
-    def _extract_unit(self, value: str) -> Tuple[str, str]:
-        """Extract unit from value string"""
+    def _extract_unit(self, value: str) -> str:
+        """Extract unit from value string (without modifying value)"""
         # Common units in technical specs
         unit_patterns = [
-            r'(\d+(?:[.,]\d+)?)\s*(V|W|A|Hz|kg|g|mm|cm|m|°C|°|%|dB|Nm|rpm|s|ms)$',
-            r'(\d+(?:[.,]\d+)?)\s*(Volt|Watt|Ampere|kilogram|gram|millimeter|centimeter|meter)s?$',
+            r'\d+(?:[.,]\d+)?\s*(V|W|A|Hz|kg|g|mm|cm|m|°C|°|%|dB|Nm|rpm|s|ms|μF)(?:\s|$)',
+            r'\d+(?:[.,]\d+)?\s*(Volt|Watt|Ampere|kilogram|gram|millimeter|centimeter|meter)s?(?:\s|$)',
         ]
         for pattern in unit_patterns:
             match = re.search(pattern, value, re.IGNORECASE)
             if match:
-                return match.group(2), match.group(1)
-        return "", value
+                return match.group(1)
+        return ""
 
 
 @dataclass
