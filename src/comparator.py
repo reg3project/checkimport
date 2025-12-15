@@ -27,6 +27,7 @@ from .field_mapping import (
     convert_product_dict_to_italian, get_italian_column_for_english,
     ENGLISH_TO_ITALIAN_PRODUCT, ENGLISH_TO_ITALIAN_SKU
 )
+from .multi_product_extractor import extract_multi_product, is_multi_product_file
 
 logger = logging.getLogger(__name__)
 
@@ -506,3 +507,98 @@ def batch_compare(pairs: List[Tuple[Path, Path]]) -> Dict[str, Any]:
             logger.error(f"Error comparing {idml_path.name}: {e}")
 
     return comparator.get_aggregate_stats()
+
+
+def find_xlsx_for_page(xlsx_folder: Path, page_range: str, base_name: str) -> Optional[Path]:
+    """Find XLSX file matching a specific page range and product name"""
+    xlsx_files = list(xlsx_folder.glob("*.xlsx"))
+
+    for xlsx_file in xlsx_files:
+        xlsx_stem = xlsx_file.stem
+
+        # Check if base name matches
+        xlsx_base = xlsx_stem.split('_', 1)[-1] if '_' in xlsx_stem else xlsx_stem
+        if xlsx_base != base_name:
+            continue
+
+        # Extract page info from xlsx filename
+        xlsx_page_match = re.match(r'^(\d{2,3}(?:-\d{2,3})?)', xlsx_stem)
+        if xlsx_page_match:
+            xlsx_pages = xlsx_page_match.group(1)
+            if xlsx_pages == page_range:
+                return xlsx_file
+
+    return None
+
+
+def compare_multi_product_file(
+    idml_path: Path,
+    xlsx_folder: Path
+) -> List[ComparisonResult]:
+    """Compare a multi-product IDML file with its matching XLSX files"""
+    results = []
+
+    # Extract all products from IDML
+    multi_result = extract_multi_product(idml_path)
+
+    # Get base product name from IDML filename
+    idml_stem = idml_path.stem
+    base_name = idml_stem.split('_', 1)[-1] if '_' in idml_stem else idml_stem
+
+    logger.info(f"Multi-product extraction: {multi_result.product_count} products from {idml_path.name}")
+
+    for product in multi_result.products:
+        page_range = product.product_info.pagina_catalogo
+
+        # Find matching XLSX file
+        xlsx_path = find_xlsx_for_page(xlsx_folder, page_range, base_name)
+
+        if xlsx_path:
+            try:
+                logger.info(f"  Matching {page_range} -> {xlsx_path.name}")
+                reference = load_xlsx(xlsx_path)
+
+                comparator = Comparator()
+                result = comparator.compare(product, reference)
+                results.append(result)
+            except Exception as e:
+                logger.error(f"Error comparing product {page_range}: {e}")
+        else:
+            logger.warning(f"  No XLSX found for page range: {page_range}")
+
+    return results
+
+
+def compare_files_multi(
+    idml_path: Path,
+    xlsx_folder: Path,
+    force_single: bool = False
+) -> List[ComparisonResult]:
+    """Compare an IDML file, handling multi-product files automatically
+
+    Args:
+        idml_path: Path to IDML file
+        xlsx_folder: Folder containing XLSX reference files
+        force_single: If True, always treat as single product
+
+    Returns:
+        List of ComparisonResult objects
+    """
+    if not force_single and is_multi_product_file(idml_path):
+        return compare_multi_product_file(idml_path, xlsx_folder)
+    else:
+        # Find matching XLSX for single product
+        xlsx_files = list(xlsx_folder.glob("*.xlsx"))
+
+        # Get base name from IDML
+        idml_stem = idml_path.stem
+        idml_base = idml_stem.split('_', 1)[-1] if '_' in idml_stem else idml_stem
+
+        for xlsx_file in xlsx_files:
+            xlsx_base = xlsx_file.stem.split('_', 1)[-1] if '_' in xlsx_file.stem else xlsx_file.stem
+            if xlsx_base == idml_base:
+                result = compare_files(idml_path, xlsx_file)
+                return [result]
+
+        logger.warning(f"No matching XLSX found for {idml_path.name}")
+        return []

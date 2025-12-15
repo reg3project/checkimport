@@ -220,38 +220,67 @@ def cmd_process(args):
 
 def cmd_check(args):
     """Validate all files and generate reports"""
-    from .comparator import Comparator, compare_files
+    from .comparator import Comparator, compare_files, compare_files_multi
+    from .multi_product_extractor import is_multi_product_file
     from .reporter import Reporter
 
     print("\n" + "=" * 60)
     print("CHECKING EXTRACTED DATA")
     print("=" * 60)
 
-    # Find pairs in learning directory (supports subfolder structure)
-    pairs = find_learning_pairs()
+    # Get XLSX folder for multi-product matching
+    xlsx_folder = LEARNING_DIR / "XLSX"
+    if not xlsx_folder.exists():
+        xlsx_folder = LEARNING_DIR
 
-    if not pairs:
-        print("No IDML/XLSX pairs found for validation!")
+    # Find all IDML files
+    idml_folder = LEARNING_DIR / "IDML"
+    if not idml_folder.exists():
+        idml_folder = LEARNING_DIR
+
+    idml_files = list(idml_folder.glob("*.idml"))
+
+    if not idml_files:
+        print("No IDML files found for validation!")
         print(f"Please add files to: {LEARNING_DIR}")
-        print("  - Subfolder structure: IDML/*.idml and XLSX/*.xlsx")
-        print("  - Or flat structure: *.idml and *.xlsx in same folder")
         return 1
 
-    print(f"Found {len(pairs)} pairs to validate")
+    print(f"Found {len(idml_files)} IDML files to validate")
 
-    # Compare all pairs
+    # Compare all files (handling multi-product files)
     comparator = Comparator()
     results = []
 
-    for idml_path, xlsx_path in pairs:
+    for idml_path in idml_files:
         try:
-            print(f"Validating: {idml_path.name}")
-            result = compare_files(idml_path, xlsx_path)
-            results.append(result)
-            comparator.results.append(result)
-            print(f"  Accuracy: {result.accuracy:.1f}%")
+            if is_multi_product_file(idml_path):
+                print(f"Validating (multi-product): {idml_path.name}")
+                multi_results = compare_files_multi(idml_path, xlsx_folder)
+                for result in multi_results:
+                    results.append(result)
+                    comparator.results.append(result)
+                    print(f"  {result.xlsx_file}: {result.accuracy:.1f}%")
+            else:
+                # Single product - find matching XLSX
+                pairs = find_learning_pairs()
+                matching_xlsx = None
+                for ip, xp in pairs:
+                    if ip == idml_path:
+                        matching_xlsx = xp
+                        break
+
+                if matching_xlsx:
+                    print(f"Validating: {idml_path.name}")
+                    result = compare_files(idml_path, matching_xlsx)
+                    results.append(result)
+                    comparator.results.append(result)
+                    print(f"  Accuracy: {result.accuracy:.1f}%")
+                else:
+                    logger.warning(f"No matching XLSX for {idml_path.name}")
         except Exception as e:
             logger.error(f"Error validating {idml_path.name}: {e}")
+            import traceback
+            traceback.print_exc()
 
     # Print summary
     from .reporter import print_comparison_summary
