@@ -6,6 +6,8 @@ Performs field-by-field comparison to:
 - Detect mismatches
 - Identify new fields (in IDML but not in XLSX schema)
 - Find missing fields (expected but not in IDML)
+
+Supports Italian field names from FAAC XLSX files.
 """
 
 from pathlib import Path
@@ -18,8 +20,13 @@ from datetime import datetime
 from .xlsx_loader import XLSXData, load_xlsx
 from .xlsx_writer import ExtractionResult
 from .idml_parser import parse_idml
-from .table_extractor import extract_specs_from_document
+from .table_extractor import extract_specs_from_document, SKUSpecs
 from .text_extractor import extract_product_info
+from .field_mapping import (
+    normalize_value, values_match, find_xlsx_column_for_idml_attr,
+    convert_product_dict_to_italian, get_italian_column_for_english,
+    ENGLISH_TO_ITALIAN_PRODUCT, ENGLISH_TO_ITALIAN_SKU
+)
 
 logger = logging.getLogger(__name__)
 
@@ -140,12 +147,14 @@ class Comparator:
         result: ComparisonResult
     ):
         """Compare product-level fields"""
-        extracted_dict = extraction.product_info.to_dict()
+        # Convert extracted dict from English to Italian column names
+        extracted_english = extraction.product_info.to_dict()
+        extracted_dict = convert_product_dict_to_italian(extracted_english)
 
         # Get reference product (first one if multiple)
         ref_product = reference.prodotti[0] if reference.prodotti else {}
 
-        # Compare each field
+        # Compare each field using Italian column names
         all_fields = set(extracted_dict.keys()) | set(ref_product.keys())
 
         for field_name in all_fields:
@@ -162,35 +171,87 @@ class Comparator:
         result: ComparisonResult
     ):
         """Compare SKU-level fields"""
+        # Build lookup of reference SKUs by model name
+        ref_by_model = {}
+        for ref_sku in reference.sku:
+            model = ref_sku.get('Nome Modello', '')
+            if model:
+                ref_by_model[model.lower()] = ref_sku
+            # Also index by SKU code
+            sku_code = ref_sku.get('SKU', '')
+            if sku_code:
+                ref_by_model[str(sku_code).lower()] = ref_sku
+
         for sku_specs in extraction.sku_specs:
             extracted_dict = sku_specs.to_dict()
-            sku_code = sku_specs.sku
+            model_name = sku_specs.sku  # In our extraction, sku holds the model name
 
-            # Find matching reference SKU
-            ref_sku = reference.get_sku_by_code(sku_code)
-            if not ref_sku and reference.sku:
-                # Try first SKU if no match
-                ref_sku = reference.sku[0]
+            # Find matching reference SKU by model name
+            ref_sku = None
+            model_lower = model_name.lower()
+
+            # Try exact match first
+            if model_lower in ref_by_model:
+                ref_sku = ref_by_model[model_lower]
+            else:
+                # Try partial match
+                for ref_model, ref_data in ref_by_model.items():
+                    if model_lower in ref_model or ref_model in model_lower:
+                        ref_sku = ref_data
+                        break
 
             if not ref_sku:
                 ref_sku = {}
 
-            # Compare each field
-            all_fields = set(extracted_dict.keys()) | set(ref_sku.keys())
+            # Compare each extracted field with reference
+            for field_name, field_value in extracted_dict.items():
+                if field_name in ('sku', 'Nome Modello'):
+                    continue  # Skip identifier fields
 
-            for field_name in all_fields:
-                if field_name == 'sku':
-                    continue  # Skip SKU code itself
+                extracted_val = str(field_value).strip()
 
-                extracted_val = str(extracted_dict.get(field_name, "")).strip()
-                reference_val = str(ref_sku.get(field_name, "")).strip()
+                # Find matching reference field (try exact name and mapped name)
+                reference_val = ""
+                xlsx_col = find_xlsx_column_for_idml_attr(field_name)
+
+                if xlsx_col and xlsx_col in ref_sku:
+                    reference_val = str(ref_sku.get(xlsx_col, "")).strip()
+                elif field_name in ref_sku:
+                    reference_val = str(ref_sku.get(field_name, "")).strip()
 
                 comparison = self._compare_values(
-                    f"sku.{sku_code}.{field_name}",
+                    f"{model_name}.{field_name}",
                     extracted_val,
                     reference_val
                 )
                 result.comparisons.append(comparison)
+
+            # Also check for missing fields in reference that we didn't extract
+            for ref_field, ref_value in ref_sku.items():
+                if ref_field in ('SKU', 'COUNTIF', 'SKU Immagine', 'Tipo'):
+                    continue  # Skip metadata fields
+
+                ref_val = str(ref_value).strip() if ref_value else ""
+                if not ref_val:
+                    continue
+
+                # Check if we extracted this field
+                found = False
+                for field_name in extracted_dict.keys():
+                    xlsx_col = find_xlsx_column_for_idml_attr(field_name)
+                    if xlsx_col == ref_field or field_name == ref_field:
+                        found = True
+                        break
+
+                if not found:
+                    comparison = FieldComparison(
+                        field_name=f"{model_name}.{ref_field}",
+                        extracted_value="",
+                        reference_value=ref_val[:100],
+                        status='missing',
+                        similarity=0.0
+                    )
+                    result.comparisons.append(comparison)
 
     def _compare_values(
         self,

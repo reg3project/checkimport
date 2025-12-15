@@ -99,29 +99,61 @@ class TextExtractor:
 
     def _extract_title(self):
         """Extract product title/name"""
+        # FAAC product name patterns - alphanumeric codes like "740 C", "770N 230V", "S2500I", etc.
+        product_name_patterns = [
+            r'\b(\d{3,4}\s*[A-Z]?\s*(?:230V|24V)?)\b',  # 740 C, 770N 230V
+            r'\b([A-Z]\d{4}[A-Z]?)\b',  # S2500I
+            r'\b([A-Z]+\s+\d+[A-Z]?(?:\s*kit)?)\b',  # LEADER kit, MASTER kit
+            r'\b(B\d{3})\b',  # B614
+            r'\b(XTO)\b',  # XTO
+        ]
+
+        # Collect all text sorted by position
+        all_texts = []
+        for story_texts in self.document.stories.values():
+            all_texts.extend(story_texts)
+        all_texts.sort(key=lambda x: x.position)
+
+        # Try to extract from filename first
+        if self.document.metadata.get('name'):
+            filename = self.document.metadata['name']
+            # Pattern: "116-117_740_C" -> extract "740 C" or "030_MASTER_kit" -> "MASTER kit"
+            for pattern in product_name_patterns:
+                match = re.search(pattern, filename.replace('_', ' '), re.IGNORECASE)
+                if match:
+                    self.product_info.name = match.group(1).strip()
+                    return
+
+        # Look for product name patterns in text
+        for tc in all_texts:
+            text = tc.text.strip()
+            if 3 < len(text) < 50:
+                for pattern in product_name_patterns:
+                    if re.match(pattern, text, re.IGNORECASE):
+                        self.product_info.name = text
+                        return
+
         # Look for title-styled text
         for style in self.TITLE_STYLES:
             matches = self.document.find_text_by_style(style)
             if matches:
-                # Take the first substantial title
                 for tc in matches:
                     if len(tc.text) > 3 and len(tc.text) < 200:
                         self.product_info.name = tc.text.strip()
                         return
 
-        # Fallback: look for largest text or first significant text
-        all_texts = []
-        for story_texts in self.document.stories.values():
-            all_texts.extend(story_texts)
-
-        if all_texts:
-            # Sort by position, take first substantial text
-            all_texts.sort(key=lambda x: x.position)
-            for tc in all_texts:
-                text = tc.text.strip()
-                if len(text) > 3 and len(text) < 200:
-                    self.product_info.name = text
-                    return
+        # Fallback: look for text after category keywords
+        category_keywords = ['automazioni', 'barriere', 'motoriduttore', 'kit', 'sistema']
+        found_category = False
+        for tc in all_texts:
+            text = tc.text.strip().lower()
+            if any(kw in text for kw in category_keywords):
+                found_category = True
+                continue
+            if found_category and 3 < len(tc.text.strip()) < 50:
+                # This might be the product name following the category
+                self.product_info.name = tc.text.strip()
+                return
 
     def _extract_description(self):
         """Extract product description"""
@@ -271,22 +303,56 @@ class TextExtractor:
 
     def _extract_category(self):
         """Extract product category"""
-        # Category is often in page header or specific styled text
-        category_styles = ['category', 'categoria', 'header']
+        # Known FAAC category patterns
+        category_keywords = [
+            'automazioni per cancelli',
+            'automazioni per ante',
+            'barriere stradali',
+            'barriere automatiche',
+            'motoriduttore',
+            'kit special',
+            'perfect kit',
+            'schema installazione',
+            'sistema'
+        ]
 
+        # Collect all text sorted by position
+        all_texts = []
+        for story_texts in self.document.stories.values():
+            all_texts.extend(story_texts)
+        all_texts.sort(key=lambda x: x.position)
+
+        # Look for category keywords in text
+        for tc in all_texts:
+            text = tc.text.strip()
+            text_lower = text.lower()
+            for keyword in category_keywords:
+                if keyword in text_lower and len(text) < 100:
+                    self.product_info.category = text
+                    return
+
+        # Look for category-styled text
+        category_styles = ['category', 'categoria', 'header']
         for style in category_styles:
             matches = self.document.find_text_by_style(style)
             if matches:
                 self.product_info.category = matches[0].text.strip()
                 return
 
-        # Try to infer from metadata
+        # Try to infer from metadata (filename)
         if self.document.metadata.get('name'):
             name = self.document.metadata['name']
-            # Category might be prefix of filename
-            parts = name.split('_')
-            if len(parts) > 1:
-                self.product_info.category = parts[0]
+            # For kit files like "030_MASTER_kit_24V_PERFECT_60"
+            if 'PERFECT' in name.upper():
+                self.product_info.category = "PERFECT KIT"
+                return
+            if 'kit' in name.lower():
+                self.product_info.category = "Kit"
+                return
+            # For schema files like "268_400_SI"
+            if '_SI' in name:
+                self.product_info.category = "Schema Installazione"
+                return
 
 
 def extract_product_info(document: IDMLDocument) -> ProductInfo:

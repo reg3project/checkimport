@@ -5,6 +5,7 @@ Handles various table formats:
 - Two-column tables (attribute, value)
 - Multi-column tables (attribute, value1, value2, ... for multiple SKUs)
 - Merged cells and complex layouts
+- Empty cells (inherit from previous column)
 """
 
 import re
@@ -16,6 +17,38 @@ import logging
 from .idml_parser import IDMLDocument, Table, TableCell
 
 logger = logging.getLogger(__name__)
+
+
+# Italian attribute names found in FAAC IDML files
+ITALIAN_ATTRIBUTE_NAMES = [
+    'Tensione di alimentazione di rete',
+    'Corrente assorbita',
+    'Motore elettrico',
+    'Potenza max',
+    'Coppia max',
+    'Forza max di spinta',
+    'Velocità max stelo',
+    'Velocità angolare max',
+    "Velocità dell'anta",
+    'Portata gruppo motore-pompa',
+    'Corsa dello stelo',
+    'Angolo max apertura anta',
+    'Temperatura ambiente di esercizio',
+    'Termoprotezione',
+    'Grado di protezione',
+    'Peso',
+    'Frequenza di utilizzo',
+    'Larghezza max anta',
+    'Lunghezza max anta',
+    'Peso max anta',
+    'Tipo di olio',
+    'Staffe di fissaggio',
+    'Dimensioni (LxPxH)',
+    'Apparecchiatura elettronica',
+    'Dispositivo di sblocco',
+    'Finecorsa',
+    'Encoder',
+]
 
 
 @dataclass
@@ -155,16 +188,26 @@ class TableExtractor:
 
     def _extract_multi_column(self, table: Table) -> List[SKUSpecs]:
         """Extract from multi-column table (attribute, val1, val2, ...)"""
-        # First row typically contains SKU codes
-        skus = []
+        # First row typically contains model names (SKU codes or model names)
+        models = []
         for col in range(1, table.cols):
             header_cell = table.get_cell(0, col)
             if header_cell:
-                sku = self._extract_sku(header_cell.content)
-                skus.append(sku if sku else f"SKU_{col}")
+                model_name = header_cell.content.strip()
+                models.append(model_name if model_name else f"Model_{col}")
+            else:
+                models.append(f"Model_{col}")
 
-        # Create SKUSpecs for each column
-        specs_list = [SKUSpecs(sku=sku) for sku in skus]
+        # Create SKUSpecs for each column using model name as identifier
+        specs_list = [SKUSpecs(sku=model) for model in models]
+
+        # Also store the original Italian attribute name
+        for spec in specs_list:
+            spec.specs['Nome Modello'] = TechnicalSpec(
+                attribute='Nome Modello',
+                value=spec.sku,
+                sku=spec.sku
+            )
 
         # Extract values for each attribute row
         for row in range(1, table.rows):
@@ -172,21 +215,34 @@ class TableExtractor:
             if not attr_cell:
                 continue
 
-            attribute = self._normalize_attribute(attr_cell.content)
-            if not attribute:
+            # Keep original Italian attribute name
+            original_attribute = attr_cell.content.strip()
+            if not original_attribute:
                 continue
+
+            # Track the last non-empty value for inheritance
+            last_value = None
 
             for col_idx, col in enumerate(range(1, table.cols)):
                 if col_idx >= len(specs_list):
                     break
 
                 val_cell = table.get_cell(row, col)
+                value = ""
+
                 if val_cell:
                     value = self._clean_value(val_cell.content)
-                    if value:
-                        specs_list[col_idx].add_spec(attribute, value)
 
-        return [s for s in specs_list if s.specs]
+                # If empty, inherit from previous column (FAAC table convention)
+                if not value and last_value:
+                    value = last_value
+
+                if value:
+                    last_value = value
+                    # Store with original Italian attribute name
+                    specs_list[col_idx].add_spec(original_attribute, value)
+
+        return [s for s in specs_list if len(s.specs) > 1]  # More than just model name
 
     def _normalize_attribute(self, raw: str) -> str:
         """Normalize attribute name"""

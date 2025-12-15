@@ -120,8 +120,8 @@ class XLSXLoader:
         if not rows:
             return
 
-        # First row is headers
-        headers = [str(h).strip().lower() if h else f'col_{i}' for i, h in enumerate(rows[0])]
+        # First row is headers (keep original case for Italian column names)
+        headers = [str(h).strip() if h else f'col_{i}' for i, h in enumerate(rows[0])]
 
         # Store columns
         if sheet_type == 'prodotti':
@@ -129,10 +129,24 @@ class XLSXLoader:
         else:
             self.data.sku_columns = headers
 
-        # Load data rows
-        for row in rows[1:]:
+        # Load data rows (skip template/placeholder rows)
+        for row_idx, row in enumerate(rows[1:], start=2):
             if not any(row):  # Skip empty rows
                 continue
+
+            # Skip placeholder row in prodotti sheet (row 2 typically has "Categoria", "Prodotto", etc.)
+            if sheet_type == 'prodotti':
+                first_val = str(row[0]).strip() if row[0] else ""
+                if first_val in ('Categoria', 'Category'):
+                    logger.debug(f"Skipping placeholder row {row_idx} in prodotti sheet")
+                    continue
+
+            # Skip placeholder row in sku sheet (row 2 often has template SKU '104250445')
+            if sheet_type == 'sku' and row_idx == 2:
+                first_val = str(row[0]).strip() if row[0] else ""
+                if first_val == '104250445':
+                    logger.debug(f"Skipping placeholder row {row_idx} in sku sheet")
+                    continue
 
             row_dict = {}
             for i, value in enumerate(row):
