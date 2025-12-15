@@ -98,6 +98,100 @@ The system will generate XLSX files using learned patterns.
 
 ## Git Instructions
 
+### Windows Local Setup (FAAC)
+
+**Your local folder:** `C:\Users\Lucar\Documents\FAAC\git\checkimport`
+
+#### First Time Clone (Open CMD or PowerShell)
+```cmd
+cd C:\Users\Lucar\Documents\FAAC\git
+git clone https://github.com/reg3project/checkimport.git
+cd checkimport
+```
+
+#### Daily Workflow
+
+**1. Open terminal and navigate to project:**
+```cmd
+cd C:\Users\Lucar\Documents\FAAC\git\checkimport
+```
+
+**2. Pull latest changes from GitHub:**
+```cmd
+git pull origin main
+```
+
+**3. Add your IDML/XLSX files:**
+```cmd
+REM For learning data (training pairs)
+copy "C:\path\to\your\file.idml" "input\learning\"
+copy "C:\path\to\your\file.xlsx" "input\learning\"
+
+REM For processing (new IDML files to convert)
+copy "C:\path\to\your\file.idml" "input\processing\"
+```
+
+**4. Commit and push your files:**
+```cmd
+git add .
+git status
+git commit -m "Add new IDML files for processing"
+git push origin main
+```
+
+**5. After Claude Code processes, pull results:**
+```cmd
+git pull origin main
+REM Results are in: output\xlsx\ and output\reports\
+```
+
+#### Quick Reference Commands (Windows CMD)
+```cmd
+REM Check status
+cd C:\Users\Lucar\Documents\FAAC\git\checkimport
+git status
+
+REM Pull latest
+git pull origin main
+
+REM Add all files and push
+git add .
+git commit -m "Your message here"
+git push origin main
+
+REM View what changed
+git log --oneline -5
+
+REM Discard local changes (careful!)
+git checkout -- .
+```
+
+#### Run Processing Locally (Windows)
+```cmd
+cd C:\Users\Lucar\Documents\FAAC\git\checkimport
+
+REM Create virtual environment (first time only)
+python -m venv venv
+venv\Scripts\activate
+
+REM Install dependencies (first time only)
+pip install -r requirements.txt
+
+REM Run commands
+python -m src.main learn --report
+python -m src.main process
+python -m src.main check --report
+```
+
+#### Open in File Explorer
+```cmd
+explorer C:\Users\Lucar\Documents\FAAC\git\checkimport\input\learning
+explorer C:\Users\Lucar\Documents\FAAC\git\checkimport\input\processing
+explorer C:\Users\Lucar\Documents\FAAC\git\checkimport\output\xlsx
+```
+
+---
+
 ### First Time Setup - Clone the Repository
 
 **Option 1: HTTPS (recommended for most users)**
