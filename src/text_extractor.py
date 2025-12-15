@@ -37,6 +37,9 @@ class ProductInfo:
     images: List[str] = field(default_factory=list)
     sku_codes: List[str] = field(default_factory=list)
     raw_data: Dict[str, Any] = field(default_factory=dict)
+    # New fields from table extraction
+    componenti_kit: str = ""
+    sku_correlati: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary"""
@@ -53,6 +56,8 @@ class ProductInfo:
             'accessories': '; '.join(self.accessories),
             'images': '; '.join(self.images),
             'sku_codes': '; '.join(self.sku_codes),
+            'componenti_kit': self.componenti_kit,
+            'sku_correlati': self.sku_correlati,
         }
 
 

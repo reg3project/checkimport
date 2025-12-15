@@ -212,6 +212,8 @@ ENGLISH_TO_ITALIAN_PRODUCT = {
     'accessories': 'accessori_disponibili',
     'images': 'immagine_principale',
     'sku_codes': 'codici_modelli',
+    'componenti_kit': 'componenti_kit',
+    'sku_correlati': 'sku_correlati',
 }
 
 # Maps English field names to Italian XLSX columns for SKU

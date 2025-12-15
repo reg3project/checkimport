@@ -20,7 +20,7 @@ from datetime import datetime
 from .xlsx_loader import XLSXData, load_xlsx
 from .xlsx_writer import ExtractionResult
 from .idml_parser import parse_idml
-from .table_extractor import extract_specs_from_document, SKUSpecs
+from .table_extractor import extract_specs_from_document, extract_all_from_document, SKUSpecs
 from .text_extractor import extract_product_info
 from .field_mapping import (
     normalize_value, values_match, find_xlsx_column_for_idml_attr,
@@ -384,7 +384,13 @@ def compare_files(idml_path: Path, xlsx_path: Path) -> ComparisonResult:
     # Parse IDML
     document = parse_idml(idml_path)
     product_info = extract_product_info(document)
-    sku_specs = extract_specs_from_document(document)
+    sku_specs, product_data = extract_all_from_document(document)
+
+    # Merge product_data into product_info
+    if product_data.kit_components:
+        product_info.componenti_kit = product_data.get_componenti_kit()
+    if product_data.related_skus:
+        product_info.sku_correlati = product_data.get_sku_correlati()
 
     extraction = ExtractionResult(
         source_file=str(idml_path.name),
@@ -408,7 +414,13 @@ def batch_compare(pairs: List[Tuple[Path, Path]]) -> Dict[str, Any]:
         try:
             document = parse_idml(idml_path)
             product_info = extract_product_info(document)
-            sku_specs = extract_specs_from_document(document)
+            sku_specs, product_data = extract_all_from_document(document)
+
+            # Merge product_data into product_info
+            if product_data.kit_components:
+                product_info.componenti_kit = product_data.get_componenti_kit()
+            if product_data.related_skus:
+                product_info.sku_correlati = product_data.get_sku_correlati()
 
             extraction = ExtractionResult(
                 source_file=str(idml_path.name),

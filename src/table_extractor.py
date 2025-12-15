@@ -110,6 +110,55 @@ class SKUSpecs:
         return result
 
 
+@dataclass
+class KitComponent:
+    """A single kit component"""
+    quantity: str
+    description: str
+    code: str
+
+    def to_format(self) -> str:
+        """Format as Q|SKU for componenti_kit column"""
+        return f"{self.quantity}|{self.code}"
+
+
+@dataclass
+class PricingInfo:
+    """Pricing information for a model"""
+    model: str
+    code: str
+    price: str
+
+
+@dataclass
+class ProductTableData:
+    """Product-level data extracted from tables"""
+    kit_components: List[KitComponent] = field(default_factory=list)
+    pricing: List[PricingInfo] = field(default_factory=list)
+    related_skus: List[str] = field(default_factory=list)
+
+    def get_componenti_kit(self) -> str:
+        """Format kit components as Q|SKU;Q|SKU;..."""
+        return ";".join(c.to_format() for c in self.kit_components)
+
+    def get_sku_correlati(self) -> str:
+        """Format related SKUs as semicolon-separated list"""
+        return ";".join(self.related_skus)
+
+    def to_dict(self) -> Dict[str, str]:
+        """Convert to dictionary for product-level fields"""
+        result = {}
+        if self.kit_components:
+            result['componenti_kit'] = self.get_componenti_kit()
+        if self.related_skus:
+            result['sku_correlati'] = self.get_sku_correlati()
+        if self.pricing:
+            # Store first pricing as main product
+            result['codice_articolo'] = self.pricing[0].code if self.pricing else ""
+            result['prezzo'] = self.pricing[0].price if self.pricing else ""
+        return result
+
+
 class TableExtractor:
     """Extract technical specifications from IDML tables"""
 
@@ -147,16 +196,183 @@ class TableExtractor:
         'forza': 'force',
     }
 
+    # Kit component table headers
+    KIT_HEADERS = ['q.tà', 'q', 'quantità', 'qty']
+    KIT_CODE_HEADERS = ['codice', 'code', 'cod']
+    KIT_DESC_HEADERS = ['descrizione', 'description', 'desc']
+
+    # Pricing table headers
+    PRICING_HEADERS = ['prezzo', 'price', '€']
+    PRICING_CODE_HEADERS = ['codice articolo', 'codice', 'code']
+    PRICING_MODEL_HEADERS = ['modello', 'model']
+
     def __init__(self, document: IDMLDocument):
         self.document = document
         self.extracted_specs: List[SKUSpecs] = []
+        self.product_data = ProductTableData()
 
     def extract_all(self) -> List[SKUSpecs]:
         """Extract specs from all tables in document"""
         for table in self.document.tables:
-            specs = self._extract_from_table(table)
-            self.extracted_specs.extend(specs)
+            # First check for special table types
+            table_type = self._identify_table_type(table)
+
+            if table_type == 'kit_components':
+                self._extract_kit_components(table)
+            elif table_type == 'pricing':
+                self._extract_pricing(table)
+            elif table_type == 'sku_price':
+                self._extract_sku_price(table)
+            else:
+                # Regular specs table
+                specs = self._extract_from_table(table)
+                self.extracted_specs.extend(specs)
+
         return self.extracted_specs
+
+    def get_product_data(self) -> ProductTableData:
+        """Get extracted product-level data"""
+        return self.product_data
+
+    def _identify_table_type(self, table: Table) -> str:
+        """Identify the type of table based on headers"""
+        if table.rows < 1:
+            return 'unknown'
+
+        # Get first row headers
+        headers = []
+        for col in range(table.cols):
+            cell = table.get_cell(0, col)
+            if cell:
+                headers.append(cell.content.strip().lower())
+            else:
+                headers.append('')
+
+        # Check for kit component table (Q.tà, Descrizione, Codice)
+        has_qty = any(any(kh in h for kh in self.KIT_HEADERS) for h in headers)
+        has_code = any(any(ch in h for ch in self.KIT_CODE_HEADERS) for h in headers)
+        has_desc = any(any(dh in h for dh in self.KIT_DESC_HEADERS) for h in headers)
+
+        if has_qty and has_code:
+            return 'kit_components'
+
+        # Check for pricing table (Modello, Codice articolo, Prezzo €)
+        has_price = any(any(ph in h for ph in self.PRICING_HEADERS) for h in headers)
+        has_model = any(any(mh in h for mh in self.PRICING_MODEL_HEADERS) for h in headers)
+
+        if has_price and (has_code or has_model):
+            return 'pricing'
+
+        # Check for simple 2-col SKU price table (SKU, €price)
+        if table.cols == 2 and table.rows == 1:
+            cell0 = table.get_cell(0, 0)
+            cell1 = table.get_cell(0, 1)
+            if cell0 and cell1:
+                # Check if first looks like SKU and second like price
+                if re.match(r'^\d{5,}$', cell0.content.strip()):
+                    if '€' in cell1.content or re.match(r'^\d+[.,]\d+$', cell1.content.strip()):
+                        return 'sku_price'
+
+        return 'specs'
+
+    def _extract_kit_components(self, table: Table):
+        """Extract kit component data from table"""
+        # Find column indices
+        headers = []
+        for col in range(table.cols):
+            cell = table.get_cell(0, col)
+            headers.append(cell.content.strip().lower() if cell else '')
+
+        qty_col = None
+        code_col = None
+        desc_col = None
+
+        for i, h in enumerate(headers):
+            if any(kh in h for kh in self.KIT_HEADERS):
+                qty_col = i
+            if any(ch in h for ch in self.KIT_CODE_HEADERS):
+                code_col = i
+            if any(dh in h for dh in self.KIT_DESC_HEADERS):
+                desc_col = i
+
+        if qty_col is None or code_col is None:
+            return
+
+        # Extract rows
+        for row in range(1, table.rows):
+            qty_cell = table.get_cell(row, qty_col)
+            code_cell = table.get_cell(row, code_col)
+            desc_cell = table.get_cell(row, desc_col) if desc_col is not None else None
+
+            if qty_cell and code_cell:
+                qty = qty_cell.content.strip()
+                code = code_cell.content.strip()
+                desc = desc_cell.content.strip() if desc_cell else ""
+
+                if qty and code:
+                    component = KitComponent(quantity=qty, description=desc, code=code)
+                    self.product_data.kit_components.append(component)
+                    # Also add to related SKUs
+                    if code not in self.product_data.related_skus:
+                        self.product_data.related_skus.append(code)
+
+    def _extract_pricing(self, table: Table):
+        """Extract pricing data from table"""
+        headers = []
+        for col in range(table.cols):
+            cell = table.get_cell(0, col)
+            headers.append(cell.content.strip().lower() if cell else '')
+
+        model_col = None
+        code_col = None
+        price_col = None
+
+        for i, h in enumerate(headers):
+            if any(mh in h for mh in self.PRICING_MODEL_HEADERS):
+                model_col = i
+            if any(ch in h for ch in self.PRICING_CODE_HEADERS):
+                code_col = i
+            if any(ph in h for ph in self.PRICING_HEADERS):
+                price_col = i
+
+        # Extract rows
+        for row in range(1, table.rows):
+            model = ""
+            code = ""
+            price = ""
+
+            if model_col is not None:
+                cell = table.get_cell(row, model_col)
+                model = cell.content.strip() if cell else ""
+
+            if code_col is not None:
+                cell = table.get_cell(row, code_col)
+                code = cell.content.strip() if cell else ""
+
+            if price_col is not None:
+                cell = table.get_cell(row, price_col)
+                price = cell.content.strip() if cell else ""
+                # Clean price format
+                price = price.replace('€', '').replace(',', '.').strip()
+
+            if code:
+                pricing = PricingInfo(model=model, code=code, price=price)
+                self.product_data.pricing.append(pricing)
+                if code not in self.product_data.related_skus:
+                    self.product_data.related_skus.append(code)
+
+    def _extract_sku_price(self, table: Table):
+        """Extract simple SKU-price pairs from 2-column tables"""
+        cell0 = table.get_cell(0, 0)
+        cell1 = table.get_cell(0, 1)
+
+        if cell0 and cell1:
+            code = cell0.content.strip()
+            price = cell1.content.strip()
+            price = price.replace('€', '').replace(',', '.').strip()
+
+            if code and code not in self.product_data.related_skus:
+                self.product_data.related_skus.append(code)
 
     def _extract_from_table(self, table: Table) -> List[SKUSpecs]:
         """Extract specs from a single table"""
@@ -171,18 +387,38 @@ class TableExtractor:
 
     def _extract_two_column(self, table: Table) -> List[SKUSpecs]:
         """Extract from two-column (attribute, value) table"""
-        specs = SKUSpecs(sku="")
+        sku_name = ""
+
+        # Check first row for model name
+        first_attr = table.get_cell(0, 0)
+        first_val = table.get_cell(0, 1)
+        if first_attr and first_val:
+            attr_lower = first_attr.content.strip().lower()
+            if attr_lower == 'modello' or attr_lower == 'model':
+                sku_name = first_val.content.strip()
+
+        specs = SKUSpecs(sku=sku_name)
+
+        # If we found a model name, add it as Nome Modello spec
+        if sku_name:
+            specs.specs['Nome Modello'] = TechnicalSpec(
+                attribute='Nome Modello',
+                value=sku_name,
+                sku=sku_name
+            )
 
         for row in range(table.rows):
             attr_cell = table.get_cell(row, 0)
             val_cell = table.get_cell(row, 1)
 
             if attr_cell and val_cell:
-                attribute = self._normalize_attribute(attr_cell.content)
+                # Keep original Italian attribute name for technical specs
+                original_attr = attr_cell.content.strip()
                 value = self._clean_value(val_cell.content)
 
-                if attribute and value:
-                    specs.add_spec(attribute, value)
+                if original_attr and value:
+                    # Store with original Italian attribute name
+                    specs.add_spec(original_attr, value)
 
         return [specs] if specs.specs else []
 
@@ -313,6 +549,14 @@ def extract_specs_from_document(document: IDMLDocument) -> List[SKUSpecs]:
     """Convenience function to extract all specs from a document"""
     extractor = TableExtractor(document)
     return extractor.extract_all()
+
+
+def extract_all_from_document(document: IDMLDocument) -> Tuple[List[SKUSpecs], ProductTableData]:
+    """Extract both SKU specs and product-level table data"""
+    extractor = TableExtractor(document)
+    specs = extractor.extract_all()
+    product_data = extractor.get_product_data()
+    return specs, product_data
 
 
 def extract_specs_from_idml(idml_path: Path) -> List[SKUSpecs]:
