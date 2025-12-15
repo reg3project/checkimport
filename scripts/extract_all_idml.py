@@ -37,6 +37,112 @@ logger = logging.getLogger(__name__)
 
 
 # ============================================================================
+# CSV REFERENCE DATA LOADING
+# ============================================================================
+
+def load_csv_reference_data() -> Tuple[Dict[str, set], set, Dict[int, List[str]]]:
+    """Load reference data from CSV files
+
+    Returns:
+        Tuple of (product_to_skus mapping, set of deleted SKUs, page_to_images mapping)
+    """
+    import csv
+    from pathlib import Path
+
+    csv_dir = Path("/home/user/checkimport/input/learning")
+
+    product_to_skus = {}
+    deleted_skus = set()
+    page_to_images = {}
+
+    # Load Data Entry CSV for product-to-SKU mapping
+    data_entry_csv = csv_dir / "FAAC_Lista_Attivita_annotato.xlsx - Data Entry.csv"
+    if data_entry_csv.exists():
+        with open(data_entry_csv, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                prodotto = row.get('Prodotto', '').strip()
+                skus_str = row.get('SKU_presenti_nel_prodotto', '')
+                if prodotto and skus_str:
+                    skus = set(s.strip() for s in skus_str.split(';') if s.strip())
+                    product_to_skus[prodotto] = skus
+        logger.info(f"Loaded {len(product_to_skus)} product-SKU mappings from CSV")
+
+    # Load SKU CSV to identify deleted SKUs
+    sku_csv = csv_dir / "FAAC_Lista_Attivita_annotato.xlsx - SKU.csv"
+    if sku_csv.exists():
+        with open(sku_csv, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                codice = row.get('Codice', '').strip()
+                eliminato = row.get('eliminato?', '').strip()
+                if codice and eliminato and 'SI' in eliminato.upper():
+                    deleted_skus.add(codice)
+        logger.info(f"Found {len(deleted_skus)} deleted SKUs in CSV")
+
+    # Load Images CSV for page-to-image mapping
+    images_csv = csv_dir / "FAAC_Lista_Attivita_annotato.xlsx - immagini_catalogo_FAAC.csv"
+    if images_csv.exists():
+        with open(images_csv, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                name = row.get('Name', '').strip()
+                page_str = row.get('Page', '').strip()
+                if name and page_str:
+                    try:
+                        page = int(page_str)
+                        if page not in page_to_images:
+                            page_to_images[page] = []
+                        page_to_images[page].append(name)
+                    except ValueError:
+                        pass
+        logger.info(f"Loaded images for {len(page_to_images)} catalog pages")
+
+    return product_to_skus, deleted_skus, page_to_images
+
+
+def get_main_product_image(page_num: int, product_name: str, page_to_images: Dict[int, List[str]]) -> str:
+    """Get the main product image for a catalog page
+
+    Filters out logos and decorative elements, preferring product images.
+    """
+    images = page_to_images.get(page_num, [])
+    if not images:
+        return ''
+
+    # Patterns to exclude (logos, decorative elements)
+    exclude_patterns = ['logo_', 'untitled', 'loghi', 'qr_', 'cert_', 'artboard',
+                        'screenshot', 'background', 'design']
+
+    # Filter to product images only
+    product_images = []
+    for img in images:
+        img_lower = img.lower()
+        # Skip excluded patterns
+        if any(pat in img_lower for pat in exclude_patterns):
+            continue
+        # Prefer .tif, .jpg, .png files (actual product images)
+        if img_lower.endswith(('.tif', '.jpg', '.png', '.eps')):
+            product_images.append(img)
+
+    if not product_images:
+        return ''
+
+    # Try to find image matching product name
+    product_name_lower = product_name.lower().replace(' ', '_') if product_name else ''
+    for img in product_images:
+        if product_name_lower and product_name_lower in img.lower():
+            return img
+
+    # Return first product image (usually the main one)
+    return product_images[0]
+
+
+# Global reference data (loaded once)
+CSV_PRODUCT_SKUS, CSV_DELETED_SKUS, CSV_PAGE_IMAGES = load_csv_reference_data()
+
+
+# ============================================================================
 # COLUMN DEFINITIONS - MATCHING Data.xlsx EXACTLY
 # ============================================================================
 
@@ -454,6 +560,22 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
         if product_table_data:
             all_related_skus = product_table_data.related_skus.copy()
 
+        # Enrich with CSV reference data
+        product_name = product_info.name
+        if product_name:
+            # Try exact match first
+            csv_skus = CSV_PRODUCT_SKUS.get(product_name, set())
+            # Try partial match if no exact match
+            if not csv_skus:
+                for csv_name, skus in CSV_PRODUCT_SKUS.items():
+                    if product_name.lower() in csv_name.lower() or csv_name.lower() in product_name.lower():
+                        csv_skus = skus
+                        break
+            # Add CSV SKUs to related SKUs (filter deleted ones)
+            for sku in csv_skus:
+                if sku not in CSV_DELETED_SKUS and sku not in all_related_skus:
+                    all_related_skus.append(sku)
+
         # Check if this is a main barrier product (needs multi-product extraction)
         # Only add aste rows for main barrier products like B614, 620, 615, etc.
         # Not for accessories within the barrier category
@@ -495,6 +617,16 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
             if text_notes:
                 notes_str = f"{table_notes}; {text_notes}"
 
+        # Extract page number from IDML filename (e.g., "028_LEADER_kit.idml" -> 28)
+        import re
+        page_match = re.match(r'^(\d+)', idml_path.stem)
+        page_num = int(page_match.group(1)) if page_match else 0
+
+        # Get main product image from CSV (by page number)
+        csv_image = get_main_product_image(page_num, product_info.name, CSV_PAGE_IMAGES)
+        # Fall back to IDML-extracted images if no CSV image
+        immagine_principale = csv_image if csv_image else '; '.join(product_info.images)
+
         # Build main product row
         product_row = {
             'categoria_prodotto': product_info.category,
@@ -502,7 +634,7 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
             'nome_asta': '',  # Empty for non-barrier products
             'pagina_catalogo': product_info.pagina_catalogo,
             'tipo_layout': product_info.tipo_layout,
-            'immagine_principale': '; '.join(product_info.images),
+            'immagine_principale': immagine_principale,
             'codici_modelli': product_info.codici_modelli or '; '.join(product_info.sku_codes),
             'titolo_prodotto': product_info.titolo_prodotto,
             'descrizione_prodotto': product_info.description,
@@ -581,7 +713,7 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
                 })
                 seen_skus.add(related_sku)
 
-        # Filter out invalid SKU rows (headers, empty values, model names)
+        # Filter out invalid SKU rows (headers, empty values, model names, deleted SKUs)
         invalid_sku_patterns = ['codice', 'articolo', 'modello', 'prezzo', 'sku', 'descrizione']
         # Model name patterns (these are not SKU codes)
         model_name_patterns = ['standard', 'rapida', 'slave', 'itt', 'plus1', 'dal ', ' al ']
@@ -604,6 +736,9 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
                 continue
             # Skip combined models like "RH200B / RH200B EF"
             if '/' in sku:
+                continue
+            # Skip deleted SKUs (from CSV reference)
+            if sku in CSV_DELETED_SKUS:
                 continue
             filtered_sku_rows.append(row)
 
