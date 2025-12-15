@@ -21,6 +21,35 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 
+# Column name mappings (Data.xlsx format -> standard format)
+COLUMN_NAME_ALIASES = {
+    # SKU columns
+    'codice_sku': 'SKU',
+    'immagine_sku': 'SKU Immagine',
+    'nome_modello': 'Nome Modello',
+    'modelli_correlati': 'Modelli Correlati',
+    'descrizione_breve': 'Descrizione Breve',
+    'tensione_alimentazione': 'Tensione di alimentazione',
+    'corrente_assorbita': 'Corrente assorbita',
+    'tipo_motore': 'Motore elettrico',
+    'potenza_massima': 'Potenza max',
+    'coppia_massima': 'Coppia max',
+    'tipo_materiale': 'Tipo di materiale',
+    'tipo_trattamento': 'Tipo di trattamento',
+    'grado_protezione': 'Grado di protezione',
+    'temperatura_esercizio': 'Temperatura ambiente di esercizio',
+    'peso': 'Peso',
+    'dimensioni': 'Dimensioni (LxPxH)',
+    'frequenza_utilizzo': 'Frequenza di utilizzo',
+    # Prodotti columns
+    'nome_prodotto': 'nome_prodotto',
+    'categoria_prodotto': 'categoria_prodotto',
+    'pagina_catalogo': 'pagina_catalogo',
+    'codici_modelli': 'codici_modelli',
+    'tipo_layout': 'tipo_layout',
+}
+
+
 # Standard column definitions
 PRODOTTI_COLUMNS = [
     'id', 'category', 'subcategory', 'name', 'page', 'description',
@@ -121,7 +150,13 @@ class XLSXLoader:
             return
 
         # First row is headers (keep original case for Italian column names)
-        headers = [str(h).strip() if h else f'col_{i}' for i, h in enumerate(rows[0])]
+        raw_headers = [str(h).strip() if h else f'col_{i}' for i, h in enumerate(rows[0])]
+
+        # Normalize column names using aliases (for Data.xlsx compatibility)
+        headers = []
+        for h in raw_headers:
+            normalized = COLUMN_NAME_ALIASES.get(h.lower(), h)
+            headers.append(normalized)
 
         # Store columns
         if sheet_type == 'prodotti':
@@ -141,10 +176,10 @@ class XLSXLoader:
                     logger.debug(f"Skipping placeholder row {row_idx} in prodotti sheet")
                     continue
 
-            # Skip placeholder row in sku sheet (row 2 often has template SKU '104250445')
+            # Skip placeholder row in sku sheet (row 2 often has template SKU or header text)
             if sheet_type == 'sku' and row_idx == 2:
                 first_val = str(row[0]).strip() if row[0] else ""
-                if first_val == '104250445':
+                if first_val in ('104250445', 'SKU', 'COUNTIF'):
                     logger.debug(f"Skipping placeholder row {row_idx} in sku sheet")
                     continue
 
