@@ -310,6 +310,52 @@ class MegaExcelWriter:
             ws.column_dimensions[column_letter].width = max(adjusted_width, 10)
 
 
+def extract_notes_from_text(document) -> str:
+    """Extract notes from document text
+
+    Looks for patterns like "Nota:", "ATTENZIONE:", "N.B.:", etc.
+    """
+    import re
+    all_text = document.all_text
+
+    notes = []
+
+    # Excluded patterns (section headers, not real notes)
+    excluded = ['quote', 'dimensioni', 'installazione', 'configurazioni', 'caratteristiche']
+
+    # Pattern: "Nota" or "ATTENZIONE" followed by content
+    patterns = [
+        r'Nota[:\s]+([^\n]{20,200})',
+        r'ATTENZIONE[:\s]+([^\n]{20,200})',
+        r'N\.B\.[:\s]+([^\n]{20,200})',
+        r'Importante[:\s]+([^\n]{20,200})',
+        r'Avvertenza[:\s]+([^\n]{20,200})',
+        r'(?:bracci|tubi|non compresi)[^\n]{10,150}',  # Common note patterns
+    ]
+
+    for pattern in patterns:
+        matches = re.findall(pattern, all_text, re.IGNORECASE)
+        for match in matches:
+            note = match.strip()
+            # Skip if too short
+            if len(note) < 20:
+                continue
+            # Skip if it looks like a section header
+            if any(ex in note.lower() for ex in excluded):
+                continue
+            # Skip if it looks like a spec value (just numbers/units)
+            if re.match(r'^[\d\s.,]+\s*(?:kg|mm|m|V|W|N|°|μF)?$', note):
+                continue
+            # Skip if it contains (*) - usually spec values
+            if '(*)' in note and len(note) < 30:
+                continue
+            notes.append(note)
+
+    # Remove duplicates and join
+    unique_notes = list(dict.fromkeys(notes))
+    return '; '.join(unique_notes[:3])  # Limit to 3 notes
+
+
 def extract_confezione_from_text(document, product_name: str) -> str:
     """Extract package/confezione content from document text
 
@@ -438,6 +484,17 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
         if not confezione_str:
             confezione_str = extract_confezione_from_text(document, product_info.name)
 
+        # Extract notes - combine table notes with text notes
+        table_notes = product_table_data.get_product_notes() if product_table_data else ''
+        text_notes = extract_notes_from_text(document)
+        # Use text notes if table notes are too short or look like spec values
+        if len(table_notes) < 20 or table_notes.count('(*)') > 0:
+            notes_str = text_notes if text_notes else table_notes
+        else:
+            notes_str = table_notes
+            if text_notes:
+                notes_str = f"{table_notes}; {text_notes}"
+
         # Build main product row
         product_row = {
             'categoria_prodotto': product_info.category,
@@ -469,7 +526,7 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
             'immagine_kit': '',
             'sku_correlati': '; '.join(all_related_skus),
             'prodotti_correlati': '',
-            'note_prodotto': product_table_data.get_product_notes() if product_table_data else '',
+            'note_prodotto': notes_str,
             'quote_installazione': '',
             'grafico_tecnico': '',
             'tabella_molle': '',
