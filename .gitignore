@@ -42,7 +42,6 @@ Thumbs.db
 *.tmp
 
 # Output folders - ignore generated files but keep structure
-output/*.xlsx
 output/xlsx/*
 !output/xlsx/.gitkeep
 output/reports/*
