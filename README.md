@@ -96,6 +96,137 @@ The system will generate XLSX files using learned patterns.
 - **CSV**: Spreadsheet-compatible for analysis
 - **Text**: Console-friendly summary
 
+## Git Instructions
+
+### First Time Setup - Clone the Repository
+
+**Option 1: HTTPS (recommended for most users)**
+```bash
+git clone https://github.com/reg3project/checkimport.git
+cd checkimport
+```
+
+**Option 2: SSH (if you have SSH keys configured)**
+```bash
+git clone git@github.com:reg3project/checkimport.git
+cd checkimport
+```
+
+**Option 3: GitHub CLI**
+```bash
+gh repo clone reg3project/checkimport
+cd checkimport
+```
+
+### Pull Latest Updates
+
+```bash
+# Navigate to your local repository
+cd checkimport
+
+# Fetch and merge latest changes from main branch
+git pull origin main
+
+# Or if you're on a specific branch
+git pull origin your-branch-name
+```
+
+### Working with Branches
+
+```bash
+# See all branches
+git branch -a
+
+# Create and switch to a new branch for your work
+git checkout -b my-feature-branch
+
+# Switch to an existing branch
+git checkout branch-name
+
+# Push your branch to GitHub
+git push -u origin my-feature-branch
+```
+
+### Upload Files to GitHub
+
+**Step 1: Add your files to the appropriate folder**
+```bash
+# For learning data (IDML + XLSX pairs)
+cp your_file.idml input/learning/
+cp your_file.xlsx input/learning/
+
+# For processing (IDML files to convert)
+cp your_file.idml input/processing/
+```
+
+**Step 2: Stage, commit, and push**
+```bash
+# Stage all new files
+git add .
+
+# Or stage specific files
+git add input/learning/your_file.idml
+git add input/learning/your_file.xlsx
+
+# Commit with a descriptive message
+git commit -m "Add learning data for product XYZ"
+
+# Push to GitHub
+git push origin your-branch-name
+```
+
+### Download Results from GitHub
+
+**Option 1: Pull the entire repository**
+```bash
+git pull origin main
+# Results will be in output/xlsx/ and output/reports/
+```
+
+**Option 2: Download specific files via GitHub web interface**
+1. Go to https://github.com/reg3project/checkimport
+2. Navigate to `output/xlsx/` or `output/reports/`
+3. Click on the file you want
+4. Click "Download" or "Raw" button
+
+**Option 3: Use GitHub CLI**
+```bash
+# Download a specific file
+gh api repos/reg3project/checkimport/contents/output/xlsx/your_file.xlsx --jq '.content' | base64 -d > your_file.xlsx
+```
+
+### Sync Fork with Original Repository
+
+If you forked the repository:
+```bash
+# Add upstream remote (only needed once)
+git remote add upstream https://github.com/reg3project/checkimport.git
+
+# Fetch upstream changes
+git fetch upstream
+
+# Merge upstream changes into your branch
+git checkout main
+git merge upstream/main
+
+# Push to your fork
+git push origin main
+```
+
+### Common Git Commands Reference
+
+| Command | Description |
+|---------|-------------|
+| `git status` | Check current status and changed files |
+| `git log --oneline` | View commit history |
+| `git diff` | See uncommitted changes |
+| `git stash` | Temporarily save uncommitted changes |
+| `git stash pop` | Restore stashed changes |
+| `git reset --hard HEAD` | Discard all uncommitted changes |
+| `git fetch --all` | Fetch all branches from remote |
+
+---
+
 ## Installation
 
 ```bash
