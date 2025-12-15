@@ -37,95 +37,164 @@ logger = logging.getLogger(__name__)
 
 
 # ============================================================================
-# COLUMN DEFINITIONS WITH ITALIAN LABELS
+# COLUMN DEFINITIONS - MATCHING Data.xlsx EXACTLY
 # ============================================================================
 
-# Prodotti columns: (field_name, italian_label)
+# Prodotti columns: (field_name, italian_label) - 35 columns from Data.xlsx
 PRODOTTI_COLUMNS = [
-    ('source_file', 'File Sorgente'),
-    ('pagina_catalogo', 'Pagina Catalogo'),
-    ('nome_prodotto', 'Nome Prodotto'),
-    ('titolo_prodotto', 'Titolo Prodotto'),
     ('categoria_prodotto', 'Categoria'),
-    ('tipo_layout', 'Tipo Layout'),
+    ('nome_prodotto', 'Prodotto'),
+    ('nome_asta', 'Nome Asta'),  # For barriers: asta tonda, asta rettangolare
+    ('pagina_catalogo', 'Page'),
+    ('tipo_layout', 'Layout'),
+    ('immagine_principale', 'Prodotto Immagine'),
+    ('codici_modelli', 'Modelli'),
+    ('titolo_prodotto', 'Titolo'),
     ('descrizione_prodotto', 'Descrizione'),
-    ('descrizione_breve', 'Descrizione Breve'),
-    ('caratteristica_primaria', 'Caratteristica Primaria'),
-    ('valore_primario', 'Valore Primario'),
-    ('caratteristica_secondaria', 'Caratteristica Secondaria'),
-    ('valore_secondario', 'Valore Secondario'),
-    ('intensita_transito', 'Intensità Transito'),
-    ('badge_sistemi', 'Badge Sistemi'),
+    ('intensita_transito', 'Transito (Basso;Medio;Alto)'),
+    ('caratteristica_primaria', 'Prodotto Caratteristica Label 1'),
+    ('valore_primario', 'Prodotto Caratteristica Value 1'),
+    ('caratteristica_secondaria', 'Prodotto Caratteristica Label 2'),
+    ('valore_secondario', 'Prodotto Caratteristica Value 2'),
+    ('novita', 'New'),
+    ('veloce', 'Fast'),
+    ('solare', 'Solar'),
+    ('brevetto_faac', 'FAAC Patent'),
+    ('badge_sistemi', 'Icone'),
+    ('codice_qr', 'QRCode'),
     ('certificazioni', 'Certificazioni'),
-    ('codici_modelli', 'Codici Modelli'),
-    ('componenti_kit', 'Componenti Kit'),
-    ('sku_correlati', 'SKU Correlati'),
-    ('note_prodotto', 'Note Prodotto'),
-    ('immagini', 'Immagini'),
-    ('accessori', 'Accessori'),
+    ('descrizione_categoria', 'Categoria Descrizione Intestazione Prodotto'),
+    ('contenuto_confezione', 'Confezioni'),
+    ('schema_installazione', 'Schema Installazione'),
+    ('immagine_schema', 'Schema Immagine'),
+    ('componenti_kit', 'Kit'),
+    ('immagine_kit', 'Kit Immagine'),
+    ('sku_correlati', 'SKU Correlate'),
+    ('prodotti_correlati', 'Prodotti Correlati'),
+    ('note_prodotto', 'Note'),
+    ('quote_installazione', 'Quote'),
+    ('grafico_tecnico', 'Grafico'),
+    ('tabella_molle', 'Tabella Numero Molle'),
+    ('accessori_disponibili', 'Altri Accessori'),
+    ('prototipo', 'Prototype'),
 ]
 
-# SKU columns: (field_name, italian_label)
+# SKU columns: (field_name, italian_label) - 61 columns from Data.xlsx
 SKU_COLUMNS = [
-    ('source_file', 'File Sorgente'),
-    ('pagina_catalogo', 'Pagina Catalogo'),
-    ('nome_prodotto', 'Nome Prodotto'),
-    ('SKU', 'SKU'),
-    ('Nome Modello', 'Nome Modello'),
-    ('Descrizione Breve', 'Descrizione Breve'),
-    ('Confezione', 'Confezione'),
-    ('Note', 'Note'),
-    # Electrical specs
-    ('Tensione di alimentazione di rete', 'Tensione Alimentazione'),
-    ('Corrente assorbita', 'Corrente Assorbita'),
-    ('Motore elettrico', 'Motore Elettrico'),
-    ('Potenza max', 'Potenza Max'),
-    ('Coppia max', 'Coppia Max'),
-    # Mechanical specs
-    ('Forza max di spinta', 'Forza Max Spinta'),
-    ('Rapporto di riduzione', 'Rapporto Riduzione'),
-    ('Velocità angolare max', 'Velocità Angolare Max'),
-    ("Velocità dell'anta", 'Velocità Anta'),
-    ('Velocità max stelo', 'Velocità Max Stelo'),
-    ('Corsa dello stelo', 'Corsa Stelo'),
-    ('Angolo max apertura anta', 'Angolo Max Apertura'),
-    # Dimensions
-    ('Lunghezza max anta', 'Lunghezza Max Anta'),
-    ('Lunghezza max asta', 'Lunghezza Max Asta'),
-    ('Larghezza max anta', 'Larghezza Max Anta'),
-    ('Peso max anta', 'Peso Max Anta'),
-    ('Peso', 'Peso'),
-    ('Dimensioni (LxPxH)', 'Dimensioni (LxPxH)'),
-    # Environment
-    ('Temperatura ambiente di esercizio', 'Temperatura Esercizio'),
-    ('Termoprotezione', 'Termoprotezione'),
-    ('Grado di protezione', 'Grado Protezione IP'),
-    # Usage
-    ('Frequenza di utilizzo', 'Frequenza Utilizzo'),
-    ('Tempo di utilizzo continuo (ROT)', 'Tempo Utilizzo Continuo'),
-    # Control
-    ('Apparecchiatura elettronica', 'Apparecchiatura Elettronica'),
-    ('Finecorsa', 'Finecorsa'),
-    ('Encoder', 'Encoder'),
-    ('Regolazione velocità e controllo motore', 'Regolazione Velocità'),
-    ('Regolazione della forza', 'Regolazione Forza'),
-    # Other
-    ('Tipo di materiale', 'Tipo Materiale'),
-    ('Tipo di trattamento', 'Tipo Trattamento'),
-    ('Tipo di rallentamento', 'Tipo Rallentamento'),
-    ('Tipo di asta', 'Tipo Asta'),
-    ('Dispositivo di sblocco', 'Dispositivo Sblocco'),
-    ('Pignone', 'Pignone'),
-    ('Condensatore di spunto', 'Condensatore Spunto'),
-    # Hydraulic
-    ('Portata gruppo motore-pompa', 'Portata Pompa'),
-    ('Tipo di olio', 'Tipo Olio'),
-    ('Staffe di fissaggio', 'Staffe Fissaggio'),
-    # Misc
-    ('Arresti meccanici integrati in apertura e chiusura', 'Arresti Meccanici'),
-    ('Spazio di fermata', 'Spazio Fermata'),
-    ('Tempo di apertura', 'Tempo Apertura'),
+    ('codice_sku', 'SKU'),
+    ('quantita', 'COUNTIF'),
+    ('immagine_sku', 'SKU Immagine'),
+    ('ordine_tipo_componente', 'Ordine Tipo'),
+    ('tipo_componente', 'Tipo'),
+    ('nome_modello', 'Nome Modello'),
+    ('modelli_correlati', 'Modelli Correlati'),
+    ('descrizione_breve', 'Descrizione Breve'),
+    ('tensione_alimentazione', 'Tensione di alimentazione di rete'),
+    ('corrente_assorbita', 'Corrente assorbita'),
+    ('tipo_motore', 'Motore elettrico'),
+    ('potenza_massima', 'Potenza max'),
+    ('coppia_massima', 'Coppia max'),
+    ('materiale', 'Tipo di materiale'),
+    ('trattamento_superficiale', 'Tipo di trattamento'),
+    ('forza_spinta', 'Forza max di spinta'),
+    ('rapporto_riduzione', 'Rapporto di riduzione'),
+    ('numero_max_schede_collegabili', 'Numero max schede di decodifica collegabili'),
+    ('velocita_angolare', 'Velocità angolare max'),
+    ('velocita_anta', "Velocità dell'anta"),
+    ('lunghezza_anta_max', 'Lunghezza max anta'),
+    ('lunghezza_asta_max', 'Lunghezza max asta'),
+    ('spazio_fermata', 'Spazio di fermata'),
+    ('controllo_motore', 'Regolazione velocità e controllo motore'),
+    ('tipo_finecorsa', 'Finecorsa'),
+    ('pignone', 'Pignone'),
+    ('regolazione_forza', 'Regolazione della forza'),
+    ('peso_anta_max', 'Peso max anta'),
+    ('angolo_apertura_max', 'Angolo max apertura anta'),
+    ('temperatura_esercizio', 'Temperatura ambiente di esercizio'),
+    ('termoprotezione', 'Termoprotezione'),
+    ('grado_protezione_ip', 'Grado di protezione'),
+    ('peso_unita', 'Peso'),
+    ('frequenza_utilizzo', 'Frequenza di utilizzo'),
+    ('larghezza_anta_max', 'Larghezza max anta'),
+    ('dimensioni', 'Dimensioni (LxPxH)'),
+    ('scheda_elettronica', 'Apparecchiatura elettronica'),
+    ('arresti_meccanici', 'Arresti meccanici integrati in apertura e chiusura'),
+    ('tempo_utilizzo_continuo', 'Tempo di utilizzo continuo (ROT)'),
+    ('tempo_apertura', 'Tempo di apertura'),
+    ('encoder', 'Encoder'),
+    ('tipo_rallentamento', 'Tipo di rallentamento'),
+    ('tipo_asta', 'Tipo di asta'),
+    ('dimensione_pilastro', 'Dimensione del pilastro a sezione quadrata'),
+    ('dispositivo_sblocco', 'Dispositivo di sblocco'),
+    ('condensatore_spunto', 'Condensatore di spunto'),
+    ('lunghezza_mm', 'Lunghezza (mm)'),
+    ('unita_misura_prezzo', 'Unità Misura Prezzo'),
+    ('icona_badge', 'Icona 1'),
+    ('decodifica_radio', 'Decodifica'),
+    ('memoria_codici_radio', 'Memoria codici radio'),
+    ('collegamento', 'Collegamento'),
+    ('note_tecniche', 'Note'),
+    ('corsa_stelo', 'Corsa dello stelo'),
+    ('dimensioni_colonna', 'Dimensioni colonna'),
+    ('peso_anta_cantilever', 'Peso max anta cantilever'),
+    ('portata_pompa', 'Portata gruppo motore-pompa'),
+    ('staffe_fissaggio', 'Staffe di fissaggio'),
+    ('tipo_olio', 'Tipo di olio'),
+    ('tipo_utilizzo', 'Tipo di utilizzo'),
+    ('velocita_stelo', 'Velocità max stelo'),
 ]
+
+# Mapping from IDML extracted field names to SKU column field names
+IDML_TO_SKU_FIELD = {
+    'SKU': 'codice_sku',
+    'sku': 'codice_sku',
+    'Nome Modello': 'nome_modello',
+    'Tensione di alimentazione di rete': 'tensione_alimentazione',
+    'Tensione di alimentazione': 'tensione_alimentazione',
+    'Corrente assorbita': 'corrente_assorbita',
+    'Motore elettrico': 'tipo_motore',
+    'Potenza max': 'potenza_massima',
+    'Coppia max': 'coppia_massima',
+    'Tipo di materiale': 'materiale',
+    'Tipo di trattamento': 'trattamento_superficiale',
+    'Forza max di spinta': 'forza_spinta',
+    'Rapporto di riduzione': 'rapporto_riduzione',
+    'Velocità angolare max': 'velocita_angolare',
+    "Velocità dell'anta": 'velocita_anta',
+    'Lunghezza max anta': 'lunghezza_anta_max',
+    'Lunghezza max asta': 'lunghezza_asta_max',
+    'Spazio di fermata': 'spazio_fermata',
+    'Regolazione velocità e controllo motore': 'controllo_motore',
+    'Finecorsa': 'tipo_finecorsa',
+    'Pignone': 'pignone',
+    'Regolazione della forza': 'regolazione_forza',
+    'Peso max anta': 'peso_anta_max',
+    'Angolo max apertura anta': 'angolo_apertura_max',
+    'Temperatura ambiente di esercizio': 'temperatura_esercizio',
+    'Termoprotezione': 'termoprotezione',
+    'Grado di protezione': 'grado_protezione_ip',
+    'Peso': 'peso_unita',
+    'Frequenza di utilizzo': 'frequenza_utilizzo',
+    'Larghezza max anta': 'larghezza_anta_max',
+    'Dimensioni (LxPxH)': 'dimensioni',
+    'Apparecchiatura elettronica': 'scheda_elettronica',
+    'Arresti meccanici integrati in apertura e chiusura': 'arresti_meccanici',
+    'Tempo di utilizzo continuo (ROT)': 'tempo_utilizzo_continuo',
+    'Tempo di apertura': 'tempo_apertura',
+    'Encoder': 'encoder',
+    'Tipo di rallentamento': 'tipo_rallentamento',
+    'Tipo di asta': 'tipo_asta',
+    'Dispositivo di sblocco': 'dispositivo_sblocco',
+    'Condensatore di spunto': 'condensatore_spunto',
+    'Corsa dello stelo': 'corsa_stelo',
+    'Portata gruppo motore-pompa': 'portata_pompa',
+    'Staffe di fissaggio': 'staffe_fissaggio',
+    'Tipo di olio': 'tipo_olio',
+    'Velocità max stelo': 'velocita_stelo',
+    'Confezione': 'contenuto_confezione',
+    'Note': 'note_tecniche',
+    'Descrizione Breve': 'descrizione_breve',
+}
 
 
 class MegaExcelWriter:
@@ -241,8 +310,12 @@ class MegaExcelWriter:
             ws.column_dimensions[column_letter].width = max(adjusted_width, 10)
 
 
-def extract_from_idml(idml_path: Path) -> Tuple[Dict, List[Dict]]:
-    """Extract product and SKU data from a single IDML file"""
+def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
+    """Extract product and SKU data from a single IDML file
+
+    Returns:
+        Tuple of (product_rows, sku_rows) - may have multiple products per file
+    """
     try:
         # Parse IDML
         document = parse_idml(idml_path)
@@ -253,66 +326,106 @@ def extract_from_idml(idml_path: Path) -> Tuple[Dict, List[Dict]]:
         # Extract table data (specs + product data like confezioni)
         sku_specs_list, product_table_data = extract_all_from_document(document)
 
-        # Build product row
-        product_row = {
-            'source_file': idml_path.name,
-            'pagina_catalogo': product_info.pagina_catalogo,
-            'nome_prodotto': product_info.name,
-            'titolo_prodotto': product_info.titolo_prodotto,
-            'categoria_prodotto': product_info.category,
-            'tipo_layout': product_info.tipo_layout,
-            'descrizione_prodotto': product_info.description,
-            'descrizione_breve': product_info.short_description,
-            'caratteristica_primaria': product_info.caratteristica_primaria,
-            'valore_primario': product_info.valore_primario,
-            'caratteristica_secondaria': product_info.caratteristica_secondaria,
-            'valore_secondario': product_info.valore_secondario,
-            'intensita_transito': product_info.intensita_transito,
-            'badge_sistemi': '; '.join(product_info.badge_sistemi),
-            'certificazioni': '; '.join(product_info.certifications),
-            'codici_modelli': product_info.codici_modelli or '; '.join(product_info.sku_codes),
-            'componenti_kit': product_table_data.get_componenti_kit() if product_table_data else '',
-            'sku_correlati': product_table_data.get_sku_correlati() if product_table_data else '',
-            'note_prodotto': product_table_data.get_product_notes() if product_table_data else '',
-            'immagini': '; '.join(product_info.images),
-            'accessori': '; '.join(product_info.accessories),
-        }
-
         # Build model->SKU code mapping from pricing table
         model_to_sku = {}
+        model_to_price = {}
         if product_table_data and product_table_data.pricing:
             for pricing in product_table_data.pricing:
                 if pricing.model and pricing.code:
                     model_to_sku[pricing.model] = pricing.code
+                    model_to_price[pricing.model] = pricing.price
 
-        # Build SKU rows
+        # Collect all related SKUs (accessories, etc.)
+        all_related_skus = []
+        if product_table_data:
+            all_related_skus = product_table_data.related_skus.copy()
+
+        # Build main product row
+        product_row = {
+            'categoria_prodotto': product_info.category,
+            'nome_prodotto': product_info.name,
+            'nome_asta': '',  # Empty for non-barrier products
+            'pagina_catalogo': product_info.pagina_catalogo,
+            'tipo_layout': product_info.tipo_layout,
+            'immagine_principale': '; '.join(product_info.images),
+            'codici_modelli': product_info.codici_modelli or '; '.join(product_info.sku_codes),
+            'titolo_prodotto': product_info.titolo_prodotto,
+            'descrizione_prodotto': product_info.description,
+            'intensita_transito': product_info.intensita_transito,
+            'caratteristica_primaria': product_info.caratteristica_primaria,
+            'valore_primario': product_info.valore_primario,
+            'caratteristica_secondaria': product_info.caratteristica_secondaria,
+            'valore_secondario': product_info.valore_secondario,
+            'novita': '',
+            'veloce': '',
+            'solare': '',
+            'brevetto_faac': '',
+            'badge_sistemi': '; '.join(product_info.badge_sistemi),
+            'codice_qr': '',
+            'certificazioni': '; '.join(product_info.certifications),
+            'descrizione_categoria': product_info.descrizione_categoria if hasattr(product_info, 'descrizione_categoria') else '',
+            'contenuto_confezione': '',
+            'schema_installazione': '',
+            'immagine_schema': '',
+            'componenti_kit': product_table_data.get_componenti_kit() if product_table_data else '',
+            'immagine_kit': '',
+            'sku_correlati': '; '.join(all_related_skus),
+            'prodotti_correlati': '',
+            'note_prodotto': product_table_data.get_product_notes() if product_table_data else '',
+            'quote_installazione': '',
+            'grafico_tecnico': '',
+            'tabella_molle': '',
+            'accessori_disponibili': '; '.join(product_info.accessories),
+            'prototipo': '',
+        }
+
+        product_rows = [product_row]
+
+        # Build SKU rows with proper field mapping
         sku_rows = []
         for sku_spec in sku_specs_list:
-            sku_row = {
-                'source_file': idml_path.name,
-                'pagina_catalogo': product_info.pagina_catalogo,
-                'nome_prodotto': product_info.name,
-            }
-
-            # Add all specs from sku_spec.to_dict()
+            # Get specs and map to standard column names
             specs_dict = sku_spec.to_dict()
-            sku_row.update(specs_dict)
+
+            sku_row = {}
+            # Map each extracted field to the standard column name
+            for idml_field, value in specs_dict.items():
+                if idml_field in IDML_TO_SKU_FIELD:
+                    std_field = IDML_TO_SKU_FIELD[idml_field]
+                    sku_row[std_field] = value
+                else:
+                    # Keep original if no mapping (might be already correct)
+                    sku_row[idml_field] = value
 
             # Get actual SKU code from pricing table (if available)
             model_name = sku_spec.sku
             actual_sku = model_to_sku.get(model_name, model_name)
-            sku_row['SKU'] = actual_sku
 
-            # Keep Nome Modello as the model name
-            sku_row['Nome Modello'] = model_name
+            # Set standard fields
+            sku_row['codice_sku'] = actual_sku
+            sku_row['nome_modello'] = model_name
 
             sku_rows.append(sku_row)
 
-        return product_row, sku_rows
+        # Also add SKU rows for all related SKUs (accessories) from sku_price tables
+        # These are single SKU-price pairs that don't have full specs
+        seen_skus = {row.get('codice_sku') for row in sku_rows}
+        for related_sku in all_related_skus:
+            if related_sku and related_sku not in seen_skus:
+                sku_rows.append({
+                    'codice_sku': related_sku,
+                    'nome_modello': '',
+                    'tipo_componente': 'accessorio',
+                })
+                seen_skus.add(related_sku)
+
+        return product_rows, sku_rows
 
     except Exception as e:
         logger.error(f"Error extracting {idml_path.name}: {e}")
-        return None, []
+        import traceback
+        traceback.print_exc()
+        return [], []
 
 
 def main():
@@ -335,10 +448,10 @@ def main():
     for i, idml_path in enumerate(idml_files, 1):
         logger.info(f"[{i}/{len(idml_files)}] Processing: {idml_path.name}")
 
-        product_row, sku_rows = extract_from_idml(idml_path)
+        product_rows, sku_rows = extract_from_idml(idml_path)
 
-        if product_row:
-            all_prodotti.append(product_row)
+        if product_rows:
+            all_prodotti.extend(product_rows)
 
         if sku_rows:
             all_sku.extend(sku_rows)
