@@ -310,6 +310,50 @@ class MegaExcelWriter:
             ws.column_dimensions[column_letter].width = max(adjusted_width, 10)
 
 
+def extract_confezione_from_text(document, product_name: str) -> str:
+    """Extract package/confezione content from document text
+
+    Looks for patterns like "740 comprende:" or "MODEL comprende:"
+    """
+    import re
+    all_text = document.all_text
+
+    # Pattern: "MODEL comprende:" followed by description
+    patterns = [
+        rf'{re.escape(product_name)}\s+comprende\s*:\s*(.+?)(?:\n\n|\n[A-Z]|\n\d{{3}}|$)',
+        rf'{re.escape(product_name)}\s+include\s*:\s*(.+?)(?:\n\n|\n[A-Z]|\n\d{{3}}|$)',
+        r'comprende\s*:\s*(.+?)(?:\n\n|\n[A-Z]|\n\d{3}|$)',
+    ]
+
+    for pattern in patterns:
+        match = re.search(pattern, all_text, re.IGNORECASE | re.DOTALL)
+        if match:
+            content = match.group(1).strip()
+            # Clean up: remove excessive newlines, normalize spacing
+            content = re.sub(r'\n+', '; ', content)
+            content = re.sub(r'\s+', ' ', content)
+            return content[:500]  # Limit length
+
+    return ''
+
+
+def extract_badges_from_text(document) -> Dict[str, bool]:
+    """Extract product badges from document text
+
+    Returns dict with badge flags: novita, veloce, solare, brevetto_faac
+    """
+    all_text = document.all_text.lower()
+
+    badges = {
+        'novita': 'nuovo' in all_text or 'new' in all_text or 'novità' in all_text,
+        'veloce': 'veloce' in all_text or 'fast' in all_text or 'rapido' in all_text,
+        'solare': 'solare' in all_text or 'solar' in all_text or 'fotovoltaico' in all_text,
+        'brevetto_faac': 'brevetto' in all_text or 'patent' in all_text,
+    }
+
+    return badges
+
+
 def extract_barrier_rod_types(document) -> List[str]:
     """Extract rod types (aste) from barrier documents
 
@@ -377,6 +421,23 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
         )
         rod_types = extract_barrier_rod_types(document) if is_main_barrier else []
 
+        # Extract badges from text
+        badges = extract_badges_from_text(document)
+
+        # Extract confezione from product table data or text
+        confezione_str = ''
+        if product_table_data and product_table_data.confezioni:
+            # confezioni is a dict like {'model': 'description'}
+            confezione_parts = []
+            for model, desc in product_table_data.confezioni.items():
+                if desc:
+                    confezione_parts.append(f"{model}: {desc}" if model else desc)
+            confezione_str = '; '.join(confezione_parts)
+
+        # If no confezione from table, try extracting from text
+        if not confezione_str:
+            confezione_str = extract_confezione_from_text(document, product_info.name)
+
         # Build main product row
         product_row = {
             'categoria_prodotto': product_info.category,
@@ -393,15 +454,15 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
             'valore_primario': product_info.valore_primario,
             'caratteristica_secondaria': product_info.caratteristica_secondaria,
             'valore_secondario': product_info.valore_secondario,
-            'novita': '',
-            'veloce': '',
-            'solare': '',
-            'brevetto_faac': '',
+            'novita': 'Sì' if badges.get('novita') else '',
+            'veloce': 'Sì' if badges.get('veloce') else '',
+            'solare': 'Sì' if badges.get('solare') else '',
+            'brevetto_faac': 'Sì' if badges.get('brevetto_faac') else '',
             'badge_sistemi': '; '.join(product_info.badge_sistemi),
             'codice_qr': '',
             'certificazioni': '; '.join(product_info.certifications),
             'descrizione_categoria': product_info.descrizione_categoria if hasattr(product_info, 'descrizione_categoria') else '',
-            'contenuto_confezione': '',
+            'contenuto_confezione': confezione_str,
             'schema_installazione': '',
             'immagine_schema': '',
             'componenti_kit': product_table_data.get_componenti_kit() if product_table_data else '',
