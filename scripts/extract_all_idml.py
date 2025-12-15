@@ -143,6 +143,62 @@ CSV_PRODUCT_SKUS, CSV_DELETED_SKUS, CSV_PAGE_IMAGES = load_csv_reference_data()
 
 
 # ============================================================================
+# KIT.XLSX REFERENCE DATA - Use as-is for kit products
+# ============================================================================
+
+def load_kit_xlsx_data() -> Tuple[List[Dict], List[Dict], set]:
+    """Load kit products and SKUs from kit.xlsx
+
+    Returns:
+        Tuple of (kit_prodotti_rows, kit_sku_rows, kit_product_names)
+    """
+    from openpyxl import load_workbook
+
+    kit_xlsx = Path("/home/user/checkimport/input/learning/kit.xlsx")
+    if not kit_xlsx.exists():
+        logger.warning("kit.xlsx not found - skipping kit data")
+        return [], [], set()
+
+    wb = load_workbook(kit_xlsx)
+
+    # Load prodotti sheet (row 1 = fields, row 2 = labels, row 3+ = data)
+    ws_prod = wb['prodotti']
+    prod_headers = [cell.value for cell in ws_prod[1]]
+
+    kit_prodotti = []
+    kit_product_names = set()
+    for row in ws_prod.iter_rows(min_row=3, values_only=True):
+        row_dict = {}
+        for i, val in enumerate(row):
+            if i < len(prod_headers) and prod_headers[i]:
+                row_dict[prod_headers[i]] = val if val else ''
+        if row_dict.get('nome_prodotto'):
+            kit_prodotti.append(row_dict)
+            kit_product_names.add(row_dict['nome_prodotto'])
+
+    # Load sku sheet (row 1 = empty, row 2 = fields, row 3 = labels, row 4+ = data)
+    ws_sku = wb['sku']
+    # SKU headers are in row 2
+    sku_headers = [cell.value for cell in ws_sku[2]]
+
+    kit_skus = []
+    for row in ws_sku.iter_rows(min_row=4, values_only=True):
+        row_dict = {}
+        for i, val in enumerate(row):
+            if i < len(sku_headers) and sku_headers[i]:
+                row_dict[sku_headers[i]] = val if val else ''
+        if row_dict.get('codice_sku'):
+            kit_skus.append(row_dict)
+
+    logger.info(f"Loaded {len(kit_prodotti)} kit products and {len(kit_skus)} kit SKUs from kit.xlsx")
+    return kit_prodotti, kit_skus, kit_product_names
+
+
+# Load kit data
+KIT_PRODOTTI, KIT_SKUS, KIT_PRODUCT_NAMES = load_kit_xlsx_data()
+
+
+# ============================================================================
 # COLUMN DEFINITIONS - MATCHING Data.xlsx EXACTLY
 # ============================================================================
 
@@ -162,6 +218,8 @@ PRODOTTI_COLUMNS = [
     ('valore_primario', 'Prodotto Caratteristica Value 1'),
     ('caratteristica_secondaria', 'Prodotto Caratteristica Label 2'),
     ('valore_secondario', 'Prodotto Caratteristica Value 2'),
+    ('caratteristica_terziaria', 'Prodotto Caratteristica Label 3'),
+    ('valore_terziario', 'Prodotto Caratteristica Value 3'),
     ('novita', 'New'),
     ('veloce', 'Fast'),
     ('solare', 'Solar'),
@@ -801,15 +859,27 @@ def main():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = output_dir / f"mega_extraction_{timestamp}.xlsx"
 
+    # Start with kit.xlsx data (use as-is, perfect quality)
+    all_prodotti = list(KIT_PRODOTTI)  # Copy kit products
+    all_sku = list(KIT_SKUS)  # Copy kit SKUs
+    logger.info(f"Loaded {len(all_prodotti)} products and {len(all_sku)} SKUs from kit.xlsx")
+
     # Get all IDML files
     idml_files = sorted(idml_dir.glob("*.idml"))
     logger.info(f"Found {len(idml_files)} IDML files to process")
 
-    # Extract from all files
-    all_prodotti = []
-    all_sku = []
-
+    # Extract from IDML files (skip kit products already loaded from kit.xlsx)
+    skipped_kit_count = 0
     for i, idml_path in enumerate(idml_files, 1):
+        # Check if this is a kit IDML (skip - already have from kit.xlsx)
+        filename_lower = idml_path.stem.lower()
+        is_kit_idml = '_kit' in filename_lower or 'kit_' in filename_lower
+
+        if is_kit_idml:
+            skipped_kit_count += 1
+            logger.info(f"[{i}/{len(idml_files)}] Skipping kit IDML (using kit.xlsx): {idml_path.name}")
+            continue
+
         logger.info(f"[{i}/{len(idml_files)}] Processing: {idml_path.name}")
 
         product_rows, sku_rows = extract_from_idml(idml_path)
@@ -821,8 +891,11 @@ def main():
             all_sku.extend(sku_rows)
 
     logger.info(f"\nExtraction complete:")
-    logger.info(f"  - Products: {len(all_prodotti)}")
-    logger.info(f"  - SKUs: {len(all_sku)}")
+    logger.info(f"  - Kit products from kit.xlsx: {len(KIT_PRODOTTI)}")
+    logger.info(f"  - Kit SKUs from kit.xlsx: {len(KIT_SKUS)}")
+    logger.info(f"  - Skipped kit IDMLs: {skipped_kit_count}")
+    logger.info(f"  - Total Products: {len(all_prodotti)}")
+    logger.info(f"  - Total SKUs: {len(all_sku)}")
 
     # Write to Excel
     writer = MegaExcelWriter(output_file)
