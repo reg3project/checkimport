@@ -100,6 +100,7 @@ class TextExtractor:
         r'\bISO\s*\d+',
         r'\bEN\s*\d+',
         r'\bIEC\s*\d+',
+        r'\bClasse\s*II\b',  # Double insulation class
     ]
 
     # System badges (go to badge_sistemi column)
@@ -107,6 +108,12 @@ class TextExtractor:
 
     # Technology certifications (go to certificazioni column)
     TECH_CERTIFICATIONS = ['simply', 'fds', 'omni', '2easy', 'simply connect']
+
+    # Additional certification keywords (case-insensitive search)
+    ADDITIONAL_CERTIFICATIONS = [
+        'doppio isolamento',  # Double insulation (Italian)
+        'classe ii',  # Class II
+    ]
 
     # SKU patterns
     SKU_PATTERNS = [
@@ -292,14 +299,26 @@ class TextExtractor:
         return True
 
     def _extract_certifications(self):
-        """Extract certifications (CE, IP rating, etc.)"""
+        """Extract certifications (CE, IP rating, Classe II, doppio isolamento, etc.)"""
         all_text = self.document.all_text
+        all_text_lower = all_text.lower()
         certs = set()
 
+        # Extract from regex patterns (CE, IP, EN, ISO, Classe II)
         for pattern in self.CERTIFICATION_PATTERNS:
             matches = re.findall(pattern, all_text, re.IGNORECASE)
             for match in matches:
-                certs.add(match.upper())
+                # Map "Classe II" variants to "Classe2"
+                if 'classe' in match.lower():
+                    certs.add('Classe2')
+                else:
+                    certs.add(match.upper())
+
+        # Extract from keyword patterns (doppio isolamento, Classe II -> Classe2)
+        for cert_keyword in self.ADDITIONAL_CERTIFICATIONS:
+            if cert_keyword in all_text_lower:
+                # Both "doppio isolamento" and "classe ii" map to "Classe2"
+                certs.add('Classe2')
 
         self.product_info.certifications = sorted(list(certs))
 

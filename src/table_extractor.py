@@ -665,13 +665,24 @@ class TableExtractor:
 
         return clean
 
-    def _clean_value(self, raw: str) -> str:
-        """Clean and normalize a value"""
+    def _clean_value(self, raw: str, strip_bold: bool = True) -> str:
+        """Clean and normalize a value
+
+        Args:
+            raw: Raw value string
+            strip_bold: If True, removes <b> tags (default for technical specs)
+                       Set to False for fields that should preserve bold (Confezione, Notes)
+        """
         if not raw:
             return ""
 
-        # Remove extra whitespace
         clean = raw.strip()
+
+        # Strip bold tags for technical specs (not for Confezione, Notes, Badges)
+        if strip_bold:
+            clean = re.sub(r'</?b>', '', clean)
+
+        # Remove extra whitespace
         clean = re.sub(r'\s+', ' ', clean)
 
         # Normalize numbers
