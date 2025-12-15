@@ -278,6 +278,13 @@ def extract_from_idml(idml_path: Path) -> Tuple[Dict, List[Dict]]:
             'accessori': '; '.join(product_info.accessories),
         }
 
+        # Build model->SKU code mapping from pricing table
+        model_to_sku = {}
+        if product_table_data and product_table_data.pricing:
+            for pricing in product_table_data.pricing:
+                if pricing.model and pricing.code:
+                    model_to_sku[pricing.model] = pricing.code
+
         # Build SKU rows
         sku_rows = []
         for sku_spec in sku_specs_list:
@@ -291,9 +298,13 @@ def extract_from_idml(idml_path: Path) -> Tuple[Dict, List[Dict]]:
             specs_dict = sku_spec.to_dict()
             sku_row.update(specs_dict)
 
-            # Ensure SKU field is populated
-            if not sku_row.get('SKU'):
-                sku_row['SKU'] = sku_spec.sku
+            # Get actual SKU code from pricing table (if available)
+            model_name = sku_spec.sku
+            actual_sku = model_to_sku.get(model_name, model_name)
+            sku_row['SKU'] = actual_sku
+
+            # Keep Nome Modello as the model name
+            sku_row['Nome Modello'] = model_name
 
             sku_rows.append(sku_row)
 
