@@ -218,8 +218,17 @@ class IDMLParser:
         # Parse cells
         for cell_elem in table_elem.iter():
             if cell_elem.tag.endswith('Cell'):
-                row = int(cell_elem.get('RowIndex', 0))
-                col = int(cell_elem.get('ColumnIndex', 0))
+                # Try Name attribute first (format: "col:row")
+                name = cell_elem.get('Name', '')
+                if ':' in name:
+                    parts = name.split(':')
+                    col = int(parts[0])
+                    row = int(parts[1])
+                else:
+                    # Fallback to RowIndex/ColumnIndex
+                    row = int(cell_elem.get('RowIndex', 0))
+                    col = int(cell_elem.get('ColumnIndex', 0))
+
                 row_span = int(cell_elem.get('RowSpan', 1))
                 col_span = int(cell_elem.get('ColumnSpan', 1))
 

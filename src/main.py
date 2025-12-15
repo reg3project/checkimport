@@ -41,6 +41,43 @@ XLSX_OUTPUT_DIR = OUTPUT_DIR / "xlsx"
 REPORTS_DIR = OUTPUT_DIR / "reports"
 
 
+def find_learning_pairs():
+    """Find IDML/XLSX pairs in learning folder, handling subfolder structure"""
+    pairs = []
+
+    # Check for subfolder structure (IDML/ and XLSX/)
+    idml_subfolder = LEARNING_DIR / "IDML"
+    xlsx_subfolder = LEARNING_DIR / "XLSX"
+
+    if idml_subfolder.exists() and xlsx_subfolder.exists():
+        # Subfolder structure
+        idml_files = list(idml_subfolder.glob("*.idml"))
+        xlsx_files = {f.stem: f for f in xlsx_subfolder.glob("*.xlsx")}
+
+        for idml_file in idml_files:
+            # Try exact match
+            if idml_file.stem in xlsx_files:
+                pairs.append((idml_file, xlsx_files[idml_file.stem]))
+            else:
+                # Try partial match (for cases like 160-163_B614.idml -> 160-161_B614.xlsx)
+                for xlsx_stem, xlsx_file in xlsx_files.items():
+                    # Check if base product name matches
+                    idml_base = idml_file.stem.split('_', 1)[-1] if '_' in idml_file.stem else idml_file.stem
+                    xlsx_base = xlsx_stem.split('_', 1)[-1] if '_' in xlsx_stem else xlsx_stem
+                    if idml_base == xlsx_base:
+                        pairs.append((idml_file, xlsx_file))
+                        break
+    else:
+        # Flat structure
+        idml_files = list(LEARNING_DIR.glob("*.idml"))
+        for idml_file in idml_files:
+            xlsx_file = LEARNING_DIR / f"{idml_file.stem}.xlsx"
+            if xlsx_file.exists():
+                pairs.append((idml_file, xlsx_file))
+
+    return pairs
+
+
 def cmd_learn(args):
     """Learn patterns from IDML/XLSX pairs in learning folder"""
     from .learner import create_learner
@@ -51,9 +88,16 @@ def cmd_learn(args):
     print(f"Learning directory: {LEARNING_DIR}")
     print()
 
-    # Check for learning files
-    idml_files = list(LEARNING_DIR.glob("*.idml"))
-    xlsx_files = list(LEARNING_DIR.glob("*.xlsx"))
+    # Check for learning files (support both flat and subfolder structure)
+    idml_subfolder = LEARNING_DIR / "IDML"
+    xlsx_subfolder = LEARNING_DIR / "XLSX"
+
+    if idml_subfolder.exists():
+        idml_files = list(idml_subfolder.glob("*.idml"))
+        xlsx_files = list(xlsx_subfolder.glob("*.xlsx")) if xlsx_subfolder.exists() else []
+    else:
+        idml_files = list(LEARNING_DIR.glob("*.idml"))
+        xlsx_files = list(LEARNING_DIR.glob("*.xlsx"))
 
     print(f"Found {len(idml_files)} IDML files")
     print(f"Found {len(xlsx_files)} XLSX files")
@@ -183,15 +227,14 @@ def cmd_check(args):
     print("CHECKING EXTRACTED DATA")
     print("=" * 60)
 
-    # Find pairs in learning directory
-    pairs = []
-    for idml_path in LEARNING_DIR.glob("*.idml"):
-        xlsx_path = LEARNING_DIR / f"{idml_path.stem}.xlsx"
-        if xlsx_path.exists():
-            pairs.append((idml_path, xlsx_path))
+    # Find pairs in learning directory (supports subfolder structure)
+    pairs = find_learning_pairs()
 
     if not pairs:
         print("No IDML/XLSX pairs found for validation!")
+        print(f"Please add files to: {LEARNING_DIR}")
+        print("  - Subfolder structure: IDML/*.idml and XLSX/*.xlsx")
+        print("  - Or flat structure: *.idml and *.xlsx in same folder")
         return 1
 
     print(f"Found {len(pairs)} pairs to validate")
@@ -398,15 +441,15 @@ def _generate_learning_reports():
     from .comparator import compare_files
     from .reporter import Reporter
 
+    pairs = find_learning_pairs()
     results = []
-    for idml_path in LEARNING_DIR.glob("*.idml"):
-        xlsx_path = LEARNING_DIR / f"{idml_path.stem}.xlsx"
-        if xlsx_path.exists():
-            try:
-                result = compare_files(idml_path, xlsx_path)
-                results.append(result)
-            except Exception as e:
-                logger.error(f"Error comparing {idml_path.name}: {e}")
+
+    for idml_path, xlsx_path in pairs:
+        try:
+            result = compare_files(idml_path, xlsx_path)
+            results.append(result)
+        except Exception as e:
+            logger.error(f"Error comparing {idml_path.name}: {e}")
 
     if results:
         REPORTS_DIR.mkdir(parents=True, exist_ok=True)
