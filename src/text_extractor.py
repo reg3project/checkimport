@@ -647,18 +647,34 @@ class TextExtractor:
 
         all_text = ' '.join(tc.text.lower() for tc in all_texts)
 
-        # Look for traffic intensity indicators
-        if 'alto' in all_text and 'transito' in all_text:
+        # Also check full document text which preserves newlines differently
+        full_text = self.document.all_text.lower() if self.document.all_text else ''
+
+        combined_text = all_text + ' ' + full_text
+
+        # Look for traffic intensity patterns - check for proximity
+        # Pattern: "alto transito" or "alto\ntransito" or just "alto" near traffic context
+        if re.search(r'alto\s*transito', combined_text):
             self.product_info.intensita_transito = "Alto"
-        elif 'medio' in all_text and 'transito' in all_text:
+        elif re.search(r'medio\s*transito', combined_text):
             self.product_info.intensita_transito = "Medio"
-        elif 'basso' in all_text and 'transito' in all_text:
+        elif re.search(r'basso\s*transito', combined_text):
             self.product_info.intensita_transito = "Basso"
+        # Check for standalone intensity words near "transito"
+        elif 'transito' in combined_text:
+            if 'alto' in combined_text:
+                self.product_info.intensita_transito = "Alto"
+            elif 'medio' in combined_text:
+                self.product_info.intensita_transito = "Medio"
+            elif 'basso' in combined_text:
+                self.product_info.intensita_transito = "Basso"
         # Also check for intensity without "transito"
-        elif 'intensivo' in all_text or 'intenso' in all_text:
+        elif 'intensivo' in combined_text or 'uso intenso' in combined_text:
             self.product_info.intensita_transito = "Alto"
-        elif 'residenziale' in all_text:
+        elif 'residenziale' in combined_text:
             self.product_info.intensita_transito = "Basso"
+        elif 'industriale' in combined_text or 'condominiale' in combined_text:
+            self.product_info.intensita_transito = "Medio"
 
 
 def extract_product_info(document: IDMLDocument) -> ProductInfo:

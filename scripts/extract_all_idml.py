@@ -494,16 +494,54 @@ def extract_badges_from_text(document) -> Dict[str, bool]:
 
     Returns dict with badge flags: novita, veloce, solare, brevetto_faac
     """
+    import re
     all_text = document.all_text.lower()
 
+    # Check for badge words - standalone or as part of larger text
+    # Use word boundaries to avoid false matches
     badges = {
-        'novita': 'nuovo' in all_text or 'new' in all_text or 'novità' in all_text,
-        'veloce': 'veloce' in all_text or 'fast' in all_text or 'rapido' in all_text,
-        'solare': 'solare' in all_text or 'solar' in all_text or 'fotovoltaico' in all_text,
-        'brevetto_faac': 'brevetto' in all_text or 'patent' in all_text,
+        'novita': bool(re.search(r'\b(nuovo|new|novità)\b', all_text)),
+        'veloce': bool(re.search(r'\b(veloce|fast|rapido|rapida)\b', all_text)),
+        'solare': bool(re.search(r'\b(solare|solar|fotovoltaico)\b', all_text)),
+        'brevetto_faac': bool(re.search(r'\b(brevetto|patent)\b', all_text)),
     }
 
     return badges
+
+
+def extract_prodotti_correlati(document) -> str:
+    """Extract related products/kits from document text
+
+    Looks for patterns like "Questo prodotto è disponibile anche in kit:"
+    """
+    import re
+    all_text = document.all_text
+
+    related = []
+
+    # Pattern: "Questo prodotto è disponibile anche in kit:" followed by kit names
+    kit_pattern = r'(?:disponibile anche in kit|disponibile in kit)[:\s]*([^\n]+(?:\n(?:PERFECT|CLASSIC|cod\.|Info)[^\n]*)*)'
+    matches = re.findall(kit_pattern, all_text, re.IGNORECASE)
+    for match in matches:
+        # Extract kit references
+        kit_refs = re.findall(r'((?:PERFECT|CLASSIC)\s*\d*|cod\.\s*[\d]+)', match)
+        related.extend(kit_refs)
+
+    # Also look for "Info a pag." patterns with kit codes
+    info_pattern = r'(cod\.\s*[\d]+)\s*Info a pag'
+    info_matches = re.findall(info_pattern, all_text)
+    for match in info_matches:
+        if match not in related:
+            related.append(match)
+
+    # Clean up and join
+    cleaned = []
+    for r in related:
+        r = r.strip()
+        if r and r not in cleaned:
+            cleaned.append(r)
+
+    return '; '.join(cleaned[:5])  # Limit to 5 related products
 
 
 def extract_barrier_rod_types(document) -> List[str]:
@@ -592,6 +630,9 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
         # Extract badges from text
         badges = extract_badges_from_text(document)
 
+        # Extract related products (kit references)
+        prodotti_correlati_str = extract_prodotti_correlati(document)
+
         # Extract confezione from product table data or text
         confezione_str = ''
         if product_table_data and product_table_data.confezioni:
@@ -657,7 +698,7 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
             'componenti_kit': product_table_data.get_componenti_kit() if product_table_data else '',
             'immagine_kit': '',
             'sku_correlati': '; '.join(all_related_skus),
-            'prodotti_correlati': '',
+            'prodotti_correlati': prodotti_correlati_str,
             'note_prodotto': notes_str,
             'quote_installazione': '',
             'grafico_tecnico': '',
