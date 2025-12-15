@@ -31,8 +31,9 @@ class ProductInfo:
     description: str = ""
     short_description: str = ""
     features: List[str] = field(default_factory=list)
-    badges: List[str] = field(default_factory=list)
-    certifications: List[str] = field(default_factory=list)
+    badges: List[str] = field(default_factory=list)  # Legacy - now split into badge_sistemi/certificazioni
+    certifications: List[str] = field(default_factory=list)  # Simply, FDS, Omni, 2easy, CE, etc.
+    badge_sistemi: List[str] = field(default_factory=list)  # Safe, Green only
     accessories: List[str] = field(default_factory=list)
     images: List[str] = field(default_factory=list)
     sku_codes: List[str] = field(default_factory=list)
@@ -62,8 +63,9 @@ class ProductInfo:
             'description': self.description,
             'short_description': self.short_description,
             'features': '; '.join(self.features),
-            'badges': '; '.join(self.badges),
-            'certifications': '; '.join(self.certifications),
+            'badges': '; '.join(self.badges),  # Legacy
+            'badge_sistemi': '; '.join(self.badge_sistemi),  # Safe, Green only
+            'certifications': '; '.join(self.certifications),  # Simply, FDS, Omni, 2easy, CE
             'accessories': '; '.join(self.accessories),
             'images': '; '.join(self.images),
             'sku_codes': '; '.join(self.sku_codes),
@@ -100,6 +102,12 @@ class TextExtractor:
         r'\bIEC\s*\d+',
     ]
 
+    # System badges (go to badge_sistemi column)
+    SYSTEM_BADGES = ['safe', 'green', 'greentech']
+
+    # Technology certifications (go to certificazioni column)
+    TECH_CERTIFICATIONS = ['simply', 'fds', 'omni', '2easy', 'simply connect']
+
     # SKU patterns
     SKU_PATTERNS = [
         r'\b(\d{6,}(?:-\d+)?)\b',  # 424550001 or 424550001-10
@@ -118,6 +126,7 @@ class TextExtractor:
         self._extract_skus()
         self._extract_certifications()
         self._extract_badges()
+        self._extract_badges_and_certifications()  # Classify into badge_sistemi and certificazioni
         self._extract_accessories()
         self._extract_images()
         self._extract_category()
@@ -288,7 +297,7 @@ class TextExtractor:
         certs = set()
 
         for pattern in self.CERTIFICATION_PATTERNS:
-            matches = re.findall(pattern, all_text)
+            matches = re.findall(pattern, all_text, re.IGNORECASE)
             for match in matches:
                 certs.add(match.upper())
 
@@ -318,6 +327,44 @@ class TextExtractor:
                 badges.add(keyword.capitalize())
 
         self.product_info.badges = sorted(list(badges))
+
+    def _extract_badges_and_certifications(self):
+        """Extract and classify badges into badge_sistemi and certificazioni columns
+
+        Classification rules:
+        - Safe, Green → badge_sistemi
+        - Simply, FDS, Omni, 2easy, CE → certificazioni
+        """
+        all_text = self.document.all_text.lower()
+
+        # Extract system badges (Safe, Green)
+        for badge in self.SYSTEM_BADGES:
+            if badge in all_text:
+                # Normalize the badge name
+                badge_name = badge.capitalize()
+                if badge == 'greentech':
+                    badge_name = 'Green'
+                if badge_name not in self.product_info.badge_sistemi:
+                    self.product_info.badge_sistemi.append(badge_name)
+
+        # Extract technology certifications
+        for cert in self.TECH_CERTIFICATIONS:
+            if cert in all_text:
+                # Normalize the cert name
+                cert_name = cert.upper() if cert in ['fds', 'ce'] else cert.title()
+                if cert == 'simply connect':
+                    cert_name = 'Simply'
+                elif cert == '2easy':
+                    cert_name = '2easy'
+                if cert_name not in self.product_info.certifications:
+                    self.product_info.certifications.append(cert_name)
+
+        # Also check existing certifications from CERTIFICATION_PATTERNS (CE, IP, etc.)
+        # and make sure they're in the certifications list
+
+        # Sort both lists
+        self.product_info.badge_sistemi = sorted(self.product_info.badge_sistemi)
+        self.product_info.certifications = sorted(self.product_info.certifications)
 
     def _extract_accessories(self):
         """Extract accessory list"""

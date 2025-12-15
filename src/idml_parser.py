@@ -114,6 +114,8 @@ class IDMLDocument:
     images: List[ImageRef] = field(default_factory=list)
     spreads: List[str] = field(default_factory=list)
     metadata: Dict[str, Any] = field(default_factory=dict)
+    # Map of paragraph style Self -> is_bold
+    paragraph_styles: Dict[str, bool] = field(default_factory=dict)
 
     @property
     def all_text(self) -> str:
@@ -154,9 +156,9 @@ class IDMLParser:
         with zipfile.ZipFile(self.idml_path, 'r') as zf:
             self._zip = zf
             self._parse_designmap(zf)
+            self._parse_resources(zf)  # Parse styles first for bold detection
             self._parse_stories(zf)
             self._parse_spreads(zf)
-            self._parse_resources(zf)
 
         return self.document
 
@@ -191,31 +193,12 @@ class IDMLParser:
                     tree = ET.parse(f)
                     root = tree.getroot()
 
-                    # Extract text from Content elements
+                    # Extract text with proper style context
                     position = 0
+                    position = self._extract_text_with_styles(root, story_id, position)
+
+                    # Parse tables within stories
                     for elem in root.iter():
-                        if elem.tag.endswith('Content') and elem.text:
-                            text = elem.text.strip()
-                            if text:
-                                # Get style information from parent elements
-                                para_style = self._get_parent_attr(elem, 'AppliedParagraphStyle', root)
-                                char_style = self._get_parent_attr(elem, 'AppliedCharacterStyle', root)
-
-                                # Detect bold from character style
-                                is_bold = self._is_bold_style(char_style, para_style)
-
-                                tc = TextContent(
-                                    text=text,
-                                    style=para_style or char_style or "",
-                                    paragraph_style=para_style or "",
-                                    character_style=char_style or "",
-                                    position=position,
-                                    is_bold=is_bold
-                                )
-                                self.document.stories[story_id].append(tc)
-                                position += 1
-
-                        # Parse tables within stories
                         if elem.tag.endswith('Table'):
                             table = self._parse_table_element(elem)
                             if table.cells:
@@ -223,6 +206,37 @@ class IDMLParser:
 
             except Exception as e:
                 logger.warning(f"Could not parse story {story_file}: {e}")
+
+    def _extract_text_with_styles(self, root: ET.Element, story_id: str, position: int) -> int:
+        """Extract text content with proper style inheritance from parent elements"""
+        # Process ParagraphStyleRange -> CharacterStyleRange -> Content hierarchy
+        for para_range in root.iter():
+            if para_range.tag.endswith('ParagraphStyleRange'):
+                para_style = para_range.get('AppliedParagraphStyle', '')
+
+                for char_range in para_range:
+                    if char_range.tag.endswith('CharacterStyleRange'):
+                        char_style = char_range.get('AppliedCharacterStyle', '')
+
+                        for content in char_range:
+                            if content.tag.endswith('Content') and content.text:
+                                text = content.text.strip()
+                                if text:
+                                    # Detect bold from paragraph and character styles
+                                    is_bold = self._is_bold_style(char_style, para_style)
+
+                                    tc = TextContent(
+                                        text=text,
+                                        style=para_style or char_style or "",
+                                        paragraph_style=para_style or "",
+                                        character_style=char_style or "",
+                                        position=position,
+                                        is_bold=is_bold
+                                    )
+                                    self.document.stories[story_id].append(tc)
+                                    position += 1
+
+        return position
 
     def _parse_table_element(self, table_elem: ET.Element) -> Table:
         """Parse a Table XML element"""
@@ -311,10 +325,25 @@ class IDMLParser:
 
     def _parse_resources(self, zf: zipfile.ZipFile):
         """Parse resource files (fonts, colors, styles)"""
-        # Parse Resources/Graphic.xml for colors/gradients
-        # Parse Resources/Fonts.xml for font information
-        # These are optional and used for style information
-        pass
+        # Parse Resources/Styles.xml for paragraph style -> bold mapping
+        try:
+            if 'Resources/Styles.xml' in zf.namelist():
+                with zf.open('Resources/Styles.xml') as f:
+                    tree = ET.parse(f)
+                    root = tree.getroot()
+
+                    # Find all ParagraphStyle elements
+                    for elem in root.iter():
+                        if elem.tag.endswith('ParagraphStyle'):
+                            style_self = elem.get('Self', '')
+                            font_style = elem.get('FontStyle', '')
+
+                            # Check if font style indicates bold
+                            is_bold = self._is_bold_font_style(font_style)
+                            if style_self:
+                                self.document.paragraph_styles[style_self] = is_bold
+        except Exception as e:
+            logger.warning(f"Could not parse Resources/Styles.xml: {e}")
 
     def _get_parent_attr(self, elem: ET.Element, attr_name: str, root: ET.Element) -> Optional[str]:
         """Get attribute from element or its parents"""
@@ -323,6 +352,11 @@ class IDMLParser:
 
     def _is_bold_style(self, char_style: str, para_style: str) -> bool:
         """Check if character or paragraph style indicates bold text"""
+        # First check if paragraph style is in our parsed styles map
+        if para_style and para_style in self.document.paragraph_styles:
+            if self.document.paragraph_styles[para_style]:
+                return True
+
         # Common bold indicators in IDML style names
         bold_patterns = [
             'bold', 'Bold', 'BOLD',
@@ -338,6 +372,24 @@ class IDMLParser:
 
         for pattern in bold_patterns:
             if pattern.lower() in style_text:
+                return True
+
+        return False
+
+    def _is_bold_font_style(self, font_style: str) -> bool:
+        """Check if FontStyle attribute indicates bold"""
+        if not font_style:
+            return False
+
+        bold_indicators = [
+            'bold', 'Bold', 'BOLD',
+            'heavy', 'Heavy',
+            'black', 'Black',
+            'semibold', 'SemiBold',
+        ]
+
+        for indicator in bold_indicators:
+            if indicator.lower() in font_style.lower():
                 return True
 
         return False
