@@ -102,8 +102,8 @@ class TextExtractor:
 
     # SKU patterns
     SKU_PATTERNS = [
-        r'\b(\d{6,})\b',
-        r'\b([A-Z]{1,3}\d{5,}[A-Z]?)\b',
+        r'\b(\d{6,}(?:-\d+)?)\b',  # 424550001 or 424550001-10
+        r'\b([A-Z]{1,3}\d{5,}[A-Z]?(?:-\d+)?)\b',
         r'\b(FAAC\d+)\b',
     ]
 
