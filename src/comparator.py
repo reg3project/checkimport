@@ -1,0 +1,363 @@
+"""
+Comparator - Compare extracted IDML data with reference XLSX files
+
+Performs field-by-field comparison to:
+- Find matches
+- Detect mismatches
+- Identify new fields (in IDML but not in XLSX schema)
+- Find missing fields (expected but not in IDML)
+"""
+
+from pathlib import Path
+from typing import Dict, List, Optional, Any, Tuple
+from dataclasses import dataclass, field
+import re
+import logging
+from datetime import datetime
+
+from .xlsx_loader import XLSXData, load_xlsx
+from .xlsx_writer import ExtractionResult
+from .idml_parser import parse_idml
+from .table_extractor import extract_specs_from_document
+from .text_extractor import extract_product_info
+
+logger = logging.getLogger(__name__)
+
+
+@dataclass
+class FieldComparison:
+    """Comparison result for a single field"""
+    field_name: str
+    extracted_value: str
+    reference_value: str
+    status: str  # 'match', 'mismatch', 'new', 'missing'
+    difference: Optional[float] = None  # Numeric difference if applicable
+    similarity: float = 0.0  # String similarity score
+
+    @property
+    def is_match(self) -> bool:
+        return self.status == 'match'
+
+
+@dataclass
+class ComparisonResult:
+    """Complete comparison result for a file pair"""
+    idml_file: str
+    xlsx_file: str
+    timestamp: str
+    comparisons: List[FieldComparison] = field(default_factory=list)
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+    @property
+    def matches(self) -> List[FieldComparison]:
+        return [c for c in self.comparisons if c.status == 'match']
+
+    @property
+    def mismatches(self) -> List[FieldComparison]:
+        return [c for c in self.comparisons if c.status == 'mismatch']
+
+    @property
+    def new_fields(self) -> List[FieldComparison]:
+        return [c for c in self.comparisons if c.status == 'new']
+
+    @property
+    def missing_fields(self) -> List[FieldComparison]:
+        return [c for c in self.comparisons if c.status == 'missing']
+
+    @property
+    def accuracy(self) -> float:
+        """Calculate accuracy percentage"""
+        total = len(self.matches) + len(self.mismatches)
+        if total == 0:
+            return 0.0
+        return (len(self.matches) / total) * 100
+
+    @property
+    def total_fields(self) -> int:
+        return len(self.comparisons)
+
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary for reporting"""
+        return {
+            'idml_file': self.idml_file,
+            'xlsx_file': self.xlsx_file,
+            'timestamp': self.timestamp,
+            'accuracy': round(self.accuracy, 2),
+            'total_fields': self.total_fields,
+            'matches': len(self.matches),
+            'mismatches': len(self.mismatches),
+            'new_fields': len(self.new_fields),
+            'missing_fields': len(self.missing_fields),
+            'comparisons': [
+                {
+                    'field': c.field_name,
+                    'extracted': c.extracted_value,
+                    'reference': c.reference_value,
+                    'status': c.status,
+                    'similarity': round(c.similarity, 2)
+                }
+                for c in self.comparisons
+            ]
+        }
+
+
+class Comparator:
+    """Compare extracted data with reference data"""
+
+    # Tolerance for numeric comparisons
+    NUMERIC_TOLERANCE = 0.01
+    # Minimum similarity for fuzzy match
+    SIMILARITY_THRESHOLD = 0.85
+
+    def __init__(self):
+        self.results: List[ComparisonResult] = []
+
+    def compare(
+        self,
+        extraction: ExtractionResult,
+        reference: XLSXData
+    ) -> ComparisonResult:
+        """Compare extracted data with reference XLSX data"""
+        result = ComparisonResult(
+            idml_file=extraction.source_file,
+            xlsx_file=str(reference.path.name),
+            timestamp=datetime.now().isoformat()
+        )
+
+        # Compare product-level fields
+        self._compare_product_fields(extraction, reference, result)
+
+        # Compare SKU-level fields
+        self._compare_sku_fields(extraction, reference, result)
+
+        self.results.append(result)
+        return result
+
+    def _compare_product_fields(
+        self,
+        extraction: ExtractionResult,
+        reference: XLSXData,
+        result: ComparisonResult
+    ):
+        """Compare product-level fields"""
+        extracted_dict = extraction.product_info.to_dict()
+
+        # Get reference product (first one if multiple)
+        ref_product = reference.prodotti[0] if reference.prodotti else {}
+
+        # Compare each field
+        all_fields = set(extracted_dict.keys()) | set(ref_product.keys())
+
+        for field_name in all_fields:
+            extracted_val = str(extracted_dict.get(field_name, "")).strip()
+            reference_val = str(ref_product.get(field_name, "")).strip()
+
+            comparison = self._compare_values(field_name, extracted_val, reference_val)
+            result.comparisons.append(comparison)
+
+    def _compare_sku_fields(
+        self,
+        extraction: ExtractionResult,
+        reference: XLSXData,
+        result: ComparisonResult
+    ):
+        """Compare SKU-level fields"""
+        for sku_specs in extraction.sku_specs:
+            extracted_dict = sku_specs.to_dict()
+            sku_code = sku_specs.sku
+
+            # Find matching reference SKU
+            ref_sku = reference.get_sku_by_code(sku_code)
+            if not ref_sku and reference.sku:
+                # Try first SKU if no match
+                ref_sku = reference.sku[0]
+
+            if not ref_sku:
+                ref_sku = {}
+
+            # Compare each field
+            all_fields = set(extracted_dict.keys()) | set(ref_sku.keys())
+
+            for field_name in all_fields:
+                if field_name == 'sku':
+                    continue  # Skip SKU code itself
+
+                extracted_val = str(extracted_dict.get(field_name, "")).strip()
+                reference_val = str(ref_sku.get(field_name, "")).strip()
+
+                comparison = self._compare_values(
+                    f"sku.{sku_code}.{field_name}",
+                    extracted_val,
+                    reference_val
+                )
+                result.comparisons.append(comparison)
+
+    def _compare_values(
+        self,
+        field_name: str,
+        extracted: str,
+        reference: str
+    ) -> FieldComparison:
+        """Compare two values and determine match status"""
+        # Normalize values
+        extracted_norm = self._normalize(extracted)
+        reference_norm = self._normalize(reference)
+
+        # Determine status
+        if not extracted_norm and not reference_norm:
+            status = 'match'
+            similarity = 1.0
+        elif not extracted_norm:
+            status = 'missing'
+            similarity = 0.0
+        elif not reference_norm:
+            status = 'new'
+            similarity = 0.0
+        elif extracted_norm == reference_norm:
+            status = 'match'
+            similarity = 1.0
+        else:
+            # Try numeric comparison
+            num_match, difference = self._numeric_compare(extracted_norm, reference_norm)
+            if num_match:
+                status = 'match'
+                similarity = 1.0
+            else:
+                # Try fuzzy string comparison
+                similarity = self._string_similarity(extracted_norm, reference_norm)
+                if similarity >= self.SIMILARITY_THRESHOLD:
+                    status = 'match'
+                else:
+                    status = 'mismatch'
+                difference = None
+
+            return FieldComparison(
+                field_name=field_name,
+                extracted_value=extracted,
+                reference_value=reference,
+                status=status,
+                difference=difference,
+                similarity=similarity
+            )
+
+        return FieldComparison(
+            field_name=field_name,
+            extracted_value=extracted,
+            reference_value=reference,
+            status=status,
+            similarity=similarity
+        )
+
+    def _normalize(self, value: str) -> str:
+        """Normalize a value for comparison"""
+        if not value:
+            return ""
+
+        # Lowercase
+        result = value.lower().strip()
+
+        # Normalize whitespace
+        result = re.sub(r'\s+', ' ', result)
+
+        # Normalize decimal separator
+        result = result.replace(',', '.')
+
+        return result
+
+    def _numeric_compare(self, val1: str, val2: str) -> Tuple[bool, Optional[float]]:
+        """Compare two values as numbers"""
+        try:
+            # Extract numeric parts
+            num1 = float(re.sub(r'[^\d.]', '', val1))
+            num2 = float(re.sub(r'[^\d.]', '', val2))
+
+            difference = abs(num1 - num2)
+            # Match if within tolerance
+            if difference <= self.NUMERIC_TOLERANCE:
+                return True, 0.0
+            # Match if relative difference is small
+            if num2 != 0 and (difference / abs(num2)) <= self.NUMERIC_TOLERANCE:
+                return True, difference
+
+            return False, difference
+        except (ValueError, ZeroDivisionError):
+            return False, None
+
+    def _string_similarity(self, s1: str, s2: str) -> float:
+        """Calculate string similarity using simple ratio"""
+        if not s1 or not s2:
+            return 0.0
+        if s1 == s2:
+            return 1.0
+
+        # Use simple character-based similarity
+        matches = sum(1 for a, b in zip(s1, s2) if a == b)
+        return matches / max(len(s1), len(s2))
+
+    def get_aggregate_stats(self) -> Dict[str, Any]:
+        """Get aggregate statistics across all comparisons"""
+        if not self.results:
+            return {}
+
+        total_matches = sum(len(r.matches) for r in self.results)
+        total_mismatches = sum(len(r.mismatches) for r in self.results)
+        total_new = sum(len(r.new_fields) for r in self.results)
+        total_missing = sum(len(r.missing_fields) for r in self.results)
+
+        total_compared = total_matches + total_mismatches
+        overall_accuracy = (total_matches / total_compared * 100) if total_compared > 0 else 0
+
+        return {
+            'files_compared': len(self.results),
+            'overall_accuracy': round(overall_accuracy, 2),
+            'total_matches': total_matches,
+            'total_mismatches': total_mismatches,
+            'total_new_fields': total_new,
+            'total_missing_fields': total_missing,
+            'per_file': [r.to_dict() for r in self.results]
+        }
+
+
+def compare_files(idml_path: Path, xlsx_path: Path) -> ComparisonResult:
+    """Compare an IDML file with its reference XLSX"""
+    # Parse IDML
+    document = parse_idml(idml_path)
+    product_info = extract_product_info(document)
+    sku_specs = extract_specs_from_document(document)
+
+    extraction = ExtractionResult(
+        source_file=str(idml_path.name),
+        product_info=product_info,
+        sku_specs=sku_specs
+    )
+
+    # Load reference
+    reference = load_xlsx(xlsx_path)
+
+    # Compare
+    comparator = Comparator()
+    return comparator.compare(extraction, reference)
+
+
+def batch_compare(pairs: List[Tuple[Path, Path]]) -> Dict[str, Any]:
+    """Compare multiple IDML/XLSX pairs"""
+    comparator = Comparator()
+
+    for idml_path, xlsx_path in pairs:
+        try:
+            document = parse_idml(idml_path)
+            product_info = extract_product_info(document)
+            sku_specs = extract_specs_from_document(document)
+
+            extraction = ExtractionResult(
+                source_file=str(idml_path.name),
+                product_info=product_info,
+                sku_specs=sku_specs
+            )
+
+            reference = load_xlsx(xlsx_path)
+            comparator.compare(extraction, reference)
+        except Exception as e:
+            logger.error(f"Error comparing {idml_path.name}: {e}")
+
+    return comparator.get_aggregate_stats()
