@@ -41,12 +41,13 @@ Thumbs.db
 *.log
 *.tmp
 
-# Keep input/output structure but ignore contents
-input/learning/*
-!input/learning/.gitkeep
-input/processing/*
-!input/processing/.gitkeep
+# Output folders - ignore generated files but keep structure
 output/xlsx/*
 !output/xlsx/.gitkeep
 output/reports/*
 !output/reports/.gitkeep
+
+# Input folders - ALLOW IDML and XLSX files (these should be committed)
+# Only ignore temporary files in input folders
+input/**/*.tmp
+input/**/*.log
