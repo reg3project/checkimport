@@ -280,6 +280,75 @@ def convert_product_dict_to_italian(product_dict: Dict[str, Any]) -> Dict[str, A
 
 
 # ============================================================================
+# IDML EXTRACTION TO DATA.XLSX COLUMN MAPPING
+# ============================================================================
+
+# Maps IDML extracted field names -> Data.xlsx column names (snake_case)
+IDML_TO_DATA_XLSX = {
+    # Technical specs
+    'Tensione di alimentazione di rete': 'tensione_alimentazione',
+    'Corrente assorbita': 'corrente_assorbita',
+    'Motore elettrico': 'tipo_motore',
+    'Potenza max': 'potenza_massima',
+    'Coppia max': 'coppia_massima',
+    'Forza max di spinta': 'forza_spinta',
+    'Velocità max stelo': 'velocita_stelo',
+    'Velocità angolare max': 'velocita_angolare',
+    "Velocità dell'anta": 'velocita_anta',
+    'Portata gruppo motore-pompa': 'portata_pompa',
+    'Corsa dello stelo': 'corsa_stelo',
+    'Angolo max apertura anta': 'angolo_apertura_max',
+    'Temperatura ambiente di esercizio': 'temperatura_esercizio',
+    'Termoprotezione': 'termoprotezione',
+    'Grado di protezione': 'grado_protezione_ip',
+    'Peso': 'peso_unita',
+    'Dimensioni (LxPxH)': 'dimensioni',
+    'Frequenza di utilizzo': 'frequenza_utilizzo',
+    'Larghezza max anta': 'larghezza_anta_max',
+    'Lunghezza max anta': 'lunghezza_max',
+    'Peso max anta': 'peso_anta_max',
+    'Tipo di olio': 'tipo_olio',
+    'Staffe di fissaggio': 'staffe_fissaggio',
+    'Apparecchiatura elettronica': 'scheda_elettronica',
+    'Dispositivo di sblocco': 'dispositivo_sblocco',
+    'Finecorsa': 'finecorsa',
+    'Encoder': 'encoder',
+    'Tipo di materiale': 'materiale',
+    'Tipo di trattamento': 'trattamento',
+    'Tipo di rallentamento': 'tipo_rallentamento',
+    'Tipo di asta': 'tipo_asta',
+    'Condensatore di spunto': 'condensatore_spunto',
+    'Pignone': 'pignone',
+    'Nome Modello': 'nome_modello',
+    # Reverse mapping for comparison
+    'tensione_alimentazione': 'Tensione di alimentazione di rete',
+    'tipo_motore': 'Motore elettrico',
+    'potenza_massima': 'Potenza max',
+    'coppia_massima': 'Coppia max',
+    'forza_spinta': 'Forza max di spinta',
+    'grado_protezione_ip': 'Grado di protezione',
+    'peso_unita': 'Peso',
+    'larghezza_anta_max': 'Larghezza max anta',
+    'angolo_apertura_max': 'Angolo max apertura anta',
+    'scheda_elettronica': 'Apparecchiatura elettronica',
+}
+
+
+def get_data_xlsx_column(idml_field: str) -> str:
+    """Convert IDML field name to Data.xlsx column name"""
+    return IDML_TO_DATA_XLSX.get(idml_field, idml_field)
+
+
+def get_idml_field_from_data_xlsx(data_col: str) -> str:
+    """Convert Data.xlsx column name to IDML field name"""
+    # Check reverse mapping
+    for idml, data in IDML_TO_DATA_XLSX.items():
+        if data == data_col:
+            return idml
+    return data_col
+
+
+# ============================================================================
 # VALUE NORMALIZATION
 # ============================================================================
 
