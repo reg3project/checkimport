@@ -800,15 +800,44 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
 
             sku_rows.append(sku_row)
 
+        # Build SKU-to-description mapping from kit_components and pricing
+        sku_descriptions = {}
+        if product_table_data:
+            # From kit components (has description field)
+            for comp in product_table_data.kit_components:
+                if comp.code and comp.description:
+                    sku_descriptions[comp.code] = comp.description
+            # From pricing (model field often contains description)
+            for pricing in product_table_data.pricing:
+                if pricing.code and pricing.model and pricing.code not in sku_descriptions:
+                    sku_descriptions[pricing.code] = pricing.model
+
+        # Also extract descriptions from document text for accessory codes
+        # Pattern: Description followed by code, or code followed by description
+        import re
+        text = document.all_text
+        # Pattern: description (line) + code (line)
+        desc_code_matches = re.findall(r'([A-Za-z][^\n€]{10,80})\n(\d{6})\n', text)
+        for desc, code in desc_code_matches:
+            if code not in sku_descriptions:
+                sku_descriptions[code] = desc.strip()
+        # Pattern: code + euro price + description (same line or next)
+        code_price_desc = re.findall(r'(\d{6})\s*€?\s*[\d.,]+\s*\n([A-Za-z][^\n€]{10,80})', text)
+        for code, desc in code_price_desc:
+            if code not in sku_descriptions:
+                sku_descriptions[code] = desc.strip()
+
         # Also add SKU rows for all related SKUs (accessories) from sku_price tables
         # These are single SKU-price pairs that don't have full specs
         seen_skus = {row.get('codice_sku') for row in sku_rows}
         for related_sku in all_related_skus:
             if related_sku and related_sku not in seen_skus:
+                desc = sku_descriptions.get(related_sku, '')
                 sku_rows.append({
                     'codice_sku': related_sku,
                     'nome_modello': '',
                     'tipo_componente': 'accessorio',
+                    'descrizione_breve': desc,
                 })
                 seen_skus.add(related_sku)
 
