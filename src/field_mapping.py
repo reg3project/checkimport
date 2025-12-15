@@ -285,11 +285,12 @@ def convert_product_dict_to_italian(product_dict: Dict[str, Any]) -> Dict[str, A
 
 # Maps IDML extracted field names -> Data.xlsx column names (snake_case)
 IDML_TO_DATA_XLSX = {
-    # Technical specs
-    'Tensione di alimentazione di rete': 'tensione_alimentazione',
+    # Technical specs - handle variations in naming
+    'Tensione di alimentazione di rete': 'Tensione di alimentazione',
+    'Tensione di alimentazione': 'Tensione di alimentazione',
     'Corrente assorbita': 'corrente_assorbita',
-    'Motore elettrico': 'tipo_motore',
-    'Potenza max': 'potenza_massima',
+    'Motore elettrico': 'Motore elettrico',
+    'Potenza max': 'Potenza max',
     'Coppia max': 'coppia_massima',
     'Forza max di spinta': 'forza_spinta',
     'Velocità max stelo': 'velocita_stelo',
@@ -298,12 +299,12 @@ IDML_TO_DATA_XLSX = {
     'Portata gruppo motore-pompa': 'portata_pompa',
     'Corsa dello stelo': 'corsa_stelo',
     'Angolo max apertura anta': 'angolo_apertura_max',
-    'Temperatura ambiente di esercizio': 'temperatura_esercizio',
+    'Temperatura ambiente di esercizio': 'Temperatura ambiente di esercizio',
     'Termoprotezione': 'termoprotezione',
     'Grado di protezione': 'grado_protezione_ip',
     'Peso': 'peso_unita',
-    'Dimensioni (LxPxH)': 'dimensioni',
-    'Frequenza di utilizzo': 'frequenza_utilizzo',
+    'Dimensioni (LxPxH)': 'Dimensioni (LxPxH)',
+    'Frequenza di utilizzo': 'Frequenza di utilizzo',
     'Larghezza max anta': 'larghezza_anta_max',
     'Lunghezza max anta': 'lunghezza_max',
     'Peso max anta': 'peso_anta_max',
@@ -319,7 +320,7 @@ IDML_TO_DATA_XLSX = {
     'Tipo di asta': 'tipo_asta',
     'Condensatore di spunto': 'condensatore_spunto',
     'Pignone': 'pignone',
-    'Nome Modello': 'nome_modello',
+    'Nome Modello': 'Nome Modello',
     # Reverse mapping for comparison
     'tensione_alimentazione': 'Tensione di alimentazione di rete',
     'tipo_motore': 'Motore elettrico',
