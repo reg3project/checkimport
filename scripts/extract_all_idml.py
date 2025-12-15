@@ -798,6 +798,14 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
             sku_row['codice_sku'] = actual_sku
             sku_row['nome_modello'] = model_name
 
+            # These are main product models - set tipo_componente to Modello
+            sku_row['tipo_componente'] = 'Modello'
+            sku_row['ordine_tipo_componente'] = 0  # Modello has highest priority
+
+            # Set descrizione_breve from product title if not already set
+            if not sku_row.get('descrizione_breve') and product_info.titolo_prodotto:
+                sku_row['descrizione_breve'] = product_info.titolo_prodotto
+
             sku_rows.append(sku_row)
 
         # Build SKU-to-description mapping from kit_components and pricing
