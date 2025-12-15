@@ -330,6 +330,20 @@ class Comparator:
             status = 'match'
             similarity = 1.0
         else:
+            # Try whitespace-tolerant comparison
+            extracted_no_ws = self._normalize_for_whitespace_compare(extracted)
+            reference_no_ws = self._normalize_for_whitespace_compare(reference)
+            if extracted_no_ws == reference_no_ws:
+                status = 'match'
+                similarity = 1.0
+                return FieldComparison(
+                    field_name=field_name,
+                    extracted_value=extracted,
+                    reference_value=reference,
+                    status=status,
+                    similarity=similarity
+                )
+
             # Try numeric comparison
             num_match, difference = self._numeric_compare(extracted_norm, reference_norm)
             if num_match:
@@ -369,13 +383,30 @@ class Comparator:
         # Lowercase
         result = value.lower().strip()
 
-        # Normalize whitespace
+        # Normalize whitespace - collapse multiple spaces to single
         result = re.sub(r'\s+', ' ', result)
 
         # Normalize decimal separator
         result = result.replace(',', '.')
 
-        return result
+        # Normalize range separators (÷, ~, to, a) to standard dash
+        result = re.sub(r'\s*[÷~]\s*', '-', result)
+        result = re.sub(r'\s+to\s+', '-', result)
+        result = re.sub(r'\s+a\s+', '-', result)
+
+        # Normalize page numbers - remove leading zeros (090-091 -> 90-91)
+        result = re.sub(r'\b0+(\d)', r'\1', result)
+
+        # Normalize unit spacing (50/60Hz vs 50/60 Hz)
+        result = re.sub(r'(\d)\s*(v|w|a|hz|kg|mm|cm|m|°c|nm|rpm|s|ms|db)(?:\s|$)', r'\1\2 ', result, flags=re.IGNORECASE)
+
+        return result.strip()
+
+    def _normalize_for_whitespace_compare(self, value: str) -> str:
+        """Normalize value removing all whitespace for strict comparison"""
+        normalized = self._normalize(value)
+        # Remove all whitespace for comparison
+        return re.sub(r'\s+', '', normalized)
 
     def _numeric_compare(self, val1: str, val2: str) -> Tuple[bool, Optional[float]]:
         """Compare two values as numbers"""

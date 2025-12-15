@@ -148,12 +148,30 @@ class TextExtractor:
         # Try to extract from filename first
         if self.document.metadata.get('name'):
             filename = self.document.metadata['name']
-            # Pattern: "116-117_740_C" -> extract "740 C" or "030_MASTER_kit" -> "MASTER kit"
+            # Remove page number prefix first (e.g., "090-091_400" -> "400")
+            # Pattern: strip leading "NNN_" or "NNN-NNN_" page numbers
+            name_part = re.sub(r'^\d{2,3}(?:-\d{2,3})?_', '', filename)
+
+            # For kit files like "033_HIGH_kit_PERFECT_60", extract "HIGH kit"
+            kit_match = re.search(r'([A-Z]+)_kit', name_part, re.IGNORECASE)
+            if kit_match:
+                self.product_info.name = f"{kit_match.group(1)} kit"
+                return
+
+            # For product files like "400" or "740_C", extract product name
+            name_clean = name_part.replace('_', ' ')
             for pattern in product_name_patterns:
-                match = re.search(pattern, filename.replace('_', ' '), re.IGNORECASE)
+                match = re.search(pattern, name_clean, re.IGNORECASE)
                 if match:
                     self.product_info.name = match.group(1).strip()
                     return
+
+            # Fallback: use the cleaned name part if it looks reasonable
+            if name_part and not name_part[0].isdigit():
+                # Remove any trailing suffixes like "_SI"
+                name_part = re.sub(r'_SI$', '', name_part)
+                self.product_info.name = name_part.replace('_', ' ').strip()
+                return
 
         # Look for product name patterns in text
         for tc in all_texts:
