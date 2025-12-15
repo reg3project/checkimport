@@ -76,7 +76,7 @@ SKU_COLUMNS = [
     'mounting_type', 'connection_type', 'protocol', 'compatibility',
     'included_accessories', 'optional_accessories', 'certifications',
     'price', 'currency', 'availability', 'lead_time', 'min_order',
-    'ean', 'upc', 'mpn', 'notes', 'status', 'last_updated'
+    'ean', 'upc', 'mpn', 'Confezione', 'notes', 'status', 'last_updated'
 ]
 
 

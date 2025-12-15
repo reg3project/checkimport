@@ -88,6 +88,8 @@ class SKUSpecs:
     """Technical specifications for a single SKU"""
     sku: str
     specs: Dict[str, TechnicalSpec] = field(default_factory=dict)
+    confezione: str = ""  # Package contents for this SKU
+    notes: str = ""  # SKU-specific notes
 
     def add_spec(self, attribute: str, value: str, unit: str = ""):
         """Add a specification"""
@@ -109,6 +111,11 @@ class SKUSpecs:
         result = {'sku': self.sku}
         for attr, spec in self.specs.items():
             result[attr] = spec.value
+        # Add confezione and notes if present
+        if self.confezione:
+            result['Confezione'] = self.confezione
+        if self.notes:
+            result['Note'] = self.notes
         return result
 
 
@@ -133,11 +140,36 @@ class PricingInfo:
 
 
 @dataclass
+class NoteInfo:
+    """Represents a note extracted from tables or text"""
+    note_text: str
+    note_type: str = ""  # 'technical', 'product', 'accessory', 'general'
+    related_sku: str = ""
+
+    def get_formatted(self, include_bold: bool = True) -> str:
+        """Get note text, preserving any <b> tags if present"""
+        return self.note_text
+
+
+@dataclass
+class ConfezioneInfo:
+    """Package contents for a SKU"""
+    sku: str
+    contents: str  # May contain <b> tags for bold text
+
+
+@dataclass
 class ProductTableData:
     """Product-level data extracted from tables"""
     kit_components: List[KitComponent] = field(default_factory=list)
     pricing: List[PricingInfo] = field(default_factory=list)
     related_skus: List[str] = field(default_factory=list)
+    # Notes handling
+    product_notes: List[NoteInfo] = field(default_factory=list)
+    technical_notes: List[NoteInfo] = field(default_factory=list)
+    accessory_notes: List[NoteInfo] = field(default_factory=list)
+    # Confezioni per SKU
+    confezioni: Dict[str, str] = field(default_factory=dict)
 
     def get_componenti_kit(self) -> str:
         """Format kit components as Q|SKU;Q|SKU;..."""
@@ -146,6 +178,22 @@ class ProductTableData:
     def get_sku_correlati(self) -> str:
         """Format related SKUs as semicolon-separated list"""
         return ";".join(self.related_skus)
+
+    def get_product_notes(self) -> str:
+        """Get formatted product notes"""
+        return "; ".join(n.get_formatted() for n in self.product_notes)
+
+    def get_technical_notes(self) -> str:
+        """Get formatted technical notes"""
+        return "; ".join(n.get_formatted() for n in self.technical_notes)
+
+    def get_accessory_notes(self) -> str:
+        """Get formatted accessory notes"""
+        return "; ".join(n.get_formatted() for n in self.accessory_notes)
+
+    def get_confezione_for_sku(self, sku: str) -> str:
+        """Get package contents for a specific SKU"""
+        return self.confezioni.get(sku, "")
 
     def to_dict(self) -> Dict[str, str]:
         """Convert to dictionary for product-level fields"""
@@ -158,6 +206,12 @@ class ProductTableData:
             # Store first pricing as main product
             result['codice_articolo'] = self.pricing[0].code if self.pricing else ""
             result['prezzo'] = self.pricing[0].price if self.pricing else ""
+        if self.product_notes:
+            result['note_prodotto'] = self.get_product_notes()
+        if self.technical_notes:
+            result['note_tecniche'] = self.get_technical_notes()
+        if self.accessory_notes:
+            result['note_accessori'] = self.get_accessory_notes()
         return result
 
 
@@ -208,6 +262,13 @@ class TableExtractor:
     PRICING_CODE_HEADERS = ['codice articolo', 'codice', 'code']
     PRICING_MODEL_HEADERS = ['modello', 'model']
 
+    # Notes detection patterns
+    NOTE_MARKERS = ['nota', 'note', '(*)']
+    TECHNICAL_NOTE_MARKERS = ['nota tecnica', 'note tecniche', 'specifiche']
+
+    # Confezione table headers
+    CONFEZIONE_HEADERS = ['confezione', 'contenuto', 'package', 'kit']
+
     def __init__(self, document: IDMLDocument):
         self.document = document
         self.extracted_specs: List[SKUSpecs] = []
@@ -225,16 +286,39 @@ class TableExtractor:
                 self._extract_pricing(table)
             elif table_type == 'sku_price':
                 self._extract_sku_price(table)
+            elif table_type == 'confezione':
+                self._extract_confezione(table)
             else:
-                # Regular specs table
+                # Regular specs table - also check for notes
                 specs = self._extract_from_table(table)
                 self.extracted_specs.extend(specs)
+                # Extract any notes from this specs table
+                self._extract_notes_from_table(table)
+
+        # Assign confezioni to individual SKUSpecs
+        self.assign_confezioni_to_skus()
 
         return self.extracted_specs
 
     def get_product_data(self) -> ProductTableData:
         """Get extracted product-level data"""
         return self.product_data
+
+    def assign_confezioni_to_skus(self):
+        """Assign confezioni from product_data to each matching SKUSpecs"""
+        if not self.product_data.confezioni:
+            return
+
+        for sku_spec in self.extracted_specs:
+            sku = sku_spec.sku
+            # Direct match
+            if sku in self.product_data.confezioni:
+                sku_spec.confezione = self.product_data.confezioni[sku]
+            else:
+                # Try matching by model name (Nome Modello spec)
+                model_name = sku_spec.get('Nome Modello')
+                if model_name and model_name in self.product_data.confezioni:
+                    sku_spec.confezione = self.product_data.confezioni[model_name]
 
     def _identify_table_type(self, table: Table) -> str:
         """Identify the type of table based on headers"""
@@ -264,6 +348,11 @@ class TableExtractor:
 
         if has_price and (has_code or has_model):
             return 'pricing'
+
+        # Check for confezione table
+        has_confezione = any(any(ch in h for ch in self.CONFEZIONE_HEADERS) for h in headers)
+        if has_confezione and (has_code or has_model):
+            return 'confezione'
 
         # Check for simple 2-col SKU price table (SKU, €price)
         if table.cols == 2 and table.rows == 1:
@@ -375,6 +464,79 @@ class TableExtractor:
 
             if code and code not in self.product_data.related_skus:
                 self.product_data.related_skus.append(code)
+
+    def _extract_confezione(self, table: Table):
+        """Extract package contents (confezione) per SKU from table"""
+        headers = []
+        for col in range(table.cols):
+            cell = table.get_cell(0, col)
+            headers.append(cell.content.strip().lower() if cell else '')
+
+        # Find relevant columns
+        model_col = None
+        code_col = None
+        confezione_col = None
+
+        for i, h in enumerate(headers):
+            if any(mh in h for mh in self.PRICING_MODEL_HEADERS):
+                model_col = i
+            if any(ch in h for ch in self.KIT_CODE_HEADERS):
+                code_col = i
+            if any(ch in h for ch in self.CONFEZIONE_HEADERS):
+                confezione_col = i
+
+        if confezione_col is None:
+            return
+
+        # Extract confezione for each SKU
+        for row in range(1, table.rows):
+            sku = ""
+            if code_col is not None:
+                cell = table.get_cell(row, code_col)
+                sku = cell.content.strip() if cell else ""
+            if not sku and model_col is not None:
+                cell = table.get_cell(row, model_col)
+                sku = cell.content.strip() if cell else ""
+
+            confezione_cell = table.get_cell(row, confezione_col)
+            if confezione_cell and sku:
+                # Use get_formatted_content to preserve bold tags
+                confezione_text = confezione_cell.content  # Already has <b> tags if bold
+                self.product_data.confezioni[sku] = confezione_text
+
+    def _extract_notes_from_table(self, table: Table):
+        """Extract notes from technical specs tables"""
+        for row in range(table.rows):
+            for col in range(table.cols):
+                cell = table.get_cell(row, col)
+                if not cell:
+                    continue
+
+                content_lower = cell.content.lower()
+
+                # Check if this cell contains a note
+                is_note = any(marker in content_lower for marker in self.NOTE_MARKERS)
+                is_technical_note = any(marker in content_lower for marker in self.TECHNICAL_NOTE_MARKERS)
+
+                if is_note or is_technical_note:
+                    # Get the note content (may be this cell or next cell)
+                    note_text = cell.content
+
+                    # If this is just a "Nota:" header, get text from next column
+                    if len(note_text) < 20 and col + 1 < table.cols:
+                        next_cell = table.get_cell(row, col + 1)
+                        if next_cell:
+                            note_text = next_cell.content
+
+                    note = NoteInfo(
+                        note_text=note_text,
+                        note_type='technical' if is_technical_note else 'general'
+                    )
+
+                    if is_technical_note:
+                        self.product_data.technical_notes.append(note)
+                    else:
+                        self.product_data.product_notes.append(note)
 
     def _extract_from_table(self, table: Table) -> List[SKUSpecs]:
         """Extract specs from a single table"""

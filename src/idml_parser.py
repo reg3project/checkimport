@@ -32,6 +32,13 @@ class TextContent:
     paragraph_style: str = ""
     character_style: str = ""
     position: int = 0
+    is_bold: bool = False
+
+    def get_formatted_text(self) -> str:
+        """Get text with HTML formatting (bold tags)"""
+        if self.is_bold:
+            return f"<b>{self.text}</b>"
+        return self.text
 
 
 @dataclass
@@ -43,6 +50,13 @@ class TableCell:
     row_span: int = 1
     col_span: int = 1
     style: str = ""
+    is_bold: bool = False
+
+    def get_formatted_content(self) -> str:
+        """Get content with HTML formatting (bold tags)"""
+        if self.is_bold:
+            return f"<b>{self.content}</b>"
+        return self.content
 
 
 @dataclass
@@ -187,12 +201,16 @@ class IDMLParser:
                                 para_style = self._get_parent_attr(elem, 'AppliedParagraphStyle', root)
                                 char_style = self._get_parent_attr(elem, 'AppliedCharacterStyle', root)
 
+                                # Detect bold from character style
+                                is_bold = self._is_bold_style(char_style, para_style)
+
                                 tc = TextContent(
                                     text=text,
                                     style=para_style or char_style or "",
                                     paragraph_style=para_style or "",
                                     character_style=char_style or "",
-                                    position=position
+                                    position=position,
+                                    is_bold=is_bold
                                 )
                                 self.document.stories[story_id].append(tc)
                                 position += 1
@@ -232,18 +250,35 @@ class IDMLParser:
                 row_span = int(cell_elem.get('RowSpan', 1))
                 col_span = int(cell_elem.get('ColumnSpan', 1))
 
-                # Get cell content
+                # Get cell content with bold detection
                 content_parts = []
+                has_bold = False
                 for content_elem in cell_elem.iter():
                     if content_elem.tag.endswith('Content') and content_elem.text:
-                        content_parts.append(content_elem.text.strip())
+                        text = content_elem.text.strip()
+                        # Check for bold in CharacterStyleRange parent
+                        char_style = content_elem.get('AppliedCharacterStyle', '')
+                        if not char_style:
+                            # Try to get from parent CharacterStyleRange
+                            parent = content_elem
+                            while parent is not None:
+                                if 'CharacterStyleRange' in str(parent.tag):
+                                    char_style = parent.get('AppliedCharacterStyle', '')
+                                    break
+                                parent = None  # Simplified - can't traverse up in ET
+                        if self._is_bold_style(char_style, ''):
+                            has_bold = True
+                            content_parts.append(f"<b>{text}</b>")
+                        else:
+                            content_parts.append(text)
 
                 cell = TableCell(
                     row=row,
                     col=col,
                     content=" ".join(content_parts),
                     row_span=row_span,
-                    col_span=col_span
+                    col_span=col_span,
+                    is_bold=has_bold
                 )
                 table.cells.append(cell)
 
@@ -285,6 +320,27 @@ class IDMLParser:
         """Get attribute from element or its parents"""
         # Simple implementation - in real parser would traverse tree
         return elem.get(attr_name, '')
+
+    def _is_bold_style(self, char_style: str, para_style: str) -> bool:
+        """Check if character or paragraph style indicates bold text"""
+        # Common bold indicators in IDML style names
+        bold_patterns = [
+            'bold', 'Bold', 'BOLD',
+            'heavy', 'Heavy', 'HEAVY',
+            'black', 'Black', 'BLACK',
+            'strong', 'Strong', 'STRONG',
+            'semibold', 'SemiBold', 'Semi Bold',
+            'medium', 'Medium',  # Sometimes medium is bold-ish
+            'grassetto',  # Italian for bold
+        ]
+
+        style_text = f"{char_style} {para_style}".lower()
+
+        for pattern in bold_patterns:
+            if pattern.lower() in style_text:
+                return True
+
+        return False
 
     def list_contents(self) -> List[str]:
         """List all files in the IDML archive"""
