@@ -214,6 +214,17 @@ ENGLISH_TO_ITALIAN_PRODUCT = {
     'sku_codes': 'codici_modelli',
     'componenti_kit': 'componenti_kit',
     'sku_correlati': 'sku_correlati',
+    # Direct Italian mappings
+    'tipo_layout': 'tipo_layout',
+    'pagina_catalogo': 'pagina_catalogo',
+    'titolo_prodotto': 'titolo_prodotto',
+    'descrizione_categoria': 'descrizione_categoria',
+    'caratteristica_primaria': 'caratteristica_primaria',
+    'valore_primario': 'valore_primario',
+    'caratteristica_secondaria': 'caratteristica_secondaria',
+    'valore_secondario': 'valore_secondario',
+    'intensita_transito': 'intensita_transito',
+    'codici_modelli': 'codici_modelli',
 }
 
 # Maps English field names to Italian XLSX columns for SKU

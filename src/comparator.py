@@ -379,6 +379,33 @@ class Comparator:
         }
 
 
+def _merge_product_data(product_info, product_data, sku_specs):
+    """Merge table-extracted product data into ProductInfo"""
+    # Merge kit components
+    if product_data.kit_components:
+        product_info.componenti_kit = product_data.get_componenti_kit()
+
+    # Merge related SKUs
+    if product_data.related_skus:
+        product_info.sku_correlati = product_data.get_sku_correlati()
+
+    # Extract codici_modelli from pricing tables (primary product codes)
+    if product_data.pricing:
+        # Get unique product codes from pricing
+        codes = [p.code for p in product_data.pricing if p.code]
+        if codes:
+            product_info.codici_modelli = ';'.join(codes[:5])  # First 5 codes
+
+    # Also add model names from SKU specs as codici_modelli fallback
+    if not product_info.codici_modelli and sku_specs:
+        model_codes = []
+        for spec in sku_specs:
+            if spec.sku and spec.sku not in model_codes:
+                model_codes.append(spec.sku)
+        if model_codes:
+            product_info.codici_modelli = ';'.join(model_codes[:5])
+
+
 def compare_files(idml_path: Path, xlsx_path: Path) -> ComparisonResult:
     """Compare an IDML file with its reference XLSX"""
     # Parse IDML
@@ -387,10 +414,7 @@ def compare_files(idml_path: Path, xlsx_path: Path) -> ComparisonResult:
     sku_specs, product_data = extract_all_from_document(document)
 
     # Merge product_data into product_info
-    if product_data.kit_components:
-        product_info.componenti_kit = product_data.get_componenti_kit()
-    if product_data.related_skus:
-        product_info.sku_correlati = product_data.get_sku_correlati()
+    _merge_product_data(product_info, product_data, sku_specs)
 
     extraction = ExtractionResult(
         source_file=str(idml_path.name),
@@ -417,10 +441,7 @@ def batch_compare(pairs: List[Tuple[Path, Path]]) -> Dict[str, Any]:
             sku_specs, product_data = extract_all_from_document(document)
 
             # Merge product_data into product_info
-            if product_data.kit_components:
-                product_info.componenti_kit = product_data.get_componenti_kit()
-            if product_data.related_skus:
-                product_info.sku_correlati = product_data.get_sku_correlati()
+            _merge_product_data(product_info, product_data, sku_specs)
 
             extraction = ExtractionResult(
                 source_file=str(idml_path.name),

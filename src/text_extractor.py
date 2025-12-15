@@ -40,6 +40,17 @@ class ProductInfo:
     # New fields from table extraction
     componenti_kit: str = ""
     sku_correlati: str = ""
+    # Additional product-level fields
+    tipo_layout: str = ""
+    pagina_catalogo: str = ""
+    titolo_prodotto: str = ""
+    descrizione_categoria: str = ""
+    caratteristica_primaria: str = ""
+    valore_primario: str = ""
+    caratteristica_secondaria: str = ""
+    valore_secondario: str = ""
+    intensita_transito: str = ""
+    codici_modelli: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary"""
@@ -58,6 +69,16 @@ class ProductInfo:
             'sku_codes': '; '.join(self.sku_codes),
             'componenti_kit': self.componenti_kit,
             'sku_correlati': self.sku_correlati,
+            'tipo_layout': self.tipo_layout,
+            'pagina_catalogo': self.pagina_catalogo,
+            'titolo_prodotto': self.titolo_prodotto,
+            'descrizione_categoria': self.descrizione_categoria,
+            'caratteristica_primaria': self.caratteristica_primaria,
+            'valore_primario': self.valore_primario,
+            'caratteristica_secondaria': self.caratteristica_secondaria,
+            'valore_secondario': self.valore_secondario,
+            'intensita_transito': self.intensita_transito,
+            'codici_modelli': self.codici_modelli,
         }
 
 
@@ -100,6 +121,11 @@ class TextExtractor:
         self._extract_accessories()
         self._extract_images()
         self._extract_category()
+        self._extract_page_info()
+        self._extract_layout_type()
+        self._extract_subtitle()
+        self._extract_characteristics()
+        self._extract_traffic_intensity()
         return self.product_info
 
     def _extract_title(self):
@@ -358,6 +384,119 @@ class TextExtractor:
             if '_SI' in name:
                 self.product_info.category = "Schema Installazione"
                 return
+
+    def _extract_page_info(self):
+        """Extract page catalog number from filename"""
+        if self.document.metadata.get('name'):
+            filename = self.document.metadata['name']
+            # Pattern: "116-117_740_C" -> extract "116-117"
+            # Pattern: "028_LEADER_kit" -> extract "28"
+            match = re.match(r'^(\d{2,3}(?:-\d{2,3})?)', filename)
+            if match:
+                page = match.group(1)
+                # Remove leading zeros for single page numbers
+                if '-' not in page:
+                    page = page.lstrip('0') or '0'
+                self.product_info.pagina_catalogo = page
+
+    def _extract_layout_type(self):
+        """Extract layout type based on content patterns"""
+        filename = self.document.metadata.get('name', '').lower()
+        category = self.product_info.category.lower() if self.product_info.category else ""
+
+        # Determine layout type from patterns
+        if 'kit' in filename or 'kit' in category:
+            self.product_info.tipo_layout = "Kit special"
+        elif '_si' in filename or 'schema' in category:
+            self.product_info.tipo_layout = "Schema Installazione"
+        elif 'barriere' in category or 'barriera' in category:
+            self.product_info.tipo_layout = "Barriera"
+        elif 'automazioni' in category or 'motoriduttore' in category:
+            self.product_info.tipo_layout = "Automazione"
+        elif 'sistema' in category or 'xto' in filename.lower():
+            self.product_info.tipo_layout = "Sistema"
+
+    def _extract_subtitle(self):
+        """Extract product subtitle/title"""
+        # Collect all text sorted by position
+        all_texts = []
+        for story_texts in self.document.stories.values():
+            all_texts.extend(story_texts)
+        all_texts.sort(key=lambda x: x.position)
+
+        # Look for subtitle patterns (usually after product name)
+        subtitle_keywords = [
+            'motoriduttore',
+            'automazione',
+            'sistema',
+            'operatore',
+            'attuatore',
+            'barriera',
+            'ricevitore',
+            'trasmittente'
+        ]
+
+        for tc in all_texts:
+            text = tc.text.strip()
+            text_lower = text.lower()
+            # Look for subtitle that's not the main product name
+            if 10 < len(text) < 80:
+                for keyword in subtitle_keywords:
+                    if keyword in text_lower and text != self.product_info.name:
+                        self.product_info.titolo_prodotto = text
+                        return
+
+    def _extract_characteristics(self):
+        """Extract primary and secondary characteristics"""
+        # Collect all text
+        all_texts = []
+        for story_texts in self.document.stories.values():
+            all_texts.extend(story_texts)
+        all_texts.sort(key=lambda x: x.position)
+
+        # Known characteristic patterns
+        char_patterns = [
+            (r'peso\s*(?:max|massimo)?\s*(?:anta|cancello)?[:\s]*(\d+[\s,.]?\d*\s*(?:kg|Kg|KG)?)', 'Peso max anta'),
+            (r'larghezza\s*(?:max|massima)?\s*(?:anta|cancello)?[:\s]*(\d+[\s,.]?\d*\s*(?:m|cm)?)', 'Larghezza max anta'),
+            (r'velocit[àa]\s*(?:max|massima)?[:\s]*(\d+[\s,.]?\d*\s*(?:m/min|rpm)?)', 'Velocità max'),
+            (r'lunghezza\s*(?:max|massima)?[:\s]*(\d+[\s,.]?\d*\s*(?:m|cm)?)', 'Lunghezza max'),
+        ]
+
+        all_text = ' '.join(tc.text for tc in all_texts)
+
+        for pattern, char_name in char_patterns:
+            match = re.search(pattern, all_text, re.IGNORECASE)
+            if match:
+                value = match.group(1).strip()
+                if not self.product_info.caratteristica_primaria:
+                    self.product_info.caratteristica_primaria = char_name
+                    self.product_info.valore_primario = value
+                elif not self.product_info.caratteristica_secondaria:
+                    self.product_info.caratteristica_secondaria = char_name
+                    self.product_info.valore_secondario = value
+                    break
+
+    def _extract_traffic_intensity(self):
+        """Extract traffic intensity (Basso/Medio/Alto)"""
+        # Collect all text
+        all_texts = []
+        for story_texts in self.document.stories.values():
+            all_texts.extend(story_texts)
+
+        all_text = ' '.join(tc.text.lower() for tc in all_texts)
+
+        # Look for traffic intensity indicators
+        if 'alto' in all_text and 'transito' in all_text:
+            self.product_info.intensita_transito = "Alto"
+        elif 'medio' in all_text and 'transito' in all_text:
+            self.product_info.intensita_transito = "Medio"
+        elif 'basso' in all_text and 'transito' in all_text:
+            self.product_info.intensita_transito = "Basso"
+        # Also check for intensity without "transito"
+        elif 'intensivo' in all_text or 'intenso' in all_text:
+            self.product_info.intensita_transito = "Alto"
+        elif 'residenziale' in all_text:
+            self.product_info.intensita_transito = "Basso"
 
 
 def extract_product_info(document: IDMLDocument) -> ProductInfo:
