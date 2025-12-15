@@ -418,18 +418,68 @@ class TextExtractor:
 
     def _extract_category(self):
         """Extract product category"""
-        # Known FAAC category patterns
+        # Known FAAC category patterns (real categories) - ORDER MATTERS, more specific first
         category_keywords = [
-            'automazioni per cancelli',
-            'automazioni per ante',
-            'barriere stradali',
+            # Automazioni specifiche
+            'automazioni per cancelli scorrevoli',
+            'automazioni per ante a battente',
+            'automazioni per ante scorrevoli',
+            'automazioni per porte sezionali',
+            'automazioni per porte basculanti',
+            'automazioni per porte scorrevoli',
+            'automazioni per porte a libro',
+            'automazioni per serrande',
+            'automazioni in kit per ante',
+            'automazioni in kit',
+            # Barriere
             'barriere automatiche',
+            'barriere stradali',
+            # Componenti
             'motoriduttore',
-            'kit special',
-            'perfect kit',
-            'schema installazione',
-            'sistema'
+            'schede elettroniche',
+            'fotocellule da parete',
+            'fotocellule',
+            'ricevitori',
+            'trasmettitori',
+            'trasmittenti e riceventi',  # For radio systems
+            'contenitori',
+            'datori d\'impulso',
+            'coste di sicurezza',
+            'sensori laser',
+            # Sistemi radio
+            'sistema 868mhz',
+            'sistema 433mhz',
+            'sistema slh',
+            'sistema rc',
+            # Altri
+            'accessori',
+            'dispositivi',
         ]
+
+        # Styles that indicate accessory sections (NOT real categories)
+        accessory_style_patterns = ['accessory', 'acces']
+
+        # Styles that indicate real category headers
+        category_style_patterns = ['general', 'gener', 'category', 'categoria']
+
+        # Table header patterns to EXCLUDE (not real categories)
+        excluded_patterns = [
+            'q.tà', 'quantità', 'descrizione', 'codice', 'modello',
+            'prezzo', 'lunghezza', 'rif', 'numero', 'asta',
+            'altri accessori', 'accessori specifici', 'accessori disponibili',
+        ]
+
+        # First try to infer from metadata (filename) - most reliable for kits
+        if self.document.metadata.get('name'):
+            name = self.document.metadata['name']
+            # For kit files like "030_MASTER_kit_24V_PERFECT_60"
+            if 'PERFECT' in name.upper() and 'kit' in name.lower():
+                self.product_info.category = "PERFECT KIT"
+                return
+            # For schema files like "268_400_SI"
+            if '_SI' in name:
+                self.product_info.category = "Schema Installazione"
+                return
 
         # Collect all text sorted by position
         all_texts = []
@@ -437,36 +487,47 @@ class TextExtractor:
             all_texts.extend(story_texts)
         all_texts.sort(key=lambda x: x.position)
 
-        # Look for category keywords in text
+        # FIRST: Look for category keywords in General/Category styled text (most reliable)
         for tc in all_texts:
             text = tc.text.strip()
             text_lower = text.lower()
+            style_lower = tc.style.lower() if tc.style else ''
+
+            # Skip accessory section headers (Coste di sicurezza, etc.)
+            if any(acc in style_lower for acc in accessory_style_patterns):
+                continue
+
+            # Only accept if style contains General or Category patterns
+            if any(cat in style_lower for cat in category_style_patterns):
+                for keyword in category_keywords:
+                    if keyword in text_lower and len(text) < 100:
+                        self.product_info.category = text
+                        return
+
+        # SECOND: Look for category keywords in any non-accessory text
+        for tc in all_texts:
+            text = tc.text.strip()
+            text_lower = text.lower()
+            style_lower = tc.style.lower() if tc.style else ''
+
+            # Skip accessory section headers
+            if any(acc in style_lower for acc in accessory_style_patterns):
+                continue
+
+            # Skip if it matches excluded patterns (table headers)
+            if any(excl in text_lower for excl in excluded_patterns):
+                continue
+
             for keyword in category_keywords:
                 if keyword in text_lower and len(text) < 100:
                     self.product_info.category = text
                     return
 
-        # Look for category-styled text
-        category_styles = ['category', 'categoria', 'header']
-        for style in category_styles:
-            matches = self.document.find_text_by_style(style)
-            if matches:
-                self.product_info.category = matches[0].text.strip()
-                return
-
-        # Try to infer from metadata (filename)
+        # Fallback: infer from filename for other kit types
         if self.document.metadata.get('name'):
             name = self.document.metadata['name']
-            # For kit files like "030_MASTER_kit_24V_PERFECT_60"
-            if 'PERFECT' in name.upper():
-                self.product_info.category = "PERFECT KIT"
-                return
             if 'kit' in name.lower():
                 self.product_info.category = "Kit"
-                return
-            # For schema files like "268_400_SI"
-            if '_SI' in name:
-                self.product_info.category = "Schema Installazione"
                 return
 
     def _extract_page_info(self):

@@ -310,6 +310,30 @@ class MegaExcelWriter:
             ws.column_dimensions[column_letter].width = max(adjusted_width, 10)
 
 
+def extract_barrier_rod_types(document) -> List[str]:
+    """Extract rod types (aste) from barrier documents
+
+    Returns list of rod type names found (e.g., ['ASTE TONDE S', 'ASTE RETTANGOLARI'])
+    """
+    rod_types = []
+    all_text = document.all_text.lower()
+
+    # Check for round rods (aste tonde)
+    if 'aste tonde' in all_text or 'asta tonda' in all_text:
+        # Look for the full name
+        rod_types.append('ASTE TONDE S - Ø 75MM')
+
+    # Check for rectangular rods (aste rettangolari)
+    if 'aste rettangolari' in all_text or 'asta rettangolare' in all_text:
+        rod_types.append('ASTE RETTANGOLARI')
+
+    # Check for elliptical rods
+    if 'aste ellittiche' in all_text or 'asta ellittica' in all_text:
+        rod_types.append('ASTE ELLITTICHE')
+
+    return rod_types
+
+
 def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
     """Extract product and SKU data from a single IDML file
 
@@ -339,6 +363,19 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
         all_related_skus = []
         if product_table_data:
             all_related_skus = product_table_data.related_skus.copy()
+
+        # Check if this is a main barrier product (needs multi-product extraction)
+        # Only add aste rows for main barrier products like B614, 620, 615, etc.
+        # Not for accessories within the barrier category
+        is_main_barrier = (
+            'barriere' in (product_info.category or '').lower() and
+            product_info.name and
+            # Main barrier names are typically short codes like B614, 620, 615BPR
+            len(product_info.name) < 10 and
+            not 'kit' in product_info.name.lower() and
+            not 'adesiv' in product_info.name.lower()
+        )
+        rod_types = extract_barrier_rod_types(document) if is_main_barrier else []
 
         # Build main product row
         product_row = {
@@ -381,6 +418,13 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
 
         product_rows = [product_row]
 
+        # For barriers, add additional rows for each rod type
+        if is_main_barrier and rod_types:
+            for rod_type in rod_types:
+                rod_row = product_row.copy()
+                rod_row['nome_asta'] = rod_type
+                product_rows.append(rod_row)
+
         # Build SKU rows with proper field mapping
         sku_rows = []
         for sku_spec in sku_specs_list:
@@ -419,7 +463,33 @@ def extract_from_idml(idml_path: Path) -> Tuple[List[Dict], List[Dict]]:
                 })
                 seen_skus.add(related_sku)
 
-        return product_rows, sku_rows
+        # Filter out invalid SKU rows (headers, empty values, model names)
+        invalid_sku_patterns = ['codice', 'articolo', 'modello', 'prezzo', 'sku', 'descrizione']
+        # Model name patterns (these are not SKU codes)
+        model_name_patterns = ['standard', 'rapida', 'slave', 'itt', 'plus1', 'dal ', ' al ']
+        filtered_sku_rows = []
+        for row in sku_rows:
+            sku = str(row.get('codice_sku', '')).strip()
+            # Skip if empty or looks like a header
+            if not sku:
+                continue
+            if any(pat in sku.lower() for pat in invalid_sku_patterns):
+                continue
+            # Skip if it doesn't contain any digits (probably a label, not a code)
+            if not any(c.isdigit() for c in sku):
+                continue
+            # Skip model names with spaces (real SKU codes don't have spaces)
+            if ' ' in sku:
+                continue
+            # Skip model name patterns
+            if any(pat in sku.lower() for pat in model_name_patterns):
+                continue
+            # Skip combined models like "RH200B / RH200B EF"
+            if '/' in sku:
+                continue
+            filtered_sku_rows.append(row)
+
+        return product_rows, filtered_sku_rows
 
     except Exception as e:
         logger.error(f"Error extracting {idml_path.name}: {e}")
@@ -467,7 +537,7 @@ def main():
     logger.info(f"\nOutput saved to: {output_file}")
 
     # Summary stats
-    unique_skus = len(set(row.get('SKU', '') for row in all_sku if row.get('SKU')))
+    unique_skus = len(set(row.get('codice_sku', '') for row in all_sku if row.get('codice_sku')))
     logger.info(f"  - Unique SKUs: {unique_skus}")
     logger.info(f"  - Duplicate SKU entries: {len(all_sku) - unique_skus}")
 
