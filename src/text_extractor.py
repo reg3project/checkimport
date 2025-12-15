@@ -599,27 +599,44 @@ class TextExtractor:
             all_texts.extend(story_texts)
         all_texts.sort(key=lambda x: x.position)
 
-        # Known characteristic patterns
-        char_patterns = [
-            (r'peso\s*(?:max|massimo)?\s*(?:anta|cancello)?[:\s]*(\d+[\s,.]?\d*\s*(?:kg|Kg|KG)?)', 'Peso max anta'),
-            (r'larghezza\s*(?:max|massima)?\s*(?:anta|cancello)?[:\s]*(\d+[\s,.]?\d*\s*(?:m|cm)?)', 'Larghezza max anta'),
-            (r'velocit[àa]\s*(?:max|massima)?[:\s]*(\d+[\s,.]?\d*\s*(?:m/min|rpm)?)', 'Velocità max'),
-            (r'lunghezza\s*(?:max|massima)?[:\s]*(\d+[\s,.]?\d*\s*(?:m|cm)?)', 'Lunghezza max'),
-        ]
-
         all_text = ' '.join(tc.text for tc in all_texts)
 
+        # Known characteristic patterns - include newline variants
+        char_patterns = [
+            # Peso max anta - multiple patterns
+            (r'peso\s*(?:max|massimo)?\s*(?:anta|cancello)?[:\s]*(\d+[\s,.]?\d*\s*(?:kg|Kg|KG))', 'Peso max anta'),
+            (r'peso\s*(?:max|massimo)?\s*(?:anta|cancello)?\s*[\n\r]+\s*(\d+[\s,.]?\d*\s*(?:kg|Kg|KG))', 'Peso max anta'),
+            (r'(\d+)\s*(?:kg|Kg|KG)\b', 'Peso'),  # Simple kg pattern as fallback
+            # Larghezza max anta
+            (r'larghezza\s*(?:max|massima)?\s*(?:anta|cancello)?[:\s]*(\d+[\s,.]?\d*\s*(?:m|cm))', 'Larghezza max anta'),
+            (r'larghezza\s*(?:max|massima)?\s*(?:anta|cancello)?\s*[\n\r]+\s*(\d+[\s,.]?\d*\s*(?:m|cm)?)', 'Larghezza max anta'),
+            # Velocità max
+            (r'velocit[àa]\s*(?:max|massima)?[:\s]*(\d+[\s,.]?\d*\s*(?:m/min|rpm))', 'Velocità max'),
+            (r'velocit[àa]\s*(?:max|massima)?\s*[\n\r]+\s*(\d+[\s,.]?\d*\s*(?:m/min|rpm)?\.?)', 'Velocità max'),
+            # Lunghezza max
+            (r'lunghezza\s*(?:max|massima)?[:\s]*(\d+[\s,.]?\d*\s*(?:m|cm))', 'Lunghezza max'),
+            (r'lunghezza\s*(?:max|massima)?\s*(?:asta|anta)?\s*[\n\r]+\s*(\d+[\s,.]?\d*\s*(?:m|cm)?)', 'Lunghezza max'),
+        ]
+
+        found_chars = []
         for pattern, char_name in char_patterns:
             match = re.search(pattern, all_text, re.IGNORECASE)
             if match:
                 value = match.group(1).strip()
-                if not self.product_info.caratteristica_primaria:
-                    self.product_info.caratteristica_primaria = char_name
-                    self.product_info.valore_primario = value
-                elif not self.product_info.caratteristica_secondaria:
-                    self.product_info.caratteristica_secondaria = char_name
-                    self.product_info.valore_secondario = value
-                    break
+                # Skip if value is too short or doesn't make sense
+                if len(value) < 2:
+                    continue
+                # Avoid duplicates
+                if not any(char_name == fc[0] for fc in found_chars):
+                    found_chars.append((char_name, value))
+
+        # Assign first two unique characteristics
+        if found_chars:
+            self.product_info.caratteristica_primaria = found_chars[0][0]
+            self.product_info.valore_primario = found_chars[0][1]
+        if len(found_chars) > 1:
+            self.product_info.caratteristica_secondaria = found_chars[1][0]
+            self.product_info.valore_secondario = found_chars[1][1]
 
     def _extract_traffic_intensity(self):
         """Extract traffic intensity (Basso/Medio/Alto)"""
