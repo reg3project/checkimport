@@ -55,3 +55,5 @@ input/**/*.log
 !output/sku_variants_for_review.xlsx
 !output/products_with_tech_specs.csv
 !output/caratteristiche_tecniche_summary.csv
+!output/caratteristiche_tecniche_raw.csv
+!output/modelli_famiglia_raw.csv
