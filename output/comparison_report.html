@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAAC Data Comparison Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        h1 {
+            color: #1a237e;
+            border-bottom: 3px solid #3f51b5;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #283593;
+            margin-top: 30px;
+            border-left: 4px solid #3f51b5;
+            padding-left: 15px;
+        }
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card.warning {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .stat-card.success {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .stat-card h3 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .stat-card p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #3f51b5;
+            color: white;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .error {
+            color: #c62828;
+            background: #ffebee;
+        }
+        .warning {
+            color: #f57c00;
+            background: #fff3e0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        .badge-error {
+            background: #c62828;
+            color: white;
+        }
+        .badge-warning {
+            background: #f57c00;
+            color: white;
+        }
+        .badge-info {
+            background: #1565c0;
+            color: white;
+        }
+        .collapsible {
+            background: #e8eaf6;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1em;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+        .collapsible:hover {
+            background: #c5cae9;
+        }
+        .content {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: #fafafa;
+        }
+        .content.show {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 FAAC Data Comparison Report</h1>
+        <p class="timestamp">Generated: 2025-12-16 16:45:12</p>
+
+        <p><strong>Comparing:</strong></p>
+        <ul>
+            <li><code>Data Elena P.xlsx</code> (input/processing/)</li>
+            <li><code>FAAC_master_data_v2.xlsx</code> (output/)</li>
+        </ul>
+
+        <h2>📊 Summary</h2>
+        <div class="summary-box">
+            <div class="stat-card warning">
+                <h3>2</h3>
+                <p>Structure Errors</p>
+            </div>
+            <div class="stat-card warning">
+                <h3>6</h3>
+                <p>Image-SKU Mismatches</p>
+            </div>
+            <div class="stat-card">
+                <h3>31</h3>
+                <p>Common Products</p>
+            </div>
+            <div class="stat-card success">
+                <h3>232</h3>
+                <p>Common SKUs</p>
+            </div>
+        </div>
+
+        <h2>⚠️ Structure Errors in Data Elena P.xlsx</h2>
+        <table>
+            <tr><th>Type</th><th>Sheet</th><th>Issue</th><th>Severity</th></tr>
+
+            <tr class="warning">
+                <td>Typo</td>
+                <td>prodotti</td>
+                <td>Column "immagne_schema" should be "immagine_schema"</td>
+                <td><span class="badge badge-warning">WARNING</span></td>
+            </tr>
+
+            <tr class="error">
+                <td>Wrong Header</td>
+                <td>sku</td>
+                <td>First column header was "E850S incorporata" instead of "codice_sku"</td>
+                <td><span class="badge badge-error">ERROR</span></td>
+            </tr>
+
+        </table>
+
+        <h2>🖼️ Image-SKU Mismatches in Elena</h2>
+        <p>SKUs where the image filename doesn't match the SKU code:</p>
+
+        <table>
+            <tr><th>SKU</th><th>Current Image</th><th>Expected</th></tr>
+
+            <tr class="warning">
+                <td><strong>790305</strong></td>
+                <td>790284.tif</td>
+                <td>790305.tif</td>
+            </tr>
+
+            <tr class="warning">
+                <td><strong>104100</strong></td>
+                <td>490349.tif</td>
+                <td>104100.tif</td>
+            </tr>
+
+            <tr class="warning">
+                <td><strong>XF 868 MHz</strong></td>
+                <td>787832_1.tif</td>
+                <td>XF 868 MHz.tif</td>
+            </tr>
+
+            <tr class="warning">
+                <td><strong>RP 868 SLH-DS</strong></td>
+                <td>787854_1.tif</td>
+                <td>RP 868 SLH-DS.tif</td>
+            </tr>
+
+            <tr class="warning">
+                <td><strong>PLUS1 868 MHz</strong></td>
+                <td>787834_1.tif</td>
+                <td>PLUS1 868 MHz.tif</td>
+            </tr>
+
+            <tr class="warning">
+                <td><strong>XR2N FDS 433-868</strong></td>
+                <td>787754.tif</td>
+                <td>XR2N FDS 433-868.tif</td>
+            </tr>
+</table>
+        <h2>📦 Products Comparison</h2>
+
+        <button class="collapsible">Products only in Elena (2)</button>
+        <div class="content">
+            <ul>
+<li>844 3PH</li><li>884 MC 3PH</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Products only in Master ({len(only_master_prod)})</button>
+        <div class="content">
+            <ul>
+<li>540</li><li>541</li><li>550</li><li>560</li><li>580</li><li>620</li><li>620 Standard</li><li>844</li><li>884</li><li>Alimentatore supplementare</li><li>Applicazioni Simply Connect</li><li>B680H</li><li>Contenitori</li><li>DELTA 2 kit</li><li>DELTA 3 kit</li><li>DOLPHIN kit</li><li>Datori d'impulso elettronici</li><li>Datori d'impulso semplici</li><li>Dispositivi Simply Connect</li><li>ECO kit</li><li>ENERGY kit</li><li>Fotocellule da parete o incasso</li><li>Fotocellule da parete orientabili</li><li>HANDY kit</li><li>HIGH KIT</li><li>HIGH kit</li><li>HYBRID kit</li><li>Kit 6 adesivi catarifrangenti</li><li>LEADER kit</li><li>M60 Costa elettromeccanica</li><li>MASTER kit 230V</li><li>MASTER kit 24V</li><li>POWER kit 230V</li><li>POWER kit 24V</li><li>PRATICO C kit</li><li>RAPID kit</li><li>RH200B</li><li>RH240</li><li>RL200</li><li>Rotor Kit</li><li>SAFE&GREEN Retrofit kit</li><li>SOLID kit</li><li>Schede elettroniche</li><li>Sistema 433MHz RC</li><li>Sistema 433MHz SLH LR</li><li>Sistema 868MHz SLH LR</li><li>Sistema SLHP LR</li><li>TM2K KIT MINI</li><li>TRENDY kit 230V</li><li>XS Costa di sicurezza</li><li><em>...and 5 more</em></li>
+            </ul>
+        </div>
+
+        <h2>🏷️ SKUs Comparison</h2>
+
+        <button class="collapsible">SKUs only in Elena (60)</button>
+        <div class="content">
+            <ul>
+<li>103054</li><li>104421</li><li>104422</li><li>108700</li><li>108757</li><li>109806</li><li>110000</li><li>110001</li><li>110005</li><li>110007</li><li>110012</li><li>110015</li><li>110019</li><li>110021</li><li>110022</li><li>110024</li><li>110025</li><li>110026</li><li>110028</li><li>110030</li><li>110031</li><li>110032</li><li>110034</li><li>110036</li><li>110037</li><li>404015</li><li>785538</li><li>799349</li><li>RP 868 SLH-DS</li><li>XR2N FDS 433-868</li><li><em>...and 30 more</em></li>
+            </ul>
+        </div>
+
+        <button class="collapsible">SKUs only in Master ({len(only_master_sku)})</button>
+        <div class="content">
+            <ul>
+<li>104250445</li><li>104501</li><li>1046208</li><li>1046408</li><li>105592</li><li>105598</li><li>105687</li><li>110562</li><li>110597</li><li>111144</li><li>120015</li><li>144145</li><li>145505</li><li>154155</li><li>2022715</li><li>390563</li><li>390564</li><li>401069</li><li>428048</li><li>428051</li><li>428436</li><li>712805</li><li>712990</li><li>722136</li><li>736429</li><li>738700</li><li>787020</li><li>787032</li><li>FG2</li><li>XR4N</li><li><em>...and 249 more</em></li>
+            </ul>
+        </div>
+
+        <h2>🔄 Value Differences for Common SKUs</h2>
+        <p>Different values found for the same SKU (sample):</p>
+        <table>
+            <tr><th>SKU</th><th>Column</th><th>Elena Value</th><th>Master Value</th></tr>
+
+            <tr>
+                <td>737816</td>
+                <td>descrizione_breve</td>
+                <td>Piastra di fondazione con regolazioni laterali ed </td>
+                <td>Piastra di fondazione con regolazioni laterali ed </td>
+            </tr>
+
+            <tr>
+                <td>737816</td>
+                <td>tipo_componente</td>
+                <td>Accessori</td>
+                <td>Accessori/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>108724</td>
+                <td>tipo_componente</td>
+                <td>Modello</td>
+                <td>Modello/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>390926</td>
+                <td>tipo_componente</td>
+                <td>Accessori</td>
+                <td>Accessori/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>490111</td>
+                <td>tipo_componente</td>
+                <td>Accessori</td>
+                <td>Accessori/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>104203</td>
+                <td>descrizione_breve</td>
+                <td></td>
+                <td>Attuatore oleodinamico 230V</td>
+            </tr>
+
+            <tr>
+                <td>104203</td>
+                <td>tipo_componente</td>
+                <td>Modello</td>
+                <td>Modello/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>787833</td>
+                <td>descrizione_breve</td>
+                <td>Ricevente pluricanale con antenna bipolare integra</td>
+                <td>PLUS1 433 MHz</td>
+            </tr>
+
+            <tr>
+                <td>787833</td>
+                <td>tipo_componente</td>
+                <td>Apparecchiature Elettroniche</td>
+                <td>accessorio</td>
+            </tr>
+
+            <tr>
+                <td>787833</td>
+                <td>nome_modello</td>
+                <td>PLUS1 433 MHz</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>787833</td>
+                <td>tensione_alimentazione</td>
+                <td>20 ÷ 30V~ - 24V~ (± 10%)</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>787856</td>
+                <td>descrizione_breve</td>
+                <td>Innesto 1 canale</td>
+                <td>RP1 433 RC</td>
+            </tr>
+
+            <tr>
+                <td>787856</td>
+                <td>tipo_componente</td>
+                <td>Apparecchiature Elettroniche</td>
+                <td>accessorio</td>
+            </tr>
+
+            <tr>
+                <td>787856</td>
+                <td>nome_modello</td>
+                <td>RP1 433 RC</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>1097805</td>
+                <td>descrizione_breve</td>
+                <td>Motoriduttore 230V</td>
+                <td>Motoriduttore 740 E Z16 con apparecchiatura elettr</td>
+            </tr>
+
+            <tr>
+                <td>1097805</td>
+                <td>tipo_componente</td>
+                <td>Modello</td>
+                <td>Modello/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>1097805</td>
+                <td>nome_modello</td>
+                <td>740</td>
+                <td>740 E Z16 con encoder</td>
+            </tr>
+
+            <tr>
+                <td>787855</td>
+                <td>descrizione_breve</td>
+                <td>Innesto 2 canali</td>
+                <td>RP2 868 SLH-DS</td>
+            </tr>
+
+            <tr>
+                <td>787855</td>
+                <td>tipo_componente</td>
+                <td>Apparecchiature Elettroniche</td>
+                <td>accessorio</td>
+            </tr>
+
+            <tr>
+                <td>787855</td>
+                <td>nome_modello</td>
+                <td>RP2 868 SLH-DS</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>787456</td>
+                <td>descrizione_breve</td>
+                <td>Trasmittente 4 canali Grigio (quantità multipla ve</td>
+                <td>XT4 433 RC</td>
+            </tr>
+
+            <tr>
+                <td>787456</td>
+                <td>tipo_componente</td>
+                <td>Apparecchiature Elettroniche</td>
+                <td>accessorio</td>
+            </tr>
+
+            <tr>
+                <td>787456</td>
+                <td>nome_modello</td>
+                <td>XT4 433 RC</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>490117</td>
+                <td>tipo_componente</td>
+                <td>Accessori</td>
+                <td>Accessori/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>404035</td>
+                <td>descrizione_breve</td>
+                <td>Gruppo encoder per 770N</td>
+                <td>Gruppo encoder per 770N (confezione singola - 2 co</td>
+            </tr>
+
+            <tr>
+                <td>404035</td>
+                <td>tipo_componente</td>
+                <td>Accessori</td>
+                <td>Accessori/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>404035</td>
+                <td>nome_modello</td>
+                <td></td>
+                <td>Gruppo encoder per 770N</td>
+            </tr>
+
+            <tr>
+                <td>790077</td>
+                <td>descrizione_breve</td>
+                <td>Scheda elettronica E045S</td>
+                <td>Per maggiori informazioni</td>
+            </tr>
+
+            <tr>
+                <td>790077</td>
+                <td>tipo_componente</td>
+                <td>Accessori</td>
+                <td>Apparecchiature Elettroniche/accessorio</td>
+            </tr>
+
+            <tr>
+                <td>790077</td>
+                <td>nome_modello</td>
+                <td></td>
+                <td>E045S</td>
+            </tr>
+</table>
+        <h2>💡 Recommendations</h2>
+        <ul>
+            <li><strong>Fix column header:</strong> Change "E850S incorporata" to "codice_sku" in Elena SKU sheet</li>
+            <li><strong>Fix typo:</strong> Rename "immagne_schema" to "immagine_schema" in prodotti sheet</li>
+            <li><strong>Verify image-SKU associations:</strong> Several SKUs have mismatched image filenames</li>
+            <li><strong>Add missing products:</strong> {len(only_master_prod)} products in Master are not in Elena</li>
+            <li><strong>Review SKU coverage:</strong> {len(only_master_sku)} SKUs in Master are not in Elena</li>
+        </ul>
+
+        <script>
+            document.querySelectorAll('.collapsible').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var content = this.nextElementSibling;
+                    content.classList.toggle('show');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
