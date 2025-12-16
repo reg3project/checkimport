@@ -168,13 +168,28 @@ def extract_from_story(story_path, page_start, page_end):
             continue
 
         header_row = rows_data.get(0, {})
-        descrizione_col = 0
+        descrizione_col = None
         codice_col = None
 
+        # Find columns by header text
         for col, text in header_row.items():
-            if 'Codice' in str(text):
+            text_str = str(text).strip()
+            if 'Codice' in text_str:
                 codice_col = col
-                break
+            elif 'Modello' in text_str and descrizione_col is None:
+                descrizione_col = col
+
+        # If no "Modello" header, find first column with content (not Codice/Prezzo)
+        if descrizione_col is None:
+            for col in sorted(header_row.keys()):
+                text = str(header_row.get(col, '')).strip()
+                if text and 'Codice' not in text and 'Prezzo' not in text:
+                    descrizione_col = col
+                    break
+
+        # Fallback to column 0
+        if descrizione_col is None:
+            descrizione_col = 0
 
         if codice_col is None:
             continue
