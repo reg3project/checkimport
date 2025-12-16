@@ -1,0 +1,15 @@
+SKU,Model_Name,Spec_Label,Product_1,Page_1,Value_1,Product_2,Page_2,Value_2,Notes
+404039,XKP B INOX,Tensione di alimentazione,Datori d'impulso elettronici,220-222,"230V~ (+5% - 10%) 50(60) Hz",Datori d'impulso elettronici,220-222,"Bus 2easy, a 2 fili non polarizzati 24 V",Different product variants in same table have different power specs
+404039,XKP B INOX,Temperatura ambiente di esercizio,Datori d'impulso elettronici,220-222,-20°C ÷ +55°C,Datori d'impulso elettronici,220-222,-20 °C +55 °C,Minor formatting difference (spacing around ÷ vs space)
+787023,XR2N 433-868,Frequenza di ricezione,Sistema 433-868MHz FDS,200-201,433.92 Mhz - 868.35 Mhz,XTO - Sistema 868MHz SLH-DS,204-205,868.35 ± 0.2 Mhz,Different frequency ranges per system type
+787023,XR2N 433-868,Decodifica segnale radio,Sistema 433-868MHz FDS,200-201,FDS-DS-SLH-RC,XTO - Sistema 868MHz SLH-DS,204-205,DS-SLH-RC,Different decoding modes per system
+787023,XR2N 433-868,Memoria codici radio,Sistema 433-868MHz FDS,200-201,248,XTO - Sistema 868MHz SLH-DS,204-205,250,Different memory capacity per system
+787023,XR2N 433-868,Numero uscite a relè (N.A.),Sistema 433-868MHz FDS,200-201,1 impulsiva (CH1),Sistema 868MHz SLH LR,208-209,1 impulsiva (CH1) - 1 impulsiva /fissa (selezionabile) (CH 2),Different relay outputs per system configuration
+787023,XR2N 433-868,Portata contatti,Sistema 433-868MHz FDS,200-201,"0,5 A / 120 VA",XTO - Sistema 868MHz SLH-DS,204-205,"0,5 A / 12 ÷ 24V~ - 12 ÷ 24 V~",Different contact rating format
+787024,XR4N 433-868,Frequenza di ricezione,Sistema 433-868MHz FDS,200-201,433.92 Mhz - 868.35 Mhz,XTO - Sistema 868MHz SLH-DS,204-205,868.35 ± 0.2 Mhz,Different frequency ranges per system type
+787024,XR4N 433-868,Decodifica segnale radio,Sistema 433-868MHz FDS,200-201,FDS-DS-SLH-RC,XTO - Sistema 868MHz SLH-DS,204-205,DS-SLH-RC,Different decoding modes per system
+787024,XR4N 433-868,Memoria codici radio,Sistema 433-868MHz FDS,200-201,248 CH 1-2 / 248 CH 3-4,XTO - Sistema 868MHz SLH-DS,204-205,250 CH 1-2 / 250 CH 3-4,Different memory capacity per system
+787024,XR4N 433-868,Numero uscite a relè (N.A.),Sistema 433-868MHz FDS,200-201,1 impulsiva (CH1),XTO - Sistema 868MHz SLH-DS,204-205,2 impulsiva (CH1-3),Different relay outputs per system
+787024,XR4N 433-868,Portata contatti,Sistema 433-868MHz FDS,200-201,"0,5 A / 120 VA",XTO - Sistema 868MHz SLH-DS,204-205,"0,5 A / 12 ÷ 24V~ - 12 ÷ 24 V~",Different contact rating format
+787833,PLUS1 433,Tensione di alimentazione,XTO - Sistema 433 MHz SLH-SL-DS-RC,206-207,20 ÷ 30V,Sistema 433MHz SLH LR,210-211,20 ÷ 30V~ - 24V~ (± 10%),Different voltage notation (~ suffix and tolerance)
+787833,PLUS1 433,Corrente assorbita,XTO - Sistema 433 MHz SLH-SL-DS-RC,206-207,10 mA / V,Sistema 433MHz SLH LR,210-211,10 mA / V~ - 25 mA / V~,Different current specs per system
