@@ -1,0 +1,3664 @@
+{
+  "summary": {
+    "total_tables": 1172,
+    "unique_headers": 320,
+    "types": {
+      "OTHER": 958,
+      "PRICE_TABLE_STANDARD": 119,
+      "PRICE_TABLE_WITH_DESC": 73,
+      "PRICE_TABLE_LENGTHS": 14,
+      "LAYOUT_TABLE": 5,
+      "KIT_CONTENTS": 3
+    }
+  },
+  "header_patterns": [
+    {
+      "header": "Rif | Q.tà | Descrizione materiale | Cod. | Prezzo €",
+      "count": 180,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Codice articolo | Prezzo €",
+      "count": 113,
+      "type": "PRICE_TABLE_STANDARD"
+    },
+    {
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "count": 65,
+      "type": "PRICE_TABLE_WITH_DESC"
+    },
+    {
+      "header": "Q.tà | Descrizione | Codice",
+      "count": 57,
+      "type": "OTHER"
+    },
+    {
+      "header": "790062 | € 26,00",
+      "count": 18,
+      "type": "OTHER"
+    },
+    {
+      "header": "720119 | € 35,00",
+      "count": 16,
+      "type": "OTHER"
+    },
+    {
+      "header": "720309 | € 83,00",
+      "count": 13,
+      "type": "OTHER"
+    },
+    {
+      "header": "720118 | € 55,00",
+      "count": 13,
+      "type": "OTHER"
+    },
+    {
+      "header": "390923 | € 192,00",
+      "count": 12,
+      "type": "OTHER"
+    },
+    {
+      "header": "790077 | € 256,00",
+      "count": 12,
+      "type": "OTHER"
+    },
+    {
+      "header": "790076 | € 446,00",
+      "count": 12,
+      "type": "OTHER"
+    },
+    {
+      "header": "737100 | € 12,50",
+      "count": 12,
+      "type": "OTHER"
+    },
+    {
+      "header": "401075 | € 135,00 cad.",
+      "count": 12,
+      "type": "OTHER"
+    },
+    {
+      "header": "490122 | 1m € 27,00",
+      "count": 11,
+      "type": "OTHER"
+    },
+    {
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "count": 11,
+      "type": "PRICE_TABLE_LENGTHS"
+    },
+    {
+      "header": "490124 | 1m € 27,00",
+      "count": 10,
+      "type": "OTHER"
+    },
+    {
+      "header": "401080 | € 135,00 cad.",
+      "count": 10,
+      "type": "OTHER"
+    },
+    {
+      "header": "490123 | 1m € 26,00",
+      "count": 9,
+      "type": "OTHER"
+    },
+    {
+      "header": "490333 | 1m € 19,00",
+      "count": 9,
+      "type": "OTHER"
+    },
+    {
+      "header": "390178 | € 4,50",
+      "count": 9,
+      "type": "OTHER"
+    },
+    {
+      "header": "490125 | 1m € 34,00",
+      "count": 9,
+      "type": "OTHER"
+    },
+    {
+      "header": "390993 | € 206,00",
+      "count": 9,
+      "type": "OTHER"
+    },
+    {
+      "header": "401065 | € 8,00",
+      "count": 8,
+      "type": "OTHER"
+    },
+    {
+      "header": "401064 | € 10,00",
+      "count": 8,
+      "type": "OTHER"
+    },
+    {
+      "header": "790305 | € 575,00",
+      "count": 7,
+      "type": "OTHER"
+    },
+    {
+      "header": "390926 | € 33,00",
+      "count": 7,
+      "type": "OTHER"
+    },
+    {
+      "header": "737604 | € 26,00",
+      "count": 7,
+      "type": "OTHER"
+    },
+    {
+      "header": "390992 | € 37,00",
+      "count": 7,
+      "type": "OTHER"
+    },
+    {
+      "header": "490349 | € 92,00",
+      "count": 6,
+      "type": "OTHER"
+    },
+    {
+      "header": "713002 | € 4,50",
+      "count": 6,
+      "type": "OTHER"
+    },
+    {
+      "header": "390130 | € 52,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "102011 | € 382,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "404040 | € 61,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "391456 | € 85,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "712501001-10 | € 30,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "71275101-10 | € 27,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "490117 | € 20,50",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "428806 | € 208,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "737621 | € 26,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "787725 | € 48,00",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XR2N 433-868 | XR4N 433-868",
+      "count": 5,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "count": 5,
+      "type": "PRICE_TABLE_WITH_DESC"
+    },
+    {
+      "header": "Cartello Automatico FAAC | Descrizione | Codice",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "Cartello Automatico FAAC",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "63003478 | € 487,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "428137 | € 435,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "428446 | € 327,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "428445 | € 177,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "390184 | € 99,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "428342 | € 83,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "428441 | € 232,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "428805 | € 153,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "412003 | € 59,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "102845 | € 55,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "790064 | € 57,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "790065 | € 84,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "401070 | € 70,00 cad.",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "785541 | € 43,00",
+      "count": 4,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Codice Articolo | Prezzo €",
+      "count": 3,
+      "type": "PRICE_TABLE_STANDARD"
+    },
+    {
+      "header": "790286 | € 366,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "K g",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "m",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "71209101-10 | € 29,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "719167 | € 47,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "737816 | € 52,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "719130 | € 47,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "Binario | Dimensioni max porta L x H (m) | Dimensioni max porta sezionale L x H (m) | Lunghezza binario (mm) | Max corsa carrello (mm) | Codice articolo | Prezzo €",
+      "count": 3,
+      "type": "PRICE_TABLE_LENGTHS"
+    },
+    {
+      "header": "390765 | € 65,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "390488 | € 18,50",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "424591001-10 | € 64,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "390768 | € 31,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "401066 | € 266,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "428163 | € 788,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "401051 | € 605,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "390828 | € 119,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "391450 | € 65,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "790905 | € 110,00",
+      "count": 3,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Codice articolo",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "727525 | € 53,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390682 | € 19,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 390 230V",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "401057 | € 93,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | [empty] | [empty] | [empty]",
+      "count": 2,
+      "type": "LAYOUT_TABLE"
+    },
+    {
+      "header": "424550001-10 | € 20,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "712104001-10 | € 27,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "722122 | € 30,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490065 | € 233,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490111 | € 420,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490110 | € 614,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "404035 | € 63,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "722121 | € 16,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390612 | € 139,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390972 | € 155,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490113 | € 593,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390035 | € 172,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490187 | € 195,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490112 | € 321,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "63002485 | € 310,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "202269 | € 211,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "202073 | € 620,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390564 | € 93,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390563 | € 90,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "721209 | € 39,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490186 | € 20,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "428444 | € 677,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390081 | € 141,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "490058 | € 129,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Asta | Lunghezza asta (mm) | Codice versione SX | Codice versione DX",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "424641-50 | € 53,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "2022715 | € 543,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XMBX4",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XRS485",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XMULTICOM",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XWBL",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "120002 | € 12,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "202275 | € 12,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "120003 | € 8,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XR2N | XR4N",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "102845 | € 53,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | Modello | Decodifica | Descrizione | Codice articolo | Prezzo €",
+      "count": 2,
+      "type": "PRICE_TABLE_WITH_DESC"
+    },
+    {
+      "header": "787725 | € 47,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "412006 | € 57,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | PLUS1 868 | DECODER SLH",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | PLUS1 433 | DECODER SLH",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "390205 | € 11,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "720050 | € 26,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | -",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "401306 | € 14,50 cad.",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | FG1 | FG2",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XTR B | XTR B INOX",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "401048 | € 7,00 cad.",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XP 30B | XP 30B INOX",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XP 30 | XP 30 INOX",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | M60",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "785031 | € 128,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "105043 | € 1.691,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "MLGVER_0000 | € 310,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "MLPEIN_0000 | € 490,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "430003 | € 119,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "MLPREF01 | € 208,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "785028 | € 1.924,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "MLPF01 | € 446,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | [empty] | [empty] | [empty] | [empty]",
+      "count": 2,
+      "type": "LAYOUT_TABLE"
+    },
+    {
+      "header": "mm",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "391453 | € 8,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "391452 | € 8,50",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "391454 | € 143,00",
+      "count": 2,
+      "type": "OTHER"
+    },
+    {
+      "header": "SAFE&GREEN Retrofit kit | 42",
+      "count": 1,
+      "type": "KIT_CONTENTS"
+    },
+    {
+      "header": "Modello | S418 24V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "713009 | € 7,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "404041 | € 61,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 412 dx | 412 sx",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 413 230V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 415 | 415 L",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 415 24V | 415 L 24V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "738705 | € 201,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390267 | € 87,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 392 C | 392",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "424001 | € 58,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 402 CBC | 402 SBS",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 422 CBAC | 422 SBS",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490043 | € 196,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 400 CBC | 400 SB | 400 SBS | 400 CBAC | 400 CBAC L | 400 SBS L",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490042 | € 173,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | 2,00 | 2,50 | 3,50 | 4,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | S450H CBAC | S450H SB",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | 250 | 500 | 800",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390091 | € 29,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490254 | € 78,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "416250 | € 65,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490250 | € 387,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490253 | € 196,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "416251 | € 62,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490255 | € 80,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | S2500I 24V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490252 | € 184,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 770N 230V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 770N 24V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | S800H ENC CBAC 100° | S800H ENC SBW 100° | S800H ENC CBAC 180° | S800H ENC SBW 180°",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | 400 | 500 | 600 | 800 | 900 | 1800 | 2200 | 3500",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | c 4000I | [empty] | [empty] | [empty] | [empty]",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | S800 ENC CBAC 100° | S800 ENC SBW 100° | S800 ENC CBAC 180° | S800 ENC SBW 180°",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "63003390 | € 389,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | C4000I",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "424002 | € 79,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | C720 24V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | C721 24V",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 740 E Z16 con encoder",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 740 C con encoder",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 741 E Z16 con encoder",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 741 C con encoder",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 746 C Z16 | 746 C Z20",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 844 C Z16",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "7191661 | € 71,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 844 C 3PH",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "722123 | € 27,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "719169 | € 129,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 884 MC 3PH",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "737628 | € 134,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "719328 | € 89,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "737850 | € 126,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | 3 x 3,80 | 5 x 3,80",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "63003207 | € 665,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | [empty] | D600 | D700HS | D1000 | 540 | 541 | 541 3PH",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | C851",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "2024015 | € 159,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | D600",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "63002425 | € 175,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | D700 HS",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "2024025 | € 188,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | D1000",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390548 | € 203,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390607 | € 60,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390592 | € 53,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "738709 | € 128,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Codice | Modello | Codice | Prezzo €",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "722136 | € 83,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "722140 | € 89,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "736022 | € 93,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "2022855 | € 264,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 550 ITT | 550 Slave | 550 L ITT | 550 L Slave",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "424551 | € 35,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "110554 | € 43,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390432 | € 125,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390433 | € 153,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | 1,50 | 2,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "722291 | € 93,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390594 (2 op) | € 60,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390435 | € 101,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390434 | € 200,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "424560001-10 | € 72,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390474 | € 47,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "424560101-10 | € 88,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "722299 | € 142,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 580 | 593",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "736023 (1 op) | € 109,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "738706 | € 139,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "738703 | € 137,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490251 | € 108,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 560 CBAC | 560 SB",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "738700 | € 191,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "410032 | € 91,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490183 | € 57,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Numero molle | Asta (mm) | Asta con luci (mm) | Asta con siepe (mm) | Asta con piedino (mm) | Asta con luci e piedino (mm) | Asta con luci e siepe (mm) | Asta con siepe e piedino (mm) | Asta con luci siepe e piedino (mm) | Asta con kit articolazione (mm)",
+      "count": 1,
+      "type": "KIT_CONTENTS"
+    },
+    {
+      "header": "721232 | € 31,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | B614",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Numero molle | Asta (mm) | Asta con luci (mm) | Asta con siepe (mm) | Asta con piedino (mm) | Asta con siepe e piedino (mm) | Asta con kit articolazione (mm)",
+      "count": 1,
+      "type": "KIT_CONTENTS"
+    },
+    {
+      "header": "428715 | € 47,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "63001034 | € 421,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Ø (mm) | Aste rettangolari (mm) | Aste rett. con luci (mm) | Aste rett. con siepe (mm) | Aste rett. con piedino (mm) | Aste rett. con siepe e piedino (mm) | Codice articolo | Prezzo €",
+      "count": 1,
+      "type": "PRICE_TABLE_STANDARD"
+    },
+    {
+      "header": "790281 | € 238,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Ø (mm) | Asta tonda S con luci (mm) | Asta tonda S con luci e piedino (mm) | Asta tonda S con luci e siepe (mm) | Asta tonda S con luci, siepe e piedino (mm) | Codice articolo | Prezzo €",
+      "count": 1,
+      "type": "PRICE_TABLE_STANDARD"
+    },
+    {
+      "header": "Modello | 615BPR Standard",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490073 | € 53,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Ø (mm) | Asta tonda S (mm) | Asta tonda S con piedino (mm) | Asta tonda S con siepe (mm) | Asta tonda S con siepe e piedino (mm) | Codice articolo | Prezzo €",
+      "count": 1,
+      "type": "PRICE_TABLE_STANDARD"
+    },
+    {
+      "header": "Modello | 620 Standard",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | 620 Rapida",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "410033 | € 195,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "416018 | € 599,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "63000169 | € 238,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "416017 | € 599,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390080 | € 43,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Accessori per aste tonde S in base alla luce netta del varco | Luci | Siepe | Piedino",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "401069 | € 266,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Accessori per aste tonde L in base alla luce netta del varco | Luci | Siepe | Piedino",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "428436 | € 327,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "416016 | € 599,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "63003452 | € 565,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | B680H",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "428437 | € 526,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "416019 | € 599,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "490139 | € 141,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "416020 | € 1.883,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Contenitore Mod. E",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "712805 | € 31,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Contenitore Mod. L",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Contenitore Mod. LM",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | Barriere | [empty] | [empty] | Barriere | [empty] | [empty] | SERRANDE",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | cancelli a BATTENTE | [empty] | [empty] | [empty] | [empty] | [empty] | porte SEZIONALI, INDUSTRIALI e basculanti",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty]",
+      "count": 1,
+      "type": "LAYOUT_TABLE"
+    },
+    {
+      "header": "412006 | € 59,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | DECODER SLHP",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "799349 | € 33,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | PLUS1 868 | PLUS1 433",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "390211 | € 10,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "count": 1,
+      "type": "PRICE_TABLE_WITH_DESC"
+    },
+    {
+      "header": "Modello | XK10 | XK11",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | T20 I | T21 I | T21 IF",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | T20 E | T21 E | T21 EF",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "720316 | € 7,00 cad.",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "712052-61 | € 30,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XK10 B | XK11 B",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XK30",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XKP B INOX",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XKP W 433 | XKP W 868",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "105128 | € 11,50",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XP 20W D",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XP 20B D",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | XP 20 D",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "787012 | € 125,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "787013 | € 143,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | CN 60 E",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "785200 | € 221,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "105535 | € 72,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "[empty] | RL200 | RH200B | RH240 | RH240B",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | RL200 REVERSIBILE | RL200 EF",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | RH200B / RH200B EF",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "391455 | € 193,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | RH240 EF",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Q.tà | Descrizione",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145412 | € 120,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145421 | € 59,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145422 | € 70,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145405 | € 68,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145630 | € 26,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145424 | € 84,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145423 | € 68,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145505 | € 110,00",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "Modello | TM2K 25/17 | TM2K 30/17 | TM2K 50/12",
+      "count": 1,
+      "type": "OTHER"
+    },
+    {
+      "header": "145504 | € 100,00",
+      "count": 1,
+      "type": "OTHER"
+    }
+  ],
+  "tables_by_type": {
+    "OTHER": [
+      {
+        "folder": "028_LEADER_kit_PERFECT_60",
+        "page_start": "028",
+        "page_end": "028",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "028_LEADER_kit_PERFECT_60",
+        "page_start": "028",
+        "page_end": "028",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "029_MASTER_kit_230V_PERFECT_60",
+        "page_start": "029",
+        "page_end": "029",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "029_MASTER_kit_230V_PERFECT_60",
+        "page_start": "029",
+        "page_end": "029",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "030_MASTER_kit_24V_PERFECT_60",
+        "page_start": "030",
+        "page_end": "030",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "030_MASTER_kit_24V_PERFECT_60",
+        "page_start": "030",
+        "page_end": "030",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "031_HANDY_kit_PERFECT_60",
+        "page_start": "031",
+        "page_end": "031",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "031_HANDY_kit_PERFECT_60",
+        "page_start": "031",
+        "page_end": "031",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "032_ECO_kit_PERFECT_60",
+        "page_start": "032",
+        "page_end": "032",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      },
+      {
+        "folder": "032_ECO_kit_PERFECT_60",
+        "page_start": "032",
+        "page_end": "032",
+        "header": "Q.tà | Descrizione | Codice",
+        "type": "OTHER",
+        "column_count": 3
+      }
+    ],
+    "PRICE_TABLE_STANDARD": [
+      {
+        "folder": "028_LEADER_kit_PERFECT_60",
+        "page_start": "028",
+        "page_end": "028",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "028_LEADER_kit_PERFECT_60",
+        "page_start": "028",
+        "page_end": "028",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "029_MASTER_kit_230V_PERFECT_60",
+        "page_start": "029",
+        "page_end": "029",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "029_MASTER_kit_230V_PERFECT_60",
+        "page_start": "029",
+        "page_end": "029",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "030_MASTER_kit_24V_PERFECT_60",
+        "page_start": "030",
+        "page_end": "030",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "030_MASTER_kit_24V_PERFECT_60",
+        "page_start": "030",
+        "page_end": "030",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "031_HANDY_kit_PERFECT_60",
+        "page_start": "031",
+        "page_end": "031",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "031_HANDY_kit_PERFECT_60",
+        "page_start": "031",
+        "page_end": "031",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "032_ECO_kit_PERFECT_60",
+        "page_start": "032",
+        "page_end": "032",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      },
+      {
+        "folder": "032_ECO_kit_PERFECT_60",
+        "page_start": "032",
+        "page_end": "032",
+        "header": "Modello | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_STANDARD",
+        "column_count": 3
+      }
+    ],
+    "KIT_CONTENTS": [
+      {
+        "folder": "039-040_RAPID_kit_PERFECT_60",
+        "page_start": "039",
+        "page_end": "040",
+        "header": "SAFE&GREEN Retrofit kit | 42",
+        "type": "KIT_CONTENTS",
+        "column_count": 2
+      },
+      {
+        "folder": "160-163_B614",
+        "page_start": "160",
+        "page_end": "163",
+        "header": "Numero molle | Asta (mm) | Asta con luci (mm) | Asta con siepe (mm) | Asta con piedino (mm) | Asta con luci e piedino (mm) | Asta con luci e siepe (mm) | Asta con siepe e piedino (mm) | Asta con luci siepe e piedino (mm) | Asta con kit articolazione (mm)",
+        "type": "KIT_CONTENTS",
+        "column_count": 10
+      },
+      {
+        "folder": "160-163_B614",
+        "page_start": "160",
+        "page_end": "163",
+        "header": "Numero molle | Asta (mm) | Asta con luci (mm) | Asta con siepe (mm) | Asta con piedino (mm) | Asta con siepe e piedino (mm) | Asta con kit articolazione (mm)",
+        "type": "KIT_CONTENTS",
+        "column_count": 7
+      }
+    ],
+    "LAYOUT_TABLE": [
+      {
+        "folder": "092-094_S450H",
+        "page_start": "092",
+        "page_end": "094",
+        "header": "[empty] | [empty] | [empty] | [empty]",
+        "type": "LAYOUT_TABLE",
+        "column_count": 4
+      },
+      {
+        "folder": "150-152_580_-_593",
+        "page_start": "150",
+        "page_end": "152",
+        "header": "[empty] | [empty] | [empty] | [empty]",
+        "type": "LAYOUT_TABLE",
+        "column_count": 4
+      },
+      {
+        "folder": "188-194_Schede_elettroniche",
+        "page_start": "188",
+        "page_end": "194",
+        "header": "[empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty] | [empty]",
+        "type": "LAYOUT_TABLE",
+        "column_count": 12
+      },
+      {
+        "folder": "238_Accessori_e_materiali_di_consumo",
+        "page_start": "238",
+        "page_end": "238",
+        "header": "[empty] | [empty] | [empty] | [empty] | [empty]",
+        "type": "LAYOUT_TABLE",
+        "column_count": 5
+      },
+      {
+        "folder": "238_Accessori_e_materiali_di_consumo",
+        "page_start": "238",
+        "page_end": "238",
+        "header": "[empty] | [empty] | [empty] | [empty] | [empty]",
+        "type": "LAYOUT_TABLE",
+        "column_count": 5
+      }
+    ],
+    "PRICE_TABLE_LENGTHS": [
+      {
+        "folder": "134-135_D600",
+        "page_start": "134",
+        "page_end": "135",
+        "header": "Binario | Dimensioni max porta L x H (m) | Dimensioni max porta sezionale L x H (m) | Lunghezza binario (mm) | Max corsa carrello (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 7
+      },
+      {
+        "folder": "136-137_D700_HS",
+        "page_start": "136",
+        "page_end": "137",
+        "header": "Binario | Dimensioni max porta L x H (m) | Dimensioni max porta sezionale L x H (m) | Lunghezza binario (mm) | Max corsa carrello (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 7
+      },
+      {
+        "folder": "138-139_D1000",
+        "page_start": "138",
+        "page_end": "139",
+        "header": "Binario | Dimensioni max porta L x H (m) | Dimensioni max porta sezionale L x H (m) | Lunghezza binario (mm) | Max corsa carrello (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 7
+      },
+      {
+        "folder": "160-163_B614",
+        "page_start": "160",
+        "page_end": "163",
+        "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 3
+      },
+      {
+        "folder": "160-163_B614",
+        "page_start": "160",
+        "page_end": "163",
+        "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 3
+      },
+      {
+        "folder": "164-167_615BPR",
+        "page_start": "164",
+        "page_end": "167",
+        "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 3
+      },
+      {
+        "folder": "164-167_615BPR",
+        "page_start": "164",
+        "page_end": "167",
+        "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 3
+      },
+      {
+        "folder": "168-171_620_Standard",
+        "page_start": "168",
+        "page_end": "171",
+        "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 3
+      },
+      {
+        "folder": "168-171_620_Standard",
+        "page_start": "168",
+        "page_end": "171",
+        "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 3
+      },
+      {
+        "folder": "168-171_620_Standard",
+        "page_start": "168",
+        "page_end": "171",
+        "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_LENGTHS",
+        "column_count": 3
+      }
+    ],
+    "PRICE_TABLE_WITH_DESC": [
+      {
+        "folder": "196_Dispositivi_Simply_Connect",
+        "page_start": "196",
+        "page_end": "196",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "196_Dispositivi_Simply_Connect",
+        "page_start": "196",
+        "page_end": "196",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "196_Dispositivi_Simply_Connect",
+        "page_start": "196",
+        "page_end": "196",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "196_Dispositivi_Simply_Connect",
+        "page_start": "196",
+        "page_end": "196",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "197-199_Applicazioni_Simply_Connect",
+        "page_start": "197",
+        "page_end": "199",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "197-199_Applicazioni_Simply_Connect",
+        "page_start": "197",
+        "page_end": "199",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "197-199_Applicazioni_Simply_Connect",
+        "page_start": "197",
+        "page_end": "199",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "197-199_Applicazioni_Simply_Connect",
+        "page_start": "197",
+        "page_end": "199",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "200-201_Sistema_433-868MHz_FDS",
+        "page_start": "200",
+        "page_end": "201",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      },
+      {
+        "folder": "200-201_Sistema_433-868MHz_FDS",
+        "page_start": "200",
+        "page_end": "201",
+        "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+        "type": "PRICE_TABLE_WITH_DESC",
+        "column_count": 4
+      }
+    ]
+  },
+  "price_tables": [
+    {
+      "folder": "028_LEADER_kit_PERFECT_60",
+      "page_start": "028",
+      "page_end": "028",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "028_LEADER_kit_PERFECT_60",
+      "page_start": "028",
+      "page_end": "028",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "029_MASTER_kit_230V_PERFECT_60",
+      "page_start": "029",
+      "page_end": "029",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "029_MASTER_kit_230V_PERFECT_60",
+      "page_start": "029",
+      "page_end": "029",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "030_MASTER_kit_24V_PERFECT_60",
+      "page_start": "030",
+      "page_end": "030",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "030_MASTER_kit_24V_PERFECT_60",
+      "page_start": "030",
+      "page_end": "030",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "031_HANDY_kit_PERFECT_60",
+      "page_start": "031",
+      "page_end": "031",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "031_HANDY_kit_PERFECT_60",
+      "page_start": "031",
+      "page_end": "031",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "032_ECO_kit_PERFECT_60",
+      "page_start": "032",
+      "page_end": "032",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "032_ECO_kit_PERFECT_60",
+      "page_start": "032",
+      "page_end": "032",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "033_HIGH_kit_PERFECT_60",
+      "page_start": "033",
+      "page_end": "033",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "033_HIGH_kit_PERFECT_60",
+      "page_start": "033",
+      "page_end": "033",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "034_POWER_kit_230V_PERFECT_60",
+      "page_start": "034",
+      "page_end": "034",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "034_POWER_kit_230V_PERFECT_60",
+      "page_start": "034",
+      "page_end": "034",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "035_POWER_kit_24V_PERFECT_60",
+      "page_start": "035",
+      "page_end": "035",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "035_POWER_kit_24V_PERFECT_60",
+      "page_start": "035",
+      "page_end": "035",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "036_PRATICO_C_kit_PERFECT_60",
+      "page_start": "036",
+      "page_end": "036",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "036_PRATICO_C_kit_PERFECT_60",
+      "page_start": "036",
+      "page_end": "036",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "037_DELTA_2_kit_PERFECT_60",
+      "page_start": "037",
+      "page_end": "037",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "037_DELTA_2_kit_PERFECT_60",
+      "page_start": "037",
+      "page_end": "037",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "038_DELTA_3_kit_PERFECT_60",
+      "page_start": "038",
+      "page_end": "038",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "038_DELTA_3_kit_PERFECT_60",
+      "page_start": "038",
+      "page_end": "038",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "039-040_RAPID_kit_PERFECT_60",
+      "page_start": "039",
+      "page_end": "040",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "039-040_RAPID_kit_PERFECT_60",
+      "page_start": "039",
+      "page_end": "040",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "042_SAFE&GREEN_Retrofit_kit",
+      "page_start": "042",
+      "page_end": "042",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "042_SAFE&GREEN_Retrofit_kit",
+      "page_start": "042",
+      "page_end": "042",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "043_HYBRID_kit",
+      "page_start": "043",
+      "page_end": "043",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "043_HYBRID_kit",
+      "page_start": "043",
+      "page_end": "043",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "044_LEADER_kit",
+      "page_start": "044",
+      "page_end": "044",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "044_LEADER_kit",
+      "page_start": "044",
+      "page_end": "044",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "045_TRENDY_kit_230V",
+      "page_start": "045",
+      "page_end": "045",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "045_TRENDY_kit_230V",
+      "page_start": "045",
+      "page_end": "045",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "046_MASTER_kit_230V",
+      "page_start": "046",
+      "page_end": "046",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "046_MASTER_kit_230V",
+      "page_start": "046",
+      "page_end": "046",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "047_MASTER_kit_24V",
+      "page_start": "047",
+      "page_end": "047",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "047_MASTER_kit_24V",
+      "page_start": "047",
+      "page_end": "047",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "048_HANDY_kit",
+      "page_start": "048",
+      "page_end": "048",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "048_HANDY_kit",
+      "page_start": "048",
+      "page_end": "048",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "049_ECO_kit",
+      "page_start": "049",
+      "page_end": "049",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "049_ECO_kit",
+      "page_start": "049",
+      "page_end": "049",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "050_ENERGY_kit",
+      "page_start": "050",
+      "page_end": "050",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "050_ENERGY_kit",
+      "page_start": "050",
+      "page_end": "050",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "050_ENERGY_kit",
+      "page_start": "050",
+      "page_end": "050",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "051_HIGH_KIT",
+      "page_start": "051",
+      "page_end": "051",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "051_HIGH_KIT",
+      "page_start": "051",
+      "page_end": "051",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "051_HIGH_KIT",
+      "page_start": "051",
+      "page_end": "051",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "052_POWER_kit_230V",
+      "page_start": "052",
+      "page_end": "052",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "052_POWER_kit_230V",
+      "page_start": "052",
+      "page_end": "052",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "053_POWER_kit_24V",
+      "page_start": "053",
+      "page_end": "053",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "053_POWER_kit_24V",
+      "page_start": "053",
+      "page_end": "053",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "054_PRATICO_C_kit",
+      "page_start": "054",
+      "page_end": "054",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "054_PRATICO_C_kit",
+      "page_start": "054",
+      "page_end": "054",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "055_DELTA_2_kit",
+      "page_start": "055",
+      "page_end": "055",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "055_DELTA_2_kit",
+      "page_start": "055",
+      "page_end": "055",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "056_DELTA_3_kit",
+      "page_start": "056",
+      "page_end": "056",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "056_DELTA_3_kit",
+      "page_start": "056",
+      "page_end": "056",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "057_RAPID_kit",
+      "page_start": "057",
+      "page_end": "057",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "057_RAPID_kit",
+      "page_start": "057",
+      "page_end": "057",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "058_SOLID_kit",
+      "page_start": "058",
+      "page_end": "058",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "058_SOLID_kit",
+      "page_start": "058",
+      "page_end": "058",
+      "header": "Modello | Codice Articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "059_DOLPHIN_kit",
+      "page_start": "059",
+      "page_end": "059",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "059_DOLPHIN_kit",
+      "page_start": "059",
+      "page_end": "059",
+      "header": "Modello | Codice Articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "060-061_ROTOR_Kit",
+      "page_start": "060",
+      "page_end": "061",
+      "header": "Modello | Codice Articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "072-073_S418",
+      "page_start": "072",
+      "page_end": "073",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "074-075_412",
+      "page_start": "074",
+      "page_end": "075",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "076-077_413_230V",
+      "page_start": "076",
+      "page_end": "077",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "078-079_415_230V",
+      "page_start": "078",
+      "page_end": "079",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "080-081_415_24V",
+      "page_start": "080",
+      "page_end": "081",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "082-083_390_230V",
+      "page_start": "082",
+      "page_end": "083",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "084-085_392_C",
+      "page_start": "084",
+      "page_end": "085",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "086-087_402",
+      "page_start": "086",
+      "page_end": "087",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "088-089_422",
+      "page_start": "088",
+      "page_end": "089",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "090-091_400",
+      "page_start": "090",
+      "page_end": "091",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "092-094_S450H",
+      "page_start": "092",
+      "page_end": "094",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "096-097_S2500I",
+      "page_start": "096",
+      "page_end": "097",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "098-099_770N_230V",
+      "page_start": "098",
+      "page_end": "099",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "100-101_770N_24V",
+      "page_start": "100",
+      "page_end": "101",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "102-103_S800H_ENC",
+      "page_start": "102",
+      "page_end": "103",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "104-106_S800_ENC",
+      "page_start": "104",
+      "page_end": "106",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "108-109_C4000I",
+      "page_start": "108",
+      "page_end": "109",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "110-111_C720",
+      "page_start": "110",
+      "page_end": "111",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "112-113_C721",
+      "page_start": "112",
+      "page_end": "113",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "114-115_740",
+      "page_start": "114",
+      "page_end": "115",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "116-117_740_C",
+      "page_start": "116",
+      "page_end": "117",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "118-119_741",
+      "page_start": "118",
+      "page_end": "119",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "120-121_741_C",
+      "page_start": "120",
+      "page_end": "121",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "122-123_746_C",
+      "page_start": "122",
+      "page_end": "123",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "124-125_844_C",
+      "page_start": "124",
+      "page_end": "125",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "126-127_844_3PH",
+      "page_start": "126",
+      "page_end": "127",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "128-129_884_MC_3PH",
+      "page_start": "128",
+      "page_end": "129",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "130-132_C851",
+      "page_start": "130",
+      "page_end": "132",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "134-135_D600",
+      "page_start": "134",
+      "page_end": "135",
+      "header": "Binario | Dimensioni max porta L x H (m) | Dimensioni max porta sezionale L x H (m) | Lunghezza binario (mm) | Max corsa carrello (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 7
+    },
+    {
+      "folder": "134-135_D600",
+      "page_start": "134",
+      "page_end": "135",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "136-137_D700_HS",
+      "page_start": "136",
+      "page_end": "137",
+      "header": "Binario | Dimensioni max porta L x H (m) | Dimensioni max porta sezionale L x H (m) | Lunghezza binario (mm) | Max corsa carrello (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 7
+    },
+    {
+      "folder": "136-137_D700_HS",
+      "page_start": "136",
+      "page_end": "137",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "138-139_D1000",
+      "page_start": "138",
+      "page_end": "139",
+      "header": "Binario | Dimensioni max porta L x H (m) | Dimensioni max porta sezionale L x H (m) | Lunghezza binario (mm) | Max corsa carrello (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 7
+    },
+    {
+      "folder": "138-139_D1000",
+      "page_start": "138",
+      "page_end": "139",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "150-152_580_-_593",
+      "page_start": "150",
+      "page_end": "152",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "150-152_580_-_593",
+      "page_start": "150",
+      "page_end": "152",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "154-155_390_230V",
+      "page_start": "154",
+      "page_end": "155",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "156-157_560",
+      "page_start": "156",
+      "page_end": "157",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "160-163_B614",
+      "page_start": "160",
+      "page_end": "163",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "160-163_B614",
+      "page_start": "160",
+      "page_end": "163",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "160-163_B614",
+      "page_start": "160",
+      "page_end": "163",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "164-167_615BPR",
+      "page_start": "164",
+      "page_end": "167",
+      "header": "Ø (mm) | Aste rettangolari (mm) | Aste rett. con luci (mm) | Aste rett. con siepe (mm) | Aste rett. con piedino (mm) | Aste rett. con siepe e piedino (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 8
+    },
+    {
+      "folder": "164-167_615BPR",
+      "page_start": "164",
+      "page_end": "167",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "164-167_615BPR",
+      "page_start": "164",
+      "page_end": "167",
+      "header": "Ø (mm) | Asta tonda S con luci (mm) | Asta tonda S con luci e piedino (mm) | Asta tonda S con luci e siepe (mm) | Asta tonda S con luci, siepe e piedino (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 7
+    },
+    {
+      "folder": "164-167_615BPR",
+      "page_start": "164",
+      "page_end": "167",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "164-167_615BPR",
+      "page_start": "164",
+      "page_end": "167",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "164-167_615BPR",
+      "page_start": "164",
+      "page_end": "167",
+      "header": "Ø (mm) | Asta tonda S (mm) | Asta tonda S con piedino (mm) | Asta tonda S con siepe (mm) | Asta tonda S con siepe e piedino (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 7
+    },
+    {
+      "folder": "168-171_620_Standard",
+      "page_start": "168",
+      "page_end": "171",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "168-171_620_Standard",
+      "page_start": "168",
+      "page_end": "171",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "168-171_620_Standard",
+      "page_start": "168",
+      "page_end": "171",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "168-171_620_Standard",
+      "page_start": "168",
+      "page_end": "171",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "172-175_620_Rapida",
+      "page_start": "172",
+      "page_end": "175",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "172-175_620_Rapida",
+      "page_start": "172",
+      "page_end": "175",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "172-175_620_Rapida",
+      "page_start": "172",
+      "page_end": "175",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "172-175_620_Rapida",
+      "page_start": "172",
+      "page_end": "175",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "176-179_B680H",
+      "page_start": "176",
+      "page_end": "179",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "176-179_B680H",
+      "page_start": "176",
+      "page_end": "179",
+      "header": "Lunghezza (mm) | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_LENGTHS",
+      "column_count": 3
+    },
+    {
+      "folder": "176-179_B680H",
+      "page_start": "176",
+      "page_end": "179",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "176-179_B680H",
+      "page_start": "176",
+      "page_end": "179",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "176-179_B680H",
+      "page_start": "176",
+      "page_end": "179",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "176-179_B680H",
+      "page_start": "176",
+      "page_end": "179",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "187_Contenitori",
+      "page_start": "187",
+      "page_end": "187",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "187_Contenitori",
+      "page_start": "187",
+      "page_end": "187",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "187_Contenitori",
+      "page_start": "187",
+      "page_end": "187",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "196_Dispositivi_Simply_Connect",
+      "page_start": "196",
+      "page_end": "196",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "196_Dispositivi_Simply_Connect",
+      "page_start": "196",
+      "page_end": "196",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "196_Dispositivi_Simply_Connect",
+      "page_start": "196",
+      "page_end": "196",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "196_Dispositivi_Simply_Connect",
+      "page_start": "196",
+      "page_end": "196",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "197-199_Applicazioni_Simply_Connect",
+      "page_start": "197",
+      "page_end": "199",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "197-199_Applicazioni_Simply_Connect",
+      "page_start": "197",
+      "page_end": "199",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "197-199_Applicazioni_Simply_Connect",
+      "page_start": "197",
+      "page_end": "199",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "197-199_Applicazioni_Simply_Connect",
+      "page_start": "197",
+      "page_end": "199",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "200-201_Sistema_433-868MHz_FDS",
+      "page_start": "200",
+      "page_end": "201",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "200-201_Sistema_433-868MHz_FDS",
+      "page_start": "200",
+      "page_end": "201",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "200-201_Sistema_433-868MHz_FDS",
+      "page_start": "200",
+      "page_end": "201",
+      "header": "[empty] | Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 7
+    },
+    {
+      "folder": "200-201_Sistema_433-868MHz_FDS",
+      "page_start": "200",
+      "page_end": "201",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "202-203_Sistema_433-868MHz_FDS_BD",
+      "page_start": "202",
+      "page_end": "203",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "202-203_Sistema_433-868MHz_FDS_BD",
+      "page_start": "202",
+      "page_end": "203",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "202-203_Sistema_433-868MHz_FDS_BD",
+      "page_start": "202",
+      "page_end": "203",
+      "header": "[empty] | Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 7
+    },
+    {
+      "folder": "202-203_Sistema_433-868MHz_FDS_BD",
+      "page_start": "202",
+      "page_end": "203",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "204-205_XTO_-_Sistema_868MHz_SLH-DS",
+      "page_start": "204",
+      "page_end": "205",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "204-205_XTO_-_Sistema_868MHz_SLH-DS",
+      "page_start": "204",
+      "page_end": "205",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "204-205_XTO_-_Sistema_868MHz_SLH-DS",
+      "page_start": "204",
+      "page_end": "205",
+      "header": "[empty] | Modello | Decodifica | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 6
+    },
+    {
+      "folder": "204-205_XTO_-_Sistema_868MHz_SLH-DS",
+      "page_start": "204",
+      "page_end": "205",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "204-205_XTO_-_Sistema_868MHz_SLH-DS",
+      "page_start": "204",
+      "page_end": "205",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "206-207_XTO_-_Sistema_433_MHz_SLH-SL-DS-RC",
+      "page_start": "206",
+      "page_end": "207",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "206-207_XTO_-_Sistema_433_MHz_SLH-SL-DS-RC",
+      "page_start": "206",
+      "page_end": "207",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "206-207_XTO_-_Sistema_433_MHz_SLH-SL-DS-RC",
+      "page_start": "206",
+      "page_end": "207",
+      "header": "[empty] | Modello | Decodifica | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 6
+    },
+    {
+      "folder": "206-207_XTO_-_Sistema_433_MHz_SLH-SL-DS-RC",
+      "page_start": "206",
+      "page_end": "207",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "206-207_XTO_-_Sistema_433_MHz_SLH-SL-DS-RC",
+      "page_start": "206",
+      "page_end": "207",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "206-207_XTO_-_Sistema_433_MHz_SLH-SL-DS-RC",
+      "page_start": "206",
+      "page_end": "207",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "208-209_Sistema_868MHz_SLH_LR",
+      "page_start": "208",
+      "page_end": "209",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "208-209_Sistema_868MHz_SLH_LR",
+      "page_start": "208",
+      "page_end": "209",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "208-209_Sistema_868MHz_SLH_LR",
+      "page_start": "208",
+      "page_end": "209",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "208-209_Sistema_868MHz_SLH_LR",
+      "page_start": "208",
+      "page_end": "209",
+      "header": "[empty] | Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 7
+    },
+    {
+      "folder": "208-209_Sistema_868MHz_SLH_LR",
+      "page_start": "208",
+      "page_end": "209",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "210-211_Sistema_433MHz_SLH_LR",
+      "page_start": "210",
+      "page_end": "211",
+      "header": "[empty] | Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 7
+    },
+    {
+      "folder": "210-211_Sistema_433MHz_SLH_LR",
+      "page_start": "210",
+      "page_end": "211",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "210-211_Sistema_433MHz_SLH_LR",
+      "page_start": "210",
+      "page_end": "211",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "210-211_Sistema_433MHz_SLH_LR",
+      "page_start": "210",
+      "page_end": "211",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "210-211_Sistema_433MHz_SLH_LR",
+      "page_start": "210",
+      "page_end": "211",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "212-213_Sistema_SLHP_LR",
+      "page_start": "212",
+      "page_end": "213",
+      "header": "[empty] | Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 7
+    },
+    {
+      "folder": "212-213_Sistema_SLHP_LR",
+      "page_start": "212",
+      "page_end": "213",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "212-213_Sistema_SLHP_LR",
+      "page_start": "212",
+      "page_end": "213",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "212-213_Sistema_SLHP_LR",
+      "page_start": "212",
+      "page_end": "213",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "214-215_Sistema_433MHz_RC",
+      "page_start": "214",
+      "page_end": "215",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "214-215_Sistema_433MHz_RC",
+      "page_start": "214",
+      "page_end": "215",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "214-215_Sistema_433MHz_RC",
+      "page_start": "214",
+      "page_end": "215",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "214-215_Sistema_433MHz_RC",
+      "page_start": "214",
+      "page_end": "215",
+      "header": "Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 6
+    },
+    {
+      "folder": "216-219_Datori_d'impulso_semplici",
+      "page_start": "216",
+      "page_end": "219",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "216-219_Datori_d'impulso_semplici",
+      "page_start": "216",
+      "page_end": "219",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "216-219_Datori_d'impulso_semplici",
+      "page_start": "216",
+      "page_end": "219",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "216-219_Datori_d'impulso_semplici",
+      "page_start": "216",
+      "page_end": "219",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "216-219_Datori_d'impulso_semplici",
+      "page_start": "216",
+      "page_end": "219",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "220-222_Datori_d'impulso_elettronici",
+      "page_start": "220",
+      "page_end": "222",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "220-222_Datori_d'impulso_elettronici",
+      "page_start": "220",
+      "page_end": "222",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "220-222_Datori_d'impulso_elettronici",
+      "page_start": "220",
+      "page_end": "222",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "220-222_Datori_d'impulso_elettronici",
+      "page_start": "220",
+      "page_end": "222",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "220-222_Datori_d'impulso_elettronici",
+      "page_start": "220",
+      "page_end": "222",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "223_Alimentatore_supplementare",
+      "page_start": "223",
+      "page_end": "223",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "223_Alimentatore_supplementare",
+      "page_start": "223",
+      "page_end": "223",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "223_Alimentatore_supplementare",
+      "page_start": "223",
+      "page_end": "223",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "224-225_Fotocellule_da_parete_orientabili",
+      "page_start": "224",
+      "page_end": "225",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "224-225_Fotocellule_da_parete_orientabili",
+      "page_start": "224",
+      "page_end": "225",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "224-225_Fotocellule_da_parete_orientabili",
+      "page_start": "224",
+      "page_end": "225",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "226_Fotocellule_da_parete_o_incasso",
+      "page_start": "226",
+      "page_end": "226",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "226_Fotocellule_da_parete_o_incasso",
+      "page_start": "226",
+      "page_end": "226",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "226_Fotocellule_da_parete_o_incasso",
+      "page_start": "226",
+      "page_end": "226",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "226_Fotocellule_da_parete_o_incasso",
+      "page_start": "226",
+      "page_end": "226",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "227-228_XS_Costa_di_sicurezza",
+      "page_start": "227",
+      "page_end": "228",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "227-228_XS_Costa_di_sicurezza",
+      "page_start": "227",
+      "page_end": "228",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "227-228_XS_Costa_di_sicurezza",
+      "page_start": "227",
+      "page_end": "228",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "227-228_XS_Costa_di_sicurezza",
+      "page_start": "227",
+      "page_end": "228",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "227-228_XS_Costa_di_sicurezza",
+      "page_start": "227",
+      "page_end": "228",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "234_Sensori_Laser",
+      "page_start": "234",
+      "page_end": "234",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "235_M60_Costa_elettromeccanica",
+      "page_start": "235",
+      "page_end": "235",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "238_Accessori_e_materiali_di_consumo",
+      "page_start": "238",
+      "page_end": "238",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "238_Accessori_e_materiali_di_consumo",
+      "page_start": "238",
+      "page_end": "238",
+      "header": "Modello | Descrizione | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_WITH_DESC",
+      "column_count": 4
+    },
+    {
+      "folder": "238_Accessori_e_materiali_di_consumo",
+      "page_start": "238",
+      "page_end": "238",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "240-241_RL200",
+      "page_start": "240",
+      "page_end": "241",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "242-243_RH200B",
+      "page_start": "242",
+      "page_end": "243",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "244-245_RH240",
+      "page_start": "244",
+      "page_end": "245",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    },
+    {
+      "folder": "pages_062-063_TM2K_KIT_MINI",
+      "page_start": "062",
+      "page_end": "063",
+      "header": "Modello | Codice articolo | Prezzo €",
+      "type": "PRICE_TABLE_STANDARD",
+      "column_count": 3
+    }
+  ]
+}

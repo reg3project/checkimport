@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAAC IDML Table Headers Analysis</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --text: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 16px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-card .label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section h2::before {
+            content: '';
+            width: 4px;
+            height: 1.5rem;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--bg);
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        tr:hover {
+            background: var(--bg);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-primary { background: #dbeafe; color: #1d4ed8; }
+        .badge-success { background: #dcfce7; color: #16a34a; }
+        .badge-warning { background: #fef3c7; color: #d97706; }
+        .badge-danger { background: #fee2e2; color: #dc2626; }
+        .badge-secondary { background: #f1f5f9; color: #475569; }
+        .badge-purple { background: #f3e8ff; color: #7c3aed; }
+        .badge-cyan { background: #cffafe; color: #0891b2; }
+
+        .count {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-pattern {
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.85rem;
+            background: var(--bg);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+
+        .type-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .type-card {
+            background: var(--bg);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .type-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .type-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .type-card.price { border-left-color: #22c55e; }
+        .type-card.kit { border-left-color: #f59e0b; }
+        .type-card.accessory { border-left-color: #8b5cf6; }
+        .type-card.other { border-left-color: #64748b; }
+
+        .progress-bar {
+            height: 8px;
+            background: var(--bg);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .progress-bar .fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .note {
+            background: #fef3c7;
+            border: 1px solid #fcd34d;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .note strong {
+            color: #92400e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            header h1 { font-size: 1.75rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FAAC IDML Table Headers Analysis</h1>
+            <p>Comprehensive scan of all tables in the FAAC Listino 2024 IDML document</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">1,172</div>
+                <div class="label">Total Tables</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">320</div>
+                <div class="label">Unique Patterns</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">206</div>
+                <div class="label">Price Tables</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">180</div>
+                <div class="label">Kit Contents</div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Table Type Classification</h2>
+            <p>Tables are classified based on their header structure. Here's the breakdown:</p>
+
+            <div class="type-breakdown">
+                <div class="type-card price">
+                    <h3>
+                        <span>PRICE_TABLE_STANDARD</span>
+                        <span class="count">119</span>
+                    </h3>
+                    <p>Standard price tables with: <code>Modello | Codice articolo | Prezzo &euro;</code></p>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 10.2%; background: #22c55e;"></div>
+                    </div>
+                </div>
+
+                <div class="type-card price">
+                    <h3>
+                        <span>PRICE_TABLE_WITH_DESC</span>
+                        <span class="count">73</span>
+                    </h3>
+                    <p>Extended price tables: <code>Modello | Descrizione | Codice articolo | Prezzo &euro;</code></p>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 6.2%; background: #22c55e;"></div>
+                    </div>
+                </div>
+
+                <div class="type-card price">
+                    <h3>
+                        <span>PRICE_TABLE_LENGTHS</span>
+                        <span class="count">14</span>
+                    </h3>
+                    <p>Length-based pricing: <code>Lunghezza (mm) | Codice articolo | Prezzo &euro;</code></p>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 1.2%; background: #22c55e;"></div>
+                    </div>
+                </div>
+
+                <div class="type-card kit">
+                    <h3>
+                        <span>KIT_CONTENTS</span>
+                        <span class="count">180</span>
+                    </h3>
+                    <p>Kit component lists: <code>Rif | Q.t&agrave; | Descrizione materiale | Cod. | Prezzo &euro;</code></p>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 15.4%; background: #f59e0b;"></div>
+                    </div>
+                </div>
+
+                <div class="type-card accessory">
+                    <h3>
+                        <span>ACCESSORY_LISTS</span>
+                        <span class="count">57</span>
+                    </h3>
+                    <p>Accessory tables: <code>Q.t&agrave; | Descrizione | Codice</code></p>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 4.9%; background: #8b5cf6;"></div>
+                    </div>
+                </div>
+
+                <div class="type-card other">
+                    <h3>
+                        <span>SINGLE_ITEM_PRICES</span>
+                        <span class="count">~500</span>
+                    </h3>
+                    <p>Single accessory rows: <code>790062 | &euro; 26,00</code> format</p>
+                    <div class="progress-bar">
+                        <div class="fill" style="width: 42.7%; background: #64748b;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Main Header Patterns</h2>
+            <p>The most common table header patterns found in the document:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Count</th>
+                        <th>Type</th>
+                        <th>Header Pattern</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="count">180</span></td>
+                        <td><span class="badge badge-warning">KIT_CONTENTS</span></td>
+                        <td><code class="header-pattern">Rif | Q.t&agrave; | Descrizione materiale | Cod. | Prezzo &euro;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">113</span></td>
+                        <td><span class="badge badge-success">PRICE_TABLE</span></td>
+                        <td><code class="header-pattern">Modello | Codice articolo | Prezzo &euro;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">65</span></td>
+                        <td><span class="badge badge-success">PRICE_WITH_DESC</span></td>
+                        <td><code class="header-pattern">Modello | Descrizione | Codice articolo | Prezzo &euro;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">57</span></td>
+                        <td><span class="badge badge-purple">ACCESSORY_LIST</span></td>
+                        <td><code class="header-pattern">Q.t&agrave; | Descrizione | Codice</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">18</span></td>
+                        <td><span class="badge badge-secondary">SINGLE_PRICE</span></td>
+                        <td><code class="header-pattern">790062 | &euro; 26,00</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">16</span></td>
+                        <td><span class="badge badge-secondary">SINGLE_PRICE</span></td>
+                        <td><code class="header-pattern">720119 | &euro; 35,00</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">13</span></td>
+                        <td><span class="badge badge-secondary">SINGLE_PRICE</span></td>
+                        <td><code class="header-pattern">720309 | &euro; 83,00</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">11</span></td>
+                        <td><span class="badge badge-success">LENGTH_PRICE</span></td>
+                        <td><code class="header-pattern">Lunghezza (mm) | Codice articolo | Prezzo &euro;</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="count">5</span></td>
+                        <td><span class="badge badge-cyan">RADIO_TABLE</span></td>
+                        <td><code class="header-pattern">[empty] | Modello | Decodifica | Descrizione | Colore | Codice articolo | Prezzo &euro;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Price Table Details</h2>
+            <p>206 tables contain product pricing information with <code>Codice articolo</code> and <code>Prezzo</code> columns.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Count</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge badge-success">Standard (3 cols)</span></td>
+                        <td>119</td>
+                        <td>Modello | Codice articolo | Prezzo &euro;</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-success">With Description (4 cols)</span></td>
+                        <td>65</td>
+                        <td>Modello | Descrizione | Codice articolo | Prezzo &euro;</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-success">Length-based (3 cols)</span></td>
+                        <td>14</td>
+                        <td>Lunghezza (mm) | Codice articolo | Prezzo &euro;</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-cyan">Radio Systems (6-7 cols)</span></td>
+                        <td>5</td>
+                        <td>[Image] | Modello | Decodifica | Descrizione | Colore | Codice | Prezzo</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-primary">Other variants</span></td>
+                        <td>3</td>
+                        <td>Various other formats with Codice + Prezzo</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Note:</strong> Radio system tables (pages 206-207) have 6-7 columns with an empty first column for product images.
+                The extraction script handles these by looking for the "Modello" header explicitly rather than assuming column 0.
+            </div>
+        </section>
+
+        <section>
+            <h2>Kit Contents Tables</h2>
+            <p>180 tables list the components included in product kits.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Rif</strong></td>
+                        <td>Reference number (matches diagram callouts)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Q.t&agrave;</strong></td>
+                        <td>Quantity included in kit</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Descrizione materiale</strong></td>
+                        <td>Component description</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cod.</strong></td>
+                        <td>Component SKU code</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prezzo &euro;</strong></td>
+                        <td>Individual component price</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Single-Item Price Entries</h2>
+            <p>A large portion (~500) of tables are simple 2-column accessory price entries:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Example SKU</th>
+                        <th>Price</th>
+                        <th>Occurrences</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>790062</code></td>
+                        <td>&euro; 26,00</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td><code>720119</code></td>
+                        <td>&euro; 35,00</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td><code>720309</code></td>
+                        <td>&euro; 83,00</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td><code>720118</code></td>
+                        <td>&euro; 55,00</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td><code>390923</code></td>
+                        <td>&euro; 192,00</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td><code>790077</code></td>
+                        <td>&euro; 256,00</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td><code>790076</code></td>
+                        <td>&euro; 446,00</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Note:</strong> These are common accessories (encoders, brackets, control boards) that appear on multiple product pages.
+                They represent the same SKU appearing across different products that use the same accessory.
+            </div>
+        </section>
+
+        <section>
+            <h2>Extraction Summary</h2>
+            <p>Based on this analysis, the data extraction scripts target:</p>
+
+            <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                <li><strong>206 price tables</strong> containing product SKUs and prices</li>
+                <li><strong>358 unique SKU rows</strong> extracted (after deduplication)</li>
+                <li><strong>Excluded:</strong> Schemi di installazione pages (263-285) - technical drawings without pricing</li>
+            </ul>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: #f0fdf4; border-radius: 8px; border: 1px solid #bbf7d0;">
+                <strong style="color: #166534;">Output Files:</strong>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem; color: #166534;">
+                    <li><code>FAAC_Complete_v2_TOC.csv</code> - Table of contents (138 products)</li>
+                    <li><code>FAAC_Complete_v2_Modello_Codice_Pagina.csv</code> - SKU extraction (358 rows)</li>
+                    <li><code>FAAC_Complete_v2_TOC_with_SKUs.csv</code> - Consolidated TOC with SKU codes</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>Generated from FAAC Listino 2024 IDML Analysis</p>
+            <p>Source: <code>/home/user/checkimport/input/processing/IDML_unzipped</code></p>
+        </footer>
+    </div>
+</body>
+</html>
