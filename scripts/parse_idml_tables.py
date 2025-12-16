@@ -112,6 +112,9 @@ def get_product_name_from_filename(filename):
     """Extract product name from IDML filename."""
     # Remove extension
     name = Path(filename).stem
+    # Handle "pages_062-063_..." format
+    if name.startswith('pages_'):
+        name = name[6:]  # Remove "pages_" prefix
     # Remove page prefix - match pattern: digits, optional dash-digits, then underscore
     # e.g., "098-099_770N_230V" -> "770N_230V"
     # e.g., "098_770N" -> "770N"
@@ -127,6 +130,9 @@ def get_product_name_from_filename(filename):
 def get_page_from_filename(filename):
     """Extract page number from IDML filename."""
     name = Path(filename).stem
+    # Handle "pages_062-063_..." format
+    if name.startswith('pages_'):
+        name = name[6:]  # Remove "pages_" prefix
     match = re.match(r'^(\d+(?:[-_]\d+)?)', name)
     if match:
         return match.group(1).replace('_', '-')
@@ -143,12 +149,15 @@ def main():
     all_modelli = []
 
     # Get all IDML files
-    # Exclude: _SI files (Schema Installazione) and KIT files
+    # Exclude: _SI files (Schema Installazione) and KIT files (but not TM2K KIT MINI which is a product)
     def should_include(f):
         stem_lower = f.stem.lower()
         # Skip Schema Installazione
         if f.stem.endswith('_SI'):
             return False
+        # Allow TM2K KIT MINI (it's a product page, not a kit package)
+        if 'tm2k' in stem_lower:
+            return True
         # Skip KIT files
         if '_kit' in stem_lower or 'kit_' in stem_lower:
             return False
