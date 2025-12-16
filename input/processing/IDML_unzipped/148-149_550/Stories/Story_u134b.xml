@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u134b" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Models_gruppo%3aPackage_Description">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Content>550 Slave / 550 L Slave</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Content>comprendono:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content> un attuatore elettromeccanico, carter di protezione con plafoniera incorporata, lampada di cortesia temporizzata, un condensatore di spunto 10μF 400V (8μF 400V mod. L).</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Content>550 ITT / 550 L ITT</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Content>comprendono:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content> un attuatore elettromeccanico, carter di protezione con plafoniera incorporata, apparecchiatura elettronica E550, finecorsa meccanici di apertura e chiusura, encoder, lampada di cortesia temporizzata, un condensatore di spunto 10μF 400V (8μF 400V mod. L).</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

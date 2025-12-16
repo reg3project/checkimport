@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u109" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/sommario%3aindice" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<HyperlinkTextSource Self="u212" Name=".530" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>392 C	</Content>
+				</HyperlinkTextSource>
+				<Content>263</Content>
+				<Br />
+				<HyperlinkTextSource Self="u213" Name=".531" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>390 230V	</Content>
+				</HyperlinkTextSource>
+				<Content>263</Content>
+				<Br />
+				<HyperlinkTextSource Self="u211" Name=".529" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>412	</Content>
+				</HyperlinkTextSource>
+				<Content>264</Content>
+				<Br />
+				<HyperlinkTextSource Self="u214" Name=".532" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>413 230V	</Content>
+				</HyperlinkTextSource>
+				<Content>264</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/sommario%3aindice" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<HyperlinkTextSource Self="u20f" Name=".527" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>415 230V	</Content>
+				</HyperlinkTextSource>
+				<Content>265</Content>
+				<Br />
+				<HyperlinkTextSource Self="u210" Name=".528" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>415 24V	</Content>
+				</HyperlinkTextSource>
+				<Content>265</Content>
+				<Br />
+				<HyperlinkTextSource Self="u20d" Name=".525" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>S418	</Content>
+				</HyperlinkTextSource>
+				<Content>266</Content>
+				<Br />
+				<HyperlinkTextSource Self="u20e" Name=".526" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>402	</Content>
+				</HyperlinkTextSource>
+				<Content>266</Content>
+				<Br />
+				<HyperlinkTextSource Self="u20c" Name=".524" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>S450H	</Content>
+				</HyperlinkTextSource>
+				<Content>267</Content>
+				<Br />
+				<HyperlinkTextSource Self="u215" Name=".533" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>422	</Content>
+				</HyperlinkTextSource>
+				<Content>267</Content>
+				<Br />
+				<HyperlinkTextSource Self="u209" Name=".521" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>400	</Content>
+				</HyperlinkTextSource>
+				<Content>268</Content>
+				<Br />
+				<HyperlinkTextSource Self="u20a" Name=".522" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>770N 230V	</Content>
+				</HyperlinkTextSource>
+				<Content>268</Content>
+				<Br />
+				<HyperlinkTextSource Self="u207" Name=".519" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>770N 24V	</Content>
+				</HyperlinkTextSource>
+				<Content>269</Content>
+				<Br />
+				<HyperlinkTextSource Self="u208" Name=".520" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>S800H ENC	</Content>
+				</HyperlinkTextSource>
+				<Content>269</Content>
+				<Br />
+				<HyperlinkTextSource Self="u206" Name=".518" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>S800 ENC	</Content>
+				</HyperlinkTextSource>
+				<Content>270</Content>
+				<Br />
+				<HyperlinkTextSource Self="u20b" Name=".523" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>740	</Content>
+				</HyperlinkTextSource>
+				<Content>270</Content>
+				<Br />
+				<Content>740 C                                                                        271</Content>
+				<Br />
+				<Content>741 C                                                                        271</Content>
+				<Br />
+				<Content>741                                                                            272</Content>
+				<Br />
+				<HyperlinkTextSource Self="u203" Name=".515" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>C4000I	</Content>
+				</HyperlinkTextSource>
+				<Content>273</Content>
+				<Br />
+				<HyperlinkTextSource Self="u204" Name=".516" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>S2500I	</Content>
+				</HyperlinkTextSource>
+				<Content>273</Content>
+				<Br />
+				<HyperlinkTextSource Self="u205" Name=".517" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>C720	</Content>
+				</HyperlinkTextSource>
+				<Content>272</Content>
+				<Br />
+				<HyperlinkTextSource Self="u202" Name=".514" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>C721	</Content>
+				</HyperlinkTextSource>
+				<Content>274</Content>
+				<Br />
+				<HyperlinkTextSource Self="u216" Name=".534" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>746 C	</Content>
+				</HyperlinkTextSource>
+				<Content>274</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1fd" Name=".509" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>844 C	</Content>
+				</HyperlinkTextSource>
+				<Content>275</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1fe" Name=".510" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>844 C 3PH	</Content>
+				</HyperlinkTextSource>
+				<Content>275</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<HyperlinkTextSource Self="u1fc" Name=".508" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>884 MC 3PH	</Content>
+				</HyperlinkTextSource>
+				<Content>276</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/sommario%3aindice" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<HyperlinkTextSource Self="u1ff" Name=".511" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>C851	</Content>
+				</HyperlinkTextSource>
+				<Content>276</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1fa" Name=".506" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>D600	</Content>
+				</HyperlinkTextSource>
+				<Content>277</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1fb" Name=".507" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>D700 HS	</Content>
+				</HyperlinkTextSource>
+				<Content>277</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f9" Name=".505" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>D1000	</Content>
+				</HyperlinkTextSource>
+				<Content>278</Content>
+				<Br />
+				<HyperlinkTextSource Self="u200" Name=".512" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>540	</Content>
+				</HyperlinkTextSource>
+				<Content>278</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f7" Name=".503" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>541	</Content>
+				</HyperlinkTextSource>
+				<Content>279</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f8" Name=".504" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>541 3PH	</Content>
+				</HyperlinkTextSource>
+				<Content>279</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f6" Name=".502" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>550	</Content>
+				</HyperlinkTextSource>
+				<Content>280</Content>
+				<Br />
+				<Content>593	280</Content>
+				<Br />
+				<HyperlinkTextSource Self="u201" Name=".513" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>580	</Content>
+				</HyperlinkTextSource>
+				<Content>281</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f3" Name=".499" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>B614	</Content>
+				</HyperlinkTextSource>
+				<Content>282</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f2" Name=".498" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>615BPR	</Content>
+				</HyperlinkTextSource>
+				<Content>282</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f4" Name=".500" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>620 Standard	</Content>
+				</HyperlinkTextSource>
+				<Content>283</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f1" Name=".497" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>620 Rapida	</Content>
+				</HyperlinkTextSource>
+				<Content>283</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f5" Name=".501" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>B680H	</Content>
+				</HyperlinkTextSource>
+				<Content>281</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1ef" Name=".495" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>RL200	</Content>
+				</HyperlinkTextSource>
+				<Content>284</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1f0" Name=".496" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>RH200B	</Content>
+				</HyperlinkTextSource>
+				<Content>284</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1ee" Name=".494" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>RH240	</Content>
+				</HyperlinkTextSource>
+				<Content>285</Content>
+				<Br />
+				<HyperlinkTextSource Self="u1ed" Name=".493" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>RH240B	</Content>
+				</HyperlinkTextSource>
+				<Content>285</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

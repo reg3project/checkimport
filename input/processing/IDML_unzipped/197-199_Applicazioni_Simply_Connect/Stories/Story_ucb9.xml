@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="ucb9" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" ParagraphShadingTint="-1">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/C=100 M=0 Y=0 K=0</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/C=100 M=81 Y=38 K=27" FontStyle="67 Bold Condensed" PointSize="16" Capitalization="AllCaps" AppliedLanguage="$ID/English: UK" DiacriticPosition="OpentypePosition">
+				<Properties>
+					<AppliedFont type="string">Univers LT Std</AppliedFont>
+				</Properties>
+				<Content>XWBL</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/C=100 M=81 Y=38 K=27" FontStyle="57 Condensed" PointSize="16" Capitalization="AllCaps" AppliedLanguage="$ID/English: UK" DiacriticPosition="OpentypePosition">
+				<Properties>
+					<AppliedFont type="string">Univers LT Std</AppliedFont>
+				</Properties>
+				<Content>  </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/C=100 M=81 Y=38 K=27" FontStyle="57 Condensed" PointSize="16" AppliedLanguage="$ID/English: UK" DiacriticPosition="OpentypePosition">
+				<Properties>
+					<AppliedFont type="string">Univers LT Std</AppliedFont>
+				</Properties>
+				<Content>o</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/C=100 M=81 Y=38 K=27" FontStyle="57 Condensed" PointSize="16" Capitalization="AllCaps" AppliedLanguage="$ID/English: UK" DiacriticPosition="OpentypePosition">
+				<Properties>
+					<AppliedFont type="string">Univers LT Std</AppliedFont>
+				</Properties>
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/C=100 M=81 Y=38 K=27" FontStyle="67 Bold Condensed" PointSize="16" Capitalization="AllCaps" AppliedLanguage="$ID/English: UK" DiacriticPosition="OpentypePosition">
+				<Properties>
+					<AppliedFont type="string">Univers LT Std</AppliedFont>
+				</Properties>
+				<Content>XMBX4</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

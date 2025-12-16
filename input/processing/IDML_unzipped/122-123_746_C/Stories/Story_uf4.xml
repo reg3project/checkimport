@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="uf4" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_box_in_flusso">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<TextFrame Self="u2e1" ParentStory="u2e4" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" StrokeWeight="1" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 0 -371.38499999999993">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="510.2362204724409 0" LeftDirection="510.2362204724409 0" RightDirection="510.2362204724409 0" />
+									<PathPointType Anchor="510.2362204724409 371.38499999999993" LeftDirection="510.2362204724409 371.38499999999993" RightDirection="510.2362204724409 371.38499999999993" />
+									<PathPointType Anchor="0 371.38499999999993" LeftDirection="0 371.38499999999993" RightDirection="0 371.38499999999993" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="510.2362204724409" TextColumnMaxWidth="0">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<AnchoredObjectSetting AnchoredPosition="AboveLine" HorizontalAlignment="CenterAlign" AnchorYoffset="11.34" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+				<Br />
+				<TextFrame Self="u2c9" ParentStory="u2cc" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" StrokeWeight="1" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 0 -70.875">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="510.2362204724409 0" LeftDirection="510.2362204724409 0" RightDirection="510.2362204724409 0" />
+									<PathPointType Anchor="510.2362204724409 70.875" LeftDirection="510.2362204724409 70.875" RightDirection="510.2362204724409 70.875" />
+									<PathPointType Anchor="0 70.875" LeftDirection="0 70.875" RightDirection="0 70.875" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="510.2362204724409" TextColumnMaxWidth="0">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<AnchoredObjectSetting AnchoredPosition="AboveLine" HorizontalAlignment="CenterAlign" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+				<Br />
+				<TextFrame Self="u2b0" ParentStory="u2b4" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" CornerRadius="12" MiterLimit="4" EndCap="ButtEndCap" EndJoin="MiterEndJoin" LeftLineEnd="None" RightLineEnd="None" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" StrokeAlignment="CenterAlignment" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/GATES_box" CornerOption="None" Visible="true" Name="$ID/" TopLeftCornerOption="None" TopRightCornerOption="None" BottomLeftCornerOption="None" BottomRightCornerOption="None" TopLeftCornerRadius="12" TopRightCornerRadius="12" BottomLeftCornerRadius="12" BottomRightCornerRadius="12" ArrowHeadAlignment="InsidePath" LeftArrowHeadScale="100" RightArrowHeadScale="100" ItemTransform="1 0 0 1 0 -11.34">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="510.2362204724409 0" LeftDirection="510.2362204724409 0" RightDirection="510.2362204724409 0" />
+									<PathPointType Anchor="510.2362204724409 11.34" LeftDirection="510.2362204724409 11.34" RightDirection="510.2362204724409 11.34" />
+									<PathPointType Anchor="0 11.34" LeftDirection="0 11.34" RightDirection="0 11.34" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="510.2362204724409" FirstBaselineOffset="AscentOffset" MinimumFirstBaselineOffset="0" TextColumnMaxWidth="0" AutoSizingType="Off" AutoSizingReferencePoint="CenterPoint" UseMinimumHeightForAutoSizing="false" MinimumHeightForAutoSizing="0" UseMinimumWidthForAutoSizing="false" MinimumWidthForAutoSizing="0" UseNoLineBreaksForAutoSizing="false" ColumnRuleOverride="false" ColumnRuleOffset="0" ColumnRuleTopInset="0" ColumnRuleInsetChainOverride="true" ColumnRuleBottomInset="0" ColumnRuleStrokeWidth="1" ColumnRuleStrokeColor="Color/Black" ColumnRuleStrokeType="StrokeStyle/$ID/Solid" ColumnRuleStrokeTint="100" ColumnRuleOverprintOverride="false" FootnotesEnableOverrides="false" FootnotesSpanAcrossColumns="false" FootnotesMinimumSpacing="12" FootnotesSpaceBetween="6">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<AnchoredObjectSetting AnchoredPosition="AboveLine" SpineRelative="false" LockPosition="false" PinPosition="true" AnchorPoint="BottomRightAnchor" HorizontalAlignment="CenterAlign" HorizontalReferencePoint="TextFrame" VerticalAlignment="BottomAlign" VerticalReferencePoint="LineBaseline" AnchorXoffset="0" AnchorYoffset="2.835" AnchorSpaceAbove="0" />
+					<BaselineFrameGridOption UseCustomBaselineFrameGrid="false" StartingOffsetForBaselineFrameGrid="0" BaselineFrameGridRelativeOption="TopOfInset" BaselineFrameGridIncrement="12">
+						<Properties>
+							<BaselineFrameGridColor type="enumeration">LightBlue</BaselineFrameGridColor>
+						</Properties>
+					</BaselineFrameGridOption>
+					<TextFrameFootnoteOptionsObject EnableOverrides="false" SpanFootnotesAcross="false" MinimumSpacingOption="12" SpaceBetweenFootnotes="6" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_tabella">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Table Self="uf4i282" HeaderRowCount="1" FooterRowCount="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" BodyRowCount="14" ColumnCount="3" AppliedTableStyle="TableStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE" TableDirection="LeftToRightDirection">
+					<Row Self="uf4i282Row0" Name="0" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row1" Name="1" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row2" Name="2" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row3" Name="3" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row4" Name="4" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row5" Name="5" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row6" Name="6" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row7" Name="7" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row8" Name="8" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Row9" Name="9" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Rowa" Name="10" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Rowb" Name="11" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Rowc" Name="12" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Rowd" Name="13" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="uf4i282Rowe" Name="14" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Column Self="uf4i282Column0" Name="0" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="255.11811023622045" />
+					<Column Self="uf4i282Column1" Name="1" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="127.55905511811022" />
+					<Column Self="uf4i282Column2" Name="2" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="127.55905511811022" />
+					<Cell Self="uf4i282i27" Name="0:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="1" RightEdgeStrokePriority="2" TopEdgeStrokePriority="1" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_header_left_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Modello</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i28" Name="1:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="2" RightEdgeStrokePriority="3" TopEdgeStrokePriority="2" BottomEdgeStrokePriority="2">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>746 C Z16</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i29" Name="2:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="3" RightEdgeStrokePriority="3" TopEdgeStrokePriority="3" BottomEdgeStrokePriority="3">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>746 C Z20</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i0" Name="0:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="4" RightEdgeStrokePriority="5" TopEdgeStrokePriority="4" BottomEdgeStrokePriority="6">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Tensione di alimentazione di rete</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i1" Name="1:1" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="5" RightEdgeStrokePriority="1" TopEdgeStrokePriority="5" BottomEdgeStrokePriority="7">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>220-240V~ 50/60 Hz</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i3" Name="0:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="6" RightEdgeStrokePriority="7" TopEdgeStrokePriority="6" BottomEdgeStrokePriority="8">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Potenza max</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i4" Name="1:2" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="7" RightEdgeStrokePriority="1" TopEdgeStrokePriority="7" BottomEdgeStrokePriority="9">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>150 W</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i6" Name="0:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="8" RightEdgeStrokePriority="9" TopEdgeStrokePriority="8" BottomEdgeStrokePriority="11">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Pignone</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i7" Name="1:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="9" RightEdgeStrokePriority="10" TopEdgeStrokePriority="9" BottomEdgeStrokePriority="12">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Z16 modulo 4</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i8" Name="2:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="10" RightEdgeStrokePriority="10" TopEdgeStrokePriority="10" BottomEdgeStrokePriority="13">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Z20 modulo 4</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i9" Name="0:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="11" RightEdgeStrokePriority="12" TopEdgeStrokePriority="11" BottomEdgeStrokePriority="14">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Forza max di spinta</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282ia" Name="1:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="12" RightEdgeStrokePriority="13" TopEdgeStrokePriority="12" BottomEdgeStrokePriority="15">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>830 N</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282ib" Name="2:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="13" RightEdgeStrokePriority="13" TopEdgeStrokePriority="13" BottomEdgeStrokePriority="16">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>665 N</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282ic" Name="0:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="14" RightEdgeStrokePriority="15" TopEdgeStrokePriority="14" BottomEdgeStrokePriority="17">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Peso max anta</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282id" Name="1:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="15" RightEdgeStrokePriority="16" TopEdgeStrokePriority="15" BottomEdgeStrokePriority="18">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>600 Kg</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282ie" Name="2:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="16" RightEdgeStrokePriority="16" TopEdgeStrokePriority="16" BottomEdgeStrokePriority="19">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>400 Kg</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282if" Name="0:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="17" RightEdgeStrokePriority="18" TopEdgeStrokePriority="17" BottomEdgeStrokePriority="20">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Velocità max anta</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i10" Name="1:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="18" RightEdgeStrokePriority="19" TopEdgeStrokePriority="18" BottomEdgeStrokePriority="21">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>9.6 m/min</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i11" Name="2:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="19" RightEdgeStrokePriority="19" TopEdgeStrokePriority="19" BottomEdgeStrokePriority="22">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>12 m/min</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i12" Name="0:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="20" RightEdgeStrokePriority="21" TopEdgeStrokePriority="20" BottomEdgeStrokePriority="23">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Lunghezza max anta</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i13" Name="1:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="21" RightEdgeStrokePriority="22" TopEdgeStrokePriority="21" BottomEdgeStrokePriority="24">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>40 m</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i14" Name="2:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="22" RightEdgeStrokePriority="22" TopEdgeStrokePriority="22" BottomEdgeStrokePriority="24">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>50 m</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i15" Name="0:8" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="23" RightEdgeStrokePriority="24" TopEdgeStrokePriority="23" BottomEdgeStrokePriority="25">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Spazio di fermata</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i16" Name="1:8" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="24" RightEdgeStrokePriority="1" TopEdgeStrokePriority="24" BottomEdgeStrokePriority="26">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>30 mm</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i18" Name="0:9" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="25" RightEdgeStrokePriority="26" TopEdgeStrokePriority="25" BottomEdgeStrokePriority="27">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Grado di protezione</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i19" Name="1:9" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="26" RightEdgeStrokePriority="1" TopEdgeStrokePriority="26" BottomEdgeStrokePriority="28">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>IP44</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i1b" Name="0:10" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="27" RightEdgeStrokePriority="28" TopEdgeStrokePriority="27" BottomEdgeStrokePriority="29">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Condensatore di spunto</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i1c" Name="1:10" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="28" RightEdgeStrokePriority="1" TopEdgeStrokePriority="28" BottomEdgeStrokePriority="30">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>12.5 µF</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i1e" Name="0:11" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="29" RightEdgeStrokePriority="30" TopEdgeStrokePriority="29" BottomEdgeStrokePriority="31">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Temperatura ambiente di esercizio</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i1f" Name="1:11" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="30" RightEdgeStrokePriority="1" TopEdgeStrokePriority="30" BottomEdgeStrokePriority="32">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>-20° ÷ +55°C *</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i2a" Name="0:12" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="29" RightEdgeStrokePriority="30" TopEdgeStrokePriority="31" BottomEdgeStrokePriority="31">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Frequenza di utilizzo</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i2b" Name="1:12" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="30" RightEdgeStrokePriority="1" TopEdgeStrokePriority="32" BottomEdgeStrokePriority="32">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Uso continuo*</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i21" Name="0:13" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="31" RightEdgeStrokePriority="32" TopEdgeStrokePriority="31" BottomEdgeStrokePriority="33">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Termoprotezione</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i22" Name="1:13" RowSpan="1" ColumnSpan="2" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="32" RightEdgeStrokePriority="1" TopEdgeStrokePriority="32" BottomEdgeStrokePriority="34">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>120°C autoripristinanti</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i24" Name="0:14" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="33" RightEdgeStrokePriority="34" TopEdgeStrokePriority="33" BottomEdgeStrokePriority="33">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_param_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Peso</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i25" Name="1:14" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="34" RightEdgeStrokePriority="35" TopEdgeStrokePriority="34" BottomEdgeStrokePriority="34">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>16.2 Kg</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="uf4i282i26" Name="2:14" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="35" RightEdgeStrokePriority="35" TopEdgeStrokePriority="35" BottomEdgeStrokePriority="35">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3atechspec_value_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>16.5 Kg</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+				</Table>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Technical_Specifications_gruppo%3aNote">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>(*) In versione a 230V può funzionare a temperature da +55° a +65° alle seguenti condizioni:  Frequenza di utilizzo 28 cicli/h (746 C Z16) - 36 cicli/h (746 C Z20), Carico massimo sugli accessori (inclusi accessori Bus2Easy) 400 mA (anzichè 500 mA). I cicli/ora sono riferiti ad un’anta di peso massimo e di 5 mt di larghezza.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

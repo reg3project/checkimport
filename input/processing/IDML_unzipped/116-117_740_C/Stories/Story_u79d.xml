@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u79d" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aProduct_Plus_gruppo%3aBullet_List">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper">
+				<Content>Motoriduttore avanzato: Unità di controllo integrata con velocità regolabile, ingressi per coste di sicurezza, protocollo radio FDS e Omnidec, tecnologia Bus2Easy.</Content>
+				<Br />
+				<Content>Compatibile con Simply Connect e modalità di funzionamento a basso consumo (&lt;0,5 W in standby e &lt;2 W in standby con Simply Connect).</Content>
+				<Br />
+				<Content>Controllo motore ad alte prestazioni: Dotato di encoder ad alta risoluzione per un funzionamento fluido, ottimizzazione della forza, ridotto consumo energetico e sensibilità regolabile per il rilevamento degli ostacoli.</Content>
+				<Br />
+				<Content>Estetica rinnovata, integrabile in qualsiasi contesto</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

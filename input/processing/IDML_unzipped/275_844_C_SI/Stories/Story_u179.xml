@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u179" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aKit_Reference_gruppo%3aPaper_Info">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/XRR_None">
+				<HyperlinkTextSource Self="u273" Name="Source_414_88_1" Hidden="false" AppliedCharacterStyle="n">
+					<Content>PRATICO C kit</Content>
+				</HyperlinkTextSource>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> </Content>
+				<Br />
+				<Content>cod. 105940</Content>
+				<Br />
+				<Content>Info a pag. 54</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/XRR_None">
+				<HyperlinkTextSource Self="u272" Name="Source_414_88_1 430" Hidden="false" AppliedCharacterStyle="n">
+					<Content>PRATICO C kit</Content>
+				</HyperlinkTextSource>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> PERFECT 60 </Content>
+				<Br />
+				<Content>cod. 120011</Content>
+				<Br />
+				<Content>Info a pag. 36</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

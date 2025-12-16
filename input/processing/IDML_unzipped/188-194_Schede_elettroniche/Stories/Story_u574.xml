@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u574" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/sommario%3aindice" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">21</Leading>
+				</Properties>
+				<Content>Dispositivi Simply Connect</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<HyperlinkTextSource Self="u5af" Name=".1455" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">21</Leading>
+				</Properties>
+				<Content>196</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Br />
+				<Content>Applicazioni Simply Connect </Content>
+				<HyperlinkTextSource Self="u5b0" Name=".1456" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>197</Content>
+				<Br />
+				<Content>Sistema 433-868MHz FDS</Content>
+				<HyperlinkTextSource Self="u5ad" Name=".1453" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>200</Content>
+				<Br />
+				<Content>Sistema 433-868MHz FDS BD</Content>
+				<HyperlinkTextSource Self="u5ae" Name=".1454" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>202</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content>XTO - Sistema 868MHz SLH-DS</Content>
+				<HyperlinkTextSource Self="u5ac" Name=".1452" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>204</Content>
+				<Br />
+				<Content>XTO - Sistema 433 MHz SLH-SL-DS-RC</Content>
+				<HyperlinkTextSource Self="u5b1" Name=".1457" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>206</Content>
+				<Br />
+				<Content>Sistema 868MHz SLH LR</Content>
+				<HyperlinkTextSource Self="u5aa" Name=".1450" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>208</Content>
+				<Br />
+				<Content>Sistema 433MHz SLH LR</Content>
+				<HyperlinkTextSource Self="u5ab" Name=".1451" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>210</Content>
+				<Br />
+				<Content>Sistema SLHP LR</Content>
+				<HyperlinkTextSource Self="u5a9" Name=".1449" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>212</Content>
+				<Br />
+				<Content>Sistema 433MHz RC</Content>
+				<HyperlinkTextSource Self="u5b2" Name=".1458" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>214</Content>
+				<Br />
+				<Content>Datori d’impulso semplici</Content>
+				<HyperlinkTextSource Self="u5a6" Name=".1446" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>216</Content>
+				<Br />
+				<Content>Datori d’impulso elettronici </Content>
+				<HyperlinkTextSource Self="u5a7" Name=".1447" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>220</Content>
+				<Br />
+				<Content>Datori d’impulso per applicazioni speciali</Content>
+				<HyperlinkTextSource Self="u5a5" Name=".1445" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>223</Content>
+				<Br />
+				<Content>Alimentatore supplementare</Content>
+				<HyperlinkTextSource Self="u5a8" Name=".1448" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>223</Content>
+				<Br />
+				<Content>Fotocellule da parete orientabili</Content>
+				<HyperlinkTextSource Self="u5a2" Name=".1442" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>224</Content>
+				<Br />
+				<Content>Fotocellule da parete o incasso</Content>
+				<HyperlinkTextSource Self="u5a3" Name=".1443" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>226</Content>
+				<Br />
+				<Content>XS Costa di sicurezza                                           227</Content>
+				<Br />
+				<Content>Unità di controllo per coste di sicurezza         </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" KerningValue="-140" AppliedLanguage="$ID/English: UK">
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content> 229</Content>
+				<Br />
+				<Content>Sistema Radio Coste                                            </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" KerningValue="-80" AppliedLanguage="$ID/English: UK">
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content>230</Content>
+				<Br />
+				<Content>SAFEcoder </Content>
+				<HyperlinkTextSource Self="u5a1" Name=".1441" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>231</Content>
+				<Br />
+				<Content>XLC </Content>
+				<HyperlinkTextSource Self="u5a4" Name=".1444" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>232</Content>
+				<Br />
+				<Content>XUSB </Content>
+				<HyperlinkTextSource Self="u59f" Name=".1439" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>233</Content>
+				<Br />
+				<Content>Sensori Laser </Content>
+				<HyperlinkTextSource Self="u5a0" Name=".1440" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>234</Content>
+				<Br />
+				<Content>M60 Costa elettromeccanica</Content>
+				<HyperlinkTextSource Self="u59d" Name=".1437" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>235</Content>
+				<Br />
+				<Content>SAFE PRO - misuratore curva d’impatto</Content>
+				<HyperlinkTextSource Self="u59e" Name=".1438" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>236</Content>
+				<Br />
+				<Content>Lampeggiatori </Content>
+				<HyperlinkTextSource Self="u59b" Name=".1435" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>237</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content>Accessori e materiali di consumo</Content>
+				<HyperlinkTextSource Self="u59c" Name=".1436" Hidden="true" AppliedCharacterStyle="n">
+					<Properties>
+						<AlternativeDestination Type="TocTextAnchor" IndexMarkerId="0" TextAnchorName="" TocEntryPageNumberString="" TocEntryLevel="0" />
+					</Properties>
+					<Content>	</Content>
+				</HyperlinkTextSource>
+				<Content>238</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

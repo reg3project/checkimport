@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u184" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aProduct_Plus_gruppo%3aBullet_List">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper">
+				<Content>Sicurezza antischiacciamento: dispositivo elettronico di regolazione coppia motrice ed ENCODER.</Content>
+				<Br />
+				<Content>Finecorsa microswitch integrati per maggior frequenza di utilizzo.</Content>
+				<Br />
+				<Content>Sblocco interno e predisposizione per sblocco esterno con chiave personalizzata.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aProduct_Plus_gruppo%3aBullet_List" BulletsAndNumberingListType="NoList">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper">
+				<Br />
+				<Content>NUOVA VERSIONE D550 - PROSSIMAMENTE DISPONIBILE</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aProduct_Plus_gruppo%3aBullet_List">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper">
+				<Content>Nuova scheda elettronica con funzionalità di basso consumo in modalità stand-by integrata.</Content>
+				<Br />
+				<Content>Design estetico rinnovato.</Content>
+				<Br />
+				<Content>Illuminazione LED avanzata per una maggiore efficienza e durata.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

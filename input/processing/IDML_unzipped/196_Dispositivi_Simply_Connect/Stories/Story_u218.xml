@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u218" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aApplication">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>I dispositivi Simply Connect funzionano con connessione su rete dati mobile GSM (XMBX4)  o con connessione WiFi - LAN (XWBL) alla rete domestica/aziendale.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+				<Content>I dispositivi XMBX4 e XWBL Simply Connect possono essere abbinati direttamente alle automazioni compatibili (schede elettroniche).</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+				<Content>Il dispositivo XMBX4 dispone di connessione GSM ed è fornito di eSIM integrata: non è necessario acquistare alcuna SIM dati.</Content>
+				<Br />
+				<Content>Entrambi i dispositivi sono inoltre dotati di connettività BLE per la gestione delle automazioni in prossimità delle stesse.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

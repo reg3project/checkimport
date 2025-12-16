@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u18a" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Family_Tech_Data_gruppo%3aTitle_Value2" LeftIndent="0" HyphenationZone="26.295652596625345" RuleAboveLineWeight="0.7304347943507041" RuleBelowLineWeight="0.7304347943507041" SplitColumnInsideGutter="4.382608766104224" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="0.7304347943507041" ParagraphBorderTopRightCornerRadius="0.7304347943507041" ParagraphBorderBottomLeftCornerRadius="0.7304347943507041" ParagraphBorderBottomRightCornerRadius="0.7304347943507041" ParagraphShadingTopLeftCornerRadius="0.7304347943507041" ParagraphShadingTopRightCornerRadius="0.7304347943507041" ParagraphShadingBottomLeftCornerRadius="0.7304347943507041" ParagraphShadingBottomRightCornerRadius="0.7304347943507041" ParagraphBorderTopLineWeight="0.7304347943507041" ParagraphBorderBottomLineWeight="0.7304347943507041" ParagraphBorderLeftLineWeight="0.7304347943507041" ParagraphBorderRightLineWeight="0.7304347943507041">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+				<SameParaStyleSpacing type="unit">-0.7304347943507041</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="39 Thin Ultra Condensed" PointSize="35.06087012883379" HorizontalScale="127" StrokeWeight="0.7304347943507041" Capitalization="AllCaps" AppliedLanguage="$ID/English: UK" FillTint="0" MiterLimit="2.9217391774028165" RubyFontSize="-0.7304347943507041" KentenFontSize="-0.7304347943507041">
+				<Properties>
+					<Leading type="unit">8.034782737857745</Leading>
+				</Properties>
+				<Content>altO</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

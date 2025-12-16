@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u10b9" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_box_ancorato">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Rectangle Self="u1479" ContentType="GraphicType" StoryTitle="$ID/" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" CornerRadius="12" MiterLimit="4" EndCap="ButtEndCap" EndJoin="MiterEndJoin" LeftLineEnd="None" RightLineEnd="None" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" StrokeAlignment="CenterAlignment" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/Infoblocks_gruppo%3aAccessories_gruppo%3aInfo_Block_gruppo%3aImage_CC" CornerOption="None" Visible="true" Name="$ID/" TopLeftCornerOption="None" TopRightCornerOption="None" BottomLeftCornerOption="None" BottomRightCornerOption="None" TopLeftCornerRadius="12" TopRightCornerRadius="12" BottomLeftCornerRadius="12" BottomRightCornerRadius="12" ArrowHeadAlignment="InsidePath" LeftArrowHeadScale="100" RightArrowHeadScale="100" ItemTransform="1 0 0 1 0 -51.41521647999999">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="76.53543307086613 0" LeftDirection="76.53543307086613 0" RightDirection="76.53543307086613 0" />
+									<PathPointType Anchor="76.53543307086613 51.41521647999999" LeftDirection="76.53543307086613 51.41521647999999" RightDirection="76.53543307086613 51.41521647999999" />
+									<PathPointType Anchor="0 51.41521647999999" LeftDirection="0 51.41521647999999" RightDirection="0 51.41521647999999" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+						<ContourOption ContourPathName="$ID/" />
+					</TextWrapPreference>
+					<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+					<FrameFittingOption TopCrop="-21.168998828385757" RightCrop="-4.713703901870758e-05" BottomCrop="-20.681910690303766" />
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+					<Image Self="u147a" Space="$ID/#Links_CMYK" ActualPpi="300 300" EffectivePpi="4605 4605" ImageRenderingIntent="UseColorSettings" OverriddenPageItemProps="" LocalDisplaySetting="Default" ImageTypeName="$ID/TIFF" AppliedObjectStyle="ObjectStyle/$ID/[None]" ItemTransform="0.06514762512768131 0 0 0.06514762512768131 0 1.3791099999999998" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" Visible="true" Name="$ID/">
+						<Properties>
+							<Profile type="string">$ID/Use Document Default</Profile>
+							<GraphicBounds Left="0" Top="0" Right="1174.8" Bottom="747.36" />
+						</Properties>
+						<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+							<Properties>
+								<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+							</Properties>
+							<ContourOption ContourType="SameAsClipping" IncludeInsideEdges="false" ContourPathName="$ID/" />
+						</TextWrapPreference>
+						<MetadataPacketPreference>
+							<Properties>
+								<Contents><![CDATA[<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 10.0-c000 25.G.ef72e4e, 2025/06/27-18:54:05        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:aux="http://ns.adobe.com/exif/1.0/aux/"
+            xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+            xmlns:exif="http://ns.adobe.com/exif/1.0/">
+         <xmp:ModifyDate>2011-04-19T14:37:39+02:00</xmp:ModifyDate>
+         <xmp:CreateDate>2010-11-17T16:47:52.44+01:00</xmp:CreateDate>
+         <xmp:Rating>0</xmp:Rating>
+         <xmp:MetadataDate>2011-04-19T14:37:39+02:00</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe Photoshop CS5 Macintosh</xmp:CreatorTool>
+         <aux:SerialNumber>630316740</aux:SerialNumber>
+         <aux:LensInfo>100/1 100/1 0/0 0/0</aux:LensInfo>
+         <aux:Lens>EF100mm f/2.8 Macro USM</aux:Lens>
+         <aux:LensID>190</aux:LensID>
+         <aux:ImageNumber>0</aux:ImageNumber>
+         <aux:ApproximateFocusDistance>124/100</aux:ApproximateFocusDistance>
+         <aux:FlashCompensation>0/1</aux:FlashCompensation>
+         <aux:Firmware>2.0.8</aux:Firmware>
+         <crs:RawFileName>_MG_6977.CR2</crs:RawFileName>
+         <crs:Version>6.2</crs:Version>
+         <crs:ProcessVersion>5.7</crs:ProcessVersion>
+         <crs:WhiteBalance>As Shot</crs:WhiteBalance>
+         <crs:Temperature>5400</crs:Temperature>
+         <crs:Tint>+5</crs:Tint>
+         <crs:Exposure>0.00</crs:Exposure>
+         <crs:Shadows>5</crs:Shadows>
+         <crs:Brightness>+50</crs:Brightness>
+         <crs:Contrast>+25</crs:Contrast>
+         <crs:Saturation>0</crs:Saturation>
+         <crs:Sharpness>70</crs:Sharpness>
+         <crs:LuminanceSmoothing>0</crs:LuminanceSmoothing>
+         <crs:ColorNoiseReduction>25</crs:ColorNoiseReduction>
+         <crs:ChromaticAberrationR>0</crs:ChromaticAberrationR>
+         <crs:ChromaticAberrationB>0</crs:ChromaticAberrationB>
+         <crs:VignetteAmount>0</crs:VignetteAmount>
+         <crs:ShadowTint>0</crs:ShadowTint>
+         <crs:RedHue>0</crs:RedHue>
+         <crs:RedSaturation>0</crs:RedSaturation>
+         <crs:GreenHue>0</crs:GreenHue>
+         <crs:GreenSaturation>0</crs:GreenSaturation>
+         <crs:BlueHue>0</crs:BlueHue>
+         <crs:BlueSaturation>0</crs:BlueSaturation>
+         <crs:FillLight>0</crs:FillLight>
+         <crs:Vibrance>0</crs:Vibrance>
+         <crs:HighlightRecovery>0</crs:HighlightRecovery>
+         <crs:Clarity>0</crs:Clarity>
+         <crs:Defringe>0</crs:Defringe>
+         <crs:HueAdjustmentRed>0</crs:HueAdjustmentRed>
+         <crs:HueAdjustmentOrange>0</crs:HueAdjustmentOrange>
+         <crs:HueAdjustmentYellow>0</crs:HueAdjustmentYellow>
+         <crs:HueAdjustmentGreen>0</crs:HueAdjustmentGreen>
+         <crs:HueAdjustmentAqua>0</crs:HueAdjustmentAqua>
+         <crs:HueAdjustmentBlue>0</crs:HueAdjustmentBlue>
+         <crs:HueAdjustmentPurple>0</crs:HueAdjustmentPurple>
+         <crs:HueAdjustmentMagenta>0</crs:HueAdjustmentMagenta>
+         <crs:SaturationAdjustmentRed>0</crs:SaturationAdjustmentRed>
+         <crs:SaturationAdjustmentOrange>0</crs:SaturationAdjustmentOrange>
+         <crs:SaturationAdjustmentYellow>0</crs:SaturationAdjustmentYellow>
+         <crs:SaturationAdjustmentGreen>0</crs:SaturationAdjustmentGreen>
+         <crs:SaturationAdjustmentAqua>0</crs:SaturationAdjustmentAqua>
+         <crs:SaturationAdjustmentBlue>0</crs:SaturationAdjustmentBlue>
+         <crs:SaturationAdjustmentPurple>0</crs:SaturationAdjustmentPurple>
+         <crs:SaturationAdjustmentMagenta>0</crs:SaturationAdjustmentMagenta>
+         <crs:LuminanceAdjustmentRed>0</crs:LuminanceAdjustmentRed>
+         <crs:LuminanceAdjustmentOrange>0</crs:LuminanceAdjustmentOrange>
+         <crs:LuminanceAdjustmentYellow>0</crs:LuminanceAdjustmentYellow>
+         <crs:LuminanceAdjustmentGreen>0</crs:LuminanceAdjustmentGreen>
+         <crs:LuminanceAdjustmentAqua>0</crs:LuminanceAdjustmentAqua>
+         <crs:LuminanceAdjustmentBlue>0</crs:LuminanceAdjustmentBlue>
+         <crs:LuminanceAdjustmentPurple>0</crs:LuminanceAdjustmentPurple>
+         <crs:LuminanceAdjustmentMagenta>0</crs:LuminanceAdjustmentMagenta>
+         <crs:SplitToningShadowHue>0</crs:SplitToningShadowHue>
+         <crs:SplitToningShadowSaturation>0</crs:SplitToningShadowSaturation>
+         <crs:SplitToningHighlightHue>0</crs:SplitToningHighlightHue>
+         <crs:SplitToningHighlightSaturation>0</crs:SplitToningHighlightSaturation>
+         <crs:SplitToningBalance>0</crs:SplitToningBalance>
+         <crs:ParametricShadows>0</crs:ParametricShadows>
+         <crs:ParametricDarks>0</crs:ParametricDarks>
+         <crs:ParametricLights>0</crs:ParametricLights>
+         <crs:ParametricHighlights>0</crs:ParametricHighlights>
+         <crs:ParametricShadowSplit>25</crs:ParametricShadowSplit>
+         <crs:ParametricMidtoneSplit>50</crs:ParametricMidtoneSplit>
+         <crs:ParametricHighlightSplit>75</crs:ParametricHighlightSplit>
+         <crs:SharpenRadius>+1.0</crs:SharpenRadius>
+         <crs:SharpenDetail>5</crs:SharpenDetail>
+         <crs:SharpenEdgeMasking>0</crs:SharpenEdgeMasking>
+         <crs:PostCropVignetteAmount>0</crs:PostCropVignetteAmount>
+         <crs:GrainAmount>0</crs:GrainAmount>
+         <crs:ColorNoiseReductionDetail>50</crs:ColorNoiseReductionDetail>
+         <crs:LensProfileEnable>0</crs:LensProfileEnable>
+         <crs:LensManualDistortionAmount>0</crs:LensManualDistortionAmount>
+         <crs:PerspectiveVertical>0</crs:PerspectiveVertical>
+         <crs:PerspectiveHorizontal>0</crs:PerspectiveHorizontal>
+         <crs:PerspectiveRotate>0.0</crs:PerspectiveRotate>
+         <crs:PerspectiveScale>100</crs:PerspectiveScale>
+         <crs:ConvertToGrayscale>False</crs:ConvertToGrayscale>
+         <crs:ToneCurveName>Medium Contrast</crs:ToneCurveName>
+         <crs:CameraProfile>Adobe Standard</crs:CameraProfile>
+         <crs:CameraProfileDigest>3DA8CE4A626CE36A1D0C55BF157793C9</crs:CameraProfileDigest>
+         <crs:LensProfileSetup>LensDefaults</crs:LensProfileSetup>
+         <crs:HasSettings>True</crs:HasSettings>
+         <crs:CropTop>0.062361</crs:CropTop>
+         <crs:CropLeft>0.054937</crs:CropLeft>
+         <crs:CropBottom>0.894209</crs:CropBottom>
+         <crs:CropRight>0.926503</crs:CropRight>
+         <crs:CropAngle>0</crs:CropAngle>
+         <crs:CropConstrainToWarp>1</crs:CropConstrainToWarp>
+         <crs:HasCrop>True</crs:HasCrop>
+         <crs:AlreadyApplied>True</crs:AlreadyApplied>
+         <crs:ToneCurve>
+            <rdf:Seq>
+               <rdf:li>0, 0</rdf:li>
+               <rdf:li>32, 22</rdf:li>
+               <rdf:li>64, 56</rdf:li>
+               <rdf:li>128, 128</rdf:li>
+               <rdf:li>192, 196</rdf:li>
+               <rdf:li>255, 255</rdf:li>
+            </rdf:Seq>
+         </crs:ToneCurve>
+         <crs:PaintBasedCorrections>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <crs:What>Correction</crs:What>
+                  <crs:CorrectionAmount>1.000000</crs:CorrectionAmount>
+                  <crs:CorrectionActive>true</crs:CorrectionActive>
+                  <crs:LocalExposure>-0.087500</crs:LocalExposure>
+                  <crs:LocalSaturation>0.000000</crs:LocalSaturation>
+                  <crs:LocalContrast>0.020000</crs:LocalContrast>
+                  <crs:LocalClarity>0.000000</crs:LocalClarity>
+                  <crs:LocalSharpness>0.000000</crs:LocalSharpness>
+                  <crs:LocalBrightness>-0.150000</crs:LocalBrightness>
+                  <crs:LocalToningHue>0.000000</crs:LocalToningHue>
+                  <crs:LocalToningSaturation>0.000000</crs:LocalToningSaturation>
+                  <crs:CorrectionMasks>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.061737</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.839644 0.426503</rdf:li>
+                                 <rdf:li>d 0.835308 0.443845</rdf:li>
+                                 <rdf:li>d 0.843141 0.458162</rdf:li>
+                                 <rdf:li>d 0.855079 0.462896</rdf:li>
+                                 <rdf:li>d 0.866589 0.456193</rdf:li>
+                                 <rdf:li>d 0.873981 0.441358</rdf:li>
+                                 <rdf:li>d 0.868703 0.424613</rdf:li>
+                                 <rdf:li>d 0.856454 0.422281</rdf:li>
+                                 <rdf:li>d 0.844723 0.428057</rdf:li>
+                                 <rdf:li>d 0.838328 0.443901</rdf:li>
+                                 <rdf:li>d 0.840273 0.462191</rdf:li>
+                                 <rdf:li>d 0.848383 0.476158</rdf:li>
+                                 <rdf:li>d 0.859345 0.484680</rdf:li>
+                                 <rdf:li>d 0.871042 0.478747</rdf:li>
+                                 <rdf:li>d 0.872791 0.460413</rdf:li>
+                                 <rdf:li>d 0.860650 0.457043</rdf:li>
+                                 <rdf:li>d 0.850804 0.468220</rdf:li>
+                                 <rdf:li>d 0.847474 0.486055</rdf:li>
+                                 <rdf:li>d 0.847733 0.504571</rdf:li>
+                                 <rdf:li>d 0.851120 0.522382</rdf:li>
+                                 <rdf:li>d 0.859736 0.535649</rdf:li>
+                                 <rdf:li>d 0.871818 0.539465</rdf:li>
+                                 <rdf:li>d 0.879958 0.525539</rdf:li>
+                                 <rdf:li>d 0.882105 0.507300</rdf:li>
+                                 <rdf:li>d 0.879446 0.489214</rdf:li>
+                                 <rdf:li>d 0.873538 0.472950</rdf:li>
+                                 <rdf:li>d 0.864210 0.460816</rdf:li>
+                                 <rdf:li>d 0.852464 0.466526</rdf:li>
+                                 <rdf:li>d 0.847324 0.483366</rdf:li>
+                                 <rdf:li>d 0.849353 0.501635</rdf:li>
+                                 <rdf:li>d 0.856654 0.516572</rdf:li>
+                                 <rdf:li>d 0.868829 0.513492</rdf:li>
+                                 <rdf:li>d 0.875775 0.498179</rdf:li>
+                                 <rdf:li>d 0.878764 0.480209</rdf:li>
+                                 <rdf:li>d 0.877050 0.461867</rdf:li>
+                                 <rdf:li>d 0.869507 0.447204</rdf:li>
+                                 <rdf:li>d 0.860261 0.434930</rdf:li>
+                                 <rdf:li>d 0.850120 0.424363</rdf:li>
+                                 <rdf:li>d 0.844532 0.440878</rdf:li>
+                                 <rdf:li>d 0.845227 0.459370</rdf:li>
+                                 <rdf:li>d 0.847397 0.477603</rdf:li>
+                                 <rdf:li>d 0.851558 0.495041</rdf:li>
+                                 <rdf:li>d 0.857948 0.510888</rdf:li>
+                                 <rdf:li>d 0.867743 0.499611</rdf:li>
+                                 <rdf:li>d 0.867848 0.481091</rdf:li>
+                                 <rdf:li>d 0.863270 0.463890</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.061737</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.844840 0.413140</rdf:li>
+                                 <rdf:li>d 0.843009 0.431456</rdf:li>
+                                 <rdf:li>d 0.842704 0.449972</rdf:li>
+                                 <rdf:li>d 0.844016 0.468388</rdf:li>
+                                 <rdf:li>d 0.845793 0.486716</rdf:li>
+                                 <rdf:li>d 0.849409 0.504425</rdf:li>
+                                 <rdf:li>d 0.857310 0.518658</rdf:li>
+                                 <rdf:li>d 0.862489 0.501845</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.061737</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.853749 0.420935</rdf:li>
+                                 <rdf:li>d 0.849250 0.438183</rdf:li>
+                                 <rdf:li>d 0.846680 0.456298</rdf:li>
+                                 <rdf:li>d 0.845626 0.474752</rdf:li>
+                                 <rdf:li>d 0.845583 0.493273</rdf:li>
+                                 <rdf:li>d 0.845583 0.511794</rdf:li>
+                                 <rdf:li>d 0.847247 0.530146</rdf:li>
+                                 <rdf:li>d 0.849756 0.548281</rdf:li>
+                                 <rdf:li>d 0.853954 0.565698</rdf:li>
+                                 <rdf:li>d 0.858662 0.548577</rdf:li>
+                                 <rdf:li>d 0.861760 0.530648</rdf:li>
+                                 <rdf:li>d 0.863502 0.512312</rdf:li>
+                                 <rdf:li>d 0.864033 0.493808</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.061737</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.854491 0.444321</rdf:li>
+                                 <rdf:li>d 0.847642 0.459731</rdf:li>
+                                 <rdf:li>d 0.844755 0.477739</rdf:li>
+                                 <rdf:li>d 0.842781 0.496022</rdf:li>
+                                 <rdf:li>d 0.842009 0.514506</rdf:li>
+                                 <rdf:li>d 0.841904 0.533027</rdf:li>
+                                 <rdf:li>d 0.847986 0.516908</rdf:li>
+                                 <rdf:li>d 0.852449 0.499639</rdf:li>
+                                 <rdf:li>d 0.855707 0.481775</rdf:li>
+                                 <rdf:li>d 0.858148 0.463619</rdf:li>
+                                 <rdf:li>d 0.859616 0.445229</rdf:li>
+                                 <rdf:li>d 0.855804 0.462846</rdf:li>
+                                 <rdf:li>d 0.854410 0.481248</rdf:li>
+                                 <rdf:li>d 0.853856 0.499751</rdf:li>
+                                 <rdf:li>d 0.853776 0.518271</rdf:li>
+                                 <rdf:li>d 0.855947 0.536504</rdf:li>
+                                 <rdf:li>d 0.860926 0.519556</rdf:li>
+                                 <rdf:li>d 0.867759 0.504129</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </crs:CorrectionMasks>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <crs:What>Correction</crs:What>
+                  <crs:CorrectionAmount>1.000000</crs:CorrectionAmount>
+                  <crs:CorrectionActive>true</crs:CorrectionActive>
+                  <crs:LocalExposure>0.225000</crs:LocalExposure>
+                  <crs:LocalSaturation>-0.550000</crs:LocalSaturation>
+                  <crs:LocalContrast>0.020000</crs:LocalContrast>
+                  <crs:LocalClarity>0.000000</crs:LocalClarity>
+                  <crs:LocalSharpness>0.000000</crs:LocalSharpness>
+                  <crs:LocalBrightness>0.065000</crs:LocalBrightness>
+                  <crs:LocalToningHue>0.000000</crs:LocalToningHue>
+                  <crs:LocalToningSaturation>0.000000</crs:LocalToningSaturation>
+                  <crs:CorrectionMasks>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.061737</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.350408 0.306236</rdf:li>
+                                 <rdf:li>d 0.358833 0.319776</rdf:li>
+                                 <rdf:li>d 0.370032 0.327577</rdf:li>
+                                 <rdf:li>d 0.381577 0.334146</rdf:li>
+                                 <rdf:li>d 0.393146 0.340616</rdf:li>
+                                 <rdf:li>d 0.404715 0.347086</rdf:li>
+                                 <rdf:li>d 0.416577 0.352230</rdf:li>
+                                 <rdf:li>d 0.428479 0.357161</rdf:li>
+                                 <rdf:li>d 0.440194 0.363013</rdf:li>
+                                 <rdf:li>d 0.451908 0.368865</rdf:li>
+                                 <rdf:li>d 0.463523 0.375150</rdf:li>
+                                 <rdf:li>d 0.475248 0.380957</rdf:li>
+                                 <rdf:li>d 0.486800 0.387495</rdf:li>
+                                 <rdf:li>d 0.498353 0.394034</rdf:li>
+                                 <rdf:li>d 0.509946 0.400406</rdf:li>
+                                 <rdf:li>d 0.521387 0.407372</rdf:li>
+                                 <rdf:li>d 0.532828 0.414337</rdf:li>
+                                 <rdf:li>d 0.544290 0.421224</rdf:li>
+                                 <rdf:li>d 0.555623 0.428574</rdf:li>
+                                 <rdf:li>d 0.566943 0.435971</rdf:li>
+                                 <rdf:li>d 0.578505 0.442474</rdf:li>
+                                 <rdf:li>d 0.590105 0.448817</rdf:li>
+                                 <rdf:li>d 0.601774 0.454871</rdf:li>
+                                 <rdf:li>d 0.613668 0.459845</rdf:li>
+                                 <rdf:li>d 0.625692 0.464055</rdf:li>
+                                 <rdf:li>d 0.613409 0.462168</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.061737</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.351893 0.331849</rdf:li>
+                                 <rdf:li>d 0.361903 0.342692</rdf:li>
+                                 <rdf:li>d 0.371974 0.353408</rdf:li>
+                                 <rdf:li>d 0.382246 0.363685</rdf:li>
+                                 <rdf:li>d 0.392693 0.373557</rdf:li>
+                                 <rdf:li>d 0.402916 0.383945</rdf:li>
+                                 <rdf:li>d 0.413438 0.393635</rdf:li>
+                                 <rdf:li>d 0.424012 0.403198</rdf:li>
+                                 <rdf:li>d 0.434949 0.411794</rdf:li>
+                                 <rdf:li>d 0.445856 0.420476</rdf:li>
+                                 <rdf:li>d 0.457056 0.428274</rdf:li>
+                                 <rdf:li>d 0.468333 0.435817</rdf:li>
+                                 <rdf:li>d 0.480011 0.441831</rdf:li>
+                                 <rdf:li>d 0.491920 0.446722</rdf:li>
+                                 <rdf:li>d 0.503872 0.451372</rdf:li>
+                                 <rdf:li>d 0.515942 0.455276</rdf:li>
+                                 <rdf:li>d 0.528108 0.458437</rdf:li>
+                                 <rdf:li>d 0.540167 0.462419</rdf:li>
+                                 <rdf:li>d 0.552005 0.467681</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.061737</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.366741 0.248330</rdf:li>
+                                 <rdf:li>d 0.378849 0.251962</rdf:li>
+                                 <rdf:li>d 0.390593 0.257676</rdf:li>
+                                 <rdf:li>d 0.402247 0.263796</rdf:li>
+                                 <rdf:li>d 0.413801 0.270328</rdf:li>
+                                 <rdf:li>d 0.425547 0.276039</rdf:li>
+                                 <rdf:li>d 0.437274 0.281838</rdf:li>
+                                 <rdf:li>d 0.449000 0.287637</rdf:li>
+                                 <rdf:li>d 0.460752 0.293320</rdf:li>
+                                 <rdf:li>d 0.472504 0.299003</rdf:li>
+                                 <rdf:li>d 0.484220 0.304849</rdf:li>
+                                 <rdf:li>d 0.495827 0.311165</rdf:li>
+                                 <rdf:li>d 0.507434 0.317481</rdf:li>
+                                 <rdf:li>d 0.519091 0.323588</rdf:li>
+                                 <rdf:li>d 0.530668 0.330029</rdf:li>
+                                 <rdf:li>d 0.542289 0.336287</rdf:li>
+                                 <rdf:li>d 0.553910 0.342546</rdf:li>
+                                 <rdf:li>d 0.565332 0.349579</rdf:li>
+                                 <rdf:li>d 0.576964 0.355791</rdf:li>
+                                 <rdf:li>d 0.588553 0.362184</rdf:li>
+                                 <rdf:li>d 0.600106 0.368721</rdf:li>
+                                 <rdf:li>d 0.611689 0.375136</rdf:li>
+                                 <rdf:li>d 0.621618 0.386145</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </crs:CorrectionMasks>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <crs:What>Correction</crs:What>
+                  <crs:CorrectionAmount>1.000000</crs:CorrectionAmount>
+                  <crs:CorrectionActive>true</crs:CorrectionActive>
+                  <crs:LocalExposure>-0.237500</crs:LocalExposure>
+                  <crs:LocalSaturation>-0.010000</crs:LocalSaturation>
+                  <crs:LocalContrast>0.020000</crs:LocalContrast>
+                  <crs:LocalClarity>0.000000</crs:LocalClarity>
+                  <crs:LocalSharpness>0.000000</crs:LocalSharpness>
+                  <crs:LocalBrightness>-0.085000</crs:LocalBrightness>
+                  <crs:LocalToningHue>0.000000</crs:LocalToningHue>
+                  <crs:LocalToningSaturation>0.000000</crs:LocalToningSaturation>
+                  <crs:CorrectionMasks>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <crs:What>Mask/Paint</crs:What>
+                           <crs:MaskValue>0.330000</crs:MaskValue>
+                           <crs:Radius>0.017863</crs:Radius>
+                           <crs:Flow>0.716418</crs:Flow>
+                           <crs:CenterWeight>0.250056</crs:CenterWeight>
+                           <crs:Dabs>
+                              <rdf:Seq>
+                                 <rdf:li>d 0.602821 0.429844</rdf:li>
+                                 <rdf:li>d 0.599504 0.431834</rdf:li>
+                                 <rdf:li>d 0.596589 0.434934</rdf:li>
+                                 <rdf:li>d 0.595043 0.439765</rdf:li>
+                                 <rdf:li>d 0.594019 0.444899</rdf:li>
+                                 <rdf:li>d 0.595165 0.449975</rdf:li>
+                                 <rdf:li>d 0.597520 0.454006</rdf:li>
+                                 <rdf:li>d 0.600259 0.457445</rdf:li>
+                                 <rdf:li>d 0.603569 0.459462</rdf:li>
+                                 <rdf:li>d 0.607130 0.459893</rdf:li>
+                                 <rdf:li>d 0.610703 0.459907</rdf:li>
+                                 <rdf:li>d 0.614216 0.458932</rdf:li>
+                                 <rdf:li>d 0.617103 0.455774</rdf:li>
+                                 <rdf:li>d 0.619460 0.451747</rdf:li>
+                                 <rdf:li>d 0.619828 0.446417</rdf:li>
+                                 <rdf:li>d 0.617293 0.442640</rdf:li>
+                                 <rdf:li>d 0.614278 0.439766</rdf:li>
+                                 <rdf:li>d 0.610853 0.438241</rdf:li>
+                                 <rdf:li>d 0.607296 0.437745</rdf:li>
+                                 <rdf:li>d 0.603779 0.438695</rdf:li>
+                                 <rdf:li>d 0.601829 0.443185</rdf:li>
+                                 <rdf:li>d 0.600877 0.448350</rdf:li>
+                                 <rdf:li>d 0.601756 0.453545</rdf:li>
+                                 <rdf:li>d 0.604203 0.457449</rdf:li>
+                                 <rdf:li>d 0.607485 0.459567</rdf:li>
+                                 <rdf:li>d 0.611043 0.459089</rdf:li>
+                                 <rdf:li>d 0.614290 0.456852</rdf:li>
+                                 <rdf:li>d 0.616900 0.453193</rdf:li>
+                                 <rdf:li>d 0.618520 0.448417</rdf:li>
+                                 <rdf:li>d 0.619836 0.443434</rdf:li>
+                                 <rdf:li>d 0.616842 0.440510</rdf:li>
+                                 <rdf:li>d 0.613539 0.442549</rdf:li>
+                                 <rdf:li>d 0.611056 0.446403</rdf:li>
+                              </rdf:Seq>
+                           </crs:Dabs>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </crs:CorrectionMasks>
+               </rdf:li>
+            </rdf:Seq>
+         </crs:PaintBasedCorrections>
+         <dc:format>image/tiff</dc:format>
+         <photoshop:ColorMode>4</photoshop:ColorMode>
+         <photoshop:ICCProfile>Coated FOGRA27 (ISO 12647-2:2004)</photoshop:ICCProfile>
+         <photoshop:DateCreated>2010-11-17</photoshop:DateCreated>
+         <xmpMM:InstanceID>xmp.iid:DE7608871F2068119457BB9885BF9BF1</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:D42AFB0B1B20681192B0CC569D710F52</xmpMM:DocumentID>
+         <xmpMM:OriginalDocumentID>xmp.did:D42AFB0B1B20681192B0CC569D710F52</xmpMM:OriginalDocumentID>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:D42AFB0B1B20681192B0CC569D710F52</stEvt:instanceID>
+                  <stEvt:when>2010-11-17T17:41:11+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CS5 Macintosh</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:E0FA4F27102068118531F6DBC1CFFCD4</stEvt:instanceID>
+                  <stEvt:when>2010-11-18T11:38:21+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CS5 Macintosh</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:37352A34342068119109D3D0F2DC73BE</stEvt:instanceID>
+                  <stEvt:when>2010-12-06T15:37:07+01:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CS4 Macintosh</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:DD7608871F2068119457BB9885BF9BF1</stEvt:instanceID>
+                  <stEvt:when>2011-04-19T14:37:39+02:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CS4 Macintosh</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:DE7608871F2068119457BB9885BF9BF1</stEvt:instanceID>
+                  <stEvt:when>2011-04-19T14:37:39+02:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CS4 Macintosh</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <tiff:ImageWidth>4895</tiff:ImageWidth>
+         <tiff:ImageLength>3114</tiff:ImageLength>
+         <tiff:Compression>1</tiff:Compression>
+         <tiff:PhotometricInterpretation>5</tiff:PhotometricInterpretation>
+         <tiff:Orientation>1</tiff:Orientation>
+         <tiff:SamplesPerPixel>4</tiff:SamplesPerPixel>
+         <tiff:PlanarConfiguration>1</tiff:PlanarConfiguration>
+         <tiff:XResolution>3000000/10000</tiff:XResolution>
+         <tiff:YResolution>3000000/10000</tiff:YResolution>
+         <tiff:ResolutionUnit>2</tiff:ResolutionUnit>
+         <tiff:Make>Canon</tiff:Make>
+         <tiff:Model>Canon EOS 5D Mark II</tiff:Model>
+         <tiff:NativeDigest>256,257,258,259,262,274,277,284,530,531,282,283,296,301,318,319,529,532,306,270,271,272,305,315,33432;E2528F66B7CF39C62D2B4716487C0547</tiff:NativeDigest>
+         <tiff:BitsPerSample>
+            <rdf:Seq>
+               <rdf:li>8</rdf:li>
+               <rdf:li>8</rdf:li>
+               <rdf:li>8</rdf:li>
+               <rdf:li>8</rdf:li>
+            </rdf:Seq>
+         </tiff:BitsPerSample>
+         <exif:ExifVersion>0221</exif:ExifVersion>
+         <exif:ColorSpace>65535</exif:ColorSpace>
+         <exif:PixelXDimension>4895</exif:PixelXDimension>
+         <exif:PixelYDimension>3114</exif:PixelYDimension>
+         <exif:DateTimeOriginal>2010-11-17T16:47:52+01:00</exif:DateTimeOriginal>
+         <exif:ExposureTime>1/100</exif:ExposureTime>
+         <exif:FNumber>32/1</exif:FNumber>
+         <exif:ExposureProgram>1</exif:ExposureProgram>
+         <exif:ShutterSpeedValue>6643856/1000000</exif:ShutterSpeedValue>
+         <exif:ApertureValue>10000000/1000000</exif:ApertureValue>
+         <exif:ExposureBiasValue>0/1</exif:ExposureBiasValue>
+         <exif:MaxApertureValue>3/1</exif:MaxApertureValue>
+         <exif:SubjectDistance>124/100</exif:SubjectDistance>
+         <exif:MeteringMode>5</exif:MeteringMode>
+         <exif:FocalLength>100/1</exif:FocalLength>
+         <exif:FocalPlaneXResolution>5616000/1459</exif:FocalPlaneXResolution>
+         <exif:FocalPlaneYResolution>3744000/958</exif:FocalPlaneYResolution>
+         <exif:FocalPlaneResolutionUnit>2</exif:FocalPlaneResolutionUnit>
+         <exif:CustomRendered>0</exif:CustomRendered>
+         <exif:ExposureMode>1</exif:ExposureMode>
+         <exif:WhiteBalance>1</exif:WhiteBalance>
+         <exif:SceneCaptureType>0</exif:SceneCaptureType>
+         <exif:NativeDigest>36864,40960,40961,37121,37122,40962,40963,37510,40964,36867,36868,33434,33437,34850,34852,34855,34856,37377,37378,37379,37380,37381,37382,37383,37384,37385,37386,37396,41483,41484,41486,41487,41488,41492,41493,41495,41728,41729,41730,41985,41986,41987,41988,41989,41990,41991,41992,41993,41994,41995,41996,42016,0,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20,22,23,24,25,26,27,28,30;B362063DFDE1A5D8A91AD4D81DBFF8FD</exif:NativeDigest>
+         <exif:ISOSpeedRatings>
+            <rdf:Seq>
+               <rdf:li>100</rdf:li>
+            </rdf:Seq>
+         </exif:ISOSpeedRatings>
+         <exif:Flash rdf:parseType="Resource">
+            <exif:Fired>False</exif:Fired>
+            <exif:Return>0</exif:Return>
+            <exif:Mode>2</exif:Mode>
+            <exif:Function>False</exif:Function>
+            <exif:RedEyeMode>False</exif:RedEyeMode>
+         </exif:Flash>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="r"?>]]></Contents>
+							</Properties>
+						</MetadataPacketPreference>
+						<Link Self="u147e" AssetURL="$ID/" AssetID="$ID/" RenditionData="Actual" LinkResourceURI="file:C:/Users/Luca1/Downloads/CATALISTINO_2025_PACCHETTO_COMPLETO/Links/390035.tif" PDFIdentifier="0" LinkResourceFormat="$ID/TIFF" StoredState="Normal" LinkClassID="35906" LinkClientID="257" LinkResourceModified="false" LinkObjectModified="false" ShowInUI="true" CanEmbed="true" CanUnembed="true" CanPackage="true" ImportPolicy="NoAutoImport" ExportPolicy="NoAutoExport" LinkImportStamp="file 134096012205273662 61592816" LinkImportModificationTime="2025-12-07T18:13:40" LinkImportTime="2025-12-07T18:23:00" LinkResourceSize="0~3abd4f0" />
+						<ClippingPathSettings ClippingType="None" InvertPath="false" IncludeInsideEdges="false" RestrictToFrame="false" UseHighResolutionImage="true" Threshold="25" Tolerance="2" InsetFrame="0" AppliedPathName="$ID/" Index="-1" />
+						<ImageIOPreference ApplyPhotoshopClippingPath="true" AllowAutoEmbedding="true" AlphaChannelName="$ID/" />
+					</Image>
+				</Rectangle>
+				<TextFrame Self="u1461" ParentStory="u1464" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" GradientFillStart="0 47.11394843999999" GradientFillLength="76.53543307086613" GradientFillAngle="0" GradientStrokeStart="0 47.11394843999999" GradientStrokeLength="76.53543307086613" GradientStrokeAngle="0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/Infoblocks_gruppo%3aAccessories_gruppo%3aInfo_Block_gruppo%3aDescription" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 0 -47.11394843999999">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="76.53543307086613 0" LeftDirection="76.53543307086613 0" RightDirection="76.53543307086613 0" />
+									<PathPointType Anchor="76.53543307086613 47.11394843999999" LeftDirection="76.53543307086613 47.11394843999999" RightDirection="76.53543307086613 47.11394843999999" />
+									<PathPointType Anchor="0 47.11394843999999" LeftDirection="0 47.11394843999999" RightDirection="0 47.11394843999999" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnGutter="12" TextColumnFixedWidth="76.53543307086613" UseFixedColumnWidth="false" FirstBaselineOffset="AscentOffset" MinimumFirstBaselineOffset="0" VerticalJustification="TopAlign" VerticalThreshold="0" IgnoreWrap="false" UseFlexibleColumnWidth="false" TextColumnMaxWidth="0" AutoSizingType="Off" AutoSizingReferencePoint="CenterPoint" UseMinimumHeightForAutoSizing="false" MinimumHeightForAutoSizing="0" UseMinimumWidthForAutoSizing="false" MinimumWidthForAutoSizing="0" UseNoLineBreaksForAutoSizing="false" ColumnRuleOverride="false" ColumnRuleOffset="0" ColumnRuleTopInset="0" ColumnRuleInsetChainOverride="true" ColumnRuleBottomInset="0" ColumnRuleStrokeWidth="1" ColumnRuleStrokeColor="Color/Black" ColumnRuleStrokeType="StrokeStyle/$ID/Solid" ColumnRuleStrokeTint="100" ColumnRuleOverprintOverride="false" FootnotesEnableOverrides="false" FootnotesSpanAcrossColumns="false" FootnotesMinimumSpacing="12" FootnotesSpaceBetween="6" VerticalBalanceColumns="false">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<BaselineFrameGridOption UseCustomBaselineFrameGrid="false" StartingOffsetForBaselineFrameGrid="0" BaselineFrameGridRelativeOption="TopOfInset" BaselineFrameGridIncrement="12">
+						<Properties>
+							<BaselineFrameGridColor type="enumeration">LightBlue</BaselineFrameGridColor>
+						</Properties>
+					</BaselineFrameGridOption>
+					<TextFrameFootnoteOptionsObject EnableOverrides="false" SpanFootnotesAcross="false" MinimumSpacingOption="12" SpaceBetweenFootnotes="6" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+				<TextFrame Self="u1449" ParentStory="u144c" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" GradientFillStart="0 8.402536079999999" GradientFillLength="76.53543307086613" GradientFillAngle="0" GradientStrokeStart="0 8.402536079999999" GradientStrokeLength="76.53543307086613" GradientStrokeAngle="0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/Infoblocks_gruppo%3aAccessories_gruppo%3aInfo_Block_gruppo%3aTable" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 0 -8.402536079999999">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="76.53543307086613 0" LeftDirection="76.53543307086613 0" RightDirection="76.53543307086613 0" />
+									<PathPointType Anchor="76.53543307086613 8.402536079999999" LeftDirection="76.53543307086613 8.402536079999999" RightDirection="76.53543307086613 8.402536079999999" />
+									<PathPointType Anchor="0 8.402536079999999" LeftDirection="0 8.402536079999999" RightDirection="0 8.402536079999999" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="76.53543307086613" TextColumnMaxWidth="0" ColumnRuleOverride="false" ColumnRuleOffset="0" ColumnRuleTopInset="0" ColumnRuleInsetChainOverride="true" ColumnRuleBottomInset="0" ColumnRuleStrokeWidth="1" ColumnRuleStrokeColor="Color/Black" ColumnRuleStrokeType="StrokeStyle/$ID/Solid" ColumnRuleStrokeTint="100" ColumnRuleOverprintOverride="false" FootnotesEnableOverrides="false" FootnotesSpanAcrossColumns="false" FootnotesMinimumSpacing="12" FootnotesSpaceBetween="6">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<TextFrameFootnoteOptionsObject EnableOverrides="false" SpanFootnotesAcross="false" MinimumSpacingOption="12" SpaceBetweenFootnotes="6" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

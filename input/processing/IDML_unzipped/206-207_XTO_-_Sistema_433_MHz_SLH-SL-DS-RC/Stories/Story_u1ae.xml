@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u1ae" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_System_Info_gruppo%3aApplication" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Content>•Nuovo Design</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" FontStyle="57 Condensed" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Br />
+				<Content>Design ergonomico che rende agevole l’attivazione dei pulsanti.</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Br />
+				<Content>•Compatibilità con tutte le codifiche</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" FontStyle="57 Condensed" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Content>XTO può gestire diverse codifiche contemporaneamente, in maniera indipendente sui vari canali.</Content>
+				<Br />
+				<Content>Questo permette di interagire con diversi sistemi senza bisogno di cambiare dispositivo.</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" FontStyle="57 Condensed" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Content>Le codifiche SLH e RC possono essere utilizzate per nuovi impianti mentre le codifiche SL e DS possono essere acquisite tramite autoapprendimento in caso di impianti pre-esistenti.</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Br />
+				<Br />
+				<Br />
+				<Br />
+				<Content>•Codifica Flessibile</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" FontStyle="57 Condensed" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Content>La procedura è reversibile in qualsiasi momento, garantendo flessibilità e adattabilità alle diverse esigenze di codifica.</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Br />
+				<Content>•Procedure Semplificate</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" FontStyle="57 Condensed" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Content>Programmazione facile da eseguire grazie anche alla presenza di un LED bicolore rosso-verde che guida gli utenti attraverso le procedure.</Content>
+				<Br />
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Content>•Design a Singola Batteria</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight" FontStyle="57 Condensed" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="enumeration">Auto</Leading>
+				</Properties>
+				<Br />
+				<Content>Prestazioni eccellenti con una singola batteria CR2032.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

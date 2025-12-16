@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="uc6c" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/[No paragraph style]" HyphenationZone="24.941306641422756" RuleAboveLineWeight="0.6928140733728544" RuleBelowLineWeight="0.6928140733728544" SplitColumnInsideGutter="4.1568844402371266" ParagraphShadingTint="-1" ParagraphBorderTopLeftCornerRadius="8.313768880474253" ParagraphBorderTopRightCornerRadius="8.313768880474253" ParagraphBorderBottomLeftCornerRadius="8.313768880474253" ParagraphBorderBottomRightCornerRadius="8.313768880474253" ParagraphShadingTopLeftCornerRadius="8.313768880474253" ParagraphShadingTopRightCornerRadius="8.313768880474253" ParagraphShadingBottomLeftCornerRadius="8.313768880474253" ParagraphShadingBottomRightCornerRadius="8.313768880474253" ParagraphBorderTopLineWeight="0.6928140733728544" ParagraphBorderBottomLineWeight="0.6928140733728544" ParagraphBorderLeftLineWeight="0.6928140733728544" ParagraphBorderRightLineWeight="0.6928140733728544">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/C=100 M=0 Y=0 K=0</ParagraphShadingColor>
+				<SameParaStyleSpacing type="unit">-0.6928140733728544</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="8.313768880474253" StrokeWeight="0.6928140733728544" AppliedLanguage="$ID/Italian" MiterLimit="2.7712562934914176" RubyFontSize="-0.6928140733728544" KentenFontSize="-0.6928140733728544" DiacriticPosition="OpentypePosition" />
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

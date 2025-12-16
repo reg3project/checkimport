@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u1858" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_tabella" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Table Self="u1858i1a16" HeaderRowCount="0" FooterRowCount="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" BodyRowCount="3" ColumnCount="6" AppliedTableStyle="TableStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES" TableDirection="LeftToRightDirection">
+					<Row Self="u1858i1a16Row0" Name="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleRowHeight="74.40868272857627" MinimumHeight="74.40868272857627" AutoGrow="true" />
+					<Row Self="u1858i1a16Row1" Name="1" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleRowHeight="70.09406565248223" MinimumHeight="70.09406565248223" AutoGrow="true" />
+					<Row Self="u1858i1a16Row2" Name="2" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleRowHeight="65.38988941421665" MinimumHeight="65.38988941421665" AutoGrow="true" />
+					<Column Self="u1858i1a16Column0" Name="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="255.65468194015435" />
+					<Column Self="u1858i1a16Column1" Name="1" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="75.91642307621304" />
+					<Column Self="u1858i1a16Column2" Name="2" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="73.4297255213951" />
+					<Column Self="u1858i1a16Column3" Name="3" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="93.29706089592807" />
+					<Column Self="u1858i1a16Column4" Name="4" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="94.360161366753" />
+					<Column Self="u1858i1a16Column5" Name="5" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" SingleColumnWidth="62.26115006605211" />
+					<Cell Self="u1858i1a16i0" Name="0:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_header_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_header_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i2" Name="1:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" Capitalization="AllCaps" AppliedLanguage="$ID/English: UK">
+								<Content>c</Content>
+							</CharacterStyleRange>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>4000I</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i3" Name="2:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="15" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i4" Name="3:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="15" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i5" Name="4:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="15" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i6" Name="5:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="15" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16ic" Name="0:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_header_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_header_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16ie" Name="1:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>C720</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16if" Name="2:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>C721</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i10" Name="3:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>740</Content>
+								<Br />
+								<Content>740 C</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i11" Name="4:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>741</Content>
+								<Br />
+								<Content>741 C</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i12" Name="5:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="15" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i18" Name="0:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_header_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" RightEdgeStrokeTint="24" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_header_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK" />
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i1a" Name="1:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" BottomEdgeStrokeTint="0" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>746 C</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i1b" Name="2:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" BottomEdgeStrokeTint="0" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>844 C</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i1c" Name="3:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" BottomEdgeStrokeTint="0" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>844 3PH</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i1d" Name="4:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" BottomEdgeStrokeTint="0" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>884 MC 3PH</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u1858i1a16i1e" Name="5:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttypeTR_model_cell" AppliedCellStylePriority="0" FillColor="Swatch/None" FillTint="11" LeftEdgeStrokeWeight="0" RightEdgeStrokeWeight="0" LeftEdgeStrokeColor="Swatch/None" TopEdgeStrokeColor="Swatch/None" RightEdgeStrokeColor="Swatch/None" BottomEdgeStrokeColor="Swatch/None" LeftEdgeStrokeTint="24" RightEdgeStrokeTint="24" BottomEdgeStrokeTint="0" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="66" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Configuration_gruppo%3aOperator_Type_gruppo%3aTable_gruppo%3aGATES_gruppo%3ainsttype_model_pgf" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+							<Properties>
+								<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+							</Properties>
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="57 Condensed" PointSize="15" AppliedLanguage="$ID/English: UK">
+								<Content>C851</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+				</Table>
+				<Br />
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

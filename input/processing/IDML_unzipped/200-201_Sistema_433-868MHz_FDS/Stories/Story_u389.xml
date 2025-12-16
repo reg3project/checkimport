@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u389" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_System_Info_gruppo%3aApplication">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Frequenza d’utilizzo 433,92 - 868,35 MHz</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+				<Content>Tipo di codifica: tecnologia FDS</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>FDS = FAAC DIGITAL SIGNATURE:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> Protocollo radio basato sulla modulazione di frequenza con prestazioni ottimali in termini di autonomia e durata della batteria; la trasmissione radio è protetta dall&apos;algoritmo di crittografia simmetrica </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>AES-128 con chiave a 128 bit</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>. L&apos;autenticità delle trasmittenti è verificata mediante una catena di certificati di sicurezza personalizzati FAAC.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Vantaggi:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+				<Content> </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Massima sicurezza contro la clonazione</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> ottenuta grazie all&apos;avanzato schema di sicurezza potenziato dall&apos;adozione delle tecnologie hardware </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>Secure Vault™</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> (certificato </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>PSA™</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> Livello 3) e </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>TrustZone®</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>: lo &quot;stato dell&apos;arte&quot; per proteggere le transazioni finanziarie digitali e i dispositivi/reti IoT ad alta sicurezza.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Doppia frequenza:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> le trasmittenti e le riceventi sono in grado di comunicare a 868MHz-433MHz in time sharing, senza dover scegliere preventivamente la frequenza di lavoro, semplificando così la gestione delle attività di installazione/manutenzione.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Facilità di memorizzazione:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> nuove procedure semplificate di memorizzazione/gestione delle trasmittenti sia tramite autoapprendimento che tramite memorizzazione diretta sul ricevente.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Compatibile con SLH:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> le trasmittenti FDS possono, in caso di necessità, essere utilizzate su sistemi SLH esistenti.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Soluzione PHYGITAL:</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> le trasmittenti FDS sono il primo prodotto PHYGITAL di FAAC.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+				<Content>Grazie all&apos;integrazione con </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>Simply Connect</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> è possibile ottenere una gestione remota completa (aggiunta di una o più trasmittenti tramite Matrix-Code, possibilità di rimuovere, abilitare, disabilitare le trasmittenti e gestire le fasce orarie di funzionamento) senza la necessità di utilizzare programmatori dedicati o di essere presenti sul posto.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u5a4" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" Hyphenation="false" Justification="RightAlign">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>Con un </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>packaging in nero e grigio</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>, questi kit rappresentano la </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="Bold" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>tradizione e l’efficienza di un sistema consolidato.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

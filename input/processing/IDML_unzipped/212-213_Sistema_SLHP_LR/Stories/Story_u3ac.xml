@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u3ac" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_System_Info_gruppo%3aApplication">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Frequenza d’utilizzo 868,35 MHz o 433,92 MHz</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+				<Content>Tipo di codifica: tecnologia SLHP LR </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>(</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>Brevetto FAAC</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>)</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Highlight">
+				<Content>Il sistema SLHP LR</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> deriva della tecnologia SLH LR (</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>Brevetto FAAC</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>) e nasce per la realizzazione di impianti altamente professionali in cui sia richiesta la programmazione dei radiocomandi e delle schede di memoria con codici dedicati tramite unità di programmazione e/o tramite software a PC. Ciò consente inoltre la creazione dei archivi a PC dei codici presenti su ogni impianto realizzato, agevolando di conseguenza la gestione dell’impianto (aggiunta codici radio da remoto).</Content>
+				<Br />
+				<Content>Un impianto SLHP sarà quindi composto da: 1 ricevente pluricanale (433MHz o 868MHz) + un numero di DECODER SLHP pari al numero di utenze da controllare.</Content>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_System_Info_gruppo%3aApplication_gruppo%3aPaper_Info">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Le trasmittenti sono le medesime XT SLH LR presenti a pagina </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/XRR_Numero_Pagina">
+				<HyperlinkTextSource Self="u618" Name="Source_89_7_89" Hidden="false" AppliedCharacterStyle="n">
+					<Content>208</Content>
+				</HyperlinkTextSource>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> e pagina </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/XRR_Numero_Pagina">
+				<HyperlinkTextSource Self="u617" Name="Source_377_56_377" Hidden="false" AppliedCharacterStyle="n">
+					<Content>210</Content>
+				</HyperlinkTextSource>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content> (in base alla frequenza scelta 433MHz o 868MHz)</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

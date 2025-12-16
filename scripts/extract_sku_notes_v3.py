@@ -85,16 +85,32 @@ def extract_product_descriptions(xml_content):
 def extract_accessory_notes(xml_content):
     """Extract accessory notes (with diamond markers)"""
     notes = []
-    if 'Accessories_gruppo%3aNote' in xml_content:
-        pattern = r'ParentStory="(u[a-f0-9]+)".*?</TextFrame>\s*<Content>([^<]+)</Content>'
-        matches = re.findall(pattern, xml_content, re.DOTALL)
-        for parent_story, text in matches:
-            text = text.strip()
-            if text:
-                notes.append({
-                    'parent_story': parent_story,
-                    'text': text
-                })
+    # Match both Accessories and Accessories_1 variants
+    accessory_note_styles = [
+        'Accessories_gruppo%3aNote',
+        'Accessories_1_gruppo%3aNote'
+    ]
+
+    for style in accessory_note_styles:
+        if style in xml_content:
+            # Find the entire ParagraphStyleRange for this note style
+            para_pattern = rf'ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Infoblocks_gruppo%3a{re.escape(style)}"[^>]*>(.*?)</ParagraphStyleRange>'
+            para_matches = re.findall(para_pattern, xml_content, re.DOTALL)
+
+            for para_content in para_matches:
+                # Get parent story ID (diamond marker reference)
+                parent_match = re.search(r'ParentStory="(u[a-f0-9]+)"', para_content)
+                parent_story = parent_match.group(1) if parent_match else 'unknown'
+
+                # Get ALL content tags and combine non-whitespace ones
+                contents = re.findall(r'<Content>([^<]*)</Content>', para_content)
+                full_text = ' '.join(c.strip() for c in contents if c.strip())
+
+                if full_text:
+                    notes.append({
+                        'parent_story': parent_story,
+                        'text': full_text
+                    })
     return notes
 
 def extract_product_notes(xml_content):

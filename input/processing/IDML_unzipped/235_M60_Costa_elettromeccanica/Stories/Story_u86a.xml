@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u86a" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aApplication">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Lo Scanner Laser Orizzontale XGUARD 10H può essere utilizzato in combinazione con le barriere automatiche per rilevare in modo affidabile veicoli e pedoni, garantendo al contempo la massima protezione per le persone; l’ambito applicativo tipico è quello in cui non è possibile installare spire ad induzione (ad esempio quando sono presenti reti metalliche di rinforzo o riscaldamento elettrico a pavimento).</Content>
+				<Br />
+				<Content>Lo scanner laser genera quattro raggi orizzontali sovrapposti ed è in grado di scansionare un’area di max. 9,9 x 9,9 m. Tale area può essere a sua volta suddivisa in campo di sicurezza e campo di apertura. A seconda delle impostazioni, la barriera può, ad esempio, aprirsi solo quando viene rilevato un veicolo (e non quando viene rilevata una persona) e chiudersi solo quando non saranno presenti veicoli e/o persone all’interno del campo di sicurezza.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

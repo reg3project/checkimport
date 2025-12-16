@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u5d7" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aProduct_Name" HyphenationZone="115.2" RuleAboveLineWeight="3.2" RuleBelowLineWeight="3.2" SplitColumnInsideGutter="19.200000000000003" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="3.2" ParagraphBorderTopRightCornerRadius="3.2" ParagraphBorderBottomLeftCornerRadius="3.2" ParagraphBorderBottomRightCornerRadius="3.2" ParagraphShadingTopLeftCornerRadius="3.2" ParagraphShadingTopRightCornerRadius="3.2" ParagraphShadingBottomLeftCornerRadius="3.2" ParagraphShadingBottomRightCornerRadius="3.2" ParagraphBorderTopLineWeight="3.2" ParagraphBorderBottomLineWeight="3.2" ParagraphBorderLeftLineWeight="3.2" ParagraphBorderRightLineWeight="3.2">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="48" StrokeWeight="3.2" AppliedLanguage="$ID/English: UK" OverprintFill="false" MiterLimit="12.8" RubyFontSize="-3.2" KentenFontSize="-3.2">
+				<Properties>
+					<Leading type="unit">128</Leading>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>Kit</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

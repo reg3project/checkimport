@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?aid style="50" type="document" readerVersion="6.0" featureSet="257" product="21.0(2)" ?>
+<Document xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0" Self="d" StoryList="uf1 u108 u12f u147 u18d u1bd u1d8 u236 u24f u267 u289 u2bb u2d6 u2fc u314 u32c u34a u362 u37a u392 u3aa u3c2 u3db u3f3 u40b u423 u441 u459 u471 u489 u4a1 u4b9 u4d7 u4ef u507 u51f u537 u54f u567 u589 u5a1 u5be u5d6 u5ee u606 u61f u637 u64f u667 u67f u697 u6af u6c8 u6e1 u6f9 u711 u729 u745 u764 u77c u794 u7ac u7c9 u7e1 u7ff u854 u86c u884 u89c u8b4 u8cc u8e7 u907 u93d u955 u98d u9a5 u9c1 u9d9 u9f1 ua09 ua21 ua39 ua51 ua69 ua81 ua99 uab1 uaca uae2 uafa ub12 ub2a ub42 ub5b ub75 ub8d uba5 uc43 uc60 uc9e ucb6 ucce uce6 ucfe ud16 ud2e ud46 ud5e ud76 ud8e uda6 udbe udd6 udee ue06 ue1f ue38 ue50 ue68 ue80 ue98 ueb0 uec8 uee0 uef9 uf11 uf2a uf42 uf5b uf73 uf8b ufa3 ufbb ufd3 ufeb u1003 u101b u1033 u104b u1064 u1081 u109a u10b3 u10cb u10e3 u10fb u1113 u112c u1144 u1161 u117e u1196 u11ae u11c6 u11e1 u11fd u1215 u122d u1245 u1262 u127a u1297 u12ea u1302 u131a u1332 u134b u1363 u137b u139a u13b2 u13ca u13e8 u1400 u1418 u1431 u1449 u1461 u1479 u1491 u14a9 u14c1 u14e0 u14f8 u1510 u1528 u1540 u1558 u1571 u1589 u15a1 u15b9 u15d1 u15e9 u1601 u16b4 u16cc u16e4 u16fc u1714 u172c u1744 u175c u1774 u178d u17a5 u17c3 u17db u17f3 u180b u1823 u183b u186c u1889 u18c6 u18df u18f7 u1919 u1931 u1949 u1961 u1979 u1998 u19b5 u19f4 u1a1d u1a3b u1a53 u1a6c u1a84 u1a9c u1ab9 u1ad8 u1b14 u1b42 u1b5f u1b7c u1b9a u1bb2 u1bca u1be2 u1bfa u1c12 u1c30 u1c48 u1c60 u1c78 u1c90 u1cb1 u1cca u1ceb u1d03 u1d25 u1d46 u1d63 u1d80 u1d9a u1db3 u1dd9 u1df1 u1e16 u1e70 u1e8f u1ea7 u1ebf u1ee2 u1efc u1f1f u1f42 u1f5b u1f7f u1f97 u1fb8 u1fd1 u1ff2 u200a u202a u2047 u2064 u2092 u20cf u20e7 u2109 u2121 u2146 u215f u21a2 u21dc u21f4 u2216 u222e u226d u22b8 u22db u22f3 u2313 u232b u234c u2364 u2387 u23a1 u23cf ub3" AppliedMathMLFontSize="10" AppliedMathMLRgbColor="0 0 0" TintValue="100" PreferMathMLInEpubExport="false" Name="Untitled-378" ZeroPoint="0 0" ActiveLayer="uce" CMYKProfile="Coated FOGRA39 (ISO 12647-2:2004)" RGBProfile="sRGB IEC61966-2.1" SolidColorIntent="UseColorSettings" AfterBlendingIntent="UseColorSettings" DefaultImageIntent="UseColorSettings" RGBPolicy="PreserveEmbeddedProfiles" CMYKPolicy="CombinationOfPreserveAndSafeCmyk" AccurateLABSpots="false">
+	<Properties>
+		<AppliedMathMLSwatch type="enumeration">Nothing</AppliedMathMLSwatch>
+		<Label>
+			<KeyValuePair Key="kAdobeDPS_Version" Value="2" />
+		</Label>
+	</Properties>
+	<Language Self="Language/$ID/[No Language]" Name="$ID/[No Language]" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/[No Language]" SublanguageName="$ID/[No Language]" Id="0" HyphenationVendor="$ID/" SpellingVendor="$ID/" />
+	<Language Self="Language/$ID/German%3a Reformed" Name="$ID/German: Reformed" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Reformed" Id="275" HyphenationVendor="Duden" SpellingVendor="Duden" />
+	<Language Self="Language/$ID/de_DE_2006" Name="$ID/de_DE_2006" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/de_DE_2006" SublanguageName="$ID/" Id="275" HyphenationVendor="Duden" SpellingVendor="Duden" />
+	<Language Self="Language/$ID/German%3a Swiss" Name="$ID/German: Swiss" SingleQuotes="‹›" DoubleQuotes="«»" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Swiss" Id="531" HyphenationVendor="Duden" SpellingVendor="Duden" />
+	<Language Self="Language/$ID/de_CH_2006" Name="$ID/de_CH_2006" SingleQuotes="‹›" DoubleQuotes="«»" PrimaryLanguageName="$ID/de_CH_2006" SublanguageName="$ID/" Id="531" HyphenationVendor="Duden" SpellingVendor="Duden" />
+	<Language Self="Language/$ID/German%3a Austrian" Name="$ID/German: Austrian" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Austrian" Id="787" HyphenationVendor="Duden" SpellingVendor="Duden" />
+	<Language Self="Language/$ID/bn_IN" Name="$ID/bn_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/gu_IN" Name="$ID/gu_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/hi_IN" Name="$ID/hi_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/kn_IN" Name="$ID/kn_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/ml_IN" Name="$ID/ml_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/mr_IN" Name="$ID/mr_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/or_IN" Name="$ID/or_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/pa_IN" Name="$ID/pa_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/ta_IN" Name="$ID/ta_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/te_IN" Name="$ID/te_IN" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Bulgarian" Name="$ID/Bulgarian" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Bulgarian" SublanguageName="$ID/" Id="261" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Catalan" Name="$ID/Catalan" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Catalan" SublanguageName="$ID/" Id="263" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Czech" Name="$ID/Czech" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Czech" SublanguageName="$ID/" Id="266" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Danish" Name="$ID/Danish" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Danish" SublanguageName="$ID/" Id="267" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Greek" Name="$ID/Greek" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/Greek" SublanguageName="$ID/" Id="276" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/English%3a Canadian" Name="$ID/English: Canadian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/Canadian" Id="1037" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/English%3a UK" Name="$ID/English: UK" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/UK" Id="525" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/English%3a USA" Name="$ID/English: USA" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/USA" Id="269" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/English%3a USA Medical" Name="$ID/English: USA Medical" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/USA Medical" Id="269" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Spanish%3a Castilian" Name="$ID/Spanish: Castilian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Spanish" SublanguageName="$ID/Castilian" Id="294" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Estonian" Name="$ID/Estonian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Estonian" SublanguageName="$ID/" Id="270" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Finnish" Name="$ID/Finnish" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Finnish" SublanguageName="$ID/" Id="273" HyphenationVendor="Hunspell" SpellingVendor="Proximity" />
+	<Language Self="Language/$ID/French%3a Canadian" Name="$ID/French: Canadian" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/French" SublanguageName="$ID/Canadian" Id="786" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/French" Name="$ID/French" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/French" SublanguageName="$ID/" Id="274" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Croatian" Name="$ID/Croatian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Croatian" SublanguageName="$ID/" Id="265" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Hungarian" Name="$ID/Hungarian" SingleQuotes="‚’" DoubleQuotes="„”" PrimaryLanguageName="$ID/Hungarian" SublanguageName="$ID/" Id="278" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Italian" Name="$ID/Italian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Italian" SublanguageName="$ID/" Id="281" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Lithuanian" Name="$ID/Lithuanian" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Lithuanian" SublanguageName="$ID/" Id="285" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Latvian" Name="$ID/Latvian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Latvian" SublanguageName="$ID/" Id="284" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Norwegian%3a Bokmal" Name="$ID/Norwegian: Bokmal" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Norwegian" SublanguageName="$ID/Bokmal" Id="286" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Dutch" Name="$ID/Dutch" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Dutch" SublanguageName="$ID/" Id="268" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/nl_NL_2005" Name="$ID/nl_NL_2005" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/nl_NL_2005" SublanguageName="$ID/" Id="268" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Norwegian%3a Nynorsk" Name="$ID/Norwegian: Nynorsk" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Norwegian" SublanguageName="$ID/Nynorsk" Id="542" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Polish" Name="$ID/Polish" SingleQuotes="‚’" DoubleQuotes="„”" PrimaryLanguageName="$ID/Polish" SublanguageName="$ID/" Id="287" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Portuguese%3a Brazilian" Name="$ID/Portuguese: Brazilian" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Portuguese" SublanguageName="$ID/Brazilian" Id="544" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Portuguese%3a Orthographic Agreement" Name="$ID/Portuguese: Orthographic Agreement" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Portuguese" SublanguageName="$ID/Orthographic Agreement" Id="544" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Portuguese" Name="$ID/Portuguese" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Portuguese" SublanguageName="$ID/" Id="288" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Romanian" Name="$ID/Romanian" SingleQuotes="‚’" DoubleQuotes="„”" PrimaryLanguageName="$ID/Romanian" SublanguageName="$ID/" Id="289" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Russian" Name="$ID/Russian" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/Russian" SublanguageName="$ID/" Id="290" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Slovak" Name="$ID/Slovak" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/Slovak" SublanguageName="$ID/" Id="291" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Slovenian" Name="$ID/Slovenian" SingleQuotes="&apos;&apos;" DoubleQuotes="»«" PrimaryLanguageName="$ID/Slovenian" SublanguageName="$ID/" Id="292" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Swedish" Name="$ID/Swedish" SingleQuotes="’’" DoubleQuotes="””" PrimaryLanguageName="$ID/Swedish" SublanguageName="$ID/" Id="295" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Turkish" Name="$ID/Turkish" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/Turkish" SublanguageName="$ID/" Id="297" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Ukrainian" Name="$ID/Ukrainian" SingleQuotes="‘’" DoubleQuotes="«»" PrimaryLanguageName="$ID/Ukrainian" SublanguageName="$ID/" Id="298" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/id_ID" Name="$ID/id_ID" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/km_KH" Name="$ID/km_KH" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/lo_LA" Name="$ID/lo_LA" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/my_MM" Name="$ID/my_MM" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/si_LK" Name="$ID/si_LK" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/" SublanguageName="$ID/" Id="348" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Thai" Name="$ID/Thai" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/Thai" SublanguageName="$ID/" Id="296" HyphenationVendor="Hunspell" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/English%3a USA Legal" Name="$ID/English: USA Legal" SingleQuotes="‘’" DoubleQuotes="“”" PrimaryLanguageName="$ID/English" SublanguageName="$ID/USA Legal" Id="269" HyphenationVendor="Proximity" SpellingVendor="Proximity" />
+	<Language Self="Language/$ID/German%3a Traditional" Name="$ID/German: Traditional" SingleQuotes="‚‘" DoubleQuotes="„“" PrimaryLanguageName="$ID/German" SublanguageName="$ID/Traditional" Id="275" HyphenationVendor="Proximity" SpellingVendor="Proximity" />
+	<Language Self="Language/$ID/Hebrew" Name="$ID/Hebrew" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/Hebrew" SublanguageName="$ID/" Id="277" HyphenationVendor="WinSoft" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Arabic" Name="$ID/Arabic" SingleQuotes="‹›" DoubleQuotes="«»" PrimaryLanguageName="$ID/Arabic" SublanguageName="$ID/" Id="257" HyphenationVendor="$ID/" SpellingVendor="Hunspell" />
+	<Language Self="Language/$ID/Vietnamese" Name="$ID/Vietnamese" SingleQuotes="&apos;&apos;" DoubleQuotes="&quot;&quot;" PrimaryLanguageName="$ID/Vietnamese" SublanguageName="$ID/" Id="299" HyphenationVendor="$ID/" SpellingVendor="Hunspell" />
+	<idPkg:Graphic src="Resources/Graphic.xml" />
+	<idPkg:Fonts src="Resources/Fonts.xml" />
+	<idPkg:Styles src="Resources/Styles.xml" />
+	<NumberingList Self="NumberingList/$ID/[Default]" Name="$ID/[Default]" ContinueNumbersAcrossStories="false" ContinueNumbersAcrossDocuments="false" />
+	<NamedGrid Self="NamedGrid/$ID/[Page Grid]" Name="$ID/[Page Grid]">
+		<GridDataInformation FontStyle="Regular" PointSize="12" CharacterAki="0" LineAki="9" HorizontalScale="100" VerticalScale="100" LineAlignment="LeftOrTopLineJustify" GridAlignment="AlignEmCenter" CharacterAlignment="AlignEmCenter">
+			<Properties>
+				<AppliedFont type="string">Minion Pro</AppliedFont>
+			</Properties>
+		</GridDataInformation>
+	</NamedGrid>
+	<idPkg:Preferences src="Resources/Preferences.xml" />
+	<AdjustLayoutPreference EnableAdjustLayout="false" AllowLockedObjectsToAdjust="true" AllowFontSizeAndLeadingAdjustment="false" ImposeFontSizeRestriction="false" MinimumFontSize="6" MaximumFontSize="324" EnableAutoAdjustMargins="false" />
+	<HTMLFXLExportPreference EpubPageRange="" EpubPageRangeFormat="ExportAllPages" />
+	<PublishExportPreference PublishCover="FirstPage" CoverImageFile="" PublishPageRange="" PublishPageRangeFormat="ExportAllPages" ImageConversion="Automatic" ImageExportResolution="Ppi96" PublishDescription="" PublishFileName="" PublishFormat="PublishByPages" CoverPage="$ID/" GIFOptionsPalette="AdaptivePalette" JPEGOptionsQuality="High" PublishPdf="false" />
+	<EndnoteOption EndnoteTitle="Endnotes" EndnoteTitleStyle="ParagraphStyle/$ID/NormalParagraphStyle" StartEndnoteNumberAt="1" EndnoteMarkerStyle="CharacterStyle/$ID/[No character style]" EndnoteTextStyle="ParagraphStyle/$ID/NormalParagraphStyle" EndnoteSeparatorText="&#x9;" EndnotePrefix="" EndnoteSuffix="">
+		<Properties>
+			<EndnoteNumberingStyle type="enumeration">Arabic</EndnoteNumberingStyle>
+			<RestartEndnoteNumbering type="enumeration">Continuous</RestartEndnoteNumbering>
+			<EndnoteMarkerPositioning type="enumeration">SuperscriptMarker</EndnoteMarkerPositioning>
+			<ScopeValue type="enumeration">EndnoteDocumentScope</ScopeValue>
+			<FrameCreateOption type="enumeration">NewPage</FrameCreateOption>
+			<ShowEndnotePrefixSuffix type="enumeration">NoPrefixSuffix</ShowEndnotePrefixSuffix>
+		</Properties>
+	</EndnoteOption>
+	<TextFrameFootnoteOptionsObject EnableOverrides="false" SpanFootnotesAcross="false" MinimumSpacingOption="12" SpaceBetweenFootnotes="6" />
+	<LinkedStoryOption UpdateWhileSaving="false" WarnOnUpdateOfEditedStory="true" RemoveForcedLineBreaks="false" ApplyStyleMappings="false" />
+	<LinkedPageItemOption UpdateLinkWhileSaving="false" WarnOnUpdateOfEditedPageItem="true" PreserveSizeAndShape="false" PreserveAppearance="false" PreserveInteractivity="false" PreserveFrameContent="false" PreserveOthers="false" />
+	<TaggedPDFPreference StructureOrder="UseXMLStructure" />
+	<WatermarkPreference WatermarkVisibility="false" WatermarkDoPrint="false" WatermarkDrawInBack="true" WatermarkText="" WatermarkFontFamily="Minion Pro" WatermarkFontStyle="Regular" WatermarkFontPointSize="48" WatermarkOpacity="50" WatermarkRotation="0" WatermarkHorizontalPosition="WatermarkHCenter" WatermarkHorizontalOffset="0" WatermarkVerticalPosition="WatermarkVCenter" WatermarkVerticalOffset="0">
+		<Properties>
+			<WatermarkFontColor type="enumeration">Black</WatermarkFontColor>
+		</Properties>
+	</WatermarkPreference>
+	<ConditionalTextPreference ShowConditionIndicators="ShowIndicators" ActiveConditionSet="n" />
+	<TextVariable Self="dTextVariablen&lt;?AID 001b?&gt;TV XRefChapterNumber" Name="&lt;?AID 001b?&gt;TV XRefChapterNumber" VariableType="XrefChapterNumberType" />
+	<TextVariable Self="dTextVariablen&lt;?AID 001b?&gt;TV XRefPageNumber" Name="&lt;?AID 001b?&gt;TV XRefPageNumber" VariableType="XrefPageNumberType" />
+	<TextVariable Self="dTextVariablenChapter Number" Name="Chapter Number" VariableType="ChapterNumberType">
+		<ChapterNumberVariablePreference TextBefore="" Format="Current" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenCreation Date" Name="Creation Date" VariableType="CreationDateType">
+		<DateVariablePreference TextBefore="" Format="MM/dd/yy" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenFile Name" Name="File Name" VariableType="FileNameType">
+		<FileNameVariablePreference TextBefore="" IncludePath="false" IncludeExtension="false" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenImage Name" Name="Image Name" VariableType="LiveCaptionType">
+		<CaptionMetadataVariablePreference TextBefore="" MetadataProviderName="$ID/#LinkInfoNameStr" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenLast Page Number" Name="Last Page Number" VariableType="LastPageNumberType">
+		<PageNumberVariablePreference TextBefore="" Format="Current" TextAfter="" Scope="SectionScope" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenModification Date" Name="Modification Date" VariableType="ModificationDateType">
+		<DateVariablePreference TextBefore="" Format="MMMM d, yyyy h:mm aa" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenOutput Date" Name="Output Date" VariableType="OutputDateType">
+		<DateVariablePreference TextBefore="" Format="MM/dd/yy" TextAfter="" />
+	</TextVariable>
+	<TextVariable Self="dTextVariablenRunning Header" Name="Running Header" VariableType="MatchParagraphStyleType">
+		<MatchParagraphStylePreference TextBefore="" TextAfter="" AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" SearchStrategy="FirstOnPage" ChangeCase="None" DeleteEndPunctuation="false" />
+	</TextVariable>
+	<idPkg:Tags src="XML/Tags.xml" />
+	<Layer Self="uce" Name="Layer 1" Visible="true" Locked="false" IgnoreWrap="false" ShowGuides="true" LockGuides="false" UI="true" Expendable="true" Printable="true">
+		<Properties>
+			<LayerColor type="enumeration">LightBlue</LayerColor>
+		</Properties>
+	</Layer>
+	<Layer Self="ue7" Name="Livello 1" Visible="true" Locked="false" IgnoreWrap="false" ShowGuides="true" LockGuides="false" UI="true" Expendable="true" Printable="true">
+		<Properties>
+			<LayerColor type="enumeration">LightBlue</LayerColor>
+		</Properties>
+	</Layer>
+	<idPkg:MasterSpread src="MasterSpreads/MasterSpread_ud8.xml" />
+	<idPkg:MasterSpread src="MasterSpreads/MasterSpread_u180.xml" />
+	<idPkg:MasterSpread src="MasterSpreads/MasterSpread_u1b1.xml" />
+	<idPkg:Spread src="Spreads/Spread_ue0.xml" />
+	<idPkg:Spread src="Spreads/Spread_uc91.xml" />
+	<idPkg:Spread src="Spreads/Spread_u245a.xml" />
+	<Section Self="ud7" Length="4" AlternateLayoutLength="4" AlternateLayout="Letter V" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="ue5" SectionPrefix="">
+		<Properties>
+			<PageNumberStyle type="enumeration">Arabic</PageNumberStyle>
+		</Properties>
+	</Section>
+	<DocumentUser Self="dDocumentUser0" UserName="$ID/Unknown User Name">
+		<Properties>
+			<UserColor type="enumeration">Gold</UserColor>
+		</Properties>
+	</DocumentUser>
+	<CrossReferenceFormat Self="ua1" Name="Full Paragraph &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua1BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua1BuildingBlock1" BlockType="FullParagraphBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua1BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua1BuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua2" Name="Full Paragraph" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua2BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua2BuildingBlock1" BlockType="FullParagraphBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua2BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua3" Name="Paragraph Text &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua3BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua3BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua3BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua3BuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua4" Name="Paragraph Text" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua4BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua4BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua4BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua5" Name="Paragraph Number &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua5BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua5BuildingBlock1" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText=" on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua5BuildingBlock2" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua6" Name="Paragraph Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua6BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua7" Name="Text Anchor Name &amp; Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua7BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua7BuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua7BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua7BuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua8" Name="Text Anchor Name" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua8BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua8BuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua8BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<CrossReferenceFormat Self="ua9" Name="Page Number" AppliedCharacterStyle="n">
+		<BuildingBlock Self="ua9BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+		<BuildingBlock Self="ua9BuildingBlock1" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+	</CrossReferenceFormat>
+	<idPkg:BackingStory src="XML/BackingStory.xml" />
+	<idPkg:Story src="Stories/Story_ucb6.xml" />
+	<idPkg:Story src="Stories/Story_uc9e.xml" />
+	<idPkg:Story src="Stories/Story_u1d8.xml" />
+	<idPkg:Story src="Stories/Story_u1bd.xml" />
+	<idPkg:Story src="Stories/Story_u18d.xml" />
+	<idPkg:Story src="Stories/Story_u147.xml" />
+	<idPkg:Story src="Stories/Story_u12f.xml" />
+	<idPkg:Story src="Stories/Story_u108.xml" />
+	<idPkg:Story src="Stories/Story_uf1.xml" />
+	<idPkg:Story src="Stories/Story_udd6.xml" />
+	<idPkg:Story src="Stories/Story_udbe.xml" />
+	<idPkg:Story src="Stories/Story_uda6.xml" />
+	<idPkg:Story src="Stories/Story_ud8e.xml" />
+	<idPkg:Story src="Stories/Story_ud76.xml" />
+	<idPkg:Story src="Stories/Story_ud5e.xml" />
+	<idPkg:Story src="Stories/Story_ud46.xml" />
+	<idPkg:Story src="Stories/Story_ud2e.xml" />
+	<idPkg:Story src="Stories/Story_ud16.xml" />
+	<idPkg:Story src="Stories/Story_ucfe.xml" />
+	<idPkg:Story src="Stories/Story_uce6.xml" />
+	<idPkg:Story src="Stories/Story_ucce.xml" />
+	<idPkg:Story src="Stories/Story_u2d6.xml" />
+	<idPkg:Story src="Stories/Story_u2bb.xml" />
+	<idPkg:Story src="Stories/Story_u289.xml" />
+	<idPkg:Story src="Stories/Story_u267.xml" />
+	<idPkg:Story src="Stories/Story_u24f.xml" />
+	<idPkg:Story src="Stories/Story_u236.xml" />
+	<idPkg:Story src="Stories/Story_u1144.xml" />
+	<idPkg:Story src="Stories/Story_u112c.xml" />
+	<idPkg:Story src="Stories/Story_u1113.xml" />
+	<idPkg:Story src="Stories/Story_u10fb.xml" />
+	<idPkg:Story src="Stories/Story_u10e3.xml" />
+	<idPkg:Story src="Stories/Story_u10cb.xml" />
+	<idPkg:Story src="Stories/Story_u10b3.xml" />
+	<idPkg:Story src="Stories/Story_u109a.xml" />
+	<idPkg:Story src="Stories/Story_u1081.xml" />
+	<idPkg:Story src="Stories/Story_u1064.xml" />
+	<idPkg:Story src="Stories/Story_u104b.xml" />
+	<idPkg:Story src="Stories/Story_u1033.xml" />
+	<idPkg:Story src="Stories/Story_u101b.xml" />
+	<idPkg:Story src="Stories/Story_u1003.xml" />
+	<idPkg:Story src="Stories/Story_ufeb.xml" />
+	<idPkg:Story src="Stories/Story_ufd3.xml" />
+	<idPkg:Story src="Stories/Story_ufbb.xml" />
+	<idPkg:Story src="Stories/Story_ufa3.xml" />
+	<idPkg:Story src="Stories/Story_uf8b.xml" />
+	<idPkg:Story src="Stories/Story_uf73.xml" />
+	<idPkg:Story src="Stories/Story_uf5b.xml" />
+	<idPkg:Story src="Stories/Story_uf42.xml" />
+	<idPkg:Story src="Stories/Story_uf2a.xml" />
+	<idPkg:Story src="Stories/Story_uf11.xml" />
+	<idPkg:Story src="Stories/Story_uef9.xml" />
+	<idPkg:Story src="Stories/Story_uee0.xml" />
+	<idPkg:Story src="Stories/Story_uec8.xml" />
+	<idPkg:Story src="Stories/Story_ueb0.xml" />
+	<idPkg:Story src="Stories/Story_ue98.xml" />
+	<idPkg:Story src="Stories/Story_ue80.xml" />
+	<idPkg:Story src="Stories/Story_ue68.xml" />
+	<idPkg:Story src="Stories/Story_ue50.xml" />
+	<idPkg:Story src="Stories/Story_ue38.xml" />
+	<idPkg:Story src="Stories/Story_ue1f.xml" />
+	<idPkg:Story src="Stories/Story_ue06.xml" />
+	<idPkg:Story src="Stories/Story_udee.xml" />
+	<idPkg:Story src="Stories/Story_u40b.xml" />
+	<idPkg:Story src="Stories/Story_u3f3.xml" />
+	<idPkg:Story src="Stories/Story_u3db.xml" />
+	<idPkg:Story src="Stories/Story_u3c2.xml" />
+	<idPkg:Story src="Stories/Story_u3aa.xml" />
+	<idPkg:Story src="Stories/Story_u392.xml" />
+	<idPkg:Story src="Stories/Story_u37a.xml" />
+	<idPkg:Story src="Stories/Story_u362.xml" />
+	<idPkg:Story src="Stories/Story_u34a.xml" />
+	<idPkg:Story src="Stories/Story_u32c.xml" />
+	<idPkg:Story src="Stories/Story_u314.xml" />
+	<idPkg:Story src="Stories/Story_u2fc.xml" />
+	<idPkg:Story src="Stories/Story_u14c1.xml" />
+	<idPkg:Story src="Stories/Story_u14a9.xml" />
+	<idPkg:Story src="Stories/Story_u1491.xml" />
+	<idPkg:Story src="Stories/Story_u1479.xml" />
+	<idPkg:Story src="Stories/Story_u1461.xml" />
+	<idPkg:Story src="Stories/Story_u1449.xml" />
+	<idPkg:Story src="Stories/Story_u1431.xml" />
+	<idPkg:Story src="Stories/Story_u1418.xml" />
+	<idPkg:Story src="Stories/Story_u1400.xml" />
+	<idPkg:Story src="Stories/Story_u13e8.xml" />
+	<idPkg:Story src="Stories/Story_u13ca.xml" />
+	<idPkg:Story src="Stories/Story_u13b2.xml" />
+	<idPkg:Story src="Stories/Story_u139a.xml" />
+	<idPkg:Story src="Stories/Story_u137b.xml" />
+	<idPkg:Story src="Stories/Story_u1363.xml" />
+	<idPkg:Story src="Stories/Story_u134b.xml" />
+	<idPkg:Story src="Stories/Story_u1332.xml" />
+	<idPkg:Story src="Stories/Story_u131a.xml" />
+	<idPkg:Story src="Stories/Story_u1302.xml" />
+	<idPkg:Story src="Stories/Story_u12ea.xml" />
+	<idPkg:Story src="Stories/Story_u1297.xml" />
+	<idPkg:Story src="Stories/Story_u127a.xml" />
+	<idPkg:Story src="Stories/Story_u1262.xml" />
+	<idPkg:Story src="Stories/Story_u1245.xml" />
+	<idPkg:Story src="Stories/Story_u122d.xml" />
+	<idPkg:Story src="Stories/Story_u1215.xml" />
+	<idPkg:Story src="Stories/Story_u11fd.xml" />
+	<idPkg:Story src="Stories/Story_u11e1.xml" />
+	<idPkg:Story src="Stories/Story_u11c6.xml" />
+	<idPkg:Story src="Stories/Story_u11ae.xml" />
+	<idPkg:Story src="Stories/Story_u1196.xml" />
+	<idPkg:Story src="Stories/Story_u117e.xml" />
+	<idPkg:Story src="Stories/Story_u1161.xml" />
+	<idPkg:Story src="Stories/Story_u5be.xml" />
+	<idPkg:Story src="Stories/Story_u5a1.xml" />
+	<idPkg:Story src="Stories/Story_u589.xml" />
+	<idPkg:Story src="Stories/Story_u567.xml" />
+	<idPkg:Story src="Stories/Story_u54f.xml" />
+	<idPkg:Story src="Stories/Story_u537.xml" />
+	<idPkg:Story src="Stories/Story_u51f.xml" />
+	<idPkg:Story src="Stories/Story_u507.xml" />
+	<idPkg:Story src="Stories/Story_u4ef.xml" />
+	<idPkg:Story src="Stories/Story_u4d7.xml" />
+	<idPkg:Story src="Stories/Story_u4b9.xml" />
+	<idPkg:Story src="Stories/Story_u4a1.xml" />
+	<idPkg:Story src="Stories/Story_u489.xml" />
+	<idPkg:Story src="Stories/Story_u471.xml" />
+	<idPkg:Story src="Stories/Story_u459.xml" />
+	<idPkg:Story src="Stories/Story_u441.xml" />
+	<idPkg:Story src="Stories/Story_u423.xml" />
+	<idPkg:Story src="Stories/Story_u19f4.xml" />
+	<idPkg:Story src="Stories/Story_u19b5.xml" />
+	<idPkg:Story src="Stories/Story_u1998.xml" />
+	<idPkg:Story src="Stories/Story_u1979.xml" />
+	<idPkg:Story src="Stories/Story_u1961.xml" />
+	<idPkg:Story src="Stories/Story_u1949.xml" />
+	<idPkg:Story src="Stories/Story_u1931.xml" />
+	<idPkg:Story src="Stories/Story_u1919.xml" />
+	<idPkg:Story src="Stories/Story_u18f7.xml" />
+	<idPkg:Story src="Stories/Story_u18df.xml" />
+	<idPkg:Story src="Stories/Story_u18c6.xml" />
+	<idPkg:Story src="Stories/Story_u1889.xml" />
+	<idPkg:Story src="Stories/Story_u186c.xml" />
+	<idPkg:Story src="Stories/Story_u183b.xml" />
+	<idPkg:Story src="Stories/Story_u1823.xml" />
+	<idPkg:Story src="Stories/Story_u180b.xml" />
+	<idPkg:Story src="Stories/Story_u17f3.xml" />
+	<idPkg:Story src="Stories/Story_u17db.xml" />
+	<idPkg:Story src="Stories/Story_u17c3.xml" />
+	<idPkg:Story src="Stories/Story_u17a5.xml" />
+	<idPkg:Story src="Stories/Story_u178d.xml" />
+	<idPkg:Story src="Stories/Story_u1774.xml" />
+	<idPkg:Story src="Stories/Story_u175c.xml" />
+	<idPkg:Story src="Stories/Story_u1744.xml" />
+	<idPkg:Story src="Stories/Story_u172c.xml" />
+	<idPkg:Story src="Stories/Story_u1714.xml" />
+	<idPkg:Story src="Stories/Story_u16fc.xml" />
+	<idPkg:Story src="Stories/Story_u16e4.xml" />
+	<idPkg:Story src="Stories/Story_u16cc.xml" />
+	<idPkg:Story src="Stories/Story_u16b4.xml" />
+	<idPkg:Story src="Stories/Story_u1601.xml" />
+	<idPkg:Story src="Stories/Story_u15e9.xml" />
+	<idPkg:Story src="Stories/Story_u15d1.xml" />
+	<idPkg:Story src="Stories/Story_u15b9.xml" />
+	<idPkg:Story src="Stories/Story_u15a1.xml" />
+	<idPkg:Story src="Stories/Story_u1589.xml" />
+	<idPkg:Story src="Stories/Story_u1571.xml" />
+	<idPkg:Story src="Stories/Story_u1558.xml" />
+	<idPkg:Story src="Stories/Story_u1540.xml" />
+	<idPkg:Story src="Stories/Story_u1528.xml" />
+	<idPkg:Story src="Stories/Story_u1510.xml" />
+	<idPkg:Story src="Stories/Story_u14f8.xml" />
+	<idPkg:Story src="Stories/Story_u14e0.xml" />
+	<idPkg:Story src="Stories/Story_u8cc.xml" />
+	<idPkg:Story src="Stories/Story_u8b4.xml" />
+	<idPkg:Story src="Stories/Story_u89c.xml" />
+	<idPkg:Story src="Stories/Story_u884.xml" />
+	<idPkg:Story src="Stories/Story_u86c.xml" />
+	<idPkg:Story src="Stories/Story_u854.xml" />
+	<idPkg:Story src="Stories/Story_u7ff.xml" />
+	<idPkg:Story src="Stories/Story_u7e1.xml" />
+	<idPkg:Story src="Stories/Story_u7c9.xml" />
+	<idPkg:Story src="Stories/Story_u7ac.xml" />
+	<idPkg:Story src="Stories/Story_u794.xml" />
+	<idPkg:Story src="Stories/Story_u77c.xml" />
+	<idPkg:Story src="Stories/Story_u764.xml" />
+	<idPkg:Story src="Stories/Story_u745.xml" />
+	<idPkg:Story src="Stories/Story_u729.xml" />
+	<idPkg:Story src="Stories/Story_u711.xml" />
+	<idPkg:Story src="Stories/Story_u6f9.xml" />
+	<idPkg:Story src="Stories/Story_u6e1.xml" />
+	<idPkg:Story src="Stories/Story_u6c8.xml" />
+	<idPkg:Story src="Stories/Story_u6af.xml" />
+	<idPkg:Story src="Stories/Story_u697.xml" />
+	<idPkg:Story src="Stories/Story_u67f.xml" />
+	<idPkg:Story src="Stories/Story_u667.xml" />
+	<idPkg:Story src="Stories/Story_u64f.xml" />
+	<idPkg:Story src="Stories/Story_u637.xml" />
+	<idPkg:Story src="Stories/Story_u61f.xml" />
+	<idPkg:Story src="Stories/Story_u606.xml" />
+	<idPkg:Story src="Stories/Story_u5ee.xml" />
+	<idPkg:Story src="Stories/Story_u5d6.xml" />
+	<idPkg:Story src="Stories/Story_u1e16.xml" />
+	<idPkg:Story src="Stories/Story_u1df1.xml" />
+	<idPkg:Story src="Stories/Story_u1dd9.xml" />
+	<idPkg:Story src="Stories/Story_u1db3.xml" />
+	<idPkg:Story src="Stories/Story_u1d9a.xml" />
+	<idPkg:Story src="Stories/Story_u1d80.xml" />
+	<idPkg:Story src="Stories/Story_u1d63.xml" />
+	<idPkg:Story src="Stories/Story_u1d46.xml" />
+	<idPkg:Story src="Stories/Story_u1d25.xml" />
+	<idPkg:Story src="Stories/Story_u1d03.xml" />
+	<idPkg:Story src="Stories/Story_u1ceb.xml" />
+	<idPkg:Story src="Stories/Story_u1cca.xml" />
+	<idPkg:Story src="Stories/Story_u1cb1.xml" />
+	<idPkg:Story src="Stories/Story_u1c90.xml" />
+	<idPkg:Story src="Stories/Story_u1c78.xml" />
+	<idPkg:Story src="Stories/Story_u1c60.xml" />
+	<idPkg:Story src="Stories/Story_u1c48.xml" />
+	<idPkg:Story src="Stories/Story_u1c30.xml" />
+	<idPkg:Story src="Stories/Story_u1c12.xml" />
+	<idPkg:Story src="Stories/Story_u1bfa.xml" />
+	<idPkg:Story src="Stories/Story_u1be2.xml" />
+	<idPkg:Story src="Stories/Story_u1bca.xml" />
+	<idPkg:Story src="Stories/Story_u1bb2.xml" />
+	<idPkg:Story src="Stories/Story_u1b9a.xml" />
+	<idPkg:Story src="Stories/Story_u1b7c.xml" />
+	<idPkg:Story src="Stories/Story_u1b5f.xml" />
+	<idPkg:Story src="Stories/Story_u1b42.xml" />
+	<idPkg:Story src="Stories/Story_u1b14.xml" />
+	<idPkg:Story src="Stories/Story_u1ad8.xml" />
+	<idPkg:Story src="Stories/Story_u1ab9.xml" />
+	<idPkg:Story src="Stories/Story_u1a9c.xml" />
+	<idPkg:Story src="Stories/Story_u1a84.xml" />
+	<idPkg:Story src="Stories/Story_u1a6c.xml" />
+	<idPkg:Story src="Stories/Story_u1a53.xml" />
+	<idPkg:Story src="Stories/Story_u1a3b.xml" />
+	<idPkg:Story src="Stories/Story_u1a1d.xml" />
+	<idPkg:Story src="Stories/Story_uba5.xml" />
+	<idPkg:Story src="Stories/Story_ub8d.xml" />
+	<idPkg:Story src="Stories/Story_ub75.xml" />
+	<idPkg:Story src="Stories/Story_ub5b.xml" />
+	<idPkg:Story src="Stories/Story_ub42.xml" />
+	<idPkg:Story src="Stories/Story_ub2a.xml" />
+	<idPkg:Story src="Stories/Story_ub12.xml" />
+	<idPkg:Story src="Stories/Story_uafa.xml" />
+	<idPkg:Story src="Stories/Story_uae2.xml" />
+	<idPkg:Story src="Stories/Story_uaca.xml" />
+	<idPkg:Story src="Stories/Story_uab1.xml" />
+	<idPkg:Story src="Stories/Story_ua99.xml" />
+	<idPkg:Story src="Stories/Story_ua81.xml" />
+	<idPkg:Story src="Stories/Story_ua69.xml" />
+	<idPkg:Story src="Stories/Story_ua51.xml" />
+	<idPkg:Story src="Stories/Story_ua39.xml" />
+	<idPkg:Story src="Stories/Story_ua21.xml" />
+	<idPkg:Story src="Stories/Story_ua09.xml" />
+	<idPkg:Story src="Stories/Story_u9f1.xml" />
+	<idPkg:Story src="Stories/Story_u9d9.xml" />
+	<idPkg:Story src="Stories/Story_u9c1.xml" />
+	<idPkg:Story src="Stories/Story_u9a5.xml" />
+	<idPkg:Story src="Stories/Story_u98d.xml" />
+	<idPkg:Story src="Stories/Story_u955.xml" />
+	<idPkg:Story src="Stories/Story_u93d.xml" />
+	<idPkg:Story src="Stories/Story_u907.xml" />
+	<idPkg:Story src="Stories/Story_u8e7.xml" />
+	<idPkg:Story src="Stories/Story_u21a2.xml" />
+	<idPkg:Story src="Stories/Story_u215f.xml" />
+	<idPkg:Story src="Stories/Story_u2146.xml" />
+	<idPkg:Story src="Stories/Story_u2121.xml" />
+	<idPkg:Story src="Stories/Story_u2109.xml" />
+	<idPkg:Story src="Stories/Story_u20e7.xml" />
+	<idPkg:Story src="Stories/Story_u20cf.xml" />
+	<idPkg:Story src="Stories/Story_u2092.xml" />
+	<idPkg:Story src="Stories/Story_u2064.xml" />
+	<idPkg:Story src="Stories/Story_u2047.xml" />
+	<idPkg:Story src="Stories/Story_u202a.xml" />
+	<idPkg:Story src="Stories/Story_u200a.xml" />
+	<idPkg:Story src="Stories/Story_u1ff2.xml" />
+	<idPkg:Story src="Stories/Story_u1fd1.xml" />
+	<idPkg:Story src="Stories/Story_u1fb8.xml" />
+	<idPkg:Story src="Stories/Story_u1f97.xml" />
+	<idPkg:Story src="Stories/Story_u1f7f.xml" />
+	<idPkg:Story src="Stories/Story_u1f5b.xml" />
+	<idPkg:Story src="Stories/Story_u1f42.xml" />
+	<idPkg:Story src="Stories/Story_u1f1f.xml" />
+	<idPkg:Story src="Stories/Story_u1efc.xml" />
+	<idPkg:Story src="Stories/Story_u1ee2.xml" />
+	<idPkg:Story src="Stories/Story_u1ebf.xml" />
+	<idPkg:Story src="Stories/Story_u1ea7.xml" />
+	<idPkg:Story src="Stories/Story_u1e8f.xml" />
+	<idPkg:Story src="Stories/Story_u1e70.xml" />
+	<idPkg:Story src="Stories/Story_uc60.xml" />
+	<idPkg:Story src="Stories/Story_uc43.xml" />
+	<idPkg:Story src="Stories/Story_u23cf.xml" />
+	<idPkg:Story src="Stories/Story_u23a1.xml" />
+	<idPkg:Story src="Stories/Story_u2387.xml" />
+	<idPkg:Story src="Stories/Story_u2364.xml" />
+	<idPkg:Story src="Stories/Story_u234c.xml" />
+	<idPkg:Story src="Stories/Story_u232b.xml" />
+	<idPkg:Story src="Stories/Story_u2313.xml" />
+	<idPkg:Story src="Stories/Story_u22f3.xml" />
+	<idPkg:Story src="Stories/Story_u22db.xml" />
+	<idPkg:Story src="Stories/Story_u22b8.xml" />
+	<idPkg:Story src="Stories/Story_u226d.xml" />
+	<idPkg:Story src="Stories/Story_u222e.xml" />
+	<idPkg:Story src="Stories/Story_u2216.xml" />
+	<idPkg:Story src="Stories/Story_u21f4.xml" />
+	<idPkg:Story src="Stories/Story_u21dc.xml" />
+	<Hyperlink Self="uc7a" Name="Link_376_55_376" Source="uc74" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="false" DestinationUniqueKey="55">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="list">
+				<ListItem type="string">C:\Users\Luca1\Documents\FAAC\FAAC_CATALISTINO_IT_2025.InDesign2026.indd</ListItem>
+				<ListItem type="string"></ListItem>
+				<ListItem type="long">0</ListItem>
+				<ListItem type="long">35841</ListItem>
+				<ListItem type="long">374271</ListItem>
+			</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u12bd" Name="Link_321_12_321" Source="u12b5" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="false" DestinationUniqueKey="12">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="list">
+				<ListItem type="string">C:\Users\Luca1\Documents\FAAC\FAAC_CATALISTINO_IT_2025.InDesign2026.indd</ListItem>
+				<ListItem type="string"></ListItem>
+				<ListItem type="long">0</ListItem>
+				<ListItem type="long">35841</ListItem>
+				<ListItem type="long">330165</ListItem>
+			</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u12c5" Name="Link_274_11_274" Source="u12c2" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="false" DestinationUniqueKey="11">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="list">
+				<ListItem type="string">C:\Users\Luca1\Documents\FAAC\FAAC_CATALISTINO_IT_2025.InDesign2026.indd</ListItem>
+				<ListItem type="string"></ListItem>
+				<ListItem type="long">0</ListItem>
+				<ListItem type="long">35841</ListItem>
+				<ListItem type="long">329137</ListItem>
+			</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u12cc" Name="Link_185_9_185" Source="u12c9" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="false" DestinationUniqueKey="9">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="list">
+				<ListItem type="string">C:\Users\Luca1\Documents\FAAC\FAAC_CATALISTINO_IT_2025.InDesign2026.indd</ListItem>
+				<ListItem type="string"></ListItem>
+				<ListItem type="long">0</ListItem>
+				<ListItem type="long">35841</ListItem>
+				<ListItem type="long">312238</ListItem>
+			</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u12d3" Name="Link_85_7_85" Source="u12d0" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="false" DestinationUniqueKey="7">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="list">
+				<ListItem type="string">C:\Users\Luca1\Documents\FAAC\FAAC_CATALISTINO_IT_2025.InDesign2026.indd</ListItem>
+				<ListItem type="string"></ListItem>
+				<ListItem type="long">0</ListItem>
+				<ListItem type="long">35841</ListItem>
+				<ListItem type="long">285792</ListItem>
+			</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u12da" Name="Link_369_51_369" Source="u12d7" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="false" DestinationUniqueKey="51">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="list">
+				<ListItem type="string">C:\Users\Luca1\Documents\FAAC\FAAC_CATALISTINO_IT_2025.InDesign2026.indd</ListItem>
+				<ListItem type="string"></ListItem>
+				<ListItem type="long">0</ListItem>
+				<ListItem type="long">35841</ListItem>
+				<ListItem type="long">324869</ListItem>
+			</Destination>
+		</Properties>
+	</Hyperlink>
+	<Hyperlink Self="u12e1" Name="Link_136_8_136" Source="u12de" Visible="false" Highlight="None" Width="Thin" BorderStyle="Solid" Hidden="false" DestinationUniqueKey="8">
+		<Properties>
+			<BorderColor type="enumeration">Black</BorderColor>
+			<Destination type="list">
+				<ListItem type="string">C:\Users\Luca1\Documents\FAAC\FAAC_CATALISTINO_IT_2025.InDesign2026.indd</ListItem>
+				<ListItem type="string"></ListItem>
+				<ListItem type="long">0</ListItem>
+				<ListItem type="long">35841</ListItem>
+				<ListItem type="long">297261</ListItem>
+			</Destination>
+		</Properties>
+	</Hyperlink>
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Symbol" Name="$ID/kIndexGroup_Symbol" Include="true" Priority="0" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Alphabet" Name="$ID/kIndexGroup_Alphabet" Include="true" Priority="1" HeaderType="BasicLatin" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Numeric" Name="$ID/kIndexGroup_Numeric" Include="false" Priority="2" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_GreekAlphabet" Name="$ID/kWRIndexGroup_GreekAlphabet" Include="false" Priority="3" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_CyrillicAlphabet" Name="$ID/kWRIndexGroup_CyrillicAlphabet" Include="false" Priority="4" HeaderType="Russian" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Kana" Name="$ID/kIndexGroup_Kana" Include="false" Priority="5" HeaderType="HiraganaAll" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Chinese" Name="$ID/kIndexGroup_Chinese" Include="false" Priority="6" HeaderType="ChinesePinyin" />
+	<IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Korean" Name="$ID/kIndexGroup_Korean" Include="false" Priority="7" HeaderType="KoreanConsonant" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_ArabicAlphabet" Name="$ID/kWRIndexGroup_ArabicAlphabet" Include="false" Priority="8" HeaderType="Nothing" />
+	<IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_HebrewAlphabet" Name="$ID/kWRIndexGroup_HebrewAlphabet" Include="false" Priority="9" HeaderType="Nothing" />
+	<ColorGroup Self="ColorGroup/[Root Color Group]" Name="[Root Color Group]" IsRootColorGroup="true">
+		<ColorGroupSwatch Self="u18ColorGroupSwatch0" SwatchItemRef="Swatch/None" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch1" SwatchItemRef="Color/Registration" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch2" SwatchItemRef="Color/Paper" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch3" SwatchItemRef="Color/Black" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch4" SwatchItemRef="Color/C=100 M=0 Y=0 K=0" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch5" SwatchItemRef="Color/C=0 M=100 Y=0 K=0" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch6" SwatchItemRef="Color/C=0 M=0 Y=100 K=0" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch7" SwatchItemRef="Color/C=15 M=100 Y=100 K=0" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch8" SwatchItemRef="Color/C=75 M=5 Y=100 K=0" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch9" SwatchItemRef="Color/C=100 M=90 Y=10 K=0" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatcha" SwatchItemRef="Color/C=83 M=64 Y=41 K=40" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatchb" SwatchItemRef="Color/Yellow - Copia" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatchc" SwatchItemRef="Color/Blue_FAAC_GENERAL" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatchd" SwatchItemRef="Color/C=0 M=0 Y=0 K=60" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatche" SwatchItemRef="Color/C=0 M=0 Y=0 K=10 2" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatchf" SwatchItemRef="Color/C=0 M=0 Y=0 K=0" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch10" SwatchItemRef="Color/C=83 M=64 Y=41 K=40 4" />
+		<ColorGroupSwatch Self="u18ColorGroupSwatch11" SwatchItemRef="Color/30" />
+	</ColorGroup>
+	<ABullet Self="dABullet0" CharacterType="UnicodeOnly" CharacterValue="8226">
+		<Properties>
+			<BulletsFont type="string">$ID/</BulletsFont>
+			<BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet1" CharacterType="UnicodeOnly" CharacterValue="42">
+		<Properties>
+			<BulletsFont type="string">$ID/</BulletsFont>
+			<BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet2" CharacterType="UnicodeOnly" CharacterValue="9674">
+		<Properties>
+			<BulletsFont type="string">$ID/</BulletsFont>
+			<BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet3" CharacterType="UnicodeWithFont" CharacterValue="187">
+		<Properties>
+			<BulletsFont type="string">Myriad Pro</BulletsFont>
+			<BulletsFontStyle type="string">$ID/Regular</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<ABullet Self="dABullet4" CharacterType="GlyphWithFont" CharacterValue="503">
+		<Properties>
+			<BulletsFont type="string">Minion Pro</BulletsFont>
+			<BulletsFontStyle type="string">$ID/Regular</BulletsFontStyle>
+		</Properties>
+	</ABullet>
+	<Assignment Self="udf" Name="$ID/UnassignedInCopy" UserName="$ID/" ExportOptions="AssignedSpreads" IncludeLinksWhenPackage="true" FilePath="$ID/">
+		<Properties>
+			<FrameColor type="enumeration">Nothing</FrameColor>
+		</Properties>
+	</Assignment>
+</Document>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u1577" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Infoblocks_gruppo%3aControl_Units_gruppo%3aInfo_Block_gruppo%3aDescription_gruppo%3aDescription">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" AppliedLanguage="$ID/English: UK">
+				<Content>Scheda 740D (incorporata nell&apos;automatismo)</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Paper_Info" AppliedLanguage="$ID/English: UK">
+				<Content>Info a pag. </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/XRR_Numero_Pagina" AppliedLanguage="$ID/English: UK">
+				<HyperlinkTextSource Self="u15da" Name="Source_42_6_42 557" Hidden="false" AppliedCharacterStyle="n">
+					<Content>1</Content>
+				</HyperlinkTextSource>
+				<Content>90</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/LINK_CONTENT" AppliedLanguage="$ID/English: UK">
+				<Content>i</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

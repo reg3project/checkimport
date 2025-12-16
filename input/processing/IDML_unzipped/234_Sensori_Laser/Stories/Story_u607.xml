@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u607" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aApplication">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>Lo scanner laser verticale XGUARD10 può essere utilizzato in combinazione con le barriere automatiche per garantire un passaggio sicuro per i veicoli commerciali, camion, o automezzi con sporgenze evitando che le aste si abbassino quando ancora questi si trovino sotto l’asta. Lo scanner laser genera un campo di rilevamento verticale vicino all’asta della barriera e ne impedisce la chiusura quando un oggetto si trova all’interno del campo di rilevamento. Di conseguenza, vengono rilevati in modo affidabile tutti i tipi di veicoli e si prevengono danni a carico della carrozzeria, dell’asta o del telaio della barriera.</Content>
+				<Br />
+				<Content>Con un campo di rilevamento massimo di 9,9 x 9,9 m, lo scanner laser è idoneo anche per il rilevamento di veicoli alti e per l’uso in passaggi particolarmente larghi. Lo scanner genera quattro raggi verticali affiancati per garantire la massima efficacia.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

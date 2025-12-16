@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="uda3" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Innovation_Mark_gruppo%3aApplication" HyphenationZone="28.333618604920535" RuleAboveLineWeight="0.7870449612477927" RuleBelowLineWeight="0.7870449612477927" SplitColumnInsideGutter="4.722269767486756" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="0.7870449612477927" ParagraphBorderTopRightCornerRadius="0.7870449612477927" ParagraphBorderBottomLeftCornerRadius="0.7870449612477927" ParagraphBorderBottomRightCornerRadius="0.7870449612477927" ParagraphShadingTopLeftCornerRadius="0.7870449612477927" ParagraphShadingTopRightCornerRadius="0.7870449612477927" ParagraphShadingBottomLeftCornerRadius="0.7870449612477927" ParagraphShadingBottomRightCornerRadius="0.7870449612477927" ParagraphBorderTopLineWeight="0.7870449612477927" ParagraphBorderBottomLineWeight="0.7870449612477927" ParagraphBorderLeftLineWeight="0.7870449612477927" ParagraphBorderRightLineWeight="0.7870449612477927">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+				<SameParaStyleSpacing type="unit">-0.7870449612477927</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/White_Text" FillColor="Color/Blue_FAAC_GENERAL" FontStyle="Bold" PointSize="7.870449612477927" StrokeWeight="0.7870449612477927" AppliedLanguage="$ID/English: UK" MiterLimit="3.1481798449911707" RubyFontSize="-0.7870449612477927" KentenFontSize="-0.7870449612477927">
+				<Properties>
+					<Leading type="unit">10.231584496221304</Leading>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>ESEMPI DI APPLICAZIONE</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

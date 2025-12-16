@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u116" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" Hyphenation="false" HyphenationZone="29.290059114667997" RuleAboveLineWeight="0.8136127531852221" RuleBelowLineWeight="0.8136127531852221" Justification="CenterAlign" SplitColumnInsideGutter="4.881676519111333" ParagraphBorderTopLeftCornerRadius="9.763353038222666" ParagraphBorderTopRightCornerRadius="9.763353038222666" ParagraphBorderBottomLeftCornerRadius="9.763353038222666" ParagraphBorderBottomRightCornerRadius="9.763353038222666" ParagraphShadingTopLeftCornerRadius="9.763353038222666" ParagraphShadingTopRightCornerRadius="9.763353038222666" ParagraphShadingBottomLeftCornerRadius="9.763353038222666" ParagraphShadingBottomRightCornerRadius="9.763353038222666" ParagraphBorderTopLineWeight="0.8136127531852221" ParagraphBorderBottomLineWeight="0.8136127531852221" ParagraphBorderLeftLineWeight="0.8136127531852221" ParagraphBorderRightLineWeight="0.8136127531852221">
+			<Properties>
+				<SameParaStyleSpacing type="unit">-0.8136127531852221</SameParaStyleSpacing>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Blue_FAAC_GENERAL" FontStyle="57 Condensed" PointSize="7.322514778666999" StrokeWeight="0.8136127531852221" Tracking="200" Capitalization="AllCaps" AppliedLanguage="$ID/English: UK" MiterLimit="3.2544510127408883" RubyFontSize="-0.8136127531852221" KentenFontSize="-0.8136127531852221">
+				<Properties>
+					<Leading type="unit">7.322514778666999</Leading>
+					<AppliedFont type="string">Univers LT Std</AppliedFont>
+				</Properties>
+				<Content>transito</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

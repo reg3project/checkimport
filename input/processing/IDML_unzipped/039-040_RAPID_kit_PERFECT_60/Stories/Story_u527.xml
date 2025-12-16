@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u527" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" Hyphenation="false">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>All’interno i </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>radiocomandi SLH</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>, le </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>fotocellule XP20</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content> e il </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" FontStyle="Bold" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>lampeggiante XLED</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper" PointSize="13" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<AppliedFont type="string">Univers LT 47 CondensedLt</AppliedFont>
+				</Properties>
+				<Content>, accessori che garantiscono prestazioni eccellenti e sicurezza assoluta.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

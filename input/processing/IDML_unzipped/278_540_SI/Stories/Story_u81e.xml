@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u81e" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_tabella">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<HyperlinkTextDestination Self="HyperlinkTextDestination/Destination_46" Name="Destination_46" Hidden="false" DestinationUniqueKey="46" />
+				<Table Self="u81eia78" HeaderRowCount="1" FooterRowCount="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" BodyRowCount="8" ColumnCount="5" AppliedTableStyle="TableStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE" TableDirection="LeftToRightDirection">
+					<Row Self="u81eia78Row0" Name="0" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.34" AutoGrow="true" />
+					<Row Self="u81eia78Row1" Name="1" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="2.835" AutoGrow="true" />
+					<Row Self="u81eia78Row2" Name="2" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="21.269291338582676" MinimumHeight="2.835" AutoGrow="true" />
+					<Row Self="u81eia78Row3" Name="3" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="21.269291338582676" MinimumHeight="2.835" AutoGrow="true" />
+					<Row Self="u81eia78Row4" Name="4" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="2.835" AutoGrow="true" />
+					<Row Self="u81eia78Row5" Name="5" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="21.269291338582676" MinimumHeight="2.835" AutoGrow="true" />
+					<Row Self="u81eia78Row6" Name="6" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="2.835" AutoGrow="true" />
+					<Row Self="u81eia78Row7" Name="7" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="2.835" AutoGrow="true" />
+					<Row Self="u81eia78Row8" Name="8" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="2.835" AutoGrow="true" />
+					<Column Self="u81eia78Column0" Name="0" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleColumnWidth="17.972893906015745" />
+					<Column Self="u81eia78Column1" Name="1" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleColumnWidth="26.959340859023612" />
+					<Column Self="u81eia78Column2" Name="2" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleColumnWidth="122.21561903470864" />
+					<Column Self="u81eia78Column3" Name="3" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleColumnWidth="44.93220996245668" />
+					<Column Self="u81eia78Column4" Name="4" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" SingleColumnWidth="35.94576300944881" />
+					<Cell Self="u81eia78i28" Name="0:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="1" RightEdgeStrokePriority="2" TopEdgeStrokePriority="1" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Rif</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i29" Name="1:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="2" RightEdgeStrokePriority="3" TopEdgeStrokePriority="2" BottomEdgeStrokePriority="2">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Q.tà</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i2a" Name="2:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="3" RightEdgeStrokePriority="4" TopEdgeStrokePriority="3" BottomEdgeStrokePriority="3">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_header_left_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Descrizione materiale</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i2b" Name="3:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="4" RightEdgeStrokePriority="5" TopEdgeStrokePriority="4" BottomEdgeStrokePriority="4">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Cod.</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i2c" Name="4:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="5" RightEdgeStrokePriority="5" TopEdgeStrokePriority="5" BottomEdgeStrokePriority="5">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_header_right_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Prezzo €</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i0" Name="0:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="6" RightEdgeStrokePriority="7" TopEdgeStrokePriority="6" BottomEdgeStrokePriority="11">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i1" Name="1:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="7" RightEdgeStrokePriority="8" TopEdgeStrokePriority="7" BottomEdgeStrokePriority="12">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i2" Name="2:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="8" RightEdgeStrokePriority="9" TopEdgeStrokePriority="8" BottomEdgeStrokePriority="13">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_descr_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Motoriduttore 541 V</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i3" Name="3:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="9" RightEdgeStrokePriority="10" TopEdgeStrokePriority="9" BottomEdgeStrokePriority="14">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>109542</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i4" Name="4:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="10" RightEdgeStrokePriority="10" TopEdgeStrokePriority="10" BottomEdgeStrokePriority="15">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1.265,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i5" Name="0:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="11" RightEdgeStrokePriority="12" TopEdgeStrokePriority="11" BottomEdgeStrokePriority="16">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i6" Name="1:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="12" RightEdgeStrokePriority="13" TopEdgeStrokePriority="12" BottomEdgeStrokePriority="17">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i7" Name="2:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="13" RightEdgeStrokePriority="14" TopEdgeStrokePriority="13" BottomEdgeStrokePriority="18">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_descr_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Scheda elettronica 578D (installazione remota)</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i8" Name="3:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="14" RightEdgeStrokePriority="15" TopEdgeStrokePriority="14" BottomEdgeStrokePriority="19">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>790922</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i9" Name="4:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="15" RightEdgeStrokePriority="15" TopEdgeStrokePriority="15" BottomEdgeStrokePriority="20">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>368,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78ia" Name="0:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="16" RightEdgeStrokePriority="17" TopEdgeStrokePriority="16" BottomEdgeStrokePriority="21">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78ib" Name="1:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="17" RightEdgeStrokePriority="18" TopEdgeStrokePriority="17" BottomEdgeStrokePriority="22">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78ic" Name="2:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="18" RightEdgeStrokePriority="19" TopEdgeStrokePriority="18" BottomEdgeStrokePriority="23">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_descr_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Contenitore mod. E per schede elettroniche</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78id" Name="3:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="19" RightEdgeStrokePriority="20" TopEdgeStrokePriority="19" BottomEdgeStrokePriority="24">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>720119</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78ie" Name="4:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="20" RightEdgeStrokePriority="20" TopEdgeStrokePriority="20" BottomEdgeStrokePriority="25">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>35,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78if" Name="0:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="21" RightEdgeStrokePriority="22" TopEdgeStrokePriority="21" BottomEdgeStrokePriority="26">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i10" Name="1:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="22" RightEdgeStrokePriority="23" TopEdgeStrokePriority="22" BottomEdgeStrokePriority="27">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i11" Name="2:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="23" RightEdgeStrokePriority="24" TopEdgeStrokePriority="23" BottomEdgeStrokePriority="28">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_descr_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Lampeggiatore XLED</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i12" Name="3:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="24" RightEdgeStrokePriority="25" TopEdgeStrokePriority="24" BottomEdgeStrokePriority="29">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>410029</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i13" Name="4:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="25" RightEdgeStrokePriority="25" TopEdgeStrokePriority="25" BottomEdgeStrokePriority="30">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>91,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i14" Name="0:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="26" RightEdgeStrokePriority="27" TopEdgeStrokePriority="26" BottomEdgeStrokePriority="31">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i15" Name="1:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="27" RightEdgeStrokePriority="28" TopEdgeStrokePriority="27" BottomEdgeStrokePriority="32">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i16" Name="2:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="28" RightEdgeStrokePriority="29" TopEdgeStrokePriority="28" BottomEdgeStrokePriority="33">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_descr_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Ricevente ad innesto 1 canale RP 433 SLH</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i17" Name="3:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="29" RightEdgeStrokePriority="30" TopEdgeStrokePriority="29" BottomEdgeStrokePriority="34">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>787852</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i18" Name="4:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="30" RightEdgeStrokePriority="30" TopEdgeStrokePriority="30" BottomEdgeStrokePriority="35">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>81,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i19" Name="0:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="31" RightEdgeStrokePriority="32" TopEdgeStrokePriority="31" BottomEdgeStrokePriority="36">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>4</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i1a" Name="1:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="32" RightEdgeStrokePriority="33" TopEdgeStrokePriority="32" BottomEdgeStrokePriority="37">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i1b" Name="2:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="33" RightEdgeStrokePriority="34" TopEdgeStrokePriority="33" BottomEdgeStrokePriority="38">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_descr_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Coppia di fotocellule XP 30</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i1c" Name="3:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="34" RightEdgeStrokePriority="35" TopEdgeStrokePriority="34" BottomEdgeStrokePriority="39">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>785105</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i1d" Name="4:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="35" RightEdgeStrokePriority="35" TopEdgeStrokePriority="35" BottomEdgeStrokePriority="40">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>104,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i1e" Name="0:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="36" RightEdgeStrokePriority="37" TopEdgeStrokePriority="36" BottomEdgeStrokePriority="41">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content> </Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i1f" Name="1:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="37" RightEdgeStrokePriority="38" TopEdgeStrokePriority="37" BottomEdgeStrokePriority="41">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i20" Name="2:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="38" RightEdgeStrokePriority="39" TopEdgeStrokePriority="38" BottomEdgeStrokePriority="41">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_descr_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>XT2 433 SLH LR Trasmittente 2 canali</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i21" Name="3:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="39" RightEdgeStrokePriority="40" TopEdgeStrokePriority="39" BottomEdgeStrokePriority="41">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>787007</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i22" Name="4:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="40" RightEdgeStrokePriority="40" TopEdgeStrokePriority="40" BottomEdgeStrokePriority="42">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>41,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i23" Name="0:8" RowSpan="1" ColumnSpan="4" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="41" RightEdgeStrokePriority="1" TopEdgeStrokePriority="41" BottomEdgeStrokePriority="41">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_total_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>TOTALE (IVA ESCLUSA)</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u81eia78i27" Name="4:8" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="0" TextBottomInset="2.834645669291339" TextRightInset="0" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="42" RightEdgeStrokePriority="42" TopEdgeStrokePriority="42" BottomEdgeStrokePriority="42">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Installation_Example_gruppo%3aConfiguration_gruppo%3aEKR_SmartTable_gruppo%3aTable_gruppo%3aTABLE_gruppo%3ainstallation_price_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1.985,00</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+				</Table>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="udba" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Simply_Connect_Doors_gruppo%3aSubtitle" Justification="LeftAlign" ParagraphShadingTint="20" ParagraphBorderTopLeftCornerRadius="12" ParagraphBorderTopRightCornerRadius="12" ParagraphBorderBottomLeftCornerRadius="12" ParagraphBorderBottomRightCornerRadius="12" ParagraphShadingTopLeftCornerRadius="12" ParagraphShadingTopRightCornerRadius="12" ParagraphShadingBottomLeftCornerRadius="12" ParagraphShadingBottomRightCornerRadius="12">
+			<Properties>
+				<ParagraphShadingColor type="object">Color/Black</ParagraphShadingColor>
+			</Properties>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="21" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">20</Leading>
+				</Properties>
+				<Content>Come si innesta un </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="67 Bold Condensed" PointSize="21" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">20</Leading>
+				</Properties>
+				<Content>modulo</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="21" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">20</Leading>
+				</Properties>
+				<Content> </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="67 Bold Condensed" PointSize="21" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">20</Leading>
+				</Properties>
+				<Content>Simply Connect</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="21" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">20</Leading>
+				</Properties>
+				<Content> su una </Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FontStyle="67 Bold Condensed" PointSize="21" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">20</Leading>
+				</Properties>
+				<Content>scheda elettronica compatibile</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" PointSize="21" AppliedLanguage="$ID/English: UK">
+				<Properties>
+					<Leading type="unit">20</Leading>
+				</Properties>
+				<Content>?</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

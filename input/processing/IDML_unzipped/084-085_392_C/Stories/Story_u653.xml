@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u653" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aProduct_Plus_gruppo%3aBullet_List">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]" FillColor="Color/Paper">
+				<Content>L&apos;attuatore è dotato dell&apos;innovativa scheda elettronica E034, che può essere programmata localmente tramite display e pulsante o tramite Simply Connect. Garantisce un&apos;installazione semplice ma allo stesso tempo versatile, offrendo due livelli di programmazione per soddisfare al meglio le esigenze di installazione e rispettare gli standard normativi.</Content>
+				<Br />
+				<Content>É compatibile con il modulo opzionale XLC, che riduce il consumo energetico in standby a 0,5W (2W con Simply Connect). Supporta anche fonti di energia alternative come i pannelli solari, garantendo allo stesso tempo il risparmio economico ed il rispetto per l&apos;ambiente.</Content>
+				<Br />
+				<Content>Estetica rinnovata</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

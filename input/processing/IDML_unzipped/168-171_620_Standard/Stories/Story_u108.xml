@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u108" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_box_in_flusso">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<TextFrame Self="u2d5" ParentStory="u2da" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" GradientFillStart="0 113.39999999999999" GradientFillLength="510.2362204724409" GradientFillAngle="0" GradientStrokeStart="0 113.39999999999999" GradientStrokeLength="510.2362204724409" GradientStrokeAngle="0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/LiteOrange_Box" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 0 -113.39999999999999">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="510.2362204724409 0" LeftDirection="510.2362204724409 0" RightDirection="510.2362204724409 0" />
+									<PathPointType Anchor="510.2362204724409 113.39999999999999" LeftDirection="510.2362204724409 113.39999999999999" RightDirection="510.2362204724409 113.39999999999999" />
+									<PathPointType Anchor="0 113.39999999999999" LeftDirection="0 113.39999999999999" RightDirection="0 113.39999999999999" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnGutter="12" TextColumnFixedWidth="510.2362204724409" UseFixedColumnWidth="false" FirstBaselineOffset="AscentOffset" MinimumFirstBaselineOffset="0" VerticalJustification="TopAlign" VerticalThreshold="0" IgnoreWrap="false" UseFlexibleColumnWidth="false" TextColumnMaxWidth="0" AutoSizingType="Off" AutoSizingReferencePoint="CenterPoint" UseMinimumHeightForAutoSizing="false" MinimumHeightForAutoSizing="0" UseMinimumWidthForAutoSizing="false" MinimumWidthForAutoSizing="0" UseNoLineBreaksForAutoSizing="false" ColumnRuleOverride="false" ColumnRuleOffset="0" ColumnRuleTopInset="0" ColumnRuleInsetChainOverride="true" ColumnRuleBottomInset="0" ColumnRuleStrokeWidth="1" ColumnRuleStrokeColor="Color/Black" ColumnRuleStrokeType="StrokeStyle/$ID/Solid" ColumnRuleStrokeTint="100" ColumnRuleOverprintOverride="false" FootnotesEnableOverrides="false" FootnotesSpanAcrossColumns="false" FootnotesMinimumSpacing="12" FootnotesSpaceBetween="6" VerticalBalanceColumns="false">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<AnchoredObjectSetting AnchoredPosition="AboveLine" SpineRelative="false" LockPosition="false" PinPosition="true" AnchorPoint="BottomRightAnchor" HorizontalAlignment="CenterAlign" HorizontalReferencePoint="TextFrame" VerticalAlignment="BottomAlign" VerticalReferencePoint="LineBaseline" AnchorXoffset="0" AnchorYoffset="8.504999999999999" AnchorSpaceAbove="0" />
+					<BaselineFrameGridOption UseCustomBaselineFrameGrid="false" StartingOffsetForBaselineFrameGrid="0" BaselineFrameGridRelativeOption="TopOfInset" BaselineFrameGridIncrement="12">
+						<Properties>
+							<BaselineFrameGridColor type="enumeration">LightBlue</BaselineFrameGridColor>
+						</Properties>
+					</BaselineFrameGridOption>
+					<TextFrameFootnoteOptionsObject EnableOverrides="false" SpanFootnotesAcross="false" MinimumSpacingOption="12" SpaceBetweenFootnotes="6" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+				<Br />
+				<TextFrame Self="u2bd" ParentStory="u2c0" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" CornerRadius="12" MiterLimit="4" EndCap="ButtEndCap" EndJoin="MiterEndJoin" LeftLineEnd="None" RightLineEnd="None" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" StrokeAlignment="CenterAlignment" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/GATES_box" CornerOption="None" Visible="true" Name="$ID/" TopLeftCornerOption="None" TopRightCornerOption="None" BottomLeftCornerOption="None" BottomRightCornerOption="None" TopLeftCornerRadius="12" TopRightCornerRadius="12" BottomLeftCornerRadius="12" BottomRightCornerRadius="12" ArrowHeadAlignment="InsidePath" LeftArrowHeadScale="100" RightArrowHeadScale="100" ItemTransform="1 0 0 1 0 -11.34">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="510.2362204724409 0" LeftDirection="510.2362204724409 0" RightDirection="510.2362204724409 0" />
+									<PathPointType Anchor="510.2362204724409 11.34" LeftDirection="510.2362204724409 11.34" RightDirection="510.2362204724409 11.34" />
+									<PathPointType Anchor="0 11.34" LeftDirection="0 11.34" RightDirection="0 11.34" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="510.2362204724409" FirstBaselineOffset="AscentOffset" MinimumFirstBaselineOffset="0" TextColumnMaxWidth="0" AutoSizingType="Off" AutoSizingReferencePoint="CenterPoint" UseMinimumHeightForAutoSizing="false" MinimumHeightForAutoSizing="0" UseMinimumWidthForAutoSizing="false" MinimumWidthForAutoSizing="0" UseNoLineBreaksForAutoSizing="false" ColumnRuleOverride="false" ColumnRuleOffset="0" ColumnRuleTopInset="0" ColumnRuleInsetChainOverride="true" ColumnRuleBottomInset="0" ColumnRuleStrokeWidth="1" ColumnRuleStrokeColor="Color/Black" ColumnRuleStrokeType="StrokeStyle/$ID/Solid" ColumnRuleStrokeTint="100" ColumnRuleOverprintOverride="false" FootnotesEnableOverrides="false" FootnotesSpanAcrossColumns="false" FootnotesMinimumSpacing="12" FootnotesSpaceBetween="6">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<AnchoredObjectSetting AnchoredPosition="AboveLine" SpineRelative="false" LockPosition="false" PinPosition="true" AnchorPoint="BottomRightAnchor" HorizontalAlignment="CenterAlign" HorizontalReferencePoint="TextFrame" VerticalAlignment="BottomAlign" VerticalReferencePoint="LineBaseline" AnchorXoffset="0" AnchorYoffset="5.67" AnchorSpaceAbove="0" />
+					<BaselineFrameGridOption UseCustomBaselineFrameGrid="false" StartingOffsetForBaselineFrameGrid="0" BaselineFrameGridRelativeOption="TopOfInset" BaselineFrameGridIncrement="12">
+						<Properties>
+							<BaselineFrameGridColor type="enumeration">LightBlue</BaselineFrameGridColor>
+						</Properties>
+					</BaselineFrameGridOption>
+					<TextFrameFootnoteOptionsObject EnableOverrides="false" SpanFootnotesAcross="false" MinimumSpacingOption="12" SpaceBetweenFootnotes="6" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_tabella">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Table Self="u108i29a" HeaderRowCount="1" FooterRowCount="0" TextTopInset="4" TextLeftInset="4" TextBottomInset="4" TextRightInset="4" ClipContentToTextCell="false" BodyRowCount="32" ColumnCount="5" AppliedTableStyle="TableStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE" TableDirection="LeftToRightDirection">
+					<Row Self="u108i29aRow0" Name="0" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow1" Name="1" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow2" Name="2" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow3" Name="3" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow4" Name="4" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow5" Name="5" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow6" Name="6" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow7" Name="7" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow8" Name="8" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow9" Name="9" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRowa" Name="10" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRowb" Name="11" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRowc" Name="12" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRowd" Name="13" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRowe" Name="14" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRowf" Name="15" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow10" Name="16" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow11" Name="17" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow12" Name="18" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow13" Name="19" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow14" Name="20" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow15" Name="21" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow16" Name="22" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow17" Name="23" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow18" Name="24" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow19" Name="25" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow1a" Name="26" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow1b" Name="27" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow1c" Name="28" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow1d" Name="29" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow1e" Name="30" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="11.669291338582678" MinimumHeight="11.461283526082678" AutoGrow="true" />
+					<Row Self="u108i29aRow1f" Name="31" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="21.269291338582676" MinimumHeight="21.061283526082676" AutoGrow="true" />
+					<Row Self="u108i29aRow20" Name="32" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleRowHeight="21.269291338582676" MinimumHeight="21.061283526082676" AutoGrow="true" />
+					<Column Self="u108i29aColumn0" Name="0" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="102.04724409448818" />
+					<Column Self="u108i29aColumn1" Name="1" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="102.04724409448818" />
+					<Column Self="u108i29aColumn2" Name="2" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="102.04724409448818" />
+					<Column Self="u108i29aColumn3" Name="3" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="102.04724409448818" />
+					<Column Self="u108i29aColumn4" Name="4" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" SingleColumnWidth="102.04724409448818" />
+					<Cell Self="u108i29aia0" Name="0:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="1" RightEdgeStrokePriority="2" TopEdgeStrokePriority="1" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_header_left_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Modello</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29aia1" Name="1:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="2" RightEdgeStrokePriority="3" TopEdgeStrokePriority="2" BottomEdgeStrokePriority="2">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Asta</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29aia2" Name="2:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="3" RightEdgeStrokePriority="4" TopEdgeStrokePriority="3" BottomEdgeStrokePriority="3">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Lunghezza asta (mm)</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29aia3" Name="3:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="4" RightEdgeStrokePriority="5" TopEdgeStrokePriority="4" BottomEdgeStrokePriority="4">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Codice versione SX</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29aia4" Name="4:0" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="5" RightEdgeStrokePriority="5" TopEdgeStrokePriority="5" BottomEdgeStrokePriority="5">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_header_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>Codice versione DX</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai0" Name="0:1" RowSpan="30" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="6" RightEdgeStrokePriority="7" TopEdgeStrokePriority="6" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_left_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 Standard</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai1" Name="1:1" RowSpan="5" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="7" RightEdgeStrokePriority="8" TopEdgeStrokePriority="7" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 rettangolare standard</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai2" Name="2:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="8" RightEdgeStrokePriority="9" TopEdgeStrokePriority="8" BottomEdgeStrokePriority="11">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1.315 ÷ 2.055</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai3" Name="3:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="9" RightEdgeStrokePriority="10" TopEdgeStrokePriority="9" BottomEdgeStrokePriority="12">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046268</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai4" Name="4:1" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="10" RightEdgeStrokePriority="10" TopEdgeStrokePriority="10" BottomEdgeStrokePriority="13">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>-</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai7" Name="2:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="11" RightEdgeStrokePriority="12" TopEdgeStrokePriority="11" BottomEdgeStrokePriority="14">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.065 ÷ 2.555</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai8" Name="3:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="12" RightEdgeStrokePriority="13" TopEdgeStrokePriority="12" BottomEdgeStrokePriority="15">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046208</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai9" Name="4:2" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="13" RightEdgeStrokePriority="13" TopEdgeStrokePriority="13" BottomEdgeStrokePriority="16">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046408</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29aic" Name="2:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="14" RightEdgeStrokePriority="15" TopEdgeStrokePriority="14" BottomEdgeStrokePriority="17">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.565 ÷ 3.055</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29aid" Name="3:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="15" RightEdgeStrokePriority="16" TopEdgeStrokePriority="15" BottomEdgeStrokePriority="18">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046278</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29aie" Name="4:3" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="16" RightEdgeStrokePriority="16" TopEdgeStrokePriority="16" BottomEdgeStrokePriority="19">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046478</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai11" Name="2:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="17" RightEdgeStrokePriority="18" TopEdgeStrokePriority="17" BottomEdgeStrokePriority="20">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.065 ÷ 3.815</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai12" Name="3:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="18" RightEdgeStrokePriority="19" TopEdgeStrokePriority="18" BottomEdgeStrokePriority="21">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046288</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai13" Name="4:4" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="19" RightEdgeStrokePriority="19" TopEdgeStrokePriority="19" BottomEdgeStrokePriority="22">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046488</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai16" Name="2:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="20" RightEdgeStrokePriority="21" TopEdgeStrokePriority="20" BottomEdgeStrokePriority="24">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.825 ÷ 4.815</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai17" Name="3:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="21" RightEdgeStrokePriority="22" TopEdgeStrokePriority="21" BottomEdgeStrokePriority="25">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046228</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai18" Name="4:5" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="22" RightEdgeStrokePriority="22" TopEdgeStrokePriority="22" BottomEdgeStrokePriority="26">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046428</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai1a" Name="1:6" RowSpan="6" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="23" RightEdgeStrokePriority="24" TopEdgeStrokePriority="23" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 rettangolare standard</Content>
+								<Br />
+								<Content>con luci</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai1b" Name="2:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="24" RightEdgeStrokePriority="25" TopEdgeStrokePriority="24" BottomEdgeStrokePriority="27">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1.315 ÷ 2.055</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai1c" Name="3:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="25" RightEdgeStrokePriority="26" TopEdgeStrokePriority="25" BottomEdgeStrokePriority="28">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046268</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai1d" Name="4:6" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="26" RightEdgeStrokePriority="26" TopEdgeStrokePriority="26" BottomEdgeStrokePriority="29">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>-</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai20" Name="2:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="27" RightEdgeStrokePriority="28" TopEdgeStrokePriority="27" BottomEdgeStrokePriority="30">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.065 ÷ 2.555</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai21" Name="3:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="28" RightEdgeStrokePriority="29" TopEdgeStrokePriority="28" BottomEdgeStrokePriority="31">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046208</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai22" Name="4:7" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="29" RightEdgeStrokePriority="29" TopEdgeStrokePriority="29" BottomEdgeStrokePriority="32">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046408</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai25" Name="2:8" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="30" RightEdgeStrokePriority="31" TopEdgeStrokePriority="30" BottomEdgeStrokePriority="33">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.565 ÷ 3.055</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai26" Name="3:8" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="31" RightEdgeStrokePriority="32" TopEdgeStrokePriority="31" BottomEdgeStrokePriority="34">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046278</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai27" Name="4:8" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="32" RightEdgeStrokePriority="32" TopEdgeStrokePriority="32" BottomEdgeStrokePriority="35">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046478</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai2a" Name="2:9" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="33" RightEdgeStrokePriority="34" TopEdgeStrokePriority="33" BottomEdgeStrokePriority="36">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.065 ÷ 3.665</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai2b" Name="3:9" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="34" RightEdgeStrokePriority="35" TopEdgeStrokePriority="34" BottomEdgeStrokePriority="37">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046288</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai2c" Name="4:9" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="35" RightEdgeStrokePriority="35" TopEdgeStrokePriority="35" BottomEdgeStrokePriority="38">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046488</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai2f" Name="2:10" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="36" RightEdgeStrokePriority="37" TopEdgeStrokePriority="36" BottomEdgeStrokePriority="39">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.675 ÷ 4.490</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai30" Name="3:10" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="37" RightEdgeStrokePriority="38" TopEdgeStrokePriority="37" BottomEdgeStrokePriority="40">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046228</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai31" Name="4:10" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="38" RightEdgeStrokePriority="38" TopEdgeStrokePriority="38" BottomEdgeStrokePriority="41">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046428</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai34" Name="2:11" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="39" RightEdgeStrokePriority="40" TopEdgeStrokePriority="39" BottomEdgeStrokePriority="43">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>4.500 ÷ 4.815</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai35" Name="3:11" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="40" RightEdgeStrokePriority="41" TopEdgeStrokePriority="40" BottomEdgeStrokePriority="44">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047508</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai36" Name="4:11" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="41" RightEdgeStrokePriority="41" TopEdgeStrokePriority="41" BottomEdgeStrokePriority="45">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047518</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai38" Name="1:12" RowSpan="4" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="42" RightEdgeStrokePriority="43" TopEdgeStrokePriority="42" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 rettangolare standard</Content>
+								<Br />
+								<Content>con siepe</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai39" Name="2:12" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="43" RightEdgeStrokePriority="44" TopEdgeStrokePriority="43" BottomEdgeStrokePriority="46">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1.815 ÷ 2.805</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai3a" Name="3:12" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="44" RightEdgeStrokePriority="45" TopEdgeStrokePriority="44" BottomEdgeStrokePriority="47">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046208</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai3b" Name="4:12" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="45" RightEdgeStrokePriority="45" TopEdgeStrokePriority="45" BottomEdgeStrokePriority="48">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046408</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai3e" Name="2:13" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="46" RightEdgeStrokePriority="47" TopEdgeStrokePriority="46" BottomEdgeStrokePriority="49">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.815 ÷ 3.555</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai3f" Name="3:13" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="47" RightEdgeStrokePriority="48" TopEdgeStrokePriority="47" BottomEdgeStrokePriority="50">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046218</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai40" Name="4:13" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="48" RightEdgeStrokePriority="48" TopEdgeStrokePriority="48" BottomEdgeStrokePriority="51">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046418</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai43" Name="2:14" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="49" RightEdgeStrokePriority="50" TopEdgeStrokePriority="49" BottomEdgeStrokePriority="52">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.565 ÷ 3.815</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai44" Name="3:14" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="50" RightEdgeStrokePriority="51" TopEdgeStrokePriority="50" BottomEdgeStrokePriority="53">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046228</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai45" Name="4:14" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="51" RightEdgeStrokePriority="51" TopEdgeStrokePriority="51" BottomEdgeStrokePriority="54">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046428</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai48" Name="2:15" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="52" RightEdgeStrokePriority="53" TopEdgeStrokePriority="52" BottomEdgeStrokePriority="56">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.825 ÷ 4.815</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai49" Name="3:15" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="53" RightEdgeStrokePriority="54" TopEdgeStrokePriority="53" BottomEdgeStrokePriority="57">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047508</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai4a" Name="4:15" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="54" RightEdgeStrokePriority="54" TopEdgeStrokePriority="54" BottomEdgeStrokePriority="58">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047518</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai4c" Name="1:16" RowSpan="6" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="55" RightEdgeStrokePriority="56" TopEdgeStrokePriority="55" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 tonda S</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai4d" Name="2:16" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="56" RightEdgeStrokePriority="57" TopEdgeStrokePriority="56" BottomEdgeStrokePriority="59">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>0 ÷ 2.300</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai4e" Name="3:16" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="57" RightEdgeStrokePriority="58" TopEdgeStrokePriority="57" BottomEdgeStrokePriority="60">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046268</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai4f" Name="4:16" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="58" RightEdgeStrokePriority="58" TopEdgeStrokePriority="58" BottomEdgeStrokePriority="61">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>-</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai52" Name="2:17" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="59" RightEdgeStrokePriority="60" TopEdgeStrokePriority="59" BottomEdgeStrokePriority="62">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.310 ÷ 2.800</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai53" Name="3:17" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="60" RightEdgeStrokePriority="61" TopEdgeStrokePriority="60" BottomEdgeStrokePriority="63">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046208</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai54" Name="4:17" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="61" RightEdgeStrokePriority="61" TopEdgeStrokePriority="61" BottomEdgeStrokePriority="64">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046408</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai57" Name="2:18" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="62" RightEdgeStrokePriority="63" TopEdgeStrokePriority="62" BottomEdgeStrokePriority="65">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.810 ÷ 3.300</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai58" Name="3:18" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="63" RightEdgeStrokePriority="64" TopEdgeStrokePriority="63" BottomEdgeStrokePriority="66">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046278</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai59" Name="4:18" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="64" RightEdgeStrokePriority="64" TopEdgeStrokePriority="64" BottomEdgeStrokePriority="67">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046478</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai5c" Name="2:19" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="65" RightEdgeStrokePriority="66" TopEdgeStrokePriority="65" BottomEdgeStrokePriority="68">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.310 ÷ 3.800</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai5d" Name="3:19" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="66" RightEdgeStrokePriority="67" TopEdgeStrokePriority="66" BottomEdgeStrokePriority="69">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046288</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai5e" Name="4:19" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="67" RightEdgeStrokePriority="67" TopEdgeStrokePriority="67" BottomEdgeStrokePriority="70">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046488</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai61" Name="2:20" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="68" RightEdgeStrokePriority="69" TopEdgeStrokePriority="68" BottomEdgeStrokePriority="71">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.810 ÷ 4.300</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai62" Name="3:20" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="69" RightEdgeStrokePriority="70" TopEdgeStrokePriority="69" BottomEdgeStrokePriority="72">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046228</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai63" Name="4:20" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="70" RightEdgeStrokePriority="70" TopEdgeStrokePriority="70" BottomEdgeStrokePriority="73">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046428</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai66" Name="2:21" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="71" RightEdgeStrokePriority="72" TopEdgeStrokePriority="71" BottomEdgeStrokePriority="75">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>4.310 ÷ 5.000</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai67" Name="3:21" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="72" RightEdgeStrokePriority="73" TopEdgeStrokePriority="72" BottomEdgeStrokePriority="76">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046228</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai68" Name="4:21" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="73" RightEdgeStrokePriority="73" TopEdgeStrokePriority="73" BottomEdgeStrokePriority="77">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046428</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai6a" Name="1:22" RowSpan="6" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="74" RightEdgeStrokePriority="75" TopEdgeStrokePriority="74" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 tonda S con siepe</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai6b" Name="2:22" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="75" RightEdgeStrokePriority="76" TopEdgeStrokePriority="75" BottomEdgeStrokePriority="78">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>0 ÷ 2.300</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai6c" Name="3:22" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="76" RightEdgeStrokePriority="77" TopEdgeStrokePriority="76" BottomEdgeStrokePriority="79">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046268</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai6d" Name="4:22" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="77" RightEdgeStrokePriority="77" TopEdgeStrokePriority="77" BottomEdgeStrokePriority="80">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>-</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai70" Name="2:23" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="78" RightEdgeStrokePriority="79" TopEdgeStrokePriority="78" BottomEdgeStrokePriority="81">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.310 ÷ 2.800</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai71" Name="3:23" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="79" RightEdgeStrokePriority="80" TopEdgeStrokePriority="79" BottomEdgeStrokePriority="82">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046208</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai72" Name="4:23" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="80" RightEdgeStrokePriority="80" TopEdgeStrokePriority="80" BottomEdgeStrokePriority="83">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046408</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai75" Name="2:24" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="81" RightEdgeStrokePriority="82" TopEdgeStrokePriority="81" BottomEdgeStrokePriority="84">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.810 ÷ 3.300</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai76" Name="3:24" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="82" RightEdgeStrokePriority="83" TopEdgeStrokePriority="82" BottomEdgeStrokePriority="85">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046218</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai77" Name="4:24" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="83" RightEdgeStrokePriority="83" TopEdgeStrokePriority="83" BottomEdgeStrokePriority="86">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046418</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai7a" Name="2:25" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="84" RightEdgeStrokePriority="85" TopEdgeStrokePriority="84" BottomEdgeStrokePriority="87">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.310 ÷ 3.800</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai7b" Name="3:25" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="85" RightEdgeStrokePriority="86" TopEdgeStrokePriority="85" BottomEdgeStrokePriority="88">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046228</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai7c" Name="4:25" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="86" RightEdgeStrokePriority="86" TopEdgeStrokePriority="86" BottomEdgeStrokePriority="89">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046428</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai7f" Name="2:26" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="87" RightEdgeStrokePriority="88" TopEdgeStrokePriority="87" BottomEdgeStrokePriority="90">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>3.810 ÷ 4.300</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai80" Name="3:26" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="88" RightEdgeStrokePriority="89" TopEdgeStrokePriority="88" BottomEdgeStrokePriority="91">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047508</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai81" Name="4:26" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="89" RightEdgeStrokePriority="89" TopEdgeStrokePriority="89" BottomEdgeStrokePriority="92">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047518</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai84" Name="2:27" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="90" RightEdgeStrokePriority="91" TopEdgeStrokePriority="90" BottomEdgeStrokePriority="94">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>4.310 ÷ 5.000</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai85" Name="3:27" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="91" RightEdgeStrokePriority="92" TopEdgeStrokePriority="91" BottomEdgeStrokePriority="95">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047508</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai86" Name="4:27" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="92" RightEdgeStrokePriority="92" TopEdgeStrokePriority="92" BottomEdgeStrokePriority="96">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047518</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai88" Name="1:28" RowSpan="3" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="93" RightEdgeStrokePriority="94" TopEdgeStrokePriority="93" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 tonda pivottante</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai89" Name="2:28" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="94" RightEdgeStrokePriority="95" TopEdgeStrokePriority="94" BottomEdgeStrokePriority="97">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1.500 ÷ 2.240</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai8a" Name="3:28" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="95" RightEdgeStrokePriority="96" TopEdgeStrokePriority="95" BottomEdgeStrokePriority="98">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046268</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai8b" Name="4:28" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="96" RightEdgeStrokePriority="96" TopEdgeStrokePriority="96" BottomEdgeStrokePriority="99">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>-</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai8e" Name="2:29" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="97" RightEdgeStrokePriority="98" TopEdgeStrokePriority="97" BottomEdgeStrokePriority="100">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.250 ÷ 2.740</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai8f" Name="3:29" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="98" RightEdgeStrokePriority="99" TopEdgeStrokePriority="98" BottomEdgeStrokePriority="101">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046208</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai90" Name="4:29" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="99" RightEdgeStrokePriority="99" TopEdgeStrokePriority="99" BottomEdgeStrokePriority="102">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046408</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai93" Name="2:30" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="100" RightEdgeStrokePriority="101" TopEdgeStrokePriority="100" BottomEdgeStrokePriority="105">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.750 ÷ 3.000</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai94" Name="3:30" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="101" RightEdgeStrokePriority="102" TopEdgeStrokePriority="101" BottomEdgeStrokePriority="106">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046278</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai95" Name="4:30" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="102" RightEdgeStrokePriority="102" TopEdgeStrokePriority="102" BottomEdgeStrokePriority="107">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1046478</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai96" Name="0:31" RowSpan="2" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="103" RightEdgeStrokePriority="104" TopEdgeStrokePriority="103" BottomEdgeStrokePriority="1">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_left_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 Standard ARTICOLATA</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai97" Name="1:31" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="104" RightEdgeStrokePriority="105" TopEdgeStrokePriority="104" BottomEdgeStrokePriority="108">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 rettangolare articolata A(*) = 1315 ÷ 1814 mm</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai98" Name="2:31" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="105" RightEdgeStrokePriority="106" TopEdgeStrokePriority="105" BottomEdgeStrokePriority="109">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>2.825 ÷ 3.815</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai99" Name="3:31" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="106" RightEdgeStrokePriority="107" TopEdgeStrokePriority="106" BottomEdgeStrokePriority="110">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047048</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai9a" Name="4:31" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="107" RightEdgeStrokePriority="107" TopEdgeStrokePriority="107" BottomEdgeStrokePriority="111">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047148</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai9c" Name="1:32" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="108" RightEdgeStrokePriority="109" TopEdgeStrokePriority="108" BottomEdgeStrokePriority="108">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>620 rettangolare articolata A(*) = 1815 ÷ 2075 mm</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai9d" Name="2:32" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="109" RightEdgeStrokePriority="110" TopEdgeStrokePriority="109" BottomEdgeStrokePriority="109">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1.825 ÷ 2.815</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai9e" Name="3:32" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="110" RightEdgeStrokePriority="111" TopEdgeStrokePriority="110" BottomEdgeStrokePriority="110">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047048</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+					<Cell Self="u108i29ai9f" Name="4:32" RowSpan="1" ColumnSpan="1" CellType="TextTypeCell" TextTopInset="2.834645669291339" TextLeftInset="2.834645669291339" TextBottomInset="2.834645669291339" TextRightInset="2.834645669291339" ClipContentToTextCell="false" AppliedCellStyle="CellStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_cell" AppliedCellStylePriority="0" LeftEdgeStrokePriority="111" RightEdgeStrokePriority="111" TopEdgeStrokePriority="111" BottomEdgeStrokePriority="111">
+						<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aTable_gruppo%3aTABLE_gruppo%3aconfigoptions_text_pgf">
+							<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+								<Content>1047148</Content>
+							</CharacterStyleRange>
+						</ParagraphStyleRange>
+					</Cell>
+				</Table>
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Configuration_Options_gruppo%3aNote">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>(*) A = H - 1125 (mm) dove H è l’altezza tra pavimento e soffitto.</Content>
+				<Br />
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/Bold">
+				<Content>Per un corretto bilanciamento, l&apos;installazione di un piedino su un&apos;asta e su un&apos;asta con siepe, comporta la scelta di un cofano barriera per una lunghezza asta superiore di 0,5 m.</Content>
+			</CharacterStyleRange>
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Br />
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/porta_box_in_flusso">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<TextFrame Self="u282" ParentStory="u285" PreviousTextFrame="n" NextTextFrame="n" ContentType="TextType" ParentInterfaceChangeCount="" TargetInterfaceChangeCount="" LastUpdatedInterfaceChangeCount="" OverriddenPageItemProps="" HorizontalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" VerticalLayoutConstraints="FlexibleDimension FixedDimension FlexibleDimension" FlexItemWidthMode="FlexFixed" FlexItemHeightMode="FlexFixed" StrokeWeight="1" GradientFillStart="0 0" GradientFillLength="0" GradientFillAngle="0" GradientStrokeStart="0 0" GradientStrokeLength="0" GradientStrokeAngle="0" Locked="false" LocalDisplaySetting="Default" GradientFillHiliteLength="0" GradientFillHiliteAngle="0" GradientStrokeHiliteLength="0" GradientStrokeHiliteAngle="0" AppliedObjectStyle="ObjectStyle/$ID/[None]" Visible="true" Name="$ID/" ItemTransform="1 0 0 1 0 -121.905">
+					<Properties>
+						<PathGeometry>
+							<GeometryPathType PathOpen="false">
+								<PathPointArray>
+									<PathPointType Anchor="0 0" LeftDirection="0 0" RightDirection="0 0" />
+									<PathPointType Anchor="510.2362204724409 0" LeftDirection="510.2362204724409 0" RightDirection="510.2362204724409 0" />
+									<PathPointType Anchor="510.2362204724409 121.905" LeftDirection="510.2362204724409 121.905" RightDirection="510.2362204724409 121.905" />
+									<PathPointType Anchor="0 121.905" LeftDirection="0 121.905" RightDirection="0 121.905" />
+								</PathPointArray>
+							</GeometryPathType>
+						</PathGeometry>
+					</Properties>
+					<TextFramePreference TextColumnCount="1" TextColumnFixedWidth="510.2362204724409" TextColumnMaxWidth="0">
+						<Properties>
+							<InsetSpacing type="list">
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+								<ListItem type="unit">0</ListItem>
+							</InsetSpacing>
+						</Properties>
+					</TextFramePreference>
+					<AnchoredObjectSetting AnchoredPosition="AboveLine" HorizontalAlignment="CenterAlign" AnchorSpaceAbove="14.174999999999999" />
+					<TextWrapPreference Inverse="false" ApplyToMasterPageOnly="false" TextWrapSide="BothSides" TextWrapMode="None">
+						<Properties>
+							<TextWrapOffset Top="0" Left="0" Bottom="0" Right="0" />
+						</Properties>
+					</TextWrapPreference>
+					<ObjectExportOption EpubType="$ID/" SizeType="DefaultSize" CustomSize="$ID/" PreserveAppearanceFromLayout="PreserveAppearanceDefault" EpubAriaRole="$ID/" AltTextSourceType="SourceXMLStructure" ActualTextSourceType="SourceXMLStructure" CustomAltText="$ID/" CustomActualText="$ID/" ApplyTagType="TagFromStructure" ImageConversionType="JPEG" ImageExportResolution="Ppi300" GIFOptionsPalette="AdaptivePalette" GIFOptionsInterlaced="true" JPEGOptionsQuality="High" JPEGOptionsFormat="BaselineEncoding" ImageAlignment="AlignLeft" ImageSpaceBefore="0" ImageSpaceAfter="0" UseImagePageBreak="false" ImagePageBreak="PageBreakBefore" CustomImageAlignment="false" SpaceUnit="CssPixel" CustomLayout="false" CustomLayoutType="AlignmentAndSpacing">
+						<Properties>
+							<AltMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+							<ActualMetadataProperty NamespacePrefix="$ID/" PropertyPath="$ID/" />
+						</Properties>
+					</ObjectExportOption>
+				</TextFrame>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<idPkg:Story xmlns:idPkg="http://ns.adobe.com/AdobeInDesign/idml/1.0/packaging" DOMVersion="21.0">
+	<Story Self="u4d2" AppliedTOCStyle="n" UserText="true" IsEndnoteStory="false" TrackChanges="false" StoryTitle="$ID/" AppliedNamedGrid="n">
+		<StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection" />
+		<InCopyExportOption IncludeGraphicProxies="true" IncludeAllResources="false" />
+		<ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/General_Product_Info_gruppo%3aApplication">
+			<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/$ID/[No character style]">
+				<Content>XMULTICOM è una scheda di interfaccia sulla quale è possibile innestare un dispositivo di connettività XWBL o XMBX4, per ottenere la connettività Simply Connect con qualsiasi tipo di automazione non direttamente compatibile con i dispositivi XMBX4 e XWBL.</Content>
+				<Br />
+				<Content> </Content>
+				<Br />
+				<Content>XRS485 è una scheda  utilizzabile in abbinamento a XMULTICOM, per comandare tramite Simply Connect automazioni FAAC non compatibili coi dispositivi radio FDS.</Content>
+			</CharacterStyleRange>
+		</ParagraphStyleRange>
+	</Story>
+</idPkg:Story>
