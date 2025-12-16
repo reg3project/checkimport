@@ -51,6 +51,10 @@ output/reports/*
 # Only ignore temporary files in input folders
 input/**/*.tmp
 input/**/*.log
+
+# Downloaded/extracted data for analysis (too large for git)
+input/processing/drive-download*.zip
+input/processing/extracted_data/
 !output/sku_variants_for_review.csv
 !output/sku_variants_for_review.xlsx
 !output/products_with_tech_specs.csv
