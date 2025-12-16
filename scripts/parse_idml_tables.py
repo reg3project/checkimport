@@ -110,11 +110,13 @@ def extract_tables_from_idml(idml_path):
 
 def get_product_name_from_filename(filename):
     """Extract product name from IDML filename."""
-    # Remove page numbers and extension
+    # Remove extension
     name = Path(filename).stem
-    # Remove page prefix like "098-099_"
-    name = re.sub(r'^\d+[-_]\d+[-_]', '', name)
-    name = re.sub(r'^\d+[-_]', '', name)
+    # Remove page prefix - match pattern: digits, optional dash-digits, then underscore
+    # e.g., "098-099_770N_230V" -> "770N_230V"
+    # e.g., "098_770N" -> "770N"
+    # e.g., "160-163_B614" -> "B614"
+    name = re.sub(r'^\d+(?:-\d+)*_', '', name)
     # Remove _SI suffix
     name = re.sub(r'_SI$', '', name)
     # Replace underscores with spaces
@@ -132,7 +134,7 @@ def get_page_from_filename(filename):
 
 
 def main():
-    idml_dir = Path('input/learning/IDML')
+    idml_dir = Path('input/processing/IDML')
     output_dir = Path('output')
     output_dir.mkdir(exist_ok=True)
 
@@ -140,8 +142,19 @@ def main():
     all_tech_specs = []
     all_modelli = []
 
-    # Get all IDML files (exclude _SI files - Schema Installazione)
-    idml_files = sorted([f for f in idml_dir.glob('*.idml') if not f.stem.endswith('_SI')])
+    # Get all IDML files
+    # Exclude: _SI files (Schema Installazione) and KIT files
+    def should_include(f):
+        stem_lower = f.stem.lower()
+        # Skip Schema Installazione
+        if f.stem.endswith('_SI'):
+            return False
+        # Skip KIT files
+        if '_kit' in stem_lower or 'kit_' in stem_lower:
+            return False
+        return True
+
+    idml_files = sorted([f for f in idml_dir.glob('*.idml') if should_include(f)])
 
     print(f"Processing {len(idml_files)} IDML files...")
 
