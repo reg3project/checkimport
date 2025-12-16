@@ -44,23 +44,45 @@ def find_best_match(prodotto, product_names):
     return best_match, best_score
 
 
+def pages_overlap(toc_start, toc_end, csv_start, csv_end):
+    """Check if two page ranges overlap."""
+    try:
+        t_start, t_end = int(toc_start), int(toc_end)
+        c_start, c_end = int(csv_start), int(csv_end)
+        return not (t_end < c_start or c_end < t_start)
+    except ValueError:
+        return False
+
+
 def main():
-    # Read approved CSV - group SKUs by page and Product_Name
-    # Normalize page numbers to 3-digit format
-    page_product_skus = defaultdict(lambda: defaultdict(set))
+    # Read approved CSV - store all entries with page ranges
+    approved_entries = []
 
     with open(APPROVED_FILE, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f, delimiter=';')
         for row in reader:
-            # Normalize page numbers to 3 digits
             page_start = row['page_start'].zfill(3)
             page_end = row['page_end'].zfill(3)
-            page_key = (page_start, page_end)
             product_name = row['Product_Name'].strip()
             codice = row['Codice_articolo'].strip()
 
-            if product_name and codice:
-                page_product_skus[page_key][product_name].add(codice)
+            if codice:
+                approved_entries.append({
+                    'page_start': page_start,
+                    'page_end': page_end,
+                    'product_name': product_name,
+                    'codice': codice
+                })
+
+    # Build page_product_skus with overlapping range support
+    def get_products_for_page_range(toc_start, toc_end):
+        """Find all products/SKUs that overlap with given page range."""
+        result = defaultdict(set)
+        for entry in approved_entries:
+            if pages_overlap(toc_start, toc_end, entry['page_start'], entry['page_end']):
+                if entry['product_name']:
+                    result[entry['product_name']].add(entry['codice'])
+        return result
 
     # Read TOC
     toc_rows = []
@@ -78,10 +100,8 @@ def main():
         page_start = toc_row['page_start']
         page_finish = toc_row['page_finish']
 
-        page_key = (page_start, page_finish)
-
-        # Get all product names and SKUs for this page range
-        products_on_page = page_product_skus.get(page_key, {})
+        # Get all product names and SKUs for this page range (with overlap support)
+        products_on_page = get_products_for_page_range(page_start, page_finish)
 
         if not products_on_page:
             # No SKUs found - try to find in nearby pages
