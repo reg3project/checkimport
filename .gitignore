@@ -53,3 +53,4 @@ input/**/*.tmp
 input/**/*.log
 !output/sku_variants_for_review.csv
 !output/sku_variants_for_review.xlsx
+!output/products_with_tech_specs.csv
