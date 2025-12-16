@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Extract Modello and Codice articolo from IDML price tables.
-Finds tables with headers: Modello | Codice articolo | Prezzo €
+Extract Modello/Descrizione and Codice articolo from IDML price tables.
+Finds tables with headers containing: Codice articolo | Prezzo €
 Extracts data rows and saves with page number.
+Excludes Schemi di installazione pages (263-285).
 """
 import os
 import re
@@ -12,6 +13,9 @@ from pathlib import Path
 
 IDML_DIR = '/home/user/checkimport/input/processing/IDML_unzipped'
 OUTPUT_FILE = '/home/user/checkimport/output/v2/FAAC_Complete_v2_Modello_Codice_Pagina.csv'
+
+# Schemi di installazione pages to exclude
+EXCLUDED_PAGES = set(f"{p:03d}" for p in range(263, 286))
 
 
 def extract_page_from_folder(folder_name):
@@ -67,16 +71,16 @@ def parse_table(table_elem):
 
 
 def is_price_table(rows_data):
-    """Check if this is a Modello/Codice articolo/Prezzo table."""
+    """Check if this is a table with Codice articolo and Prezzo columns."""
     if 0 not in rows_data:
         return False
 
     header_row = rows_data[0]
-    # Check for expected headers
-    has_modello = any('Modello' in str(v) for v in header_row.values())
+    # Check for Codice articolo and Prezzo headers
     has_codice = any('Codice' in str(v) for v in header_row.values())
+    has_prezzo = any('Prezzo' in str(v) for v in header_row.values())
 
-    return has_modello and has_codice
+    return has_codice and has_prezzo
 
 
 def extract_from_story(story_path, page_start, page_end):
@@ -96,18 +100,17 @@ def extract_from_story(story_path, page_start, page_end):
         if not is_price_table(rows_data):
             continue
 
-        # Identify column indices for Modello and Codice
+        # Identify column indices: first column is description, find Codice column
         header_row = rows_data.get(0, {})
-        modello_col = None
+        descrizione_col = 0  # First column is always description/modello
         codice_col = None
 
         for col, text in header_row.items():
-            if 'Modello' in str(text):
-                modello_col = col
-            elif 'Codice' in str(text):
+            if 'Codice' in str(text):
                 codice_col = col
+                break
 
-        if modello_col is None or codice_col is None:
+        if codice_col is None:
             continue
 
         # Extract data rows (skip header row 0)
@@ -116,16 +119,22 @@ def extract_from_story(story_path, page_start, page_end):
                 continue
 
             row = rows_data[row_num]
-            modello = row.get(modello_col, '').strip()
+            descrizione = row.get(descrizione_col, '').strip()
             codice = row.get(codice_col, '').strip()
 
-            if modello and codice:
-                results.append({
-                    'Modello': modello,
-                    'Codice_articolo': codice,
-                    'page_start': page_start,
-                    'page_end': page_end
-                })
+            # Skip rows that are notes/footnotes (no valid codice)
+            if not codice or not descrizione:
+                continue
+            # Skip if codice doesn't look like an article code (should be mostly numeric)
+            if not any(c.isdigit() for c in codice):
+                continue
+
+            results.append({
+                'Modello': descrizione,
+                'Codice_articolo': codice,
+                'page_start': page_start,
+                'page_end': page_end
+            })
 
     return results
 
@@ -144,6 +153,10 @@ def main():
         page_start, page_end = extract_page_from_folder(folder_name)
         if not page_start:
             print(f"Skipping {folder_name} - no page number found")
+            continue
+
+        # Skip Schemi di installazione pages (263-285)
+        if page_start in EXCLUDED_PAGES:
             continue
 
         stories_dir = folder_path / 'Stories'
