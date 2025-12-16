@@ -1,8 +1,8 @@
 page;nome_prodotto;tipo_nota;note_prodotto
 062;pages 062-063 TM2K KIT MINI;note;(*) dati riferiti a 230V~ 50Hz.
 072;S418;note;Per ulteriori configurazioni consultare il manuale di istruzioni
-074;412;note;(*) dati riferiti a 230V~ 50Hz.
 074;412;warning;La versione per ante destra (DX e SX) si determina con vista dall'interno della proprietà.
+074;412;note;(*) dati riferiti a 230V~ 50Hz.
 074;412;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 076;413 230V;note;(*) dati riferiti a 230V~ 50Hz
 076;413 230V;note;Per ulteriori configurazioni consultare il manuale di istruzioni
@@ -12,18 +12,18 @@ page;nome_prodotto;tipo_nota;note_prodotto
 082;390 230V;note;(*) dati riferiti a 230V~ 50Hz.
 082;390 230V;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 082;390 230V;warning;ATTENZIONE: gli operatori 390 devono essere corredati di braccio snodato (cancello a battente) o telescopico (per porte a libro). ATTENZIONE: per un corretto funzionamento verificare che tra la cerniera del cancello e il bordo del pilastro sia presente una distanza max di 300 mm. Per un cancello a due ante prevedere due operatori, due bracci snodati ed un’apparecchiatura elettronica di comando. Gli operatori 390 possono essere corredati di un finecorsa in apertura e di un finecorsa in chiusura. Per la gestione del/i finecorsa sul 390 è necessario utilizzare la scheda E145S.
-084;392 C;note;(*) dati riferiti a 230V~ 50Hz.
+084;392 C;note;Il peso dell’anta è in funzione della larghezza. Verificare attraverso il grafico A che la propria anta rientri nella zona evidenziata sul grafico.
 084;392 C;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 084;392 C;warning;ATTENZIONE: per un corretto funzionamento verificare che tra la cerniera del cancello ed eventuali pareti e recinzioni laterali sia presente una distanza maggiore di 725 mm. Per un cancello a singola anta prevedere un attuatore 392 C. Per un cancello a due ante prevedere un attuatore 392 C e un attuatore 392. IMPORTANTE: la scheda elettronica E034, grazie alle nuove tecnologie e è compatibile solamente con la ricevente XF 433/XF 868 (predisposizione a connettore) e con le fotocellule XP 20B D e XP 30B (collegamento “BUS”).
-084;392 C;note;Il peso dell’anta è in funzione della larghezza. Verificare attraverso il grafico A che la propria anta rientri nella zona evidenziata sul grafico.
-086;402;note;(*) dati riferiti a 230V~ 50Hz.
+084;392 C;note;(*) dati riferiti a 230V~ 50Hz.
 086;402;warning;Per gli attuatori senza blocco occorre installare un’elettroserratura.
+086;402;note;(*) dati riferiti a 230V~ 50Hz.
 086;402;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 088;422;note;(*) dati riferiti a 230V~ 50Hz.
-088;422;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 088;422;warning;Per gli attuatori senza blocco occorre installare un’elettroserratura.
-090;400;note;(*) dati riferiti a 230V~ 50Hz.
+088;422;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 090;400;note;Per ulteriori configurazioni consultare il manuale di istruzioni
+090;400;note;(*) dati riferiti a 230V~ 50Hz.
 090;400;warning;Per gli attuatori senza blocco occorre installare un’elettroserratura I modelli 400 L evitano la realizzazione di nicchie sui pilastri in muratura (FIG.1) L’attuatore con blocco è sconsigliato quando non si può accedere al dispositivo di sblocco manuale (ante pannellate o mancanza di altro accesso alla proprietà).
 092;S450H;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 098;770N 230V;note;(*) dati riferiti a 230V~ 50Hz.
@@ -38,8 +38,8 @@ page;nome_prodotto;tipo_nota;note_prodotto
 118;741;note;Per ulteriori configurazioni consultare il manuale di istruzioni
 120;741 C;note;(*) dati riferiti a 230V~ 50Hz. (**) In versione a 230V può funzionare a temperature da +55° a +65° alle seguenti condizioni:  Frequenza di utilizzo 30 cicli/h. Carico massimo sugli accessori (inclusi accessori Bus2Easy) 400 mA (anzichè 500 mA). I cicli/ora sono riferiti ad un’anta di peso massimo e di 5 mt di larghezza.
 120;741 C;note;Per ulteriori configurazioni consultare il manuale di istruzioni
-122;746 C;note;(*) In versione a 230V può funzionare a temperature da +55° a +65° alle seguenti condizioni:  Frequenza di utilizzo 28 cicli/h (746 C Z16) - 36 cicli/h (746 C Z20), Carico massimo sugli accessori (inclusi accessori Bus2Easy) 400 mA (anzichè 500 mA). I cicli/ora sono riferiti ad un’anta di peso massimo e di 5 mt di larghezza.
 122;746 C;note;Per ulteriori configurazioni consultare il manuale di istruzioni
+122;746 C;note;(*) In versione a 230V può funzionare a temperature da +55° a +65° alle seguenti condizioni:  Frequenza di utilizzo 28 cicli/h (746 C Z16) - 36 cicli/h (746 C Z20), Carico massimo sugli accessori (inclusi accessori Bus2Easy) 400 mA (anzichè 500 mA). I cicli/ora sono riferiti ad un’anta di peso massimo e di 5 mt di larghezza.
 124;844 C;note;(*) dati riferiti a 230V~ 50Hz.
 124;844 C;note;(*) In versione a 230V può funzionare a temperature da +55° a +65° alle seguenti condizioni:  Frequenza di utilizzo 28 cicli/h, Carico massimo sugli accessori (inclusi accessori Bus2Easy) 400 mA (anzichè 500 mA). I cicli/ora sono riferiti ad un’anta di peso massimo e di 5 mt di larghezza.
 124;844 C;note;Per ulteriori configurazioni consultare il manuale di istruzioni
@@ -60,8 +60,8 @@ page;nome_prodotto;tipo_nota;note_prodotto
 160;B614;note;(*) dati riferiti a 230V~ 50Hz.
 164;615BPR;note;(*) dati riferiti a 230V~ 50Hz.
 164;615BPR;warning;"ATTENZIONE: l'asta rettangolare e l'asta tonda S dispongono di un profilo in gomma antiurto; per una ragione di bilanciamento non è possibile installare sul profilo dell'asta delle coste di sicurezza “attive”."
-168;620 Standard;note;(*) dati riferiti a 230V~ 50Hz.
 168;620 Standard;warning;Il corpo barriera destro o sinistro si determina guardando la barriera dal lato sportello (vedere disegno). Normalmente lo sportello è rivolto all’interno della proprietà.
+168;620 Standard;note;(*) dati riferiti a 230V~ 50Hz.
 172;620 Rapida;note;(*) dati riferiti a 230V~ 50Hz.
 172;620 Rapida;warning;Il corpo barriera destro o sinistro si determina guardando la barriera dal lato sportello (vedere disegno). Normalmente lo sportello è rivolto all’interno della proprietà. La barriera modello 620 Rapida non consente l’installazione del kit siepe e/o piedino d’estremità.
 216;Datori d'impulso semplici;note;Compatibile con cilindro europeo DIN 18252
