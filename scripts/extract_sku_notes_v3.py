@@ -100,14 +100,25 @@ def extract_accessory_notes(xml_content):
 def extract_product_notes(xml_content):
     """Extract product-level notes (no diamond markers)"""
     notes = []
-    # Images_gruppo:Note style is used for product-level notes
-    if 'Images_gruppo%3aNote' in xml_content:
-        pattern = r'ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/Images_gruppo%3aNote"[^>]*>.*?<Content>([^<]+)</Content>'
-        matches = re.findall(pattern, xml_content, re.DOTALL)
-        for text in matches:
-            text = text.strip()
-            if text:
-                notes.append(text)
+    # Multiple note styles for product-level notes
+    note_styles = [
+        'Images_gruppo%3aNote',
+        'Special_Content_gruppo%3aWarning',
+        'Technical_Specifications_gruppo%3aNote'
+    ]
+
+    for style in note_styles:
+        if style in xml_content:
+            # Extract all Content tags within this style's ParagraphStyleRange
+            pattern = rf'ParagraphStyleRange AppliedParagraphStyle="ParagraphStyle/{re.escape(style)}"[^>]*>(.*?)</ParagraphStyleRange>'
+            matches = re.findall(pattern, xml_content, re.DOTALL)
+            for match in matches:
+                # Extract all Content tags
+                contents = re.findall(r'<Content>([^<]+)</Content>', match)
+                full_text = ' '.join(c.strip() for c in contents if c.strip())
+                if full_text:
+                    note_type = 'warning' if 'Warning' in style else 'note'
+                    notes.append({'text': full_text, 'type': note_type})
     return notes
 
 def process_idml(idml_path):
@@ -262,10 +273,12 @@ def main():
         product_notes = result['product_notes']
 
         for note in product_notes:
-            note_text = note.replace('&apos;', "'")
+            note_text = note['text'].replace('&apos;', "'")
+            note_type = note.get('type', 'note')
             product_rows.append({
                 'page': page,
                 'nome_prodotto': product,
+                'tipo_nota': note_type,
                 'note_prodotto': note_text
             })
 
@@ -280,7 +293,7 @@ def main():
 
     with open(product_notes_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f,
-            fieldnames=['page', 'nome_prodotto', 'note_prodotto'],
+            fieldnames=['page', 'nome_prodotto', 'tipo_nota', 'note_prodotto'],
             delimiter=';')
         writer.writeheader()
         for row in unique_product_rows:
