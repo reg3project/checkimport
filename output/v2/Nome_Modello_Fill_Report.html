@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nome Modello Fill Report</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1600px; margin: 0 auto; }
+        h1 { color: #1a1a2e; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #16213e; margin-top: 30px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .card { background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .card.error { border-left: 5px solid #e74c3c; }
+        .card.warning { border-left: 5px solid #f39c12; }
+        .card.success { border-left: 5px solid #27ae60; }
+        .stat { font-size: 28px; font-weight: bold; margin: 10px 0; }
+        .stat.error { color: #e74c3c; }
+        .stat.warning { color: #f39c12; }
+        .stat.success { color: #27ae60; }
+        table { width: 100%; border-collapse: collapse; background: white; margin: 15px 0; font-size: 13px; }
+        th { background: #16213e; color: white; padding: 10px; text-align: left; position: sticky; top: 0; }
+        td { padding: 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+        tr:hover { background: #f8f9fa; }
+        tr.match { background: #e8f5e9; }
+        tr.no-match { background: #ffebee; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; }
+        .badge-csv { background: #3498db; color: white; }
+        .badge-tech { background: #9b59b6; color: white; }
+        .badge-none { background: #95a5a6; color: white; }
+        code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 12px; }
+        .section { background: white; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .scroll-table { max-height: 500px; overflow-y: auto; }
+        .confidence { font-size: 11px; color: #666; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📝 Nome Modello Fill Report</h1>
+    <p>Generated: 2025-12-17 11:37</p>
+    <p>Source: <code>Data_Elena_P_KIT_v3.xlsx</code> SKU sheet</p>
+
+    <h2>📊 Summary</h2>
+    <div class="summary">
+        <div class="card error">
+            <h3>Missing nome_modello</h3>
+            <div class="stat error">213</div>
+            <p>SKUs need model name</p>
+        </div>
+        <div class="card success">
+            <h3>✅ Can Fill</h3>
+            <div class="stat success">54</div>
+            <p>Found in sources</p>
+        </div>
+        <div class="card warning">
+            <h3>⚠️ Still Missing</h3>
+            <div class="stat warning">159</div>
+            <p>No match found</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>✅ SKUs That Can Be Filled (54)</h2>
+        <p>These SKUs have nome_modello values available from source files:</p>
+        <div class="scroll-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>SKU</th>
+                    <th>Source</th>
+                    <th>Suggested nome_modello</th>
+                    <th>Confidence</th>
+                    <th>Page</th>
+                    <th>Current descrizione_breve</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="match">
+                    <td><strong>103054</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Radiocoder 868 SLH</code></td>
+                    <td class="confidence">100%</td>
+                    <td>212-213</td>
+                    <td>Radiocoder 868 SLH...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>103337</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Radiocoder 433 SLH</code></td>
+                    <td class="confidence">100%</td>
+                    <td>212-213</td>
+                    <td>Radiocoder 433 SLH...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>104100</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>S450H CBAC</code></td>
+                    <td class="confidence">100%</td>
+                    <td>92-94</td>
+                    <td>Kit 2 Staffe posteriori ad avvitare...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>104501</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>580 CBAC</code></td>
+                    <td class="confidence">51%</td>
+                    <td>150-152</td>
+                    <td>Attuatore oleodinamico 230V...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>104502</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>580 SB</code></td>
+                    <td class="confidence">53%</td>
+                    <td>150-152</td>
+                    <td>Attuatore oleodinamico 230V...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>10675201</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>770N 230V</code></td>
+                    <td class="confidence">100%</td>
+                    <td>98-99</td>
+                    <td>Attuatori 770N - 230V...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>110597</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>593</code></td>
+                    <td class="confidence">53%</td>
+                    <td>150-152</td>
+                    <td>Attuatore oleodinamico 230V...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>390120</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Unico a cinghia</code></td>
+                    <td class="confidence">100%</td>
+                    <td>134-135</td>
+                    <td>Binario unico a cinghia 2400 mm (dim. max porta 3,...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>390126</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Unico a cinghia</code></td>
+                    <td class="confidence">100%</td>
+                    <td>134-135</td>
+                    <td>Binario unico a cinghia 3000 mm (dim. max porta 3,...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>390132</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Unico a cinghia</code></td>
+                    <td class="confidence">100%</td>
+                    <td>134-135</td>
+                    <td>Binario unico a cinghia 3600 mm (dim. max porta 3,...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>390139</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Unico a cinghia</code></td>
+                    <td class="confidence">100%</td>
+                    <td>134-135</td>
+                    <td>Binario unico a cinghia 4200 mm (dim. max porta 3,...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>390226</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Due pezzi a cinghia</code></td>
+                    <td class="confidence">100%</td>
+                    <td>134-135</td>
+                    <td>Binario due pezzi a cinghia 3000 mm (dim. max port...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>390232</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Due pezzi a cinghia</code></td>
+                    <td class="confidence">100%</td>
+                    <td>134-135</td>
+                    <td>Binario due pezzi a cinghia 3600 mm (dim. max port...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>390239</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Due pezzi a cinghia</code></td>
+                    <td class="confidence">100%</td>
+                    <td>134-135</td>
+                    <td>Binario due pezzi a cinghia 4200 mm (dim. max port...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>391456</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>XK30</code></td>
+                    <td class="confidence">30%</td>
+                    <td>216-219</td>
+                    <td>XK30 Selettore a chiave con sblocco a leva...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>404015</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Unità di programmazione SLH</code></td>
+                    <td class="confidence">100%</td>
+                    <td>212-213</td>
+                    <td>Unità di programmazione SLH per DECODER SLHP...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>404035</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Gruppo encoder per 770N (confezione singola - 2 confezioni p...</code></td>
+                    <td class="confidence">6%</td>
+                    <td>34-34</td>
+                    <td>Gruppo encoder per 770N...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>404040</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>SAFEcoder encoder assoluto magnetico BUS (Brevetto FAAC) (co...</code></td>
+                    <td class="confidence">5%</td>
+                    <td>46-46</td>
+                    <td>SAFEcoder encoder assoluto magnetico BUS (Brevetto...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>404041</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>SAFEcoder per attuatore 412 (Brevetto FAAC) (confezione sing...</code></td>
+                    <td class="confidence">3%</td>
+                    <td>32-32</td>
+                    <td>SAFEcoder (encoder assoluto magnetico BUS) per att...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>416250</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>COVER S2500I RAL 7021</code></td>
+                    <td class="confidence">8%</td>
+                    <td>50-50</td>
+                    <td>Cover S2500I RAL 7021...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>416251</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>COVER S2500I NEUTRO</code></td>
+                    <td class="confidence">10%</td>
+                    <td>50-50</td>
+                    <td>Cover S2500I RAL Neutro...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428002</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>5.000</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>ASTE TONDE S - Ø 75MM...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428042</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>3.300</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>ASTE TONDE S - Ø 75MM...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428043</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>4.300 *</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>ASTE TONDE S - Ø 75MM...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428044</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Asta Intera S 5,3 m</code></td>
+                    <td class="confidence">100%</td>
+                    <td>176-179</td>
+                    <td>Asta Intera S...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428045</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>2.300</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>ASTE TONDE S - Ø 75MM...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428046</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>2.000 *</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>ASTE TONDE S - Ø 75MM...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428047</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Asta Intera L 5,3 m</code></td>
+                    <td class="confidence">100%</td>
+                    <td>176-179</td>
+                    <td>Asta Intera L...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428048</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Asta Iniziale L 4 m</code></td>
+                    <td class="confidence">100%</td>
+                    <td>176-179</td>
+                    <td>Asta Iniziale L 4 m...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428049</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Asta Finale L 2,3 m</code></td>
+                    <td class="confidence">100%</td>
+                    <td>176-179</td>
+                    <td>Asta Finale L...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428050</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Asta Finale L 3,3 m</code></td>
+                    <td class="confidence">100%</td>
+                    <td>176-179</td>
+                    <td>Asta Finale L...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428051</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Asta Finale L 4,3 m</code></td>
+                    <td class="confidence">100%</td>
+                    <td>176-179</td>
+                    <td>Asta Finale L...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428088</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>2.315</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428089</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>2.815</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428090</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>3.815</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428091</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>4.815</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428176</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>3.000</code></td>
+                    <td class="confidence">100%</td>
+                    <td>168-171</td>
+                    <td>ASTE TONDE PIVOTTANTI...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428615</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Giunto *</code></td>
+                    <td class="confidence">100%</td>
+                    <td>160-163</td>
+                    <td>Giunto...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>428616</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Giunto L</code></td>
+                    <td class="confidence">100%</td>
+                    <td>176-179</td>
+                    <td>Giunto L...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>490065</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Cassetta portante con sistema di sblocco</code></td>
+                    <td class="confidence">6%</td>
+                    <td>34-34</td>
+                    <td>Cassetta portante con sistema di sblocco (Brevetta...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>490250</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>GRUPPO CERNIERA S2500I</code></td>
+                    <td class="confidence">6%</td>
+                    <td>50-50</td>
+                    <td>Cerniera S2500I...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>712650</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Elettroserratura 12V~ completa di controbocchetta a paviment...</code></td>
+                    <td class="confidence">-</td>
+                    <td>238-238</td>
+                    <td>Elettroserratura 12 Vac completa di controbocchett...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>720118</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Contenitore mod. L per schede elettroniche</code></td>
+                    <td class="confidence">-</td>
+                    <td>187-187</td>
+                    <td>Contenitore mod. L per schede elettroniche...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>720119</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Contenitore mod. E per schede elettroniche</code></td>
+                    <td class="confidence">-</td>
+                    <td>187-187</td>
+                    <td>Contenitore mod. E per schede elettroniche...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>720309</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Contenitore mod. LM per schede elettroniche</code></td>
+                    <td class="confidence">-</td>
+                    <td>187-187</td>
+                    <td>Contenitore mod. LM per schede elettroniche...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>721005</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>6,0</code></td>
+                    <td class="confidence">100%</td>
+                    <td>164-167</td>
+                    <td>Molla di bilanciamento Ø 6,0 mm...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>721006</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>7,0</code></td>
+                    <td class="confidence">100%</td>
+                    <td>164-167</td>
+                    <td>Molla di bilanciamento Ø 7,0 mm...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>721007</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>7,5</code></td>
+                    <td class="confidence">100%</td>
+                    <td>164-167</td>
+                    <td>Molla di bilanciamento Ø 7,5 mm...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>721008</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>5,5</code></td>
+                    <td class="confidence">100%</td>
+                    <td>164-167</td>
+                    <td>Molla di bilanciamento Ø 5,5 mm...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>721018</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>8,0</code></td>
+                    <td class="confidence">100%</td>
+                    <td>164-167</td>
+                    <td>Molla di bilanciamento Ø 8,0 mm...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>785103</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>XP 20B D</code></td>
+                    <td class="confidence">30%</td>
+                    <td>224-225</td>
+                    <td>Coppia di fotocellule XP 20B D...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>785538</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>Software SLHP</code></td>
+                    <td class="confidence">100%</td>
+                    <td>212-213</td>
+                    <td>Software SLHP per programmare DECODER SLHP...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>787007</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>XT2 433 SLH LR</code></td>
+                    <td class="confidence">100%</td>
+                    <td>210-211</td>
+                    <td>XT2 433 SLH LR Trasmittente 2 canali...</td>
+                </tr>
+
+                <tr class="match">
+                    <td><strong>787831</strong></td>
+                    <td><span class="badge badge-csv">Modello CSV</span></td>
+                    <td><code>XF 433</code></td>
+                    <td class="confidence">100%</td>
+                    <td>206-207</td>
+                    <td>Ricevente XF 433 MHz...</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>⚠️ SKUs Still Without Match (159)</h2>
+        <p>These SKUs have no nome_modello available in source files:</p>
+        <div class="scroll-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>SKU</th>
+                    <th>Tipo</th>
+                    <th>descrizione_breve</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="no-match">
+                    <td><strong>102011</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Apparecchiatura elettronica E034 con contenitore...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>105128</strong></td>
+                    <td>Accessori</td>
+                    <td>Batteria CR2 3V al litio...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>110554</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit per grado di protezione IP44...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>2022715</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda elettronica 624BLD (incorporata nell'automatismo)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>2022805</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda elettronica 540BPR (incorporata nell'automatismo)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390035</strong></td>
+                    <td>Accessori</td>
+                    <td>Dispositivo di sblocco idraulico (da abbinare al codice 390972) per attuatori CB...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390080</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit collegamento XBAT (da abbinare a 390923)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390081</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit collegamento luci asta 615...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390091</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit sblocco esterno per S2500I...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390130</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit basso consumo XLC (Compatibile con E034)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390178</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit n°4 viti di fissaggio ad avvitare (conf. da 4 kit) da abbinare a 1 m di 4903...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390184</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit installazione luci asta rettangolare...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390267</strong></td>
+                    <td>Accessori</td>
+                    <td>Braccio dritto...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390432</strong></td>
+                    <td>Installazione Assemblaggio meccanico</td>
+                    <td>Confezioni con due bracci telescopici dritti...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390433</strong></td>
+                    <td>Installazione Assemblaggio meccanico</td>
+                    <td>Confezioni con due bracci telescopici curvi...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390434</strong></td>
+                    <td>Installazione Assemblaggio meccanico</td>
+                    <td>Coppia tubi di trasmissione, supporti laterali, installazione con 1 attuatore...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390435</strong></td>
+                    <td>Installazione Assemblaggio meccanico</td>
+                    <td>Coppia tubi di trasmissione, supporti laterali, installazione con 2 attuatori...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390474</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit installazione finecorsa apertura e chiusura (da abbinare alla scheda elettro...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390488</strong></td>
+                    <td>Accessori</td>
+                    <td>Cavo e guaina per sblocco esterno (applicazione alla maniglia esistente)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390563</strong></td>
+                    <td>Accessori</td>
+                    <td>Confezioni con due bracci telescopici dritti...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390563</strong></td>
+                    <td>Installazione Assemblaggio a saldare </td>
+                    <td>Confezioni con due bracci telescopici dritti...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390564</strong></td>
+                    <td>Installazione e assemblaggio a saldare</td>
+                    <td>Confezioni con due bracci telescopici curvi...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390592</strong></td>
+                    <td>Accessori</td>
+                    <td>Coppia tubi di trasmissione, supporti, installaz. con 2 operatori...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390594</strong></td>
+                    <td>Installazione Assemblaggio a saldare </td>
+                    <td>Coppia tubi di trasmissione, supporti laterali, installazione con 2 operatori 39...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390607</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit per sblocco esterno...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390612</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit apertura a 140°...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390682</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit Finecorsa singolo (apertura o chiusura)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390719</strong></td>
+                    <td>Accessori</td>
+                    <td>Prolunga sblocco rapido per installazioni fino a 8 m...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390720</strong></td>
+                    <td>Accessori</td>
+                    <td>Prolunga verricello a catena per installazioni fino ad 8 m...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390721</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fissaggio per regolazione tridimensionale...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390744</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit rinvio applicazioni "Fuori asse" R. 1:1,5...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390745</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit rinvio applicazioni "Fuori asse" R. 1:2,0...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390765</strong></td>
+                    <td>Accessori</td>
+                    <td>Supporto centrale binario fornito di serie con binari in due pezz...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390768</strong></td>
+                    <td>Accessori</td>
+                    <td>Braccio ricurvo per porte sezionali...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390828</strong></td>
+                    <td>ASTE TONDE PIVOTTANTI E ACCESSORI SPECIFICI</td>
+                    <td>Sensore sfondamento per aste tonde pivottanti...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390923</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit batteria d'emergenza XBAT 24...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390926</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit supporto batteria d'emergenza (specifico per E124S)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390972</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit giunto scanalato per attuatori CBAC o SBW...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390992</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit collegamento luci asta...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>390993</strong></td>
+                    <td>Accessori</td>
+                    <td>Cordone luminoso (confez. da 12 m)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>391452</strong></td>
+                    <td>Accessori</td>
+                    <td>Accessorio adattatore...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401048</strong></td>
+                    <td>Accessori</td>
+                    <td>Keytag...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401051</strong></td>
+                    <td>Accessori</td>
+                    <td>Gruppo antipanico...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401057</strong></td>
+                    <td>Accessori</td>
+                    <td>Dispositivo sblocco esterno con cavo e guaina Lunghezza 5 mt...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401064</strong></td>
+                    <td>Accessori</td>
+                    <td>Adattatore tubo esterno...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401065</strong></td>
+                    <td>Accessori</td>
+                    <td>Adattatore per colonnetta o incasso...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401066</strong></td>
+                    <td>Accessori</td>
+                    <td>Valvola antivandalismo...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401069</strong></td>
+                    <td>Accessori</td>
+                    <td>Valvola antivandalismo salvaguarda il sistema idraulico in caso di forzature sul...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401070</strong></td>
+                    <td>Accessori</td>
+                    <td>Colonnetta bassa H500...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401075</strong></td>
+                    <td>Accessori</td>
+                    <td>Colonnetta alta H1000...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401080</strong></td>
+                    <td>Accessori</td>
+                    <td>Colonnetta doppia H1000...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>401306</strong></td>
+                    <td>Accessori</td>
+                    <td>Metal keytag...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>402500</strong></td>
+                    <td>Accessori</td>
+                    <td>Pulsantiera XB300...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>402501</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Unità elettronica EB 578D (scheda 578D, contenitore, sezionatore, pulsantiera co...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>402502</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Unità elettronica EB 540BPR 3PH (scheda 540BPR, contenitore, sezionatore, teleru...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>402504</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Unità elettronica EB 578D 3PH (scheda 578D, contenitore, sezionatore, teleruttor...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>410029</strong></td>
+                    <td>Accessori</td>
+                    <td>Lampeggiatore XLED...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>410032</strong></td>
+                    <td>Accessori</td>
+                    <td>Lampeggiante semaforico integrato B614...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>410033</strong></td>
+                    <td>Accessori</td>
+                    <td>Lampeggiante semaforico integrato...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>416016</strong></td>
+                    <td>Cofani</td>
+                    <td>Cofano Rosso RAL 3020...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>416017</strong></td>
+                    <td>Cofani</td>
+                    <td>Cofano Blu RAL 5011...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>416018</strong></td>
+                    <td>Cofani</td>
+                    <td>Cofano Bianco RAL 9010...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>416019</strong></td>
+                    <td>Cofani</td>
+                    <td>Cofano Grigio RAL 9006...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>416020</strong></td>
+                    <td>Cofani</td>
+                    <td>Cofano acciaio INOX...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424001</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit per sblocco esterno...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424002</strong></td>
+                    <td>Accessori </td>
+                    <td>Kit serratura di sblocco personalizzata...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424550001-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Sblocco esterno con chiavi personalizzate dal n. 1 al n. 10...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424550001-50</strong></td>
+                    <td>Accessori</td>
+                    <td>Sblocco esterno con chiavi personalizzate dal n. 1 al n. 50...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424551</strong></td>
+                    <td>Accessori</td>
+                    <td>Prolunga sblocco esterno per porte con spessore oltre i 15 mm...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424560001-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Sblocco esterno a chiave per porte con spessore max 15 mm (dal n. 1 al n. 10)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424560101-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Sblocco esterno a chiave per porte con spessore oltre 15 mm (dal n. 1 al n. 10)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424591001-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Sblocco esterno a chiave per porte con spessore oltre i 15 mm, da 1 a 10...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>424641-50</strong></td>
+                    <td>Accessori</td>
+                    <td>Serratura di sblocco con chiave personalizzata (dal n. 1 al n. 10)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428137</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit articolazione - H max soffitto 3 m (solo per aste rettangolari standard)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428163</strong></td>
+                    <td>ASTE TONDE PIVOTTANTI E ACCESSORI SPECIFICI</td>
+                    <td>Tasca di fissaggio per asta tonda pivottante - (INOX)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428342</strong></td>
+                    <td>Accessori</td>
+                    <td>Tasca di fissaggio per asta rettangolare...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428436</strong></td>
+                    <td>Accessori</td>
+                    <td>Tasca e molla di bilanciamento S...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428437</strong></td>
+                    <td>Accessori</td>
+                    <td>Tasca e molla di bilanciamento L...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428441</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit siepe lunghezza 2 m...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428444</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit articolata per asta tonda S (max 4 m)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428445</strong></td>
+                    <td>Accessori</td>
+                    <td>Tasca di fissaggio per aste tonde S 615/620/B614...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428446</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit siepe lunghezza 3 m...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428715</strong></td>
+                    <td>Molle di bilanciamento per aste tonde s</td>
+                    <td>Kit snodo e tirante B614...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428805</strong></td>
+                    <td>Accessori</td>
+                    <td>Piedino di estremità regolabile per appoggio asta...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>428806</strong></td>
+                    <td>Accessori</td>
+                    <td>Forcella regolabile per supporto asta...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490042</strong></td>
+                    <td>Accessori</td>
+                    <td>Positive Stop - arresti meccanici ap./ch (integrabili sul mod. 400)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490043</strong></td>
+                    <td>Accessori</td>
+                    <td>Positive Stop - arresti meccanici ap./ch (integrabili sul mod. 400 CBAC L)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490058</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fondazione...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490073</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fondazione...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490110</strong></td>
+                    <td>Accessori</td>
+                    <td>Cassetta portante in acciaio inox con sistema di sblocco (Brevettato)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490111</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit apertura a 180°...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490112</strong></td>
+                    <td>Accessori</td>
+                    <td>Cassetta portante...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490113</strong></td>
+                    <td>Accessori</td>
+                    <td>Cassetta portante INOX...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490117</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit 6 adesivi catarifrangenti...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490122</strong></td>
+                    <td>Accessori</td>
+                    <td>Cremagliera zincata 30x12 mod. 4 attacchi a saldare inclusi (conf. 4 pezzi da 1m...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490123</strong></td>
+                    <td>Accessori</td>
+                    <td>Cremagliera zincata 30x8 mod. 4 attacchi a saldare inclusi (conf. 4 pezzi da 1m)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490124</strong></td>
+                    <td>Accessori</td>
+                    <td>Cremagliera zincata 30x12 mod. 4 attacchi fissaggio mecc. inclusi (conf. 4 pezzi...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490125</strong></td>
+                    <td>Accessori</td>
+                    <td>Cremagliera zincata 30x8 mod. 4 attacchi fissaggio mecc. inclusi (conf. 4 pezzi ...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490139</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fondazione...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490183</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fondazione...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490186</strong></td>
+                    <td>Molle di bilanciamento per aste tonde s</td>
+                    <td>Confezione attacchi doppia molla...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490187</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit scarpetta S800 saldata (saldatura conforme a UNI EN ISO 15614-1)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490251</strong></td>
+                    <td>Accessori</td>
+                    <td>Sblocco manuale a carrucola...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490252</strong></td>
+                    <td>Accessori</td>
+                    <td>Arresti meccanici integrati S2500I...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490253</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit staffa guida S2500I...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490254</strong></td>
+                    <td>Accessori</td>
+                    <td>Adattatore colonna 100mm S2500I...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490255</strong></td>
+                    <td>Accessori</td>
+                    <td>Adattatore colonna 120mm S2500I...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490333</strong></td>
+                    <td>Accessori</td>
+                    <td>Cremagliera nylon 30x20 mod.4 con anima in acciaio (conf. 4pezzi da 1m)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>490349</strong></td>
+                    <td>Accessori</td>
+                    <td>Kit 2 staffe posteriori (a vite)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>63000169</strong></td>
+                    <td>ASTE TONDE PIVOTTANTI E ACCESSORI SPECIFICI</td>
+                    <td>Molla S (necessaria per aste tonde pivottanti)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>63001034</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda elettronica E614 (incorporata nell'automatismo)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>63003390</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda elettronica E4000I incorporata nell'automatismo...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>712052-61</strong></td>
+                    <td>Accessori</td>
+                    <td>Serratura a cilindro europeo e chiave personalizzata da 1 a 10...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>71209101-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Serratura di sblocco con chiave personalizzata...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>712104001-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Serratura di sblocco con chiave personalizzata...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>712501001-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Serratura di sblocco con chiave personalizzata...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>712651001</strong></td>
+                    <td>Accessori</td>
+                    <td>Cilindro interno con n° 2 chiavi...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>712652001</strong></td>
+                    <td>Accessori</td>
+                    <td>Cilindro esterno con n° 2 chiavi...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>71275101</strong></td>
+                    <td>Accessori</td>
+                    <td>Serratura con chiave...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>71275101-10</strong></td>
+                    <td>Accessori</td>
+                    <td>Serratura con chiave personalizzata 1-10...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>713002</strong></td>
+                    <td>Accessori</td>
+                    <td>Chiave di sblocco supplementare triangolare (confez. da 10 pz.)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>713009</strong></td>
+                    <td>Accessori</td>
+                    <td>Coppia di chiavi di sblocco supplementari...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>719169</strong></td>
+                    <td>Pignone</td>
+                    <td>Pignone Z16 modulo 6 con protezione per cremagliera...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>719328</strong></td>
+                    <td>Cremagliera </td>
+                    <td>Cremagliera zincata 30x30...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>720316</strong></td>
+                    <td>Accessori</td>
+                    <td>Contenitore da incasso (T20 – T21)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>721209</strong></td>
+                    <td>Molle di bilanciamento per aste tonde s</td>
+                    <td>Molla di bilanciamento B614...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>721232</strong></td>
+                    <td>Molle di bilanciamento per aste tonde s</td>
+                    <td>Molla di bilanciamento 6 m B614...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>722121</strong></td>
+                    <td>Accessori</td>
+                    <td>Arresto meccanico interno di apertura...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>722122</strong></td>
+                    <td>Accessori</td>
+                    <td>Arresto meccanico interno di chiusura...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>722123</strong></td>
+                    <td>Accessori</td>
+                    <td>Confezione angolari per fissaggio cremagliera (3 pz)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>722136</strong></td>
+                    <td>Accessori</td>
+                    <td>Longherone di fissaggio lunghezza 1,5 m...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>722140</strong></td>
+                    <td>Accessori</td>
+                    <td>Longherone di fissaggio lunghezza 2 m...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>722291</strong></td>
+                    <td>Accessori</td>
+                    <td>Longherone di fissaggio lunghezza 1,5 m (per modello 593)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>722299</strong></td>
+                    <td>Accessori</td>
+                    <td>Longherone di fissaggio lunghezza 1,5 m (per modello 580)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>727525</strong></td>
+                    <td>Accessori</td>
+                    <td>Carter di copertura stelo per mod. 415 con corsa stelo 300 mm...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>736022</strong></td>
+                    <td>Accessori</td>
+                    <td>Coppia tubi di trasmissione 1,5 m, supporti, installaz. con 1 operatore...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>736023</strong></td>
+                    <td>Installazione Assemblaggio a saldare </td>
+                    <td>Coppia tubi di trasmissione, supporti laterali, installazione con 1 operatore...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>737100</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fondazione per colonnetta...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>737604</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra a murare...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>737621</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di supporto per forcella...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>737628</strong></td>
+                    <td>Accessori </td>
+                    <td>Piastra di fondazione...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>737816</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fondazione con regolazioni laterali ed in altezza...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>737850</strong></td>
+                    <td>Accessori</td>
+                    <td>Piastra di fondazione C851...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>738700</strong></td>
+                    <td>Accessori</td>
+                    <td>Braccio telescopico articolato con accessori per l’installazione...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>738703</strong></td>
+                    <td>Accessori</td>
+                    <td>Braccio telescopico standard con accessori per l’installazione...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>738705</strong></td>
+                    <td>Accessori</td>
+                    <td>Braccio snodato...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>738706</strong></td>
+                    <td>Accessori</td>
+                    <td>Attuatore elettromeccanico a braccio articolato 230V...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>738709</strong></td>
+                    <td>Accessori</td>
+                    <td>Confezioni con due bracci telescopici dritti con boccola non a saldare...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790062</strong></td>
+                    <td>Accessori</td>
+                    <td>Interfaccia BUS XIB (per scheda E045, E045S, E024S o E034 con fotocellula no BUS...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790064</strong></td>
+                    <td>Accessori</td>
+                    <td>XBR2 Interfaccia BUSRelay 2CH...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790065</strong></td>
+                    <td>Accessori</td>
+                    <td>XBR4 Interfaccia BUSRelay 4CH...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790076</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda elettronica E145S...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790077</strong></td>
+                    <td>Accessori</td>
+                    <td>Scheda elettronica E045S...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790281</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda elettronica 615BPR (incorporata nell'automatismo)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790286</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Apparecchiatura elettronica E024S con contenitore...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790291</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda di comando E721 230V...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790292</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Scheda di comando E724 230V...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790305</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Apparecchiatura elettronica E124S con contenitore...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>790922</strong></td>
+                    <td>Apparecchiature Elettroniche</td>
+                    <td>Apparecchiatura elettronica 578D (installazione remota)...</td>
+                </tr>
+
+                <tr class="no-match">
+                    <td><strong>799349</strong></td>
+                    <td>Accessori</td>
+                    <td>Mex SLH - Memoria supplementare 1000 codici per DECODER SLHP...</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📁 Data Sources Used</h2>
+        <table>
+            <tr><th>Source</th><th>Matches Found</th><th>Description</th></tr>
+
+            <tr><td><span class="badge badge-csv">Modello CSV</span></td><td>54</td><td>FAAC_Complete_v2_Modello_Codice_Pagina_TEST.csv</td></tr>
+            <tr><td><span class="badge badge-tech">Tech Spec</span></td><td>0</td><td>Tech_Spec_Master_v1.csv</td></tr>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>
