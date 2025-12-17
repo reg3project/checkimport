@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Badge/Certification Comparison Report</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1600px; margin: 0 auto; }
+        h1 { color: #1a1a2e; border-bottom: 3px solid #e94560; padding-bottom: 10px; }
+        h2 { color: #16213e; margin-top: 30px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .card { background: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .card.ok { border-left: 5px solid #27ae60; }
+        .card.warning { border-left: 5px solid #f39c12; }
+        .card.error { border-left: 5px solid #e94560; }
+        .stat { font-size: 28px; font-weight: bold; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; background: white; margin: 15px 0; font-size: 13px; }
+        th { background: #16213e; color: white; padding: 10px; text-align: left; position: sticky; top: 0; }
+        td { padding: 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+        tr:hover { background: #f8f9fa; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; margin: 2px; }
+        .badge-ce { background: #3498db; color: white; }
+        .badge-safe { background: #27ae60; color: white; }
+        .badge-green { background: #2ecc71; color: white; }
+        .badge-omnidec { background: #9b59b6; color: white; }
+        .badge-2easy { background: #e67e22; color: white; }
+        .badge-hybrid { background: #1abc9c; color: white; }
+        .badge-missing { background: #e74c3c; color: white; }
+        .issue { background: #fff3cd; padding: 5px; border-radius: 3px; margin: 3px 0; font-size: 12px; }
+        .issue.error { background: #f8d7da; }
+        .issue.warning { background: #fff3cd; }
+        .current { color: #666; }
+        .idml { color: #2c3e50; font-weight: bold; }
+        .section { background: white; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 12px; }
+        .example { background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 5px; padding: 15px; margin: 15px 0; }
+        .example h4 { margin-top: 0; color: #2e7d32; }
+        .scroll-table { max-height: 600px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🏷️ Badge/Certification Comparison Report</h1>
+    <p>Generated: 2025-12-17 11:18</p>
+    <p>Comparing: <code>Data_Elena_P_KIT_v2.xlsx</code> vs <code>FAAC_Complete_v2_Badges_Certifications.csv</code></p>
+
+    <h2>📊 Summary</h2>
+    <div class="summary">
+        <div class="card ok">
+            <h3>Total Products</h3>
+            <div class="stat">78</div>
+        </div>
+        <div class="card warning">
+            <h3>✅ No Issues</h3>
+            <div class="stat">49</div>
+        </div>
+        <div class="card warning">
+            <h3>⚠️ Missing Badges</h3>
+            <div class="stat">19</div>
+        </div>
+        <div class="card warning">
+            <h3>📱 Missing QR</h3>
+            <div class="stat">2</div>
+        </div>
+        <div class="card warning">
+            <h3>✨ Needs Styling</h3>
+            <div class="stat">6</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📋 Expected Format (S2500I Example)</h2>
+        <div class="example">
+            <h4>Page 96-97: S2500I</h4>
+            <table>
+                <tr>
+                    <th>Column</th>
+                    <th>Value</th>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td><strong>badge_sistemi</strong></td>
+                    <td><code>Safe|&lt;b&gt;Sistema 24V SAFEzone&lt;/b&gt;:&lt;/br&gt; S2500I + E124S;Green|&lt;b&gt;Sistema 24V GREENtech&lt;/b&gt;:&lt;/br&gt; S2500I + E124S</code></td>
+                    <td>Icon name + HTML styled description with &lt;b&gt; tags</td>
+                </tr>
+                <tr>
+                    <td><strong>codice_qr</strong></td>
+                    <td><code>S2500I_ITA.tif|Guarda il video vimeo.com/faacgroup/S2500I-it</code></td>
+                    <td>QR image filename + description text</td>
+                </tr>
+                <tr>
+                    <td><strong>certificazioni</strong></td>
+                    <td><code>Simply;2easy;CE</code></td>
+                    <td>Simple list of certification icons (no descriptions)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔍 Detailed Comparison</h2>
+        <div class="scroll-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>Product</th>
+                    <th>Issues</th>
+                    <th>Current badge_sistemi</th>
+                    <th>Current certificazioni</th>
+                    <th>IDML Badges</th>
+                    <th>IDML QR</th>
+                    <th>Recommended Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>28</td>
+                    <td><strong>LEADER kit</strong></td>
+                    <td><div class="issue warning">Needs HTML styling</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>Safe|SAFEZONE COMPOSTO DA: LEADER KIT230V + 2SAFEC...</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add &lt;b&gt; tags to badge_sistemi</td>
+                </tr>
+
+                <tr>
+                    <td>29</td>
+                    <td><strong>MASTER kit 230V</strong></td>
+                    <td><div class="issue warning">Needs HTML styling</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>Safe|SAFEZONE COMPOSTO DA: LEADER KIT230V + 2SAFEC...</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add &lt;b&gt; tags to badge_sistemi</td>
+                </tr>
+
+                <tr>
+                    <td>32</td>
+                    <td><strong>ECO kit</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Green</span></div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>Safe|SAFE ZONE COMPOSTO DA: ECO KIT 230V + 2SAFECO...</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Green to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>34</td>
+                    <td><strong>POWER kit 230V</strong></td>
+                    <td><div class="issue warning">Needs HTML styling</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>Safe|SAFEZONE COMPOSTO DA: POWER KIT230V + 2SAFECO...</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add &lt;b&gt; tags to badge_sistemi</td>
+                </tr>
+
+                <tr>
+                    <td>35</td>
+                    <td><strong>POWER kit 24V</strong></td>
+                    <td><div class="issue warning">Needs HTML styling</div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>FDS;Simply;Omni;2easy;CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add &lt;b&gt; tags to badge_sistemi</td>
+                </tr>
+
+                <tr>
+                    <td>38</td>
+                    <td><strong>DELTA 3 kit</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">2Easy</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Green</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>FDS;Simply;CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add 2Easy to certificazioni<br>Add Green to certificazioni<br>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>42</td>
+                    <td><strong>SAFE&GREEN Retrofit kit</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Hybrid</span></div></td>
+                    <td class="current"><code>Safe;Green</code></td>
+                    <td class="current"><code>Simply;Omni;2easy;CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-hybrid">Hybrid</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Hybrid to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>43</td>
+                    <td><strong>HYBRID kit</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Green</span></div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>Omni;Hybrid;2easy;CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-hybrid">Hybrid</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Green to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>47</td>
+                    <td><strong>MASTER kit 24V</strong></td>
+                    <td><div class="issue warning">Needs HTML styling</div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>Omni;2easy;CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add &lt;b&gt; tags to badge_sistemi</td>
+                </tr>
+
+                <tr>
+                    <td>51</td>
+                    <td><strong>HIGH KIT</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">2Easy</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Safe</span></div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add 2Easy to certificazioni<br>Add Omnidec to certificazioni<br>Add Safe to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>56</td>
+                    <td><strong>DELTA 3 kit</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">2Easy</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Green</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add 2Easy to certificazioni<br>Add Green to certificazioni<br>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>59</td>
+                    <td><strong>DOLPHIN kit</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>2easy;CE</code></td>
+                    <td class="idml"><span class="badge badge-ce">CE</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>62-63</td>
+                    <td><strong>TM2K KIT MINI</strong></td>
+                    <td><div class="issue">Not found in IDML</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>CE</code></td>
+                    <td class="idml"></td>
+                    <td><code></code></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>72-73</td>
+                    <td><strong>S418</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Green</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Safe</span></div><div class="issue warning">Needs HTML styling</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>Simply; CE</code></td>
+                    <td class="idml"><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Green to certificazioni<br>Add Safe to certificazioni<br>Add &lt;b&gt; tags to badge_sistemi</td>
+                </tr>
+
+                <tr>
+                    <td>110 - 111</td>
+                    <td><strong>C720</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe;Green</code></td>
+                    <td class="current"><code>FDS; omniDEC; 2easy; CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>112-113</td>
+                    <td><strong>C721</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe;Green</code></td>
+                    <td class="current"><code>FDS; omniDEC; 2easy; CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>116 - 117</td>
+                    <td><strong>740 C</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe;Green</code></td>
+                    <td class="current"><code>FDS; omniDEC; 2easy; CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>120 - 121</td>
+                    <td><strong>741 C</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe;Green</code></td>
+                    <td class="current"><code>FDS; omniDEC; 2easy; CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>122 - 123</td>
+                    <td><strong>746 C</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div><div class="issue error">Missing QR: <code>QR-746c-844c_ITA.tif</code></div></td>
+                    <td class="current"><code>Safe;Green</code></td>
+                    <td class="current"><code>FDS; omniDEC; 2easy; CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code>QR-746c-844c_ITA.tif</code></td>
+                    <td>Add Omnidec to certificazioni<br>Add QR: QR-746c-844c_ITA.tif</td>
+                </tr>
+
+                <tr>
+                    <td>122-123</td>
+                    <td><strong>746 C</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Green</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Safe</span></div><div class="issue error">Missing QR: <code>QR-746c-844c_ITA.tif</code></div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code>Simply;FDS;2easy;CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code>QR-746c-844c_ITA.tif</code></td>
+                    <td>Add Green to certificazioni<br>Add Omnidec to certificazioni<br>Add Safe to certificazioni<br>Add QR: QR-746c-844c_ITA.tif</td>
+                </tr>
+
+                <tr>
+                    <td>124 - 125</td>
+                    <td><strong>844 C</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe;Green</code></td>
+                    <td class="current"><code>FDS; omniDEC; 2easy; CE</code></td>
+                    <td class="idml"><span class="badge badge-2easy">2Easy</span><span class="badge badge-ce">CE</span><span class="badge badge-green">Green</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code>QR-746c-844c_ITA.tif</code></td>
+                    <td>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>134 -135</td>
+                    <td><strong>D600</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">CE</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Classe_II</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code> Classe 2</code></td>
+                    <td class="idml"><span class="badge badge-ce">CE</span><span class="badge badge-classe_ii">Classe_II</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add CE to certificazioni<br>Add Classe_II to certificazioni<br>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>136 - 137 </td>
+                    <td><strong>D700 HS</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Classe_II</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>Classe2; omniDEC; CE</code></td>
+                    <td class="idml"><span class="badge badge-ce">CE</span><span class="badge badge-classe_ii">Classe_II</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Classe_II to certificazioni<br>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>138 - 139</td>
+                    <td><strong>D1000</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Classe_II</span></div><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code>Safe</code></td>
+                    <td class="current"><code>Classe2; omniDEC; CE</code></td>
+                    <td class="idml"><span class="badge badge-ce">CE</span><span class="badge badge-classe_ii">Classe_II</span><span class="badge badge-omnidec">Omnidec</span><span class="badge badge-safe">Safe</span></td>
+                    <td><code></code></td>
+                    <td>Add Classe_II to certificazioni<br>Add Omnidec to certificazioni</td>
+                </tr>
+
+                <tr>
+                    <td>162</td>
+                    <td><strong>B614</strong></td>
+                    <td><div class="issue">Not found in IDML</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code></code></td>
+                    <td class="idml"></td>
+                    <td><code></code></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>163</td>
+                    <td><strong>B614</strong></td>
+                    <td><div class="issue">Not found in IDML</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code></code></td>
+                    <td class="idml"></td>
+                    <td><code></code></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>166</td>
+                    <td><strong>615BPR</strong></td>
+                    <td><div class="issue">Not found in IDML</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code></code></td>
+                    <td class="idml"></td>
+                    <td><code></code></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>167</td>
+                    <td><strong>615BPR</strong></td>
+                    <td><div class="issue">Not found in IDML</div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code></code></td>
+                    <td class="idml"></td>
+                    <td><code></code></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>204</td>
+                    <td><strong>XTO</strong></td>
+                    <td><div class="issue error">Missing badge: <span class="badge badge-missing">Omnidec</span></div></td>
+                    <td class="current"><code></code></td>
+                    <td class="current"><code></code></td>
+                    <td class="idml"><span class="badge badge-omnidec">Omnidec</span></td>
+                    <td><code></code></td>
+                    <td>Add Omnidec to certificazioni</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📁 Badge Icon Files Reference</h2>
+        <table>
+            <tr><th>Badge Name</th><th>Icon File</th></tr>
+            <tr><td><span class="badge badge-ce">CE</span></td><td><code>logo_CE_bw.ai</code></td></tr>
+            <tr><td><span class="badge badge-safe">Safe</span></td><td><code>logo_safezone_cmyk.ai</code></td></tr>
+            <tr><td><span class="badge badge-green">Green</span></td><td><code>logo_greentech_cmyk.ai</code></td></tr>
+            <tr><td><span class="badge badge-omnidec">Omnidec</span></td><td><code>logo_Omnidec_bw.ai</code></td></tr>
+            <tr><td><span class="badge badge-2easy">2Easy</span></td><td><code>logo_2easy_bw.ai</code></td></tr>
+            <tr><td><span class="badge badge-hybrid">Hybrid</span></td><td><code>logo_Hybrid_bw.ai</code></td></tr>
+            <tr><td>Classe_II</td><td><code>logo_double_insulation.ai</code></td></tr>
+            <tr><td>Wireless</td><td><code>logo_wireless.tif</code></td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>📱 QR Codes Reference</h2>
+        <table>
+            <tr><th>Product</th><th>Page</th><th>QR File</th></tr>
+<tr><td>746 C</td><td>122 - 123</td><td><code>QR-746c-844c_ITA.tif</code></td></tr><tr><td>746 C</td><td>122-123</td><td><code>QR-746c-844c_ITA.tif</code></td></tr><tr><td>844 C</td><td>124 - 125</td><td><code>QR-746c-844c_ITA.tif</code></td></tr><tr><td>S2500I</td><td>96-97</td><td><code>S2500I_ITA.tif</code> (current)</td></tr><tr><td>B614</td><td>160-161</td><td><code>B614</code> (current)</td></tr>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>
