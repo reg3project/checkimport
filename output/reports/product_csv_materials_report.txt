@@ -1,0 +1,156 @@
+================================================================================
+MATERIALS REPORT - Product CSV Generation
+================================================================================
+Generated: 2025-12-17 18:05:44
+
+## SUMMARY
+
+Total products generated: 108
+Products with SKUs: 105
+Products with related products: 10
+
+Products by tipo_layout:
+  - accessori: 26
+  - asta: 5
+  - automazione: 39
+  - barriera: 7
+  - kit special: 31
+
+## INPUT FILES USED
+
+- Data Entry CSV (primary source)
+  Path: /home/user/checkimport/input/learning/FAAC_Lista_Attivita_annotato.xlsx - Data Entry.csv
+  Status: EXISTS, 180 lines, 19,934 bytes
+
+- Model Codes Master (SKU/price reference)
+  Path: /home/user/checkimport/output/Model_Codes_Master.csv
+  Status: EXISTS, 236 lines, 26,056 bytes
+
+- QuiteGood Reference (cross-check)
+  Path: /home/user/checkimport/input/learning/FAAC_Complete_v2_Modello_Codice_Pagina_QuiteGood.csv
+  Status: EXISTS, 359 lines, 16,813 bytes
+
+- Barriere SKUs (barrier/arm data)
+  Path: /home/user/checkimport/output/barriere_skus.csv
+  Status: EXISTS, 77 lines, 39,698 bytes
+
+- Tech Spec Master (technical specs)
+  Path: /home/user/checkimport/output/Tech_Spec_Master_v1.csv
+  Status: EXISTS, 1081 lines, 132,691 bytes
+
+- SKU Consolidated (detailed attributes)
+  Path: /home/user/checkimport/output/sku_consolidated.csv
+  Status: EXISTS, 512 lines, 87,680 bytes
+
+## IDML FILES AVAILABLE (Source Documents)
+
+### Processing IDML: /home/user/checkimport/input/processing/IDML
+Total files: 142 IDML files
+
+Kit IDMLs: 32 files
+  - 028_LEADER_kit_PERFECT_60.idml
+  - 029_MASTER_kit_230V_PERFECT_60.idml
+  - 030_MASTER_kit_24V_PERFECT_60.idml
+  - 031_HANDY_kit_PERFECT_60.idml
+  - 032_ECO_kit_PERFECT_60.idml
+  ... and 27 more
+Motor/Operator IDMLs: 32 files
+  - 072-073_S418.idml
+  - 074-075_412.idml
+  - 076-077_413_230V.idml
+  - 078-079_415_230V.idml
+  - 080-081_415_24V.idml
+  ... and 27 more
+Barrier IDMLs: 10 files
+  - 160-163_B614.idml
+  - 164-167_615BPR.idml
+  - 168-171_620_Standard.idml
+  - 172-175_620_Rapida.idml
+  - 176-179_B680H.idml
+  ... and 5 more
+Radio System IDMLs: 8 files
+  - 200-201_Sistema_433-868MHz_FDS.idml
+  - 202-203_Sistema_433-868MHz_FDS_BD.idml
+  - 204-205_XTO_-_Sistema_868MHz_SLH-DS.idml
+  - 206-207_XTO_-_Sistema_433_MHz_SLH-SL-DS-RC.idml
+  - 208-209_Sistema_868MHz_SLH_LR.idml
+  ... and 3 more
+
+### Learning IDML: /home/user/checkimport/input/learning/IDML
+Total files: 14 IDML files
+
+Kit IDMLs: 5 files
+  - 028_LEADER_kit_PERFECT_60.idml
+  - 030_MASTER_kit_24V_PERFECT_60.idml
+  - 033_HIGH_kit_PERFECT_60.idml
+  - 034_POWER_kit_230V_PERFECT_60.idml
+  - 035_POWER_kit_24V_PERFECT_60.idml
+Motor/Operator IDMLs: 4 files
+  - 090-091_400.idml
+  - 098-099_770N_230V.idml
+  - 268_400_SI.idml
+  - 268_770N_230V_SI.idml
+Barrier IDMLs: 1 files
+  - 160-163_B614.idml
+Radio System IDMLs: 1 files
+  - 204-205_XTO_-_Sistema_868MHz_SLH-DS.idml
+
+Total IDML files: 156
+
+## TIPO_LAYOUT MAPPING RULES
+
+tipo_layout values (restricted to 5 types):
+  - kit special: Kit products (PERFECT KIT, CLASSIC KIT, etc.)
+  - automazione: Automation operators (gates, doors, shutters)
+  - barriera: Automatic barriers (B614, 615BPR, 620, B680H)
+  - asta: Barrier arms/bars (428xxx SKUs)
+  - accessori: Accessories, electronics, radio systems
+
+Category to tipo_layout mapping:
+  - Accessori per automazioni -> accessori
+  - Apparecchiature elettroniche di comando -> accessori
+  - Automazioni per ante a battente con motore interrato -> automazione
+  - Automazioni per ante a battente esterno -> automazione
+  - Automazioni per cancelli scorrevoli -> automazione
+  - Automazioni per porte a libro -> automazione
+  - Automazioni per porte basculanti -> automazione
+  - Automazioni per porte sezionali -> automazione
+  - Automazioni per serrande avvolgibili -> automazione
+  - Barriere automatiche -> barriera
+  - CLASSIC KIT -> kit special
+  - K3 kit -> kit special
+  - N2D kit -> kit special
+  - PERFECT KIT -> kit special
+  - TM2K KIT MINI -> kit special
+
+## OUTPUT FILES GENERATED
+
+- Product CSV: /home/user/checkimport/output/FAAC_products.csv
+- This report: /home/user/checkimport/output/reports/product_csv_materials_report.txt
+
+## DATA QUALITY NOTES
+
+1. SKU ordering: SKUs are listed with upper (first in table) going first
+2. prodotti_correlati: For accessory products, related products are model names
+   found on the same page but not the main product SKUs
+3. Barrier products: Main barrier SKUs separated from arm (asta) SKUs
+4. Excluded: 'Schemi Installazione' documents were not processed
+
+## PRODUCTS BY CATEGORY
+
+  - Accessori per automazioni: 24 products
+  - CLASSIC KIT: 19 products
+  - PERFECT KIT: 12 products
+  - Automazioni per cancelli scorrevoli: 12 products
+  - Barriere automatiche: 12 products
+  - Automazioni per ante a battente esterno: 11 products
+  - Automazioni per ante a battente con motore interrato: 5 products
+  - Automazioni per serrande avvolgibili: 4 products
+  - Automazioni per porte sezionali: 3 products
+  - Automazioni per porte basculanti: 2 products
+  - Automazioni per porte a libro: 2 products
+  - Apparecchiature elettroniche di comando: 2 products
+
+================================================================================
+END OF REPORT
+================================================================================
