@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Elena SKU Validation Analysis Report</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --info: #06b6d4;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --text: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+            border-radius: 16px;
+            color: white;
+        }
+
+        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        header p { opacity: 0.9; font-size: 1.1rem; }
+        header .file-info {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            font-family: monospace;
+        }
+
+        .alert {
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .alert-success {
+            background: #dcfce7;
+            border: 1px solid #86efac;
+            color: #166534;
+        }
+
+        .alert-warning {
+            background: #fef3c7;
+            border: 1px solid #fcd34d;
+            color: #92400e;
+        }
+
+        .alert-danger {
+            background: #fee2e2;
+            border: 1px solid #fca5a5;
+            color: #991b1b;
+        }
+
+        .alert h3 { margin-bottom: 0.5rem; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-card .label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-card.success .number { color: var(--success); }
+        .stat-card.warning .number { color: var(--warning); }
+        .stat-card.danger .number { color: var(--danger); }
+        .stat-card.info .number { color: var(--info); }
+        .stat-card.primary .number { color: var(--primary); }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section h2 .icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        section h2 .icon.success { background: #dcfce7; }
+        section h2 .icon.danger { background: #fee2e2; }
+        section h2 .icon.warning { background: #fef3c7; }
+        section h2 .icon.info { background: #cffafe; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.6rem 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--bg);
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        tr:hover { background: var(--bg); }
+
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 9999px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .badge-success { background: #dcfce7; color: #16a34a; }
+        .badge-danger { background: #fee2e2; color: #dc2626; }
+        .badge-warning { background: #fef3c7; color: #d97706; }
+        .badge-info { background: #cffafe; color: #0891b2; }
+        .badge-primary { background: #dbeafe; color: #1d4ed8; }
+
+        code {
+            background: var(--bg);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border);
+        }
+
+        .correction {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .correction .arrow {
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .pie-chart {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .pie-legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .pie-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .pie-legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 1px solid #86efac;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .summary-box h4 {
+            color: #166534;
+            margin-bottom: 0.75rem;
+        }
+
+        .summary-box ul {
+            margin-left: 1.25rem;
+            color: #15803d;
+        }
+
+        .action-item {
+            background: var(--bg);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .action-item.critical {
+            border-left-color: var(--danger);
+            background: #fef2f2;
+        }
+
+        .action-item.warning {
+            border-left-color: var(--warning);
+            background: #fffbeb;
+        }
+
+        .action-item h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .action-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            header h1 { font-size: 1.6rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SKU Validation Analysis Report</h1>
+            <p>Analysis of validation warnings for Data Elena P full SKU.xlsx</p>
+            <div class="file-info">input/processing/Data Elena P full SKU.xlsx</div>
+        </header>
+
+        <div class="alert alert-success">
+            <h3>Key Finding: 89% of "Missing" SKUs Actually Exist!</h3>
+            <p>Out of 147 unique entries reported as missing, <strong>131 (89%) are valid and exist in the SKU tab</strong>. This indicates a potential issue with the validator's matching logic, not with the data itself.</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card primary">
+                <div class="number">147</div>
+                <div class="label">Total Warnings</div>
+            </div>
+            <div class="stat-card success">
+                <div class="number">131</div>
+                <div class="label">False Positives</div>
+            </div>
+            <div class="stat-card danger">
+                <div class="number">4</div>
+                <div class="label">Truly Missing</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="number">4</div>
+                <div class="label">Incomplete SKUs</div>
+            </div>
+            <div class="stat-card info">
+                <div class="number">6</div>
+                <div class="label">Product Names</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="number">2</div>
+                <div class="label">Typos/Errors</div>
+            </div>
+        </div>
+
+        <section>
+            <h2><span class="icon success">&#10003;</span> False Positives - SKUs That Exist (131)</h2>
+            <p>These SKUs were reported as missing but <strong>actually exist</strong> in the <code>sku</code> tab. The validator may have a data type mismatch issue (comparing numbers to strings).</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>SKU Code</th>
+                        <th>Column</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>102011</code></td><td>sku_correlati</td><td>S418</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>790286</code></td><td>sku_correlati</td><td>S418</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>790305</code></td><td>sku_correlati</td><td>S418</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>104471</code></td><td>codici_modelli</td><td>412</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>790077</code></td><td>sku_correlati</td><td>413 230V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>104417</code></td><td>codici_modelli</td><td>415 230V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>720118</code></td><td>sku_correlati</td><td>415 230V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>1044171</code></td><td>codici_modelli</td><td>415 24V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>790076</code></td><td>sku_correlati</td><td>390 230V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>720119</code></td><td>sku_correlati</td><td>390 230V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>720309</code></td><td>sku_correlati</td><td>390 230V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>390923</code></td><td>sku_correlati</td><td>S450H</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>390926</code></td><td>sku_correlati</td><td>770N 24V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>404035</code></td><td>sku_correlati</td><td>770N 24V</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>490112</code></td><td>sku_correlati</td><td>S800H ENC</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td><code>490113</code></td><td>sku_correlati</td><td>S800H ENC</td><td><span class="badge badge-success">EXISTS</span></td></tr>
+                    <tr><td colspan="4" style="text-align: center; color: var(--text-muted);">... and 115 more SKUs that exist in the sku tab</td></tr>
+                </tbody>
+            </table>
+
+            <div class="summary-box">
+                <h4>Validator Issue Detected</h4>
+                <p>The validator is likely comparing values with different data types. Suggested fixes:</p>
+                <ul>
+                    <li>Convert all SKU values to strings before comparison</li>
+                    <li>Trim whitespace from both source and target values</li>
+                    <li>Use case-insensitive matching if applicable</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="icon danger">!</span> Truly Missing SKUs (4)</h2>
+            <p>These SKUs need to be <strong>added to the <code>sku</code> tab</strong> as they don't exist:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>SKU Code</th>
+                        <th>Column</th>
+                        <th>Product</th>
+                        <th>Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>110123</code></td>
+                        <td>codici_modelli</td>
+                        <td>550</td>
+                        <td><span class="badge badge-danger">ADD TO SKU TAB</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>110124</code></td>
+                        <td>codici_modelli</td>
+                        <td>550</td>
+                        <td><span class="badge badge-danger">ADD TO SKU TAB</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>110125</code></td>
+                        <td>codici_modelli</td>
+                        <td>550</td>
+                        <td><span class="badge badge-danger">ADD TO SKU TAB</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>110127</code></td>
+                        <td>codici_modelli</td>
+                        <td>550</td>
+                        <td><span class="badge badge-danger">ADD TO SKU TAB</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 1rem; color: var(--text-muted);">
+                <strong>Note:</strong> All 4 missing SKUs belong to product "550" and are referenced in <code>codici_modelli</code>.
+                Similar SKUs like 110553, 110554, 110558, 110562 exist in the sku tab, suggesting these are valid model codes that need to be added.
+            </p>
+        </section>
+
+        <section>
+            <h2><span class="icon warning">&#9888;</span> Incomplete SKU Codes (4)</h2>
+            <p>These entries in <code>schema_installazione</code> for product <strong>392 C</strong> are missing prefix digits:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Current Value</th>
+                        <th></th>
+                        <th>Correct SKU</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code style="color: var(--danger);">275101</code></td>
+                        <td class="arrow">→</td>
+                        <td><code style="color: var(--success);">71275101</code></td>
+                        <td><span class="badge badge-warning">FIX IN PRODOTTI</span></td>
+                    </tr>
+                    <tr>
+                        <td><code style="color: var(--danger);">651001</code></td>
+                        <td class="arrow">→</td>
+                        <td><code style="color: var(--success);">712651001</code></td>
+                        <td><span class="badge badge-warning">FIX IN PRODOTTI</span></td>
+                    </tr>
+                    <tr>
+                        <td><code style="color: var(--danger);">652001</code></td>
+                        <td class="arrow">→</td>
+                        <td><code style="color: var(--success);">712652001</code></td>
+                        <td><span class="badge badge-warning">FIX IN PRODOTTI</span></td>
+                    </tr>
+                    <tr>
+                        <td><code style="color: var(--danger);">675201</code></td>
+                        <td class="arrow">→</td>
+                        <td><code style="color: var(--success);">10675201</code></td>
+                        <td><span class="badge badge-warning">FIX IN PRODOTTI</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2><span class="icon info">&#8505;</span> Product Names Used as SKUs (6)</h2>
+            <p>These entries are <strong>product names</strong>, not SKU codes. They should be validated against <code>nome_prodotto</code> in the prodotti tab, not against <code>codice_sku</code> in the sku tab:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Value</th>
+                        <th>Found In Column</th>
+                        <th>Product</th>
+                        <th>Issue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>POWER 230V kit</code></td>
+                        <td>schema_installazione-Nome Kit</td>
+                        <td>392 C</td>
+                        <td><span class="badge badge-info">PRODUCT NAME</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>POWER 230V kit PERFECT 60</code></td>
+                        <td>schema_installazione-Nome Kit</td>
+                        <td>392 C</td>
+                        <td><span class="badge badge-info">PRODUCT NAME</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>HIGH kit</code></td>
+                        <td>schema_installazione-Nome Kit</td>
+                        <td>392 C</td>
+                        <td><span class="badge badge-info">PRODUCT NAME</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>XF 868 MHz</code></td>
+                        <td>prodotti_correlati</td>
+                        <td>XTO</td>
+                        <td><span class="badge badge-info">PRODUCT NAME</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>RP 868 SLH-DS</code></td>
+                        <td>prodotti_correlati</td>
+                        <td>XTO</td>
+                        <td><span class="badge badge-info">PRODUCT NAME</span></td>
+                    </tr>
+                    <tr>
+                        <td><code>RP2 868 SLH-DS</code></td>
+                        <td>prodotti_correlati</td>
+                        <td>XTO</td>
+                        <td><span class="badge badge-info">PRODUCT NAME</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="summary-box">
+                <h4>Validator Enhancement Needed</h4>
+                <p>The validator should distinguish between:</p>
+                <ul>
+                    <li><code>sku_correlati</code>, <code>codici_modelli</code> → validate against <code>codice_sku</code></li>
+                    <li><code>prodotti_correlati</code>, <code>schema_installazione-Nome Kit</code> → validate against <code>nome_prodotto</code></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="icon warning">&#9888;</span> Typos and Data Entry Errors (2)</h2>
+
+            <div class="action-item critical">
+                <h4>Concatenated SKUs: <code>790062390432</code></h4>
+                <p>Product: 580 - 593 | Column: sku_correlati</p>
+                <p><strong>Fix:</strong> Split into <code>790062;390432</code> (missing semicolon separator)</p>
+            </div>
+
+            <div class="action-item warning">
+                <h4>Empty Entry in sku_correlati</h4>
+                <p>Products: 741 C, 615BPR</p>
+                <p><strong>Fix:</strong> Remove empty <code>;</code> entries from the sku_correlati values</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Summary of Required Actions</h2>
+
+            <div class="action-item critical">
+                <h4>1. Fix Validator Logic (High Priority)</h4>
+                <p>89% of warnings are false positives. The validator needs to properly compare string values and handle data types correctly.</p>
+            </div>
+
+            <div class="action-item critical">
+                <h4>2. Add 4 Missing SKUs to sku tab</h4>
+                <p>Add: 110123, 110124, 110125, 110127 (all for product "550")</p>
+            </div>
+
+            <div class="action-item warning">
+                <h4>3. Fix Incomplete SKUs in prodotti tab (392 C)</h4>
+                <p>Correct: 275101→71275101, 651001→712651001, 652001→712652001, 675201→10675201</p>
+            </div>
+
+            <div class="action-item">
+                <h4>4. Fix Typo in prodotti tab (580 - 593)</h4>
+                <p>Change: 790062390432 → 790062;390432</p>
+            </div>
+
+            <div class="action-item">
+                <h4>5. Update Validator for Product Names</h4>
+                <p>Validate prodotti_correlati against nome_prodotto, not codice_sku</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Data Elena P full SKU.xlsx Validation Analysis</p>
+            <p>Generated: December 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
