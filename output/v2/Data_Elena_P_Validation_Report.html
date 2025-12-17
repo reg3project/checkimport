@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Elena P Validation Report</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --info: #06b6d4;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --text: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+            border-radius: 16px;
+            color: white;
+        }
+
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { opacity: 0.9; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-card .label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .stat-card.danger .number { color: var(--danger); }
+        .stat-card.warning .number { color: var(--warning); }
+        .stat-card.success .number { color: var(--success); }
+        .stat-card.info .number { color: var(--info); }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        th, td {
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--bg);
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:hover { background: #f1f5f9; }
+
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .badge-danger { background: #fee2e2; color: #dc2626; }
+        .badge-warning { background: #fef3c7; color: #d97706; }
+        .badge-success { background: #dcfce7; color: #16a34a; }
+        .badge-info { background: #cffafe; color: #0891b2; }
+
+        code {
+            background: #f1f5f9;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .issue-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .issue-list li {
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            background: #fef2f2;
+            border-radius: 6px;
+            border-left: 3px solid var(--danger);
+            font-size: 0.85rem;
+        }
+
+        .issue-list li.warning {
+            background: #fffbeb;
+            border-left-color: var(--warning);
+        }
+
+        .missing-product {
+            background: #fef2f2;
+            padding: 0.5rem 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        .page-range {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 1px solid #fcd34d;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-box h3 {
+            color: #92400e;
+            margin-bottom: 0.75rem;
+        }
+
+        .summary-box ul {
+            margin-left: 1.5rem;
+            color: #78350f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .scroll-table {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Data Elena P full SKU.xlsx - Validation Report</h1>
+            <p>Comparison against IDML source data (Pages 1-157)</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card info">
+                <div class="number">47</div>
+                <div class="label">Elena Products</div>
+            </div>
+            <div class="stat-card info">
+                <div class="number">66</div>
+                <div class="label">IDML Products (≤157)</div>
+            </div>
+            <div class="stat-card danger">
+                <div class="number">31</div>
+                <div class="label">Missing Products</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="number">4</div>
+                <div class="label">Page Mismatches</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="number">37</div>
+                <div class="label">Cell Issues</div>
+            </div>
+        </div>
+
+        <div class="summary-box">
+            <h3>Key Findings</h3>
+            <ul>
+                <li><strong>31 products missing</strong> from Elena (mostly kit products from pages 028-061)</li>
+                <li><strong>4 products</strong> have incorrect page ranges (end page differs from IDML)</li>
+                <li><strong>Badge format issue:</strong> Elena uses <code>Safe|&lt;b&gt;text&lt;/b&gt;</code> format, which doesn't match simple badge names in comparison</li>
+                <li><strong>QR codes:</strong> 2 products have QR codes in IDML that are not recorded in Elena (746 C, 844 C)</li>
+                <li><strong>Missing badges:</strong> Some products in Elena are missing Omnidec, 2Easy, Classe_II badges that exist in IDML</li>
+            </ul>
+        </div>
+
+        <section>
+            <h2>1. Missing Products (31 products not in Elena)</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-muted);">These products exist in IDML (pages 1-157) but are not found in Elena's prodotti sheet:</p>
+
+            <div class="scroll-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Page</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><span class="page-range">028</span></td><td>LEADER kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">029</span></td><td>MASTER kit 230V PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">030</span></td><td>MASTER kit 24V PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">031</span></td><td>HANDY kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">032</span></td><td>ECO kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">033</span></td><td>HIGH kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">034</span></td><td>POWER kit 230V PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">035</span></td><td>POWER kit 24V PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">036</span></td><td>PRATICO C kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">037</span></td><td>DELTA 2 kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">038</span></td><td>DELTA 3 kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">039-040</span></td><td>RAPID kit PERFECT 60</td><td>Kit PERFECT 60</td></tr>
+                        <tr><td><span class="page-range">042</span></td><td>SAFE&GREEN Retrofit kit</td><td>Kit speciali</td></tr>
+                        <tr><td><span class="page-range">043</span></td><td>HYBRID kit</td><td>Kit speciali</td></tr>
+                        <tr><td><span class="page-range">044</span></td><td>LEADER kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">045</span></td><td>TRENDY kit 230V</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">046</span></td><td>MASTER kit 230V</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">047</span></td><td>MASTER kit 24V</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">048</span></td><td>HANDY kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">049</span></td><td>ECO kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">050</span></td><td>ENERGY kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">051</span></td><td>HIGH KIT</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">052</span></td><td>POWER kit 230V</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">053</span></td><td>POWER kit 24V</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">054</span></td><td>PRATICO C kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">055</span></td><td>DELTA 2 kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">056</span></td><td>DELTA 3 kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">057</span></td><td>RAPID kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">058</span></td><td>SOLID kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">059</span></td><td>DOLPHIN kit</td><td>Kit standard</td></tr>
+                        <tr><td><span class="page-range">060-061</span></td><td>ROTOR Kit</td><td>Kit standard</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Page Range Mismatches (4 products)</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-muted);">These products have different page ranges in Elena vs IDML:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Elena Pages</th>
+                        <th>IDML Pages</th>
+                        <th>Issue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S450H</td>
+                        <td><code>92-93</code></td>
+                        <td><code>92-94</code></td>
+                        <td><span class="badge badge-warning">End page differs (+1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>S800 ENC</td>
+                        <td><code>104-105</code></td>
+                        <td><code>104-106</code></td>
+                        <td><span class="badge badge-warning">End page differs (+1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>C851</td>
+                        <td><code>130-131</code></td>
+                        <td><code>130-132</code></td>
+                        <td><span class="badge badge-warning">End page differs (+1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>580 - 593</td>
+                        <td><code>150-151</code></td>
+                        <td><code>150-152</code></td>
+                        <td><span class="badge badge-warning">End page differs (+1)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>3. Badge/Certification Issues</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-muted);">Products where badge_sistemi or certificazioni don't match IDML:</p>
+
+            <div class="scroll-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Page</th>
+                            <th>Product</th>
+                            <th>Missing in Elena</th>
+                            <th>Issue Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>116-117</td><td>740 C</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>108-109</td><td>C4000I</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>110-111</td><td>C720</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>112-113</td><td>C721</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>120-121</td><td>741 C</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>122-123</td><td>746 C</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>124-125</td><td>844 C</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>134-135</td><td>D600</td><td>Omnidec, Classe_II</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>136-137</td><td>D700 HS</td><td>Omnidec, Classe_II</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>138-139</td><td>D1000</td><td>Omnidec, Classe_II</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>92-93</td><td>S450H</td><td>2Easy, Hybrid</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>96-97</td><td>S2500I</td><td>2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>102-103</td><td>S800H ENC</td><td>2Easy, Hybrid</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>104-105</td><td>S800 ENC</td><td>2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                        <tr><td>84-85</td><td>392 C</td><td>Omnidec, 2Easy</td><td><span class="badge badge-danger">Missing badges</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. QR Code Issues</h2>
+            <p style="margin-bottom: 1rem; color: var(--text-muted);">Products with QR code discrepancies:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Product</th>
+                        <th>IDML QR Code</th>
+                        <th>Elena codice_qr</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>122-123</td>
+                        <td>746 C</td>
+                        <td><code>QR-746c-844c_ITA.tif</code></td>
+                        <td>(empty)</td>
+                        <td><span class="badge badge-danger">Missing in Elena</span></td>
+                    </tr>
+                    <tr>
+                        <td>124-125</td>
+                        <td>844 C</td>
+                        <td><code>QR-746c-844c_ITA.tif</code></td>
+                        <td>(empty)</td>
+                        <td><span class="badge badge-danger">Missing in Elena</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>5. Badge Format Observation</h2>
+            <p style="margin-bottom: 1rem;">Elena uses a special format for <code>badge_sistemi</code> that includes HTML styling:</p>
+
+            <div style="background: #f1f5f9; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; font-family: monospace; font-size: 0.85rem; overflow-x: auto;">
+                Safe|&lt;b&gt;Sistema 230V SAFEzone:&lt;/b&gt;&lt;br&gt;412 + E045S o E145S + SAFEcoder
+            </div>
+
+            <p>This format combines:</p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li><strong>Badge name</strong> (before the pipe): Safe, Green, etc.</li>
+                <li><strong>HTML description</strong> (after the pipe): Styled text with &lt;b&gt; and &lt;br&gt; tags</li>
+            </ul>
+
+            <p style="margin-top: 1rem; color: var(--text-muted);">
+                This format is valid but doesn't directly match simple badge names in IDML. The validation correctly identifies the badge (Safe/Green) but flags the formatted description as "not found" in simple comparison.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Duplicate Page Entries</h2>
+            <p style="color: var(--text-muted);">Some products appear multiple times with the same page numbers:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Products</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>116-117</td>
+                        <td>740 C (appears twice)</td>
+                        <td><span class="badge badge-warning">Duplicate</span></td>
+                    </tr>
+                    <tr>
+                        <td>122-123</td>
+                        <td>746 C (appears twice)</td>
+                        <td><span class="badge badge-warning">Duplicate</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>7. Recommended Actions</h2>
+
+            <ul class="issue-list">
+                <li><strong>Add 31 missing kit products</strong> (pages 028-061) to the prodotti sheet</li>
+                <li><strong>Fix page ranges</strong> for S450H, S800 ENC, C851, 580-593 (add +1 to end page)</li>
+                <li><strong>Add missing badges:</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Omnidec: 740 C, C4000I, C720, C721, 741 C, 746 C, 844 C, D600, D700 HS, D1000, 392 C</li>
+                        <li>2Easy: C4000I, C720, C721, 741 C, 746 C, 844 C, S450H, S2500I, S800H ENC, S800 ENC, 392 C</li>
+                        <li>Classe_II: D600, D700 HS, D1000</li>
+                        <li>Hybrid: S450H, S800H ENC</li>
+                    </ul>
+                </li>
+                <li><strong>Add QR codes</strong> for 746 C and 844 C: <code>QR-746c-844c_ITA.tif</code></li>
+                <li class="warning"><strong>Remove duplicate entries</strong> for 740 C and 746 C</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Data Elena P full SKU.xlsx Validation Report</p>
+            <p>Compared against IDML source files | Pages 1-157</p>
+            <p>Generated: December 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
