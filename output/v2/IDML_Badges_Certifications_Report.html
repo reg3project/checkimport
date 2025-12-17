@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAAC IDML Badges & Certifications Analysis</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --text: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            border-radius: 16px;
+            color: white;
+        }
+
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { opacity: 0.9; font-size: 1.1rem; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-card .number.success { color: var(--success); }
+        .stat-card .number.warning { color: var(--warning); }
+        .stat-card .number.danger { color: var(--danger); }
+        .stat-card .number.primary { color: var(--primary); }
+
+        .stat-card .label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section h2::before {
+            content: '';
+            width: 4px;
+            height: 1.5rem;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--bg);
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        tr:hover { background: var(--bg); }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin: 0.1rem;
+        }
+
+        .badge-ce { background: #dbeafe; color: #1d4ed8; }
+        .badge-safe { background: #dcfce7; color: #16a34a; }
+        .badge-green { background: #d1fae5; color: #059669; }
+        .badge-omnidec { background: #fef3c7; color: #d97706; }
+        .badge-2easy { background: #f3e8ff; color: #7c3aed; }
+        .badge-hybrid { background: #cffafe; color: #0891b2; }
+        .badge-missing { background: #fee2e2; color: #dc2626; }
+
+        .issue-card {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .issue-card h3 {
+            color: #dc2626;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .issue-card p {
+            color: #7f1d1d;
+            font-size: 0.9rem;
+        }
+
+        .badge-ref {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem;
+            background: var(--bg);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-ref code {
+            background: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border);
+        }
+
+        .progress-bar {
+            height: 24px;
+            background: var(--bg);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .progress-bar .fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .correction-box {
+            background: #fefce8;
+            border: 1px solid #fde047;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .correction-box h4 {
+            color: #a16207;
+            margin-bottom: 0.5rem;
+        }
+
+        .correction-box ul {
+            margin-left: 1.5rem;
+            color: #854d0e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            header h1 { font-size: 1.75rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Badges & Certifications Analysis</h1>
+            <p>FAAC Listino 2024 - IDML Document Quality Report</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number primary">141</div>
+                <div class="label">Total Pages</div>
+            </div>
+            <div class="stat-card">
+                <div class="number success">13</div>
+                <div class="label">Pages with Badges</div>
+            </div>
+            <div class="stat-card">
+                <div class="number warning">128</div>
+                <div class="label">Pages without Badges</div>
+            </div>
+            <div class="stat-card">
+                <div class="number danger">4</div>
+                <div class="label">Issues Found</div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Issues Requiring Correction</h2>
+            <p>The following pages have known badge/certification issues that need to be fixed:</p>
+
+            <div class="issue-card">
+                <h3>Page 098-099: 770N 230V</h3>
+                <p>Missing all badges - should have <span class="badge badge-safe">Safe</span> <span class="badge badge-green">Green</span> <span class="badge badge-ce">CE</span></p>
+            </div>
+
+            <div class="issue-card">
+                <h3>Page 100-101: 770N 24V</h3>
+                <p>Missing all badges - should have <span class="badge badge-safe">Safe</span> <span class="badge badge-green">Green</span> <span class="badge badge-ce">CE</span></p>
+            </div>
+
+            <div class="issue-card">
+                <h3>Page 268: 770N 230V SI (Schemi Installazione)</h3>
+                <p>Missing all badges - should have <span class="badge badge-safe">Safe</span> <span class="badge badge-green">Green</span> <span class="badge badge-ce">CE</span></p>
+            </div>
+
+            <div class="issue-card">
+                <h3>Page 269: 770N 24V SI (Schemi Installazione)</h3>
+                <p>Missing all badges - should have <span class="badge badge-safe">Safe</span> <span class="badge badge-green">Green</span> <span class="badge badge-ce">CE</span></p>
+            </div>
+
+            <div class="correction-box">
+                <h4>Suggested Correction</h4>
+                <p>Add the following linked images to the Certifications_Declarations_gruppo area:</p>
+                <ul>
+                    <li><code>logo_safezone_cmyk.ai</code> (Safe badge)</li>
+                    <li><code>logo_greentech_cmyk.ai</code> (Green badge)</li>
+                    <li><code>logo_CE_bw.ai</code> (CE certification)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Badge Usage Summary</h2>
+            <p>Distribution of badges across all product pages:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Badge</th>
+                        <th>File Name</th>
+                        <th>Pages Using</th>
+                        <th>Coverage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge badge-ce">CE</span></td>
+                        <td><code>logo_CE_bw.ai</code></td>
+                        <td>13</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 9.2%; background: #2563eb;">9%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-safe">Safe</span></td>
+                        <td><code>logo_safezone_cmyk.ai</code></td>
+                        <td>12</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 8.5%; background: #22c55e;">8%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-2easy">2Easy</span></td>
+                        <td><code>logo_2easy_bw.ai</code></td>
+                        <td>10</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 7.1%; background: #7c3aed;">7%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-omnidec">Omnidec</span></td>
+                        <td><code>logo_Omnidec_bw.ai</code></td>
+                        <td>10</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 7.1%; background: #d97706;">7%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-green">Green</span></td>
+                        <td><code>logo_greentech_cmyk.ai</code></td>
+                        <td>4</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 2.8%; background: #059669;">3%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Pages with Badges (Reference)</h2>
+            <p>These pages have correctly implemented badge/certification icons:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Product</th>
+                        <th>Badges Present</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>028</td>
+                        <td>LEADER kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>029</td>
+                        <td>MASTER kit 230V PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>030</td>
+                        <td>MASTER kit 24V PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>031</td>
+                        <td>HANDY kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>032</td>
+                        <td>ECO kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-green">Green</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>033</td>
+                        <td>HIGH kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-green">Green</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>034</td>
+                        <td>POWER kit 230V PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>035</td>
+                        <td>POWER kit 24V PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>036</td>
+                        <td>PRATICO C kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>037</td>
+                        <td>DELTA 2 kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>038</td>
+                        <td>DELTA 3 kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-green">Green</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>039-040</td>
+                        <td>RAPID kit PERFECT 60</td>
+                        <td>
+                            <span class="badge badge-2easy">2Easy</span>
+                            <span class="badge badge-ce">CE</span>
+                            <span class="badge badge-green">Green</span>
+                            <span class="badge badge-omnidec">Omnidec</span>
+                            <span class="badge badge-safe">Safe</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Badge File Reference</h2>
+            <p>Reference list of all badge/certification image files used in the document:</p>
+
+            <div class="badge-ref">
+                <span class="badge badge-ce">CE</span>
+                <code>logo_CE_bw.ai</code>
+                <span style="color: var(--text-muted);">CE certification mark</span>
+            </div>
+
+            <div class="badge-ref">
+                <span class="badge badge-safe">Safe</span>
+                <code>logo_safezone_cmyk.ai</code>
+                <span style="color: var(--text-muted);">SafeZone safety certification</span>
+            </div>
+
+            <div class="badge-ref">
+                <span class="badge badge-green">Green</span>
+                <code>logo_greentech_cmyk.ai</code>
+                <span style="color: var(--text-muted);">GreenTech eco-friendly certification</span>
+            </div>
+
+            <div class="badge-ref">
+                <span class="badge badge-omnidec">Omnidec</span>
+                <code>logo_Omnidec_bw.ai</code>
+                <span style="color: var(--text-muted);">Omnidec compatibility</span>
+            </div>
+
+            <div class="badge-ref">
+                <span class="badge badge-2easy">2Easy</span>
+                <code>logo_2easy_bw.ai</code>
+                <span style="color: var(--text-muted);">2Easy system compatibility</span>
+            </div>
+
+            <div class="badge-ref">
+                <span class="badge badge-hybrid">Hybrid</span>
+                <code>logo_Hybrid_bw.ai</code>
+                <span style="color: var(--text-muted);">Hybrid power system</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Observation</h2>
+            <p>Only <strong>13 out of 141 pages (9%)</strong> have badge images linked in their Spreads. This could indicate:</p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Badges may be applied via Master Page templates (not detected in page spreads)</li>
+                <li>Many product pages are missing their badge/certification graphics</li>
+                <li>Badge placement may use a different mechanism (inline graphics, XML data)</li>
+            </ul>
+            <p style="margin-top: 1rem;">The pages 028-040 (PERFECT 60 kit series) serve as the reference for correct badge implementation.</p>
+        </section>
+
+        <footer>
+            <p>Generated from FAAC Listino 2024 IDML Analysis</p>
+            <p>Report Date: December 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
