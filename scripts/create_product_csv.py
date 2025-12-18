@@ -445,6 +445,12 @@ def create_product_rows() -> List[Dict]:
                 if rp not in all_related:
                     all_related.append(rp)
 
+        # Create page reference (e.g., "72" or "72-73" for multi-page products)
+        if page_start == page_end:
+            pagina_ref = str(page_start) if page_start > 0 else ''
+        else:
+            pagina_ref = f"{page_start}-{page_end}" if page_start > 0 else ''
+
         # Create product row
         product_row = {
             'categoria_prodotto': current_categoria,
@@ -453,7 +459,8 @@ def create_product_rows() -> List[Dict]:
             'tipo_layout': tipo_layout,
             'descrizione_categoria': descrizione,
             'codici_modelli': ';'.join(main_skus) if main_skus else '',
-            'prodotti_correlati': ';'.join(all_related) if all_related else ''
+            'prodotti_correlati': ';'.join(all_related) if all_related else '',
+            'pagina': pagina_ref
         }
 
         products.append(product_row)
@@ -469,7 +476,8 @@ def create_product_rows() -> List[Dict]:
                     'tipo_layout': "asta",
                     'descrizione_categoria': f"Aste per barriera {prodotto}",
                     'codici_modelli': ';'.join(arm_skus),
-                    'prodotti_correlati': prodotto
+                    'prodotti_correlati': prodotto,
+                    'pagina': pagina_ref  # Same page as parent barrier
                 }
                 products.append(asta_row)
 
@@ -485,7 +493,8 @@ def write_csv(products: List[Dict], output_path: Path):
         'tipo_layout',
         'descrizione_categoria',
         'codici_modelli',
-        'prodotti_correlati'
+        'prodotti_correlati',
+        'pagina'
     ]
 
     with open(output_path, 'w', encoding='utf-8', newline='') as f:
