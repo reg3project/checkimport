@@ -73,6 +73,25 @@ Extract any `<Content>` tags that contain:
 
 ---
 
+## MANDATORY: Prove You Read the Files
+
+Before proceeding to Step 3, you MUST paste the raw `<Content>` tags from each Story file showing the attributes you found.
+
+**Do not summarize - show the actual XML excerpts.**
+
+Example:
+```
+From Story_uf1.xml:
+- Line 165: <Content>Tensione di alimentazione di rete</Content>
+- Line 172: <Content>220-240V~ 50/60 Hz</Content>
+- Line 179: <Content>Motore elettrico</Content>
+...
+```
+
+This proves you read the files fresh and prevents using cached/wrong values.
+
+---
+
 ## Step 3: Build Complete Data Map from IDML
 
 After reading ALL Story files, create these tables:
