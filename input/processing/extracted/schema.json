@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product Extraction",
+  "description": "Extracted product data from IDML and PDF sources",
+  "type": "object",
+  "properties": {
+    "product_name": {
+      "type": "string",
+      "description": "Product identifier (e.g., '560', '746 C')"
+    },
+    "catalog_pages": {
+      "type": "string",
+      "description": "Page range in catalog (e.g., '156-157')"
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "idml_folder": { "type": "string" },
+        "pdf_file": { "type": "string" },
+        "story_files": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "extracted_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sku": { "type": "string" },
+          "name": { "type": "string" },
+          "price": { "type": "string" }
+        },
+        "required": ["sku", "name"]
+      }
+    },
+    "tech_specs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attribute_it": {
+            "type": "string",
+            "description": "Italian attribute name from IDML"
+          },
+          "csv_column": {
+            "type": "string",
+            "description": "Matching CSV column name (if known)"
+          },
+          "values": {
+            "type": "object",
+            "description": "SKU -> value mapping",
+            "additionalProperties": { "type": "string" }
+          },
+          "shared": {
+            "type": "boolean",
+            "description": "True if same value for all models (ColumnSpan=2)"
+          },
+          "source": {
+            "type": "string",
+            "enum": ["idml", "pdf", "both"],
+            "description": "Where this data was found"
+          }
+        },
+        "required": ["attribute_it", "values", "source"]
+      }
+    },
+    "descriptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string" },
+          "text": { "type": "string" },
+          "source": { "type": "string", "enum": ["idml", "pdf"] }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "discrepancies": {
+      "type": "array",
+      "description": "Differences found between IDML and PDF",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attribute": { "type": "string" },
+          "idml_value": { "type": "string" },
+          "pdf_value": { "type": "string" },
+          "resolution": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["product_name", "sources", "models", "tech_specs"]
+}

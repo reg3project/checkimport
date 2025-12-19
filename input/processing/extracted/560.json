@@ -1,0 +1,140 @@
+{
+  "product_name": "560",
+  "catalog_pages": "156-157",
+  "sources": {
+    "idml_folder": "input/processing/IDML_unzipped/156-157_560/",
+    "pdf_file": "input/processing/PDF Single Products/pages_156-157_Automazioni_per_porte_a_libro_560.pdf",
+    "story_files": [
+      "Story_uc83.xml",
+      "Story_uf1.xml"
+    ]
+  },
+  "extracted_at": "2025-12-19T00:00:00Z",
+  "models": [
+    { "sku": "104561", "name": "560 CBAC", "price": "1.527,00" },
+    { "sku": "104562", "name": "560 SB", "price": "1.465,00" }
+  ],
+  "tech_specs": [
+    {
+      "attribute_it": "Tensione di alimentazione di rete",
+      "csv_column": "tensione_alimentazione",
+      "values": { "104561": "220-240V~ 50/60 Hz", "104562": "220-240V~ 50/60 Hz" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Motore elettrico",
+      "csv_column": "tipo_motore",
+      "values": { "104561": "Asincrono monofase", "104562": "Asincrono monofase" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Potenza max",
+      "csv_column": "potenza_massima",
+      "values": { "104561": "220 W", "104562": "220 W" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Coppia max",
+      "csv_column": "coppia_massima",
+      "values": { "104561": "320 Nm (*)", "104562": "320 Nm (*)" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Forza max di spinta",
+      "csv_column": "forza_spinta",
+      "values": { "104561": "-", "104562": "-" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Velocità angolare max",
+      "csv_column": "velocita_angolare",
+      "values": { "104561": "12,4 °/s (*)", "104562": "12,4 °/s (*)" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Lunghezza max anta",
+      "csv_column": "larghezza_anta_max",
+      "values": { "104561": "1,50 m (singolo pannello)", "104562": "2,00 m (singolo pannello)" },
+      "shared": false,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Temperatura ambiente di esercizio",
+      "csv_column": "temperatura_esercizio",
+      "values": { "104561": "-20 °C ÷ +55 °C", "104562": "-20 °C ÷ +55 °C" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Termoprotezione",
+      "csv_column": "termoprotezione",
+      "values": { "104561": "120°C", "104562": "120°C" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Grado di protezione",
+      "csv_column": "grado_protezione_ip",
+      "values": { "104561": "IP55", "104562": "IP55" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Peso",
+      "csv_column": "peso_unita",
+      "values": { "104561": "12 Kg", "104562": "12 Kg" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Frequenza di utilizzo",
+      "csv_column": "frequenza_utilizzo",
+      "values": { "104561": "80 cicli/ora", "104562": "80 cicli/ora" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Dimensioni (LxPxH)",
+      "csv_column": "dimensioni",
+      "values": { "104561": "480 x 85 x 110 mm", "104562": "480 x 85 x 110 mm" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Apparecchiatura elettronica",
+      "csv_column": "scheda_elettronica",
+      "values": { "104561": "Non compresa", "104562": "Non compresa" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Portata gruppo motore-pompa",
+      "csv_column": "portata_pompa",
+      "values": { "104561": "1 lpm (*)", "104562": "1 lpm (*)" },
+      "shared": true,
+      "source": "idml"
+    },
+    {
+      "attribute_it": "Tipo di olio",
+      "csv_column": "tipo_olio",
+      "values": { "104561": "FAAC HP OIL", "104562": "FAAC HP OIL" },
+      "shared": true,
+      "source": "idml"
+    }
+  ],
+  "descriptions": [
+    {
+      "type": "product_category",
+      "text": "Automazioni per porte a libro",
+      "source": "idml"
+    }
+  ],
+  "notes": [],
+  "discrepancies": []
+}

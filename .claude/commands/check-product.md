@@ -1,15 +1,15 @@
 # Check Product Data Integrity
 
-Validate product data by extracting ALL information from IDML source files and checking if it exists correctly in CSV output files.
+Validate product data by comparing source files (IDML/PDF) against CSV output files.
 
-## CRITICAL: IDML-First Workflow
+## CRITICAL: Source-First Workflow
 
-**ALWAYS start fresh from IDML files. NEVER use cached values or start from CSV.**
+**ALWAYS start from source files. NEVER use memory or start from CSV.**
 
-The IDML unzipped files are the SOURCE OF TRUTH. Your job is to:
-1. Extract ALL data from IDML
-2. Build a complete attribute map
-3. Then check if CSV matches
+The source files are the SOURCE OF TRUTH:
+1. **Extracted JSON** (preferred if exists) - `input/processing/extracted/{product}.json`
+2. **IDML files** (if no JSON) - `input/processing/IDML_unzipped/`
+3. **PDF files** (visual cross-check) - `input/processing/PDF Single Products/`
 
 ---
 
@@ -22,19 +22,30 @@ Wait for response before proceeding.
 
 ---
 
-## Step 2: Locate and READ IDML Source Files
+## Step 2: Load Product Data
 
-### 2.1 Find the IDML Folder
+### 2.1 Check for Extracted JSON (Fast Path)
+```bash
+ls input/processing/extracted/{product}*.json
+```
+
+**If JSON exists:** Read it and skip to Step 4 (validation).
+
+**If no JSON:** Continue to Step 2.2 to extract from IDML.
+
+### 2.2 Locate IDML Source Files (if no JSON)
+
+#### Find the IDML Folder
 ```bash
 ls input/processing/IDML_unzipped/ | grep -i "{product_name}"
 ```
 
-### 2.2 List ALL Story Files
+#### List ALL Story Files
 ```bash
 ls input/processing/IDML_unzipped/{folder}/Stories/
 ```
 
-### 2.3 READ EACH Story File NOW
+#### READ EACH Story File NOW
 
 **YOU MUST read each Story_*.xml file using the Read tool.** Do not skip this step or use values from memory.
 
@@ -94,7 +105,9 @@ After reading ALL Story files, create these tables:
 
 ---
 
-## Step 4: Map IDML Attributes to CSV Columns
+## Step 4: Map Attributes to CSV Columns
+
+**(If using JSON, the `csv_column` mapping is already included)**
 
 ### 4.1 Read CSV Headers
 Read first 2 rows of `output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv`:
@@ -202,17 +215,28 @@ grep "{product_name}" "output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv"
 ## File Locations
 
 ```
-Source of Truth:
+Source of Truth (check in this order):
+│
+├── input/processing/extracted/{product}.json   ← FAST: Pre-extracted data
+│
 ├── input/processing/IDML_unzipped/{pages}_{product}/
-│   └── Stories/Story_*.xml   ← READ EACH FILE
+│   └── Stories/Story_*.xml   ← FULL: Read each file
 │
 └── input/processing/PDF Single Products/
-    └── pages_{pages}_{product}.pdf   ← VISUAL REFERENCE
+    └── pages_{pages}_{product}.pdf   ← VISUAL: Cross-check
 
 Output to Validate (CSV):
 ├── output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv
 └── output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv
 ```
+
+### Extracted JSON Format
+If `{product}.json` exists, it contains:
+- `models[]` - SKUs, names, prices
+- `tech_specs[]` - All attributes with `csv_column` mapping
+- `discrepancies[]` - Any IDML vs PDF differences
+
+Use `/extract-product {name}` to create/update JSON files.
 
 ### PDF Naming Convention
 PDFs follow pattern: `pages_{page-range}_{category}_{product}.pdf`
