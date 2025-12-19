@@ -1,123 +1,139 @@
 # Check Product Data Integrity
 
-Validate that all product information from source files (IDML/PDF) is correctly transferred to CSV output files.
+Validate product data by extracting ALL information from IDML source files and checking if it exists correctly in CSV output files.
+
+## CRITICAL: IDML-First Workflow
+
+**ALWAYS start fresh from IDML files. NEVER use cached values or start from CSV.**
+
+The IDML unzipped files are the SOURCE OF TRUTH. Your job is to:
+1. Extract ALL data from IDML
+2. Build a complete attribute map
+3. Then check if CSV matches
+
+---
 
 ## Step 1: Ask for Product Name
 
-First, ask the user:
-**"Which product do you want to check? (e.g., 746 C, 844 C, 741 C, S450H, B680H, etc.)"**
+Ask the user:
+**"Which product do you want to check? (e.g., 746 C, 560, 844 C, S450H, etc.)"**
 
-Wait for the user's response before proceeding.
+Wait for response before proceeding.
 
 ---
 
-## Step 2: Find and Analyze IDML Source
+## Step 2: Locate and READ IDML Source Files
 
-### 2.1 Locate IDML Folder
+### 2.1 Find the IDML Folder
 ```bash
-# Find the product's IDML folder
 ls input/processing/IDML_unzipped/ | grep -i "{product_name}"
 ```
 
-### 2.2 Extract ALL Content from IDML Stories
-
-Read through ALL Story_*.xml files to find:
-
-**A) SKU Codes and Model Names**
+### 2.2 List ALL Story Files
 ```bash
-# Search for SKU patterns (5-6 digit codes)
-grep -roh "[0-9]\{5,6\}" Stories/*.xml | sort -u
-
-# Search for model name patterns
-grep -r "<Content>" Stories/*.xml | grep -v "ParagraphStyle"
+ls input/processing/IDML_unzipped/{folder}/Stories/
 ```
+
+### 2.3 READ EACH Story File NOW
+
+**YOU MUST read each Story_*.xml file using the Read tool.** Do not skip this step or use values from memory.
+
+For each Story file, extract:
+
+**A) Model/SKU Table (usually in one Story file)**
+Look for table with:
+- `models_model_pgf` style → Model names (e.g., "560 CBAC", "560 SB")
+- `models_code_pgf` style → SKU codes (e.g., "104561", "104562")
+- `models_price_pgf` style → Prices
 
 **B) Technical Specifications Table**
-The technical specs are in a table structure. Find ALL parameter-value pairs:
+Look for table with:
+- `techspec_param_pgf` style → Parameter names (Italian labels)
+- `techspec_value_pgf` style → Parameter values
+- **ColumnSpan="2"** → Value is SHARED across all models
+- **ColumnSpan="1"** → Value is specific to one model
 
-1. **Find the table Story file** - usually contains "Modello" and technical specs
-2. **Extract parameter names** - these are in cells with `techspec_param_pgf` style
-3. **Extract values** - these are in cells with `techspec_value_pgf` style
-4. **Note ColumnSpan** - `ColumnSpan="2"` means value applies to ALL models
+**C) All Other Text Content**
+Extract any `<Content>` tags that contain:
+- Product descriptions
+- Feature lists
+- Notes
+- Any other text
 
-**DO NOT use a predefined attribute list.** Instead, dynamically discover:
-- What attributes exist in THIS product's IDML
-- What values are specified for each model variant
-- Which values are shared (ColumnSpan="2") vs model-specific (ColumnSpan="1")
+---
 
-### 2.3 Build Attribute Map from IDML
+## Step 3: Build Complete Data Map from IDML
 
-Create a table of everything found:
+After reading ALL Story files, create these tables:
+
+### 3.1 SKUs and Models Found
 ```
-| IDML Attribute Name | Model 1 Value | Model 2 Value | Shared? |
-|---------------------|---------------|---------------|---------|
-| [discovered attr 1] | [value]       | [value]       | Yes/No  |
-| [discovered attr 2] | [value]       | [value]       | Yes/No  |
-| ...                 | ...           | ...           | ...     |
+| SKU | Model Name | Price |
+|-----|------------|-------|
+```
+
+### 3.2 Technical Specifications (COMPLETE LIST)
+```
+| # | IDML Attribute (Italian) | Model 1 Value | Model 2 Value | Shared? |
+|---|--------------------------|---------------|---------------|---------|
+| 1 | [attr from IDML]         | [value]       | [value]       | Yes/No  |
+| 2 | [attr from IDML]         | [value]       | [value]       | Yes/No  |
+| ...                                                                     |
+```
+
+**List EVERY attribute found. Do not skip any.**
+
+### 3.3 Other Text Content
+```
+| Content Type | Text Found |
+|--------------|------------|
+| Description  | [text]     |
+| Notes        | [text]     |
+| ...          | ...        |
 ```
 
 ---
 
-## Step 3: Map IDML Attributes to CSV Columns
+## Step 4: Map IDML Attributes to CSV Columns
 
-After discovering attributes in IDML, find the matching CSV column:
+### 4.1 Read CSV Headers
+Read first 2 rows of `output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv`:
+- Row 1: Technical column names (e.g., `frequenza_utilizzo`)
+- Row 2: Italian display labels (e.g., `Frequenza di utilizzo`)
 
-### CSV Column Header Reference (sku.csv row 1-2)
-Read the first 2 rows of sku.csv to get:
-- Row 1: Column technical names (e.g., `tensione_alimentazione`)
-- Row 2: Column display names (e.g., `Tensione di alimentazione di rete`)
+### 4.2 Create Mapping Table
+For EACH IDML attribute, find the matching CSV column:
 
-### Matching Process
-For each IDML attribute found:
-1. Search CSV row 2 for matching Italian label
-2. Get the corresponding column name from row 1
-3. If no exact match, try partial matching or ask user
-
----
-
-## Step 4: Check PDF (if available)
-
-Look for PDF files:
-```bash
-ls input/processing/*.pdf
-ls input/*.pdf
 ```
-
-Use PDF to:
-- Verify page numbers match IDML folder
-- Cross-check technical specs visually
-- Identify any values that might be images (not text)
+| IDML Attribute | CSV Column Name | Match Type |
+|----------------|-----------------|------------|
+| [Italian text] | [column_name]   | Exact/Partial/None |
+```
 
 ---
 
 ## Step 5: Validate CSV Data
 
-### 5.1 Check prodotti.csv
-
-File: `output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv`
-
-```bash
-grep "{product_name}" "output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv"
-```
-
-Verify:
-- Product exists
-- SKU codes from IDML are listed
-- Description matches IDML content
-
-### 5.2 Check sku.csv
-
-File: `output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv`
-
-For EACH SKU discovered in IDML:
+### 5.1 Read CSV Rows for Each SKU
+For each SKU found in IDML:
 ```bash
 grep "^{SKU}," "output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv"
 ```
 
-Compare EVERY attribute discovered in Step 2:
-- Find the CSV column that matches the IDML attribute
-- Check if value exists
-- Check if value matches
+### 5.2 Compare EVERY Attribute
+For each attribute in your IDML data map:
+1. Find the corresponding CSV column
+2. Extract the CSV value for this SKU
+3. Compare: IDML value vs CSV value
+4. Mark as: ✓ Match, ❌ Missing, ⚠ Wrong
+
+**Check ALL attributes, not just a subset.**
+
+### 5.3 Check prodotti.csv
+Verify product exists with correct SKU list:
+```bash
+grep "{product_name}" "output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv"
+```
 
 ---
 
@@ -126,42 +142,45 @@ Compare EVERY attribute discovered in Step 2:
 ```
 # Product Check Report: [PRODUCT NAME]
 
-## Source Files
-- IDML: input/processing/IDML_unzipped/[folder]/
+## Source Files Analyzed
+- IDML Folder: input/processing/IDML_unzipped/[folder]/
+- Story files read: [list each file]
 - PDF: [path or "Not found"]
-- Catalog Pages: [page numbers]
 
-## Models & SKUs Found in IDML
-| SKU | Model Name |
-|-----|------------|
-| ... | ...        |
+## Data Extracted from IDML
 
-## Technical Specifications from IDML
+### Models & SKUs
+| SKU | Model Name | Price |
+|-----|------------|-------|
 
-| Attribute (from IDML) | CSV Column | Model 1 | Model 2 | Shared |
-|-----------------------|------------|---------|---------|--------|
-| [attr name]           | [col name] | [value] | [value] | Yes/No |
-| ...                   | ...        | ...     | ...     | ...    |
+### Technical Specifications (X attributes found)
+| # | Attribute | Model 1 | Model 2 | Shared |
+|---|-----------|---------|---------|--------|
+| 1 | [name]    | [val]   | [val]   | Yes/No |
+| 2 | [name]    | [val]   | [val]   | Yes/No |
+...
 
 ## Validation Results
 
-### SKU: [SKU1] ([Model Name])
-| Attribute | IDML Value | CSV Value | Status |
-|-----------|------------|-----------|--------|
-| [attr]    | [value]    | [value]   | ✓ / ❌ |
+### SKU: [SKU1] - [Model Name]
+| # | Attribute | IDML Value | CSV Column | CSV Value | Status |
+|---|-----------|------------|------------|-----------|--------|
+| 1 | [attr]    | [value]    | [col]      | [value]   | ✓/❌/⚠ |
+| 2 | [attr]    | [value]    | [col]      | [value]   | ✓/❌/⚠ |
+...
 
-### SKU: [SKU2] ([Model Name])
-| Attribute | IDML Value | CSV Value | Status |
-|-----------|------------|-----------|--------|
-| [attr]    | [value]    | [value]   | ✓ / ❌ |
+### SKU: [SKU2] - [Model Name]
+| # | Attribute | IDML Value | CSV Column | CSV Value | Status |
+|---|-----------|------------|------------|-----------|--------|
+...
 
 ## Errors Found
 
-1. **[SKU]**: Missing `[attribute]` - should be "[value]"
-2. **[SKU]**: Wrong `[attribute]` - IDML: "[correct]", CSV: "[wrong]"
+1. **[SKU]**: Missing `[csv_column]` - IDML says "[value]"
+2. **[SKU]**: Wrong `[csv_column]` - IDML: "[correct]", CSV: "[wrong]"
 
 ## Summary
-- Attributes checked: X
+- Total attributes in IDML: X
 - ✓ Correct: X
 - ❌ Missing: X
 - ⚠ Incorrect: X
@@ -169,24 +188,25 @@ Compare EVERY attribute discovered in Step 2:
 
 ---
 
-## File Locations
+## Key Rules
 
-```
-Source (truth):
-└── input/processing/IDML_unzipped/{pages}_{product}/
-    └── Stories/Story_*.xml
-
-Output (to validate):
-├── output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv
-└── output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv
-```
+1. **READ IDML FILES FRESH** - Never rely on previous reads or memory
+2. **EXTRACT EVERYTHING** - All attributes, all text, all values
+3. **BUILD DATA MAP FIRST** - Complete the IDML analysis before touching CSV
+4. **CHECK ColumnSpan** - "2" means shared value for all models
+5. **VERIFY EVERY ATTRIBUTE** - Don't skip any discovered attributes
+6. **REPORT ALL DISCREPANCIES** - Missing, wrong, or mismatched values
 
 ---
 
-## Key Rules
+## File Locations
 
-1. **DO NOT assume which attributes exist** - discover them from IDML
-2. **Each product is different** - specs vary by product type
-3. **Check ColumnSpan** - determines if value is shared or model-specific
-4. **Match by Italian label** - IDML uses Italian, match to CSV row 2
-5. **Report ALL discrepancies** - missing values, wrong values, extra values
+```
+Source of Truth (IDML):
+└── input/processing/IDML_unzipped/{pages}_{product}/
+    └── Stories/Story_*.xml   ← READ EACH FILE
+
+Output to Validate (CSV):
+├── output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv
+└── output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv
+```
