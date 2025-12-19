@@ -202,11 +202,18 @@ grep "{product_name}" "output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv"
 ## File Locations
 
 ```
-Source of Truth (IDML):
-└── input/processing/IDML_unzipped/{pages}_{product}/
-    └── Stories/Story_*.xml   ← READ EACH FILE
+Source of Truth:
+├── input/processing/IDML_unzipped/{pages}_{product}/
+│   └── Stories/Story_*.xml   ← READ EACH FILE
+│
+└── input/processing/PDF Single Products/
+    └── pages_{pages}_{product}.pdf   ← VISUAL REFERENCE
 
 Output to Validate (CSV):
 ├── output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv
 └── output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv
 ```
+
+### PDF Naming Convention
+PDFs follow pattern: `pages_{page-range}_{category}_{product}.pdf`
+Example: `pages_156-157_Automazioni_per_porte_a_libro_560.pdf`
