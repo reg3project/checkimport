@@ -128,15 +128,31 @@ For EACH IDML attribute, find the matching CSV column:
 ## Step 5: Validate CSV Data
 
 ### 5.1 Read CSV Rows for Each SKU
-For each SKU found in IDML:
-```bash
-grep "^{SKU}," "output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv"
+
+**IMPORTANT: Use Python csv module for proper parsing.** CSV files contain quoted fields with commas (e.g., `"2,3 m"`) - simple grep/awk will break.
+
+```python
+python3 -c "
+import csv
+with open('output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv', 'r') as f:
+    reader = csv.reader(f)
+    headers = next(reader)
+    next(reader)  # skip Italian labels row
+    for row in reader:
+        if row[0] == '{SKU}':
+            # Get specific columns by name
+            cols = ['column1', 'column2', ...]
+            for col in cols:
+                idx = headers.index(col)
+                print(f'{col}: \"{row[idx]}\"')
+            break
+"
 ```
 
 ### 5.2 Compare EVERY Attribute
 For each attribute in your IDML data map:
 1. Find the corresponding CSV column
-2. Extract the CSV value for this SKU
+2. Extract the CSV value using Python csv module
 3. Compare: IDML value vs CSV value
 4. Mark as: ✓ Match, ❌ Missing, ⚠ Wrong
 
