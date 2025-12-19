@@ -5,208 +5,188 @@ Validate that all product information from source files (IDML/PDF) is correctly 
 ## Step 1: Ask for Product Name
 
 First, ask the user:
-**"Which product do you want to check? (e.g., 746 C, 844 C, 741 C, S450H, etc.)"**
+**"Which product do you want to check? (e.g., 746 C, 844 C, 741 C, S450H, B680H, etc.)"**
 
 Wait for the user's response before proceeding.
 
 ---
 
-## Step 2: Analyze Source Files (IDML + PDF)
+## Step 2: Find and Analyze IDML Source
 
-### 2.1 Find IDML Source
-Search for the product's IDML folder:
-```
-input/processing/IDML_unzipped/*{product_name}*/
-```
-
-Example: For "746 C" → `input/processing/IDML_unzipped/122-123_746_C/`
-
-### 2.2 Extract Data from IDML
-
-Read the Stories/*.xml files to extract:
-
-**A) Product Info (for prodotti.csv)**
-- Product name and category
-- Page numbers (from folder name, e.g., "122-123")
-- Product description
-- Product image references
-- SKU codes listed
-- Accessories and related products
-- Certifications and badges
-
-**B) Technical Specifications Table (for sku.csv)**
-Search for table content with patterns:
+### 2.1 Locate IDML Folder
 ```bash
-grep -r "Content>" Stories/*.xml | grep -v "ParagraphStyle\|CharacterStyle"
+# Find the product's IDML folder
+ls input/processing/IDML_unzipped/ | grep -i "{product_name}"
 ```
 
-Extract the technical specs table:
-| Attribute | Column in sku.csv |
-|-----------|-------------------|
-| Modello | nome_modello |
-| Codice articolo | SKU (first column) |
-| Tensione di alimentazione di rete | tensione_alimentazione |
-| Potenza max | potenza_massima |
-| Pignone | pignone |
-| Forza max di spinta | forza_spinta |
-| Peso max anta | peso_anta_max |
-| Temperatura ambiente di esercizio | temperatura_esercizio |
-| Termoprotezione | termoprotezione |
-| Grado di protezione | grado_protezione_ip |
-| Peso | peso_unita |
-| Frequenza di utilizzo | frequenza_utilizzo |
-| Spazio di fermata | spazio_fermata |
-| Velocità max | velocita_max |
-| Velocità dell'anta | velocita_anta |
-| Dimensioni (LxPxH) | dimensioni |
-| Lunghezza max anta | lunghezza_anta_max |
-| Condensatore di spunto | condensatore_spunto |
-| Apparecchiatura elettronica | scheda_elettronica |
-| Encoder | encoder |
+### 2.2 Extract ALL Content from IDML Stories
 
-**Important IDML parsing rules:**
-- `ColumnSpan="2"` means value applies to ALL model variants
-- `ColumnSpan="1"` means value is specific to ONE model variant
-- Model names are in row 0 of the table
-- First column contains attribute labels
+Read through ALL Story_*.xml files to find:
 
-### 2.3 Check PDF (if available)
-Look for PDF files in:
-```
-input/processing/*.pdf
-input/*.pdf
+**A) SKU Codes and Model Names**
+```bash
+# Search for SKU patterns (5-6 digit codes)
+grep -roh "[0-9]\{5,6\}" Stories/*.xml | sort -u
+
+# Search for model name patterns
+grep -r "<Content>" Stories/*.xml | grep -v "ParagraphStyle"
 ```
 
-Use PDF to visually verify:
-- Product images match
-- Page layout matches IDML
-- Any handwritten annotations or corrections
+**B) Technical Specifications Table**
+The technical specs are in a table structure. Find ALL parameter-value pairs:
+
+1. **Find the table Story file** - usually contains "Modello" and technical specs
+2. **Extract parameter names** - these are in cells with `techspec_param_pgf` style
+3. **Extract values** - these are in cells with `techspec_value_pgf` style
+4. **Note ColumnSpan** - `ColumnSpan="2"` means value applies to ALL models
+
+**DO NOT use a predefined attribute list.** Instead, dynamically discover:
+- What attributes exist in THIS product's IDML
+- What values are specified for each model variant
+- Which values are shared (ColumnSpan="2") vs model-specific (ColumnSpan="1")
+
+### 2.3 Build Attribute Map from IDML
+
+Create a table of everything found:
+```
+| IDML Attribute Name | Model 1 Value | Model 2 Value | Shared? |
+|---------------------|---------------|---------------|---------|
+| [discovered attr 1] | [value]       | [value]       | Yes/No  |
+| [discovered attr 2] | [value]       | [value]       | Yes/No  |
+| ...                 | ...           | ...           | ...     |
+```
 
 ---
 
-## Step 3: Check CSV Files
+## Step 3: Map IDML Attributes to CSV Columns
 
-### 3.1 Check prodotti.csv
+After discovering attributes in IDML, find the matching CSV column:
+
+### CSV Column Header Reference (sku.csv row 1-2)
+Read the first 2 rows of sku.csv to get:
+- Row 1: Column technical names (e.g., `tensione_alimentazione`)
+- Row 2: Column display names (e.g., `Tensione di alimentazione di rete`)
+
+### Matching Process
+For each IDML attribute found:
+1. Search CSV row 2 for matching Italian label
+2. Get the corresponding column name from row 1
+3. If no exact match, try partial matching or ask user
+
+---
+
+## Step 4: Check PDF (if available)
+
+Look for PDF files:
+```bash
+ls input/processing/*.pdf
+ls input/*.pdf
+```
+
+Use PDF to:
+- Verify page numbers match IDML folder
+- Cross-check technical specs visually
+- Identify any values that might be images (not text)
+
+---
+
+## Step 5: Validate CSV Data
+
+### 5.1 Check prodotti.csv
 
 File: `output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv`
 
-Find the product row and verify:
+```bash
+grep "{product_name}" "output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv"
+```
 
-| Field | Check |
-|-------|-------|
-| nome_prodotto | Matches IDML product name |
-| pagina_catalogo | Matches IDML folder page numbers |
-| immagine_principale | Image file exists |
-| 720118 (SKU column) | Contains ALL SKUs from IDML |
-| titolo_prodotto | Matches IDML title |
-| descrizione_prodotto | Contains IDML description text |
-| caratteristica_primaria/valore_primario | Matches IDML main specs |
-| certificazioni | Matches IDML certifications |
-| sku_correlati | Lists related SKUs |
+Verify:
+- Product exists
+- SKU codes from IDML are listed
+- Description matches IDML content
 
-### 3.2 Check sku.csv
+### 5.2 Check sku.csv
 
 File: `output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv`
 
-For EACH SKU found in IDML:
-1. Find the SKU row in sku.csv
-2. Compare EVERY technical attribute
-3. Flag any missing or different values
+For EACH SKU discovered in IDML:
+```bash
+grep "^{SKU}," "output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv"
+```
 
-**Critical checks:**
-- All SKUs from IDML exist in CSV
-- nome_modello matches IDML model name
-- ALL technical specs have values (no empty cells for attributes that exist in IDML)
-- Values match exactly (including units like "Kg", "mm", "W", "N")
+Compare EVERY attribute discovered in Step 2:
+- Find the CSV column that matches the IDML attribute
+- Check if value exists
+- Check if value matches
 
 ---
 
-## Step 4: Report Findings
-
-### Format your report as:
+## Step 6: Report Findings
 
 ```
 # Product Check Report: [PRODUCT NAME]
 
-## Source Files Analyzed
-- IDML: [folder path]
-- PDF: [file path or "Not found"]
-- Pages: [page numbers]
+## Source Files
+- IDML: input/processing/IDML_unzipped/[folder]/
+- PDF: [path or "Not found"]
+- Catalog Pages: [page numbers]
 
-## SKUs Found in IDML
+## Models & SKUs Found in IDML
 | SKU | Model Name |
 |-----|------------|
-| XXXXXX | Model A |
-| YYYYYY | Model B |
+| ... | ...        |
 
-## prodotti.csv Check
-- [ ] Product row found
-- [ ] All SKUs listed
-- [ ] Description complete
-- [ ] Images referenced
-- [ ] Certifications correct
+## Technical Specifications from IDML
 
-Issues found:
-- [list any issues]
+| Attribute (from IDML) | CSV Column | Model 1 | Model 2 | Shared |
+|-----------------------|------------|---------|---------|--------|
+| [attr name]           | [col name] | [value] | [value] | Yes/No |
+| ...                   | ...        | ...     | ...     | ...    |
 
-## sku.csv Check
+## Validation Results
 
-### SKU: XXXXXX (Model A)
+### SKU: [SKU1] ([Model Name])
 | Attribute | IDML Value | CSV Value | Status |
 |-----------|------------|-----------|--------|
-| tensione_alimentazione | 220-240V~ | 220-240V~ | ✓ |
-| spazio_fermata | 30 mm | 30 mm | ✓ |
-| ... | ... | ... | ... |
+| [attr]    | [value]    | [value]   | ✓ / ❌ |
 
-### SKU: YYYYYY (Model B)
+### SKU: [SKU2] ([Model Name])
 | Attribute | IDML Value | CSV Value | Status |
 |-----------|------------|-----------|--------|
-| tensione_alimentazione | 220-240V~ | 220-240V~ | ✓ |
-| spazio_fermata | 30 mm | (empty) | ❌ MISSING |
-| ... | ... | ... | ... |
+| [attr]    | [value]    | [value]   | ✓ / ❌ |
+
+## Errors Found
+
+1. **[SKU]**: Missing `[attribute]` - should be "[value]"
+2. **[SKU]**: Wrong `[attribute]` - IDML: "[correct]", CSV: "[wrong]"
 
 ## Summary
-- Total attributes checked: X
-- Correct: X
-- Missing: X
-- Incorrect: X
-
-## Errors to Fix
-1. **SKU YYYYYY**: Missing `spazio_fermata` - should be "30 mm"
-2. [other errors...]
+- Attributes checked: X
+- ✓ Correct: X
+- ❌ Missing: X
+- ⚠ Incorrect: X
 ```
 
 ---
 
-## Quick Reference: File Locations
+## File Locations
 
 ```
-Source Files:
-├── input/processing/IDML_unzipped/{page}_{product}/
-│   └── Stories/Story_*.xml          <- Technical specs here
-└── input/processing/*.pdf            <- Visual reference
+Source (truth):
+└── input/processing/IDML_unzipped/{pages}_{product}/
+    └── Stories/Story_*.xml
 
-Output Files:
+Output (to validate):
 ├── output/FAAC_Data_Elena_P_KIT_v4.xlsx - prodotti.csv
 └── output/FAAC_Data_Elena_P_KIT_v4.xlsx - sku.csv
 ```
 
 ---
 
-## Example Session
+## Key Rules
 
-**Claude:** Which product do you want to check?
-
-**User:** 746 C
-
-**Claude:**
-1. Finding IDML source... Found: `122-123_746_C/`
-2. Extracting technical specs from IDML...
-3. Found 2 SKUs: 109745 (746 C Z16), 109746 (746 C Z20)
-4. Checking prodotti.csv... ✓ Product found
-5. Checking sku.csv...
-
-[Detailed comparison table]
-
-**Error Found:**
-- SKU 109746 (746 C Z20): Missing `spazio_fermata` - should be "30 mm"
+1. **DO NOT assume which attributes exist** - discover them from IDML
+2. **Each product is different** - specs vary by product type
+3. **Check ColumnSpan** - determines if value is shared or model-specific
+4. **Match by Italian label** - IDML uses Italian, match to CSV row 2
+5. **Report ALL discrepancies** - missing values, wrong values, extra values
