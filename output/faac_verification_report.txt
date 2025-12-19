@@ -1,0 +1,241 @@
+================================================================================
+FAAC PRODUCT VERIFICATION REPORT
+Generated: 2025-12-19T18:43:46.812870
+================================================================================
+
+Total products verified: 120
+Total discrepancies found: 1568
+Total suggestions: 1481
+
+--------------------------------------------------------------------------------
+DISCREPANCIES BY TYPE
+--------------------------------------------------------------------------------
+
+### SKU_NOT_IN_EXCEL (1481 issues)
+  - LEADER kit: SKU 104468 in IDML not in Excel
+  - LEADER kit: SKU 790077 in IDML not in Excel
+  - LEADER kit: SKU 720119 in IDML not in Excel
+  - LEADER kit: SKU 410029 in IDML not in Excel
+  - LEADER kit: SKU 785103 in IDML not in Excel
+  - LEADER kit: SKU 787025 in IDML not in Excel
+  - LEADER kit: SKU 787017 in IDML not in Excel
+  - LEADER kit: SKU 120015 in IDML not in Excel
+  - LEADER kit: SKU 104415 in IDML not in Excel
+  - MASTER kit 230V: SKU 104468 in IDML not in Excel
+  - MASTER kit 230V: SKU 790077 in IDML not in Excel
+  - MASTER kit 230V: SKU 720119 in IDML not in Excel
+  - MASTER kit 230V: SKU 410029 in IDML not in Excel
+  - MASTER kit 230V: SKU 785103 in IDML not in Excel
+  - MASTER kit 230V: SKU 787025 in IDML not in Excel
+  - MASTER kit 230V: SKU 787017 in IDML not in Excel
+  - MASTER kit 230V: SKU 104415 in IDML not in Excel
+  - MASTER kit 230V: SKU 120013 in IDML not in Excel
+  - MASTER kit 24V: SKU 102011 in IDML not in Excel
+  - MASTER kit 24V: SKU 410029 in IDML not in Excel
+  - MASTER kit 24V: SKU 785103 in IDML not in Excel
+  - MASTER kit 24V: SKU 787025 in IDML not in Excel
+  - MASTER kit 24V: SKU 787017 in IDML not in Excel
+  - MASTER kit 24V: SKU 120019 in IDML not in Excel
+  - MASTER kit 24V: SKU 104301 in IDML not in Excel
+  - HANDY kit: SKU 102011 in IDML not in Excel
+  - HANDY kit: SKU 410029 in IDML not in Excel
+  - HANDY kit: SKU 785103 in IDML not in Excel
+  - HANDY kit: SKU 787025 in IDML not in Excel
+  - HANDY kit: SKU 787017 in IDML not in Excel
+  - HANDY kit: SKU 104301 in IDML not in Excel
+  - HANDY kit: SKU 120016 in IDML not in Excel
+  - ECO kit: SKU 104470 in IDML not in Excel
+  - ECO kit: SKU 104471 in IDML not in Excel
+  - ECO kit: SKU 790077 in IDML not in Excel
+  - ECO kit: SKU 720119 in IDML not in Excel
+  - ECO kit: SKU 410029 in IDML not in Excel
+  - ECO kit: SKU 787025 in IDML not in Excel
+  - ECO kit: SKU 787017 in IDML not in Excel
+  - ECO kit: SKU 785103 in IDML not in Excel
+  - ECO kit: SKU 416250 in IDML not in Excel
+  - ECO kit: SKU 416251 in IDML not in Excel
+  - ECO kit: SKU 490250 in IDML not in Excel
+  - ECO kit: SKU 120020 in IDML not in Excel
+  - ECO kit: SKU 104250 in IDML not in Excel
+  - ECO kit: SKU 102011 in IDML not in Excel
+  - HIGH kit: SKU 104470 in IDML not in Excel
+  - HIGH kit: SKU 104471 in IDML not in Excel
+  - HIGH kit: SKU 790077 in IDML not in Excel
+  - HIGH kit: SKU 720119 in IDML not in Excel
+  ... and 1431 more
+
+### SKU_NOT_IN_IDML (71 issues)
+  - LEADER kit: SKU 105633445 in Excel not found in IDML
+  - TRENDY kit 230V: SKU 104419445 in Excel not found in IDML
+  - MASTER kit 230V: SKU 104415445 in Excel not found in IDML
+  - MASTER kit 24V: SKU 104415144 in Excel not found in IDML
+  - ECO kit: SKU 105632445 in Excel not found in IDML
+  - HIGH KIT: SKU 104250445 in Excel not found in IDML
+  - POWER kit 230V: SKU 106746445 in Excel not found in IDML
+  - POWER kit 24V: SKU 106747445 in Excel not found in IDML
+  - DELTA 2 kit: SKU 1056303445 in Excel not found in IDML
+  - DELTA 3 kit: SKU 105630445 in Excel not found in IDML
+  - RAPID kit: SKU 1059995 in Excel not found in IDML
+  - SOLID kit: SKU 10561644 in Excel not found in IDML
+  - DOLPHIN kit: SKU 10566544 in Excel not found in IDML
+  - 415 24V: SKU 1044151 in Excel not found in IDML
+  - 415 24V: SKU 1044171 in Excel not found in IDML
+  - 770N 230V: SKU 10675201 in Excel not found in IDML
+  - 770N 24V: SKU 10675301 in Excel not found in IDML
+  - 740.0: SKU 1097805 in Excel not found in IDML
+  - 741.0: SKU 1097815 in Excel not found in IDML
+  - B614: SKU 1046143 in Excel not found in IDML
+  - B614: SKU 428046 in Excel not found in IDML
+  - B614: SKU 428045 in Excel not found in IDML
+  - B614: SKU 428042 in Excel not found in IDML
+  - B614: SKU 428043 in Excel not found in IDML
+  - B614: SKU 428002 in Excel not found in IDML
+  - B614: SKU 428615 in Excel not found in IDML
+  - B614: SKU 428088 in Excel not found in IDML
+  - B614: SKU 428089 in Excel not found in IDML
+  - 615BPR: SKU 428046 in Excel not found in IDML
+  - 615BPR: SKU 428045 in Excel not found in IDML
+  - 615BPR: SKU 428042 in Excel not found in IDML
+  - 615BPR: SKU 428043 in Excel not found in IDML
+  - 615BPR: SKU 428002 in Excel not found in IDML
+  - 615BPR: SKU 428615 in Excel not found in IDML
+  - 615BPR: SKU 428088 in Excel not found in IDML
+  - 615BPR: SKU 428089 in Excel not found in IDML
+  - B614: SKU 1046143 in Excel not found in IDML
+  - 620 Standard: SKU 1046218 in Excel not found in IDML
+  - 620 Standard: SKU 1046418 in Excel not found in IDML
+  - 620 Standard: SKU 1047048 in Excel not found in IDML
+  - 620 Standard: SKU 1047148 in Excel not found in IDML
+  - 620 Standard: SKU 1047508 in Excel not found in IDML
+  - 620 Standard: SKU 1047518 in Excel not found in IDML
+  - 620 Standard: SKU 1046408 in Excel not found in IDML
+  - 620 Standard: SKU 1046428 in Excel not found in IDML
+  - 620 Standard: SKU 1046478 in Excel not found in IDML
+  - 620 Standard: SKU 1046488 in Excel not found in IDML
+  - 620 Standard: SKU 1046208 in Excel not found in IDML
+  - 620 Standard: SKU 1046228 in Excel not found in IDML
+  - 620 Standard: SKU 1046268 in Excel not found in IDML
+  ... and 21 more
+
+### NO_IDML_FOLDER (16 issues)
+  - Access XL2/XXL: No IDML folder found for product Access XL2/XXL (page 180-183)
+  - TOLL: No IDML folder found for product TOLL (page 184-185)
+  - XF FDS 433-868: No IDML folder found for product XF FDS 433-868 (page 201.0)
+  - RP FDS 433-868: No IDML folder found for product RP FDS 433-868 (page 201.0)
+  - RP2 FDS 433-868: No IDML folder found for product RP2 FDS 433-868 (page 201.0)
+  - XR2N 433-868: No IDML folder found for product XR2N 433-868 (page 201.0)
+  - XR4N 433-868: No IDML folder found for product XR4N 433-868 (page 201.0)
+  - PLUS1 868 MHz: No IDML folder found for product PLUS1 868 MHz (page 205.0)
+  - PLUS1 868 MHz: No IDML folder found for product PLUS1 868 MHz (page 205.0)
+  - Unità di controllo per coste di sicurezza: No IDML folder found for product Unità di controllo per coste di sicurezza (page 229.0)
+  - Sistema Radio Coste: No IDML folder found for product Sistema Radio Coste (page 230.0)
+  - SAFEcoder: No IDML folder found for product SAFEcoder (page 231.0)
+  - XLC: No IDML folder found for product XLC (page 232.0)
+  - XUSB: No IDML folder found for product XUSB (page 233.0)
+  - SAFE PRO - misuratore curva d'impatto: No IDML folder found for product SAFE PRO - misuratore curva d'impatto (page 236.0)
+  - Lampeggiatori: No IDML folder found for product Lampeggiatori (page 237.0)
+
+--------------------------------------------------------------------------------
+SUGGESTED EDITS
+--------------------------------------------------------------------------------
+  - [ADD_SKU] Consider adding SKU 104468 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 790077 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 720119 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 410029 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 785103 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 787025 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 787017 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 120015 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 104415 to product LEADER kit
+  - [ADD_SKU] Consider adding SKU 104468 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 790077 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 720119 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 410029 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 785103 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 787025 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 787017 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 104415 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 120013 to product MASTER kit 230V
+  - [ADD_SKU] Consider adding SKU 102011 to product MASTER kit 24V
+  - [ADD_SKU] Consider adding SKU 410029 to product MASTER kit 24V
+  - [ADD_SKU] Consider adding SKU 785103 to product MASTER kit 24V
+  - [ADD_SKU] Consider adding SKU 787025 to product MASTER kit 24V
+  - [ADD_SKU] Consider adding SKU 787017 to product MASTER kit 24V
+  - [ADD_SKU] Consider adding SKU 120019 to product MASTER kit 24V
+  - [ADD_SKU] Consider adding SKU 104301 to product MASTER kit 24V
+  - [ADD_SKU] Consider adding SKU 102011 to product HANDY kit
+  - [ADD_SKU] Consider adding SKU 410029 to product HANDY kit
+  - [ADD_SKU] Consider adding SKU 785103 to product HANDY kit
+  - [ADD_SKU] Consider adding SKU 787025 to product HANDY kit
+  - [ADD_SKU] Consider adding SKU 787017 to product HANDY kit
+  - [ADD_SKU] Consider adding SKU 104301 to product HANDY kit
+  - [ADD_SKU] Consider adding SKU 120016 to product HANDY kit
+  - [ADD_SKU] Consider adding SKU 104470 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 104471 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 790077 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 720119 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 410029 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 787025 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 787017 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 785103 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 416250 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 416251 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 490250 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 120020 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 104250 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 102011 to product ECO kit
+  - [ADD_SKU] Consider adding SKU 104470 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 104471 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 790077 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 720119 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 410029 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 787025 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 787017 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 785103 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 416250 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 416251 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 490250 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 120014 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 404041 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 104250 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 102011 to product HIGH kit
+  - [ADD_SKU] Consider adding SKU 790077 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 720119 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 410029 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 787025 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 787017 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 785103 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 102011 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 120018 to product POWER kit 230V
+  - [ADD_SKU] Consider adding SKU 790077 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 720119 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 410029 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 787025 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 787017 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 785103 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 102011 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 120017 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 404035 to product POWER kit 24V
+  - [ADD_SKU] Consider adding SKU 109745 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 737816 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 410029 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 787025 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 787017 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 785103 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 109600 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 785102 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 120009 to product PRATICO C kit
+  - [ADD_SKU] Consider adding SKU 109745 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 737816 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 410029 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 787025 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 787017 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 785103 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 109600 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 785102 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 120011 to product DELTA 2 kit
+  - [ADD_SKU] Consider adding SKU 109602 to product DELTA 3 kit
+  - [ADD_SKU] Consider adding SKU 410029 to product DELTA 3 kit
+  - [ADD_SKU] Consider adding SKU 787025 to product DELTA 3 kit
+  - [ADD_SKU] Consider adding SKU 787017 to product DELTA 3 kit
+  ... and 1381 more suggestions

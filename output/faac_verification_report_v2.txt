@@ -1,0 +1,132 @@
+================================================================================
+FAAC PRODUCT VERIFICATION REPORT V2
+Generated: 2025-12-19T18:46:04.816913
+================================================================================
+
+STATISTICS
+  Products in Excel: 136
+  Products Verified: 120
+  Products Without IDML: 16
+  SKUs in Excel: 503
+  Total Issues: 474
+  Total Suggestions: 387
+
+ISSUES BY SEVERITY
+  HIGH: 87
+  MEDIUM: 387
+
+ISSUES BY TYPE
+  COMPONENT_NOT_IN_SKU_SHEET: 63
+  IDML_MODEL_NOT_IN_EXCEL: 324
+  KIT_CODE_NOT_IN_IDML: 71
+  NO_IDML_FOLDER: 16
+
+================================================================================
+TOP ISSUES (First 50)
+================================================================================
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120015 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120013 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120019 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120016 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 416250 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 416251 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 490250 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120020 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 416250 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 416251 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 490250 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120014 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 404041 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120018 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120017 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 404035 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120009 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120011 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120012 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 120010 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 105683 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 390113 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 105633445 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 104419445 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 104415445 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 104415144 not found in IDML source
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 404040 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 404041 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 105632445 not found in IDML source
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 105998 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 416250 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 416251 not listed in Excel kit codes
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 490250 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 104250445 not found in IDML source
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 104575 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 106746445 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 106747445 not found in IDML source
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 404035 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 1056303445 not found in IDML source
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 105940 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 105630445 not found in IDML source
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 105083 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 1059995 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 10561644 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 10566544 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 1044151 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 1044171 not found in IDML source
+[MEDIUM] IDML_MODEL_NOT_IN_EXCEL: IDML model code 104474 not listed in Excel kit codes
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 10675201 not found in IDML source
+[HIGH] KIT_CODE_NOT_IN_IDML: Kit code 10675301 not found in IDML source
+... and 424 more issues
+
+================================================================================
+TOP SUGGESTIONS (First 50)
+================================================================================
+[ADD_KIT_CODE] Consider adding model code 120015 to LEADER kit
+[ADD_KIT_CODE] Consider adding model code 120013 to MASTER kit 230V
+[ADD_KIT_CODE] Consider adding model code 120019 to MASTER kit 24V
+[ADD_KIT_CODE] Consider adding model code 120016 to HANDY kit
+[ADD_KIT_CODE] Consider adding model code 416250 to ECO kit
+[ADD_KIT_CODE] Consider adding model code 416251 to ECO kit
+[ADD_KIT_CODE] Consider adding model code 490250 to ECO kit
+[ADD_KIT_CODE] Consider adding model code 120020 to ECO kit
+[ADD_KIT_CODE] Consider adding model code 416250 to HIGH kit
+[ADD_KIT_CODE] Consider adding model code 416251 to HIGH kit
+[ADD_KIT_CODE] Consider adding model code 490250 to HIGH kit
+[ADD_KIT_CODE] Consider adding model code 120014 to HIGH kit
+[ADD_KIT_CODE] Consider adding model code 404041 to HIGH kit
+[ADD_KIT_CODE] Consider adding model code 120018 to POWER kit 230V
+[ADD_KIT_CODE] Consider adding model code 120017 to POWER kit 24V
+[ADD_KIT_CODE] Consider adding model code 404035 to POWER kit 24V
+[ADD_KIT_CODE] Consider adding model code 120009 to PRATICO C kit
+[ADD_KIT_CODE] Consider adding model code 120011 to DELTA 2 kit
+[ADD_KIT_CODE] Consider adding model code 120012 to DELTA 3 kit
+[ADD_KIT_CODE] Consider adding model code 120010 to RAPID kit
+[ADD_KIT_CODE] Consider adding model code 105683 to SAFE&GREEN Retrofit kit
+[ADD_KIT_CODE] Consider adding model code 390113 to HYBRID kit
+[ADD_KIT_CODE] Consider adding model code 404040 to MASTER kit 24V
+[ADD_KIT_CODE] Consider adding model code 404041 to HANDY kit
+[ADD_KIT_CODE] Consider adding model code 105998 to ECO kit
+[ADD_KIT_CODE] Consider adding model code 416250 to ENERGY kit
+[ADD_KIT_CODE] Consider adding model code 416251 to ENERGY kit
+[ADD_KIT_CODE] Consider adding model code 490250 to ENERGY kit
+[ADD_KIT_CODE] Consider adding model code 104575 to HIGH KIT
+[ADD_KIT_CODE] Consider adding model code 404035 to POWER kit 24V
+[ADD_KIT_CODE] Consider adding model code 105940 to DELTA 2 kit
+[ADD_KIT_CODE] Consider adding model code 105083 to DELTA 3 kit
+[ADD_KIT_CODE] Consider adding model code 104474 to 402.0
+[ADD_KIT_CODE] Consider adding model code 428046 to B614
+[ADD_KIT_CODE] Consider adding model code 428045 to B614
+[ADD_KIT_CODE] Consider adding model code 428042 to B614
+[ADD_KIT_CODE] Consider adding model code 428043 to B614
+[ADD_KIT_CODE] Consider adding model code 428002 to B614
+[ADD_KIT_CODE] Consider adding model code 428615 to B614
+[ADD_KIT_CODE] Consider adding model code 428088 to B614
+[ADD_KIT_CODE] Consider adding model code 428089 to B614
+[ADD_KIT_CODE] Consider adding model code 428090 to B614
+[ADD_KIT_CODE] Consider adding model code 428091 to B614
+[ADD_COMPONENT_SKU] Add component SKU 720086 to SKU sheet
+[ADD_COMPONENT_SKU] Add component SKU 720086 to SKU sheet
+[ADD_KIT_CODE] Consider adding model code 428046 to 615BPR
+[ADD_KIT_CODE] Consider adding model code 428045 to 615BPR
+[ADD_KIT_CODE] Consider adding model code 428042 to 615BPR
+[ADD_KIT_CODE] Consider adding model code 428043 to 615BPR
+[ADD_KIT_CODE] Consider adding model code 428002 to 615BPR
+... and 337 more suggestions
